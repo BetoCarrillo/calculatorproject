@@ -11,21 +11,21 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 
-function Q2() {
+function Q10() {
   const handleChange = (event) => {
-    let valueQ2 = event.target.value;
-    console.log(valueQ2);
+    let valueQ10 = event.target.value;
+    console.log(valueQ10);
   };
 
-  const redirectQ1 = useNavigate();
-  const redirectQ3 = useNavigate();
+  const redirectQ9 = useNavigate();
+  const redirectQ11 = useNavigate();
 
   const handlePrev = () => {
-    redirectQ1("/Q1");
+    redirectQ9("/Q9");
   };
 
   const handleNext = () => {
-    redirectQ3("/Q3");
+    redirectQ11("/Q11");
   };
 
   return (
@@ -34,7 +34,7 @@ function Q2() {
         <Card sx={{ maxWidth: 450 }} className="QCard">
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              What type of building is your home?
+              How are the windows?
             </Typography>
             <FormControl>
               <RadioGroup
@@ -42,27 +42,21 @@ function Q2() {
                 name="controlled-radio-buttons-group"
               >
                 <FormControlLabel
-                  value="apartment"
+                  value="singlepanel"
                   control={<Radio />}
-                  label="Apartment"
+                  label="Single Panel"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="detached"
+                  value="doublepanel"
                   control={<Radio />}
-                  label="Detached house"
+                  label="Double Panel"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="semi-detached"
+                  value="triplepanel"
                   control={<Radio />}
-                  label="Semi-detached house"
-                  onClick={handleChange}
-                />
-                <FormControlLabel
-                  value="other"
-                  control={<Radio />}
-                  label="Other"
+                  label="Triple Panel"
                   onClick={handleChange}
                 />
               </RadioGroup>
@@ -78,9 +72,9 @@ function Q2() {
           </CardActions>
         </Card>
       </div>
-      <div className="QNumber"> 2/17</div>
+      <div className="QNumber"> 10/17</div>
     </div>
   );
 }
 
-export default Q2;
+export default Q10;

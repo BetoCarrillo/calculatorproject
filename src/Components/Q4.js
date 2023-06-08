@@ -11,21 +11,21 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 
-function Q2() {
+function Q4() {
   const handleChange = (event) => {
-    let valueQ2 = event.target.value;
-    console.log(valueQ2);
+    let valueQ4 = event.target.value;
+    console.log(valueQ4);
   };
 
-  const redirectQ1 = useNavigate();
   const redirectQ3 = useNavigate();
+  const redirectQ5 = useNavigate();
 
   const handlePrev = () => {
-    redirectQ1("/Q1");
+    redirectQ3("/Q3");
   };
 
   const handleNext = () => {
-    redirectQ3("/Q3");
+    redirectQ5("/Q5");
   };
 
   return (
@@ -34,7 +34,7 @@ function Q2() {
         <Card sx={{ maxWidth: 450 }} className="QCard">
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              What type of building is your home?
+              When was it built or last retrofitted?
             </Typography>
             <FormControl>
               <RadioGroup
@@ -42,27 +42,45 @@ function Q2() {
                 name="controlled-radio-buttons-group"
               >
                 <FormControlLabel
-                  value="apartment"
+                  value="1960-1970"
                   control={<Radio />}
-                  label="Apartment"
+                  label="1960-1970"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="detached"
+                  value="1970-1980"
                   control={<Radio />}
-                  label="Detached house"
+                  label="1970-1980"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="semi-detached"
+                  value="1980-1990"
                   control={<Radio />}
-                  label="Semi-detached house"
+                  label="1980-1990"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="other"
+                  value="1990-2000"
                   control={<Radio />}
-                  label="Other"
+                  label="1990-2000"
+                  onClick={handleChange}
+                />
+                <FormControlLabel
+                  value="2000-2010"
+                  control={<Radio />}
+                  label="2000-2010"
+                  onClick={handleChange}
+                />
+                <FormControlLabel
+                  value="2010-2020"
+                  control={<Radio />}
+                  label="2010-2020"
+                  onClick={handleChange}
+                />
+                <FormControlLabel
+                  value="2020-present"
+                  control={<Radio />}
+                  label="2020-present"
                   onClick={handleChange}
                 />
               </RadioGroup>
@@ -78,9 +96,9 @@ function Q2() {
           </CardActions>
         </Card>
       </div>
-      <div className="QNumber"> 2/17</div>
+      <div className="QNumber"> 4/17</div>
     </div>
   );
 }
 
-export default Q2;
+export default Q4;

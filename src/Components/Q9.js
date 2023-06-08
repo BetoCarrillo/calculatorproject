@@ -11,21 +11,21 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 
-function Q2() {
+function Q9() {
   const handleChange = (event) => {
     let valueQ2 = event.target.value;
     console.log(valueQ2);
   };
 
-  const redirectQ1 = useNavigate();
-  const redirectQ3 = useNavigate();
+  const redirectQ8 = useNavigate();
+  const redirectQ10 = useNavigate();
 
   const handlePrev = () => {
-    redirectQ1("/Q1");
+    redirectQ8("/Q8");
   };
 
   const handleNext = () => {
-    redirectQ3("/Q3");
+    redirectQ10("/Q10");
   };
 
   return (
@@ -78,9 +78,9 @@ function Q2() {
           </CardActions>
         </Card>
       </div>
-      <div className="QNumber"> 2/17</div>
+      <div className="QNumber"> 9/17</div>
     </div>
   );
 }
 
-export default Q2;
+export default Q9;
