@@ -1,5 +1,5 @@
 .divbackground {
-  background-color: #282c34;
+  background-color: #095366;
   min-height: 100vh;
 }
 
@@ -13,9 +13,29 @@
 }
 
 .StartButton {
-  background-color: #ca8400 !important;
+  background-color: #f79521 !important;
 }
 
 .StartButton:hover {
   background-color: #d98e02 !important;
+}
+
+.QCardDiv {
+  justify-content: center !important;
+  display: flex;
+  align-items: center !important;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.QCard {
+  border-style: solid;
+  border-color: #4386c6;
+  border-width: 0.4rem;
+  border-radius: 2rem !important;
+}
+
+.QNumber {
+  color: rgb(183, 183, 183);
 }

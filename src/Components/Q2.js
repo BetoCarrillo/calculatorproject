@@ -13,36 +13,22 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 
-function Q1() {
-  // const [country, setCountry] = useState();
-
-  // const handleChange = () => {
-  //   let country = `germany`;
-  //   console.log(country);
-  //   setValueCountry(country);
-  // };
-
+function Q2() {
   const handleChange = (event) => {
-    let valueQ1 = event.target.value;
-    console.log(valueQ1);
-    // setCountry((currentCountry) => currentCountry + valueQ1);
-    // console.log(country);
+    let valueQ2 = event.target.value;
+    console.log(valueQ2);
   };
 
-  const redirectLanding = useNavigate();
-  const redirectQ2 = useNavigate();
+  const redirectQ1 = useNavigate();
+  const redirectQ3 = useNavigate();
 
   const handlePrev = () => {
-    redirectLanding("/");
+    redirectQ1("/Q1");
   };
 
   const handleNext = () => {
-    redirectQ2("/Q2");
+    redirectQ3("/Q3");
   };
-
-  // useEffect(() => {
-  //   console.log("useffectrun");
-  // }, []);
 
   return (
     <div className="QCardDiv">
@@ -50,43 +36,29 @@ function Q1() {
         <Card sx={{ maxWidth: 450 }} className="QCard">
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              In which country do you live?
+              What type of building is your home?
             </Typography>
-            {/* <Dropdown>
-                <Dropdown.Button>Select country</Dropdown.Button>
-                <Dropdown.Menu aria-labelledby="dropdownMenuButton">
-                  <Dropdown.Item>Germany</Dropdown.Item>
-                  <Dropdown.Item>United Kingdom</Dropdown.Item>
-                  <Dropdown.Item>Action</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown> */}
             <FormControl>
               <RadioGroup
                 aria-labelledby="demo-controlled-radio-buttons-group"
                 name="controlled-radio-buttons-group"
               >
                 <FormControlLabel
-                  value="germany"
+                  value="apartment"
                   control={<Radio />}
-                  label="Germany"
+                  label="Apartment"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="unitedkingdom"
+                  value="detached"
                   control={<Radio />}
-                  label="United Kingdom"
+                  label="Detached house"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="netherlands"
+                  value="semi-detached"
                   control={<Radio />}
-                  label="Netherlands"
-                  onClick={handleChange}
-                />
-                <FormControlLabel
-                  value="france"
-                  control={<Radio />}
-                  label="France"
+                  label="Semi-detached house"
                   onClick={handleChange}
                 />
                 <FormControlLabel
@@ -108,9 +80,9 @@ function Q1() {
           </CardActions>
         </Card>
       </div>
-      <div className="QNumber"> 1/17</div>
+      <div className="QNumber"> 2/17</div>
     </div>
   );
 }
 
-export default Q1;
+export default Q2;

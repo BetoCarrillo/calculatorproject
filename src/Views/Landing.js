@@ -1,9 +1,10 @@
 import React from "react";
 import Button from "@mui/material/Button";
+import Q1 from "../Components/Q1";
 import "../styles/mainstyle.css";
 import { useNavigate } from "react-router-dom";
 
-function landing() {
+function Landing() {
   const redirectQ1 = useNavigate();
 
   const handleStart = () => {
@@ -25,4 +26,4 @@ function landing() {
   );
 }
 
-export default landing;
+export default Landing;
