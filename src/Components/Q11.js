@@ -6,12 +6,12 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "../styles/mainstyle.css";
 import { useNavigate } from "react-router-dom";
-import Radio from "@mui/material/Radio";
-import RadioGroup from "@mui/material/RadioGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
+import CClogo from "../styles/CClogo.png";
 import FormControl from "@mui/material/FormControl";
+import { TextField } from "@mui/material";
 
 function Q11() {
+  const [inputQ11, setInputQ11] = useState(null);
   const handleChange = (event) => {
     let valueQ2 = event.target.value;
     console.log(valueQ2);
@@ -24,48 +24,39 @@ function Q11() {
     redirectQ10("/Q10");
   };
 
+  const handleInput = (event) => {
+    let valueQ11Input = event.target.value;
+    setInputQ11(valueQ11Input);
+  };
+
   const handleNext = () => {
+    console.log(inputQ11);
     redirectQ12("/Q12");
   };
 
   return (
     <div className="QCardDiv">
+      <h1 className="AreaHeading">HOUSING</h1>
       <div>
         <Card sx={{ maxWidth: 450 }} className="QCard">
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              What type of building is your home?
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              className="QTitle"
+            >
+              How many people live in your home?
             </Typography>
             <FormControl>
-              <RadioGroup
-                aria-labelledby="demo-controlled-radio-buttons-group"
-                name="controlled-radio-buttons-group"
-              >
-                <FormControlLabel
-                  value="apartment"
-                  control={<Radio />}
-                  label="Apartment"
-                  onClick={handleChange}
-                />
-                <FormControlLabel
-                  value="detached"
-                  control={<Radio />}
-                  label="Detached house"
-                  onClick={handleChange}
-                />
-                <FormControlLabel
-                  value="semi-detached"
-                  control={<Radio />}
-                  label="Semi-detached house"
-                  onClick={handleChange}
-                />
-                <FormControlLabel
-                  value="other"
-                  control={<Radio />}
-                  label="Other"
-                  onClick={handleChange}
-                />
-              </RadioGroup>
+              <TextField
+                placeholder="type in here.."
+                label="include yourself"
+                variant="filled"
+                color="primary"
+                focused
+                onChange={handleInput}
+              />
             </FormControl>
           </CardContent>
           <CardActions>
@@ -77,6 +68,10 @@ function Q11() {
             </Button>
           </CardActions>
         </Card>
+      </div>
+      <div className="CClogo">
+        <img src={CClogo} alt="Change Clubs logo" height={50}></img>
+        <p className="PoweredbyText">Powered by</p>
       </div>
       <div className="QNumber"> 11/17</div>
     </div>

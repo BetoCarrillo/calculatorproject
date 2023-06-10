@@ -11,6 +11,7 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
+import CClogo from "../styles/CClogo.png";
 
 function Q16() {
   const handleChange = (event) => {
@@ -31,10 +32,16 @@ function Q16() {
 
   return (
     <div className="QCardDiv">
+      <h1 className="AreaHeading">HOUSING</h1>
       <div>
         <Card sx={{ maxWidth: 450 }} className="QCard">
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              className="QTitle"
+            >
               What type of building is your home?
             </Typography>
             <FormControl>
@@ -98,6 +105,10 @@ function Q16() {
           </CardActions>
         </Card>
       </div>
+      {/* <div className="CClogo">
+        <img src={CClogo} alt="Change Clubs logo" height={50}></img>
+        <p className="PoweredbyText">Powered by</p>
+      </div> */}
       <div className="QNumber"> 16/17</div>
     </div>
   );

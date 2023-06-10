@@ -6,32 +6,23 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "../styles/mainstyle.css";
 import { useNavigate } from "react-router-dom";
-import CClogo from "../styles/CClogo.png";
 import FormControl from "@mui/material/FormControl";
-import { TextField } from "@mui/material";
 
-function Q12() {
-  const [inputQ12, setInputQ12] = useState(null);
+function Results() {
   const handleChange = (event) => {
     let valueQ2 = event.target.value;
     console.log(valueQ2);
   };
 
-  const redirectQ11 = useNavigate();
-  const redirectQ13 = useNavigate();
+  const redirectQ17 = useNavigate();
+  const redirectQ1 = useNavigate();
 
   const handlePrev = () => {
-    redirectQ11("/Q11");
-  };
-
-  const handleInput = (event) => {
-    let valueQ12Input = event.target.value;
-    setInputQ12(valueQ12Input);
+    redirectQ17("/Q17");
   };
 
   const handleNext = () => {
-    console.log(inputQ12);
-    redirectQ13("/Q13");
+    redirectQ1("/");
   };
 
   return (
@@ -46,36 +37,23 @@ function Q12() {
               component="div"
               className="QTitle"
             >
-              What is your annual electricity consumption?
+              Results
             </Typography>
-            <FormControl>
-              <TextField
-                placeholder="type in here.."
-                label="kW"
-                variant="filled"
-                color="primary"
-                focused
-                onChange={handleInput}
-              />
-            </FormControl>
+            <FormControl></FormControl>
           </CardContent>
           <CardActions>
             <Button size="small" onClick={handlePrev}>
               Previous
             </Button>
             <Button size="small" onClick={handleNext}>
-              Next
+              Start over
             </Button>
           </CardActions>
         </Card>
       </div>
-      <div className="CClogo">
-        <img src={CClogo} alt="Change Clubs logo" height={50}></img>
-        <p className="PoweredbyText">Powered by</p>
-      </div>
-      <div className="QNumber"> 12/17</div>
+      <div className="QNumber"> 17/17</div>
     </div>
   );
 }
 
-export default Q12;
+export default Results;

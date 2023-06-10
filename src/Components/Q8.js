@@ -6,36 +6,56 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "../styles/mainstyle.css";
 import { useNavigate } from "react-router-dom";
-import Radio from "@mui/material/Radio";
-import RadioGroup from "@mui/material/RadioGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
-import { Input } from "@mui/material";
+import { TextField } from "@mui/material";
+import CClogo from "../styles/CClogo.png";
 
 function Q8() {
   const redirectQ7 = useNavigate();
   const redirectQ9 = useNavigate();
+  const [inputQ8, setInputQ8] = useState(null);
 
   const handlePrev = () => {
     redirectQ7("/Q7");
   };
 
-  const handleNext = (event) => {
-    let valueQ8 = event.target.value;
-    console.log(event.target.value);
-    // redirectQ9("/Q9");
+  const handleInput = (event) => {
+    let valueQ8Input = event.target.value;
+    setInputQ8(valueQ8Input);
   };
+
+  const handleNext = (event) => {
+    console.log(inputQ8);
+    redirectQ9("/Q9");
+  };
+
+  useEffect(() => {
+    // console.log("use effect run");
+  }, []);
 
   return (
     <div className="QCardDiv">
+      <h1 className="AreaHeading">HOUSING</h1>
       <div>
         <Card sx={{ maxWidth: 450 }} className="QCard">
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              How big is your home in square meters?
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              className="QTitle"
+            >
+              How big is your home?
             </Typography>
             <FormControl>
-              <Input placeholder="Type in here…" variant="outlined" />
+              <TextField
+                placeholder="type in here.."
+                label="m2"
+                variant="filled"
+                color="primary"
+                focused
+                onChange={handleInput}
+              />
             </FormControl>
           </CardContent>
           <CardActions>
@@ -47,6 +67,10 @@ function Q8() {
             </Button>
           </CardActions>
         </Card>
+      </div>
+      <div className="CClogo">
+        <img src={CClogo} alt="Change Clubs logo" height={50}></img>
+        <p className="PoweredbyText">Powered by</p>
       </div>
       <div className="QNumber"> 8/17</div>
     </div>

@@ -10,10 +10,12 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
+import { Checkbox } from "bootstrap-4-react/lib/components/dom";
+import CClogo from "../styles/CClogo.png";
 
 function Q5() {
   const handleChange = (event) => {
-    let valueQ5 = event.target.value;
+    let valueQ5 = event;
     console.log(valueQ5);
   };
 
@@ -30,10 +32,16 @@ function Q5() {
 
   return (
     <div className="QCardDiv">
+      <h1 className="AreaHeading">HOUSING</h1>
       <div>
         <Card sx={{ maxWidth: 450 }} className="QCard">
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              className="QTitle"
+            >
               How is it insulated?
             </Typography>
             <FormControl>
@@ -41,6 +49,22 @@ function Q5() {
                 aria-labelledby="demo-controlled-radio-buttons-group"
                 name="controlled-radio-buttons-group"
               >
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="Doors and windows"
+                />
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="Roof and attic"
+                  size=""
+                  onClick={handleChange}
+                />
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="Floors and ceilings"
+                  onClick={handleChange}
+                />
+                <FormControlLabel control={<Checkbox />} label="Outer walls" />
                 <FormControlLabel
                   value="Doors and windows"
                   control={<Radio />}
@@ -77,6 +101,10 @@ function Q5() {
             </Button>
           </CardActions>
         </Card>
+      </div>
+      <div className="CClogo">
+        <img src={CClogo} alt="Change Clubs logo" height={50}></img>
+        <p className="PoweredbyText">Powered by</p>
       </div>
       <div className="QNumber"> 5/17</div>
     </div>

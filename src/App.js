@@ -19,6 +19,7 @@ import Q14 from "./Components/Q14";
 import Q15 from "./Components/Q15";
 import Q17 from "./Components/Q17";
 import Q16 from "./Components/Q16";
+import Results from "../src/Views/Results";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path="/Q15" element={<Q15 />} />
         <Route path="/Q16" element={<Q16 />} />
         <Route path="/Q17" element={<Q17 />} />
+        <Route path="/Results" element={<Results />} />
       </Routes>
     </div>
   );

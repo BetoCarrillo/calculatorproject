@@ -2,7 +2,6 @@ import Card from "@mui/material/Card";
 import React, { useContext, useEffect, useState } from "react";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "../styles/mainstyle.css";
@@ -11,7 +10,7 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
+import CClogo from "../styles/CClogo.png";
 
 function Q1() {
   // const [country, setCountry] = useState();
@@ -46,10 +45,16 @@ function Q1() {
 
   return (
     <div className="QCardDiv">
+      <h1 className="AreaHeading">HOUSING</h1>
       <div>
         <Card sx={{ maxWidth: 450 }} className="QCard">
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              className="QTitle"
+            >
               In which country do you live?
             </Typography>
             {/* <Dropdown>
@@ -107,6 +112,10 @@ function Q1() {
             </Button>
           </CardActions>
         </Card>
+      </div>
+      <div className="CClogo">
+        <img src={CClogo} alt="Change Clubs logo" height={50}></img>
+        <p className="PoweredbyText">Powered by</p>
       </div>
       <div className="QNumber"> 1/17</div>
     </div>
