@@ -7,8 +7,11 @@ import Typography from "@mui/material/Typography";
 import "../styles/mainstyle.css";
 import { useNavigate } from "react-router-dom";
 import FormControl from "@mui/material/FormControl";
+import { ResultsContext } from "../Context/context";
 
 function Results() {
+  const { inputQ17, setInputQ17 } = useContext(ResultsContext);
+
   const handleChange = (event) => {
     let valueQ2 = event.target.value;
     console.log(valueQ2);
@@ -22,6 +25,8 @@ function Results() {
   };
 
   const handleNext = () => {
+    console.log("Q7result", inputQ17);
+
     redirectQ1("/");
   };
 

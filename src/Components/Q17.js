@@ -9,9 +9,11 @@ import { useNavigate } from "react-router-dom";
 import FormControl from "@mui/material/FormControl";
 import { TextField } from "@mui/material";
 import CClogo from "../styles/CClogo.png";
+import { ResultsContext } from "../Context/context";
 
 function Q17() {
-  const [inputQ17, setInputQ17] = useState(null);
+  // const [inputQ17, setInputQ17] = useState(null);
+  const { inputQ17, setInputQ17 } = useContext(ResultsContext);
 
   const redirectQ16 = useNavigate();
   const redirectQ1 = useNavigate();
