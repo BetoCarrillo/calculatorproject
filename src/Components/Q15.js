@@ -111,7 +111,7 @@ function Q15() {
       </div>
 
       <div className="QNumber">15/17</div>
-      <div className="CClogo">
+      <div>
         <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         <p className="PoweredbyText">Powered by</p>
       </div>
