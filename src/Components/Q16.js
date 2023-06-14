@@ -12,15 +12,20 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import CClogo from "../styles/CClogo.png";
+import { ResultsContext } from "../Context/context";
 
 function Q16() {
+  const { setInputQ16 } = useContext(ResultsContext);
+
   const handleChange = (event) => {
     let valueQ16 = event.target.value;
     console.log(valueQ16);
+    setInputQ16(valueQ16);
   };
 
   const redirectQ15 = useNavigate();
   const redirectQ17 = useNavigate();
+  const redirectResults = useNavigate();
 
   const handlePrev = () => {
     redirectQ15("/Q15");
@@ -28,6 +33,10 @@ function Q16() {
 
   const handleNext = () => {
     redirectQ17("/Q17");
+  };
+
+  const handleSkip = () => {
+    redirectResults("/Results");
   };
 
   return (
@@ -42,7 +51,7 @@ function Q16() {
               component="div"
               className="QTitle"
             >
-              What type of building is your home?
+              How do you heat your water?
             </Typography>
             <FormControl>
               <RadioGroup
@@ -50,26 +59,26 @@ function Q16() {
                 name="controlled-radio-buttons-group"
               >
                 <FormControlLabel
-                  value="electricity"
+                  value="Electricity"
                   control={<Radio />}
                   label="Electricity"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="methane"
+                  value="Methane"
                   control={<Radio />}
                   label="Methane (natural gas)"
                   onClick={handleChange}
                 />
 
                 <FormControlLabel
-                  value="bottledgas"
+                  value="Bottled gas"
                   control={<Radio />}
                   label="Bottled gas"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="biogas"
+                  value="Biogas"
                   control={<Radio />}
                   label="Biogas (biomethane)"
                   onClick={handleChange}
@@ -87,7 +96,7 @@ function Q16() {
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="donotknow"
+                  value="don't know"
                   control={<Radio />}
                   label="Do not know"
                   onClick={handleChange}
@@ -102,14 +111,17 @@ function Q16() {
             <Button size="small" onClick={handleNext}>
               Next
             </Button>
+            <Button size="small" onClick={handleSkip}>
+              Skip
+            </Button>
           </CardActions>
         </Card>
       </div>
-      {/* <div className="CClogo">
+      <div className="QNumber">16/17</div>
+      <div>
         <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         <p className="PoweredbyText">Powered by</p>
-      </div> */}
-      <div className="QNumber"> 16/17</div>
+      </div>
     </div>
   );
 }

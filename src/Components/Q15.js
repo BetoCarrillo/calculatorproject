@@ -11,15 +11,20 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import CClogo from "../styles/CClogo.png";
+import { ResultsContext } from "../Context/context";
 
 function Q15() {
+  const { setInputQ15 } = useContext(ResultsContext);
+
   const handleChange = (event) => {
     let valueQ15 = event.target.value;
     console.log(valueQ15);
+    setInputQ15(valueQ15);
   };
 
   const redirectQ14 = useNavigate();
   const redirectQ16 = useNavigate();
+  const redirectResults = useNavigate();
 
   const handlePrev = () => {
     redirectQ14("/Q14");
@@ -27,6 +32,10 @@ function Q15() {
 
   const handleNext = () => {
     redirectQ16("/Q16");
+  };
+
+  const handleSkip = () => {
+    redirectResults("/Results");
   };
 
   return (
@@ -49,25 +58,25 @@ function Q15() {
                 name="controlled-radio-buttons-group"
               >
                 <FormControlLabel
-                  value="heatpump"
+                  value="Heat pump"
                   control={<Radio />}
                   label="Heat pump"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="fans"
+                  value="Fans"
                   control={<Radio />}
                   label="Fans"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="a"
+                  value="A/C"
                   control={<Radio />}
                   label="A/C"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="naturalventilation"
+                  value="Natural ventilation"
                   control={<Radio />}
                   label="Natural ventilation"
                   onClick={handleChange}
@@ -79,7 +88,7 @@ function Q15() {
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="donotknow"
+                  value="don't know"
                   control={<Radio />}
                   label="Do not know"
                   onClick={handleChange}
@@ -94,14 +103,18 @@ function Q15() {
             <Button size="small" onClick={handleNext}>
               Next
             </Button>
+            <Button size="small" onClick={handleSkip}>
+              Skip
+            </Button>
           </CardActions>
         </Card>
       </div>
+
+      <div className="QNumber">15/17</div>
       <div className="CClogo">
         <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         <p className="PoweredbyText">Powered by</p>
       </div>
-      <div className="QNumber"> 15/17</div>
     </div>
   );
 }

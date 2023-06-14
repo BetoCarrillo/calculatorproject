@@ -1,62 +1,57 @@
-import Card from "@mui/material/Card";
 import React, { useContext, useEffect, useState } from "react";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import "../styles/mainstyle.css";
-import { useNavigate } from "react-router-dom";
-import FormControl from "@mui/material/FormControl";
-import { ResultsContext } from "../Context/context";
+import CClogo from "../styles/CClogo.png";
+import Answers from "../Components/Answers";
+import Footprint from "../Components/Footprint";
+import Recommendations from "../Components/Recommendations";
+
+// import Table from "@mui/material/Table";
+// import TableBody from "@mui/material/TableBody";
+// import TableCell from "@mui/material/TableCell";
+// import TableContainer from "@mui/material/TableContainer";
+// import TableHead from "@mui/material/TableHead";
+// import TableRow from "@mui/material/TableRow";
+// import Paper from "@mui/material/Paper";
 
 function Results() {
-  const { inputQ17, setInputQ17 } = useContext(ResultsContext);
+  // function createData(question, answer) {
+  //   return { question, answer };
+  // }
 
-  const handleChange = (event) => {
-    let valueQ2 = event.target.value;
-    console.log(valueQ2);
-  };
-
-  const redirectQ17 = useNavigate();
-  const redirectQ1 = useNavigate();
-
-  const handlePrev = () => {
-    redirectQ17("/Q17");
-  };
-
-  const handleNext = () => {
-    console.log("Q7result", inputQ17);
-
-    redirectQ1("/");
-  };
+  // const rows = [
+  //   createData("Country", 159, 6.0),
+  //   createData("Type of building", 237, 9.0),
+  //   createData("Property", 237, 9.0),
+  //   createData("Built or retrofitted", 237, 9.0),
+  //   createData("Insultation", 237, 9.0),
+  //   createData("Smart homecontrol", 237, 9.0),
+  //   createData("LED bulbs", 237, 9.0),
+  //   createData("Size", 237, 9.0),
+  //   createData("Bedrooms", 237, 9.0),
+  //   createData("Windows", 237, 9.0),
+  //   createData("People", 237, 9.0),
+  //   createData("Annual kW", 237, 9.0),
+  //   createData("Energy source", 237, 9.0),
+  //   createData("Heating system", 237, 9.0),
+  //   createData("Cooling system", 237, 9.0),
+  //   createData("Water heating", 237, 9.0),
+  //   createData("Monthly bill", 237, 9.0),
+  // ];
 
   return (
     <div className="QCardDiv">
       <h1 className="AreaHeading">HOUSING</h1>
-      <div>
-        <Card sx={{ maxWidth: 450 }} className="QCard">
-          <CardContent>
-            <Typography
-              gutterBottom
-              variant="h5"
-              component="div"
-              className="QTitle"
-            >
-              Results
-            </Typography>
-            <FormControl></FormControl>
-          </CardContent>
-          <CardActions>
-            <Button size="small" onClick={handlePrev}>
-              Previous
-            </Button>
-            <Button size="small" onClick={handleNext}>
-              Start over
-            </Button>
-          </CardActions>
-        </Card>
+      <div className="ResultsDiv">
+        <Answers />
+        <div className="FootprintBiggestDiv">
+          <Footprint />
+          <Recommendations />
+        </div>
       </div>
-      <div className="QNumber"> 17/17</div>
+      <div>
+        <img src={CClogo} alt="Change Clubs logo" height={50}></img>
+        <p className="PoweredbyText">Powered by</p>
+      </div>
     </div>
   );
 }

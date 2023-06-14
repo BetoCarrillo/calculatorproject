@@ -11,15 +11,20 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import CClogo from "../styles/CClogo.png";
+import { ResultsContext } from "../Context/context";
 
 function Q13() {
+  const { setInputQ13 } = useContext(ResultsContext);
+
   const handleChange = (event) => {
     let valueQ13 = event.target.value;
     console.log(valueQ13);
+    setInputQ13(valueQ13);
   };
 
   const redirectQ12 = useNavigate();
   const redirectQ14 = useNavigate();
+  const redirectResults = useNavigate();
 
   const handlePrev = () => {
     redirectQ12("/Q12");
@@ -27,6 +32,10 @@ function Q13() {
 
   const handleNext = () => {
     redirectQ14("/Q14");
+  };
+
+  const handleSkip = () => {
+    redirectResults("/Results");
   };
 
   return (
@@ -49,19 +58,19 @@ function Q13() {
                 name="controlled-radio-buttons-group"
               >
                 <FormControlLabel
-                  value="normalgrix"
+                  value="Normal grix"
                   control={<Radio />}
                   label="Normal grix"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="renewablegrix"
+                  value="Renewable grix"
                   control={<Radio />}
                   label="Renewable grix"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="solar"
+                  value="Solar"
                   control={<Radio />}
                   label="Solar"
                   onClick={handleChange}
@@ -82,14 +91,18 @@ function Q13() {
             <Button size="small" onClick={handleNext}>
               Next
             </Button>
+            <Button size="small" onClick={handleSkip}>
+              Skip
+            </Button>
           </CardActions>
         </Card>
       </div>
+
+      <div className="QNumber">13/17</div>
       <div className="CClogo">
         <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         <p className="PoweredbyText">Powered by</p>
       </div>
-      <div className="QNumber"> 13/17</div>
     </div>
   );
 }

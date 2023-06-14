@@ -11,15 +11,20 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import CClogo from "../styles/CClogo.png";
+import { ResultsContext } from "../Context/context";
 
 function Q3() {
+  const { setInputQ3 } = useContext(ResultsContext);
+
   const handleChange = (event) => {
     let valueQ3 = event.target.value;
     console.log(valueQ3);
+    setInputQ3(valueQ3);
   };
 
   const redirectQ2 = useNavigate();
   const redirectQ4 = useNavigate();
+  const redirectResults = useNavigate();
 
   const handlePrev = () => {
     redirectQ2("/Q2");
@@ -27,6 +32,10 @@ function Q3() {
 
   const handleNext = () => {
     redirectQ4("/Q4");
+  };
+
+  const handleSkip = () => {
+    redirectResults("/Results");
   };
 
   return (
@@ -49,15 +58,15 @@ function Q3() {
                 name="controlled-radio-buttons-group"
               >
                 <FormControlLabel
-                  value="rent"
+                  value="Rent"
                   control={<Radio />}
-                  label="rent"
+                  label="Rent"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="own"
+                  value="Own"
                   control={<Radio />}
-                  label="own"
+                  label="Own"
                   onClick={handleChange}
                 />
               </RadioGroup>
@@ -70,14 +79,18 @@ function Q3() {
             <Button size="small" onClick={handleNext}>
               Next
             </Button>
+            <Button size="small" onClick={handleSkip}>
+              Skip
+            </Button>
           </CardActions>
         </Card>
       </div>
+
+      <div className="QNumber"> 3/17</div>
       <div className="CClogo">
         <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         <p className="PoweredbyText">Powered by</p>
       </div>
-      <div className="QNumber"> 3/17</div>
     </div>
   );
 }

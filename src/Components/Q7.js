@@ -11,15 +11,20 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import CClogo from "../styles/CClogo.png";
+import { ResultsContext } from "../Context/context";
 
 function Q7() {
+  const { setInputQ7 } = useContext(ResultsContext);
+
   const handleChange = (event) => {
     let valueQ7 = event.target.value;
     console.log(valueQ7);
+    setInputQ7(valueQ7);
   };
 
   const redirectQ6 = useNavigate();
   const redirectQ8 = useNavigate();
+  const redirectResults = useNavigate();
 
   const handlePrev = () => {
     redirectQ6("/Q6");
@@ -27,6 +32,10 @@ function Q7() {
 
   const handleNext = () => {
     redirectQ8("/Q8");
+  };
+
+  const handleSkip = () => {
+    redirectResults("/Results");
   };
 
   return (
@@ -70,14 +79,18 @@ function Q7() {
             <Button size="small" onClick={handleNext}>
               Next
             </Button>
+            <Button size="small" onClick={handleSkip}>
+              Skip
+            </Button>
           </CardActions>
         </Card>
       </div>
+
+      <div className="QNumber">7/17</div>
       <div className="CClogo">
         <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         <p className="PoweredbyText">Powered by</p>
       </div>
-      <div className="QNumber"> 7/17</div>
     </div>
   );
 }

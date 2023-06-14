@@ -7,22 +7,13 @@ import {
   Typography,
   CardActionArea,
 } from "@mui/material";
-import { useNavigate } from "react-router-dom";
 // import Card from "@mui/material/Card";
 
-function R1() {
-  const redirectR1B = useNavigate();
-
-  const handleMore = () => {
-    redirectR1B("/insulateyourhome");
-  };
+function R6() {
   return (
     <div className="item-a">
-      <Card style={{ overflow: "scroll" }} className="CardRecommendationBI">
-        <CardActionArea
-          href="/insulateyourhome"
-          className="RecommendationCardLink"
-        >
+      <Card className="CardRecommendationBI">
+        <CardActionArea>
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}
@@ -33,7 +24,7 @@ function R1() {
               Biggest impact
             </Typography>
             <Typography component="div" className="QCardRecommendationTitle">
-              Insulate your home
+              Use solar energy
             </Typography>
             <Typography
               sx={{ mb: 1 }}
@@ -43,18 +34,14 @@ function R1() {
               Housing
             </Typography>
             <Typography variant="body2" className="QCardRecommendationText">
-              Insulation is one of the most cost-efficient ways to make your
-              home energy efficient, keeping a healthy indoor temperature.
+              As a renewable source of power, solar energy has an important role
+              in reducing greenhouse gas emissions and mitigating climate change
             </Typography>
           </CardContent>
           <CardActions className="QCardRecommendationButtonPadding">
-            <Button
-              onClick={handleMore}
-              size="small"
-              className="QCardRecommendationButton"
-            >
-              Learn More
-            </Button>
+            <div size="small" className="QCardRecommendationButton">
+              LEARN MORE
+            </div>
           </CardActions>
         </CardActionArea>
       </Card>
@@ -62,4 +49,4 @@ function R1() {
   );
 }
 
-export default R1;
+export default R6;

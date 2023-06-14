@@ -9,29 +9,37 @@ import { useNavigate } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
 import FormControl from "@mui/material/FormControl";
 import { TextField } from "@mui/material";
+import { ResultsContext } from "../Context/context";
 
 function Q11() {
-  const [inputQ11, setInputQ11] = useState(null);
-  const handleChange = (event) => {
-    let valueQ2 = event.target.value;
-    console.log(valueQ2);
-  };
+  const { inputQ11, setInputQ11 } = useContext(ResultsContext);
+
+  // const [inputQ11, setInputQ11] = useState(null);
+  // const handleChange = (event) => {
+  //   let valueQ11 = event.target.value;
+  //   console.log(valueQ11);
+  // };
 
   const redirectQ10 = useNavigate();
   const redirectQ12 = useNavigate();
+  const redirectResults = useNavigate();
 
   const handlePrev = () => {
     redirectQ10("/Q10");
   };
 
   const handleInput = (event) => {
-    let valueQ11Input = event.target.value;
-    setInputQ11(valueQ11Input);
+    let valueQ11 = event.target.value;
+    setInputQ11(valueQ11);
   };
 
   const handleNext = () => {
     console.log(inputQ11);
     redirectQ12("/Q12");
+  };
+
+  const handleSkip = () => {
+    redirectResults("/Results");
   };
 
   return (
@@ -50,7 +58,7 @@ function Q11() {
             </Typography>
             <FormControl>
               <TextField
-                placeholder="type in here.."
+                placeholder="type # of people"
                 label="include yourself"
                 variant="filled"
                 color="primary"
@@ -66,14 +74,18 @@ function Q11() {
             <Button size="small" onClick={handleNext}>
               Next
             </Button>
+            <Button size="small" onClick={handleSkip}>
+              Skip
+            </Button>
           </CardActions>
         </Card>
       </div>
+
+      <div className="QNumber">11/17</div>
       <div className="CClogo">
         <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         <p className="PoweredbyText">Powered by</p>
       </div>
-      <div className="QNumber"> 11/17</div>
     </div>
   );
 }

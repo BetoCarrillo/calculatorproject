@@ -12,22 +12,37 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import { Checkbox } from "bootstrap-4-react/lib/components/dom";
 import CClogo from "../styles/CClogo.png";
+import { ResultsContext } from "../Context/context";
+import { Table } from "@mui/material";
 
 function Q5() {
+  const { setInputQ5 } = useContext(ResultsContext);
+
+  const valueQ5 = [];
+
   const handleChange = (event) => {
-    let valueQ5 = event;
-    console.log(valueQ5);
+    let valueQ5Individual = event.target.value;
+
+    valueQ5.push(valueQ5Individual);
   };
+
+  console.log(valueQ5);
 
   const redirectQ4 = useNavigate();
   const redirectQ6 = useNavigate();
+  const redirectResults = useNavigate();
 
   const handlePrev = () => {
     redirectQ4("/Q4");
   };
 
   const handleNext = () => {
+    setInputQ5(valueQ5);
     redirectQ6("/Q6");
+  };
+
+  const handleSkip = () => {
+    redirectResults("/Results");
   };
 
   return (
@@ -44,7 +59,77 @@ function Q5() {
             >
               How is it insulated?
             </Typography>
-            <FormControl>
+            <Table responsive="sm">
+              <tbody>
+                <tr className="checkboxText">
+                  <td>
+                    <input
+                      type="checkbox"
+                      value="Doors and windows "
+                      onClick={handleChange}
+                    ></input>
+                  </td>
+                  <td className="Qtext">Doors and windows</td>
+                </tr>
+                <tr className="checkboxText">
+                  <td>
+                    {" "}
+                    <input
+                      type="checkbox"
+                      value="Roof and attic "
+                      onClick={handleChange}
+                    ></input>
+                  </td>
+                  <td className="Qtext">Roof and attic</td>
+                </tr>
+                <tr className="checkboxText">
+                  <td>
+                    {" "}
+                    <input
+                      type="checkbox"
+                      value="Floors and ceilings "
+                      onClick={handleChange}
+                    ></input>
+                  </td>
+                  <td className="Qtext">Floors and ceilings</td>
+                </tr>
+                <tr className="checkboxText">
+                  <td>
+                    {" "}
+                    <input
+                      type="checkbox"
+                      value="Outer walls "
+                      onClick={handleChange}
+                    ></input>
+                  </td>
+                  <td className="Qtext">Outer walls</td>
+                </tr>
+                <tr className="checkboxText">
+                  <td>
+                    {" "}
+                    <input
+                      type="checkbox"
+                      value="Ducts and Pipes"
+                      onClick={handleChange}
+                    ></input>
+                  </td>
+                  <td className="Qtext">Ducts and Pipes</td>
+                </tr>
+                <tr className="checkboxText">
+                  <td>
+                    {" "}
+                    <input
+                      type="checkbox"
+                      value="None"
+                      onClick={handleChange}
+                    ></input>
+                  </td>
+                  <td className="Qtext">None</td>
+                </tr>
+              </tbody>
+            </Table>
+
+            {/* <FormControl>
               <RadioGroup
                 aria-labelledby="demo-controlled-radio-buttons-group"
                 name="controlled-radio-buttons-group"
@@ -90,7 +175,7 @@ function Q5() {
                   onClick={handleChange}
                 />
               </RadioGroup>
-            </FormControl>
+            </FormControl> */}
           </CardContent>
           <CardActions>
             <Button size="small" onClick={handlePrev}>
@@ -99,14 +184,17 @@ function Q5() {
             <Button size="small" onClick={handleNext}>
               Next
             </Button>
+            <Button size="small" onClick={handleSkip}>
+              Skip
+            </Button>
           </CardActions>
         </Card>
       </div>
+      <div className="QNumber"> 5/17</div>
       <div className="CClogo">
         <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         <p className="PoweredbyText">Powered by</p>
       </div>
-      <div className="QNumber"> 5/17</div>
     </div>
   );
 }

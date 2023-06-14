@@ -9,29 +9,35 @@ import { useNavigate } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
 import FormControl from "@mui/material/FormControl";
 import { TextField } from "@mui/material";
+import { ResultsContext } from "../Context/context";
 
 function Q12() {
-  const [inputQ12, setInputQ12] = useState(null);
-  const handleChange = (event) => {
-    let valueQ2 = event.target.value;
-    console.log(valueQ2);
-  };
+  const { inputQ12, setInputQ12 } = useContext(ResultsContext);
+  // const handleChange = (event) => {
+  //   let valueQ2 = event.target.value;
+  //   console.log(valueQ2);
+  // };
 
   const redirectQ11 = useNavigate();
   const redirectQ13 = useNavigate();
+  const redirectResults = useNavigate();
 
   const handlePrev = () => {
     redirectQ11("/Q11");
   };
 
   const handleInput = (event) => {
-    let valueQ12Input = event.target.value;
-    setInputQ12(valueQ12Input);
+    let valueQ12 = event.target.value;
+    setInputQ12(valueQ12);
   };
 
   const handleNext = () => {
     console.log(inputQ12);
     redirectQ13("/Q13");
+  };
+
+  const handleSkip = () => {
+    redirectResults("/Results");
   };
 
   return (
@@ -50,7 +56,7 @@ function Q12() {
             </Typography>
             <FormControl>
               <TextField
-                placeholder="type in here.."
+                placeholder="type consumption"
                 label="kW"
                 variant="filled"
                 color="primary"
@@ -66,14 +72,18 @@ function Q12() {
             <Button size="small" onClick={handleNext}>
               Next
             </Button>
+            <Button size="small" onClick={handleSkip}>
+              Skip
+            </Button>
           </CardActions>
         </Card>
       </div>
+
+      <div className="QNumber">12/17</div>
       <div className="CClogo">
         <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         <p className="PoweredbyText">Powered by</p>
       </div>
-      <div className="QNumber"> 12/17</div>
     </div>
   );
 }

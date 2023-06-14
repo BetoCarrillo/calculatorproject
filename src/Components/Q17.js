@@ -17,6 +17,7 @@ function Q17() {
 
   const redirectQ16 = useNavigate();
   const redirectQ1 = useNavigate();
+  const redirectResults = useNavigate();
 
   const handlePrev = () => {
     redirectQ16("/Q16");
@@ -29,6 +30,10 @@ function Q17() {
   const handleNext = () => {
     console.log(inputQ17);
     redirectQ1("/Results");
+  };
+
+  const handleSkip = () => {
+    redirectResults("/Results");
   };
 
   return (
@@ -63,14 +68,17 @@ function Q17() {
             <Button size="small" onClick={handleNext}>
               Done
             </Button>
+            <Button size="small" onClick={handleSkip}>
+              Skip
+            </Button>
           </CardActions>
         </Card>
       </div>
+      <div className="QNumber">17/17</div>
       <div className="CClogo">
         <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         <p className="PoweredbyText">Powered by</p>
       </div>
-      <div className="QNumber"> 17/17</div>
     </div>
   );
 }

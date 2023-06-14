@@ -1,6 +1,8 @@
 .divbackground {
   background-color: #f9ce64;
-  min-height: 100vh;
+  height: 100vh;
+  background-size: cover;
+  overflow: auto;
 }
 
 .StartButtonDiv {
@@ -14,6 +16,8 @@
 
 .StartButton {
   background-color: #f79521 !important;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-size: 20px !important;
 }
 
 .StartButton:hover {
@@ -26,6 +30,14 @@
   position: absolute;
   bottom: 0;
 }
+.CClogoTwo {
+  text-align: center;
+  width: 100%;
+  margin: auto 0;
+  position: sticky;
+  bottom: 0;
+}
+
 .PoweredbyText {
   color: gray;
   font-family: "Palanquin Dark", sans-serif !important;
@@ -37,18 +49,24 @@
   font-family: "Palanquin Dark", sans-serif !important;
   font-weight: bolder !important;
   font-size: 4rem;
-  margin-bottom: 0%;
+  margin: 0%;
+  margin: 0%;
 }
 
 .QCardDiv {
+  min-width: 300;
   justify-content: center !important;
   display: flex;
-  align-items: center !important;
-  max-height: 100vh;
+  align-items: center;
+  /* max-height: 100vh; */
   flex-direction: column;
+  gap: 5px;
 }
 
 .QCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-style: solid;
   border-color: #f79521;
   border-width: 0.4rem;
@@ -58,8 +76,281 @@
   color: #4386c6;
   font-family: "Palanquin Dark", sans-serif !important;
   font-weight: bold !important;
+  text-align: center !important;
+}
+
+.Qtext {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.00938em;
+}
+
+.checkboxText {
+  line-height: 1.5;
+  scale: 1.1;
 }
 
 .QNumber {
   color: white;
+}
+
+.ResultsDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+.TableDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.TableResults {
+  width: 300px !important;
+}
+
+.ResultTableQuestions {
+  font-family: "Palanquin Dark", sans-serif !important;
+  color: #7fc3eb;
+  width: 130px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ResultTableAnswers {
+  font-family: "Palanquin Dark", sans-serif !important;
+  color: black;
+  font-size: 14px;
+  padding-left: 10px;
+  text-align: start;
+}
+
+/* FOOTPRINT & BIGGEST IMPACTS RESULT DIV */
+
+.FootprintBiggestDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.QCardFootprint {
+  min-width: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-style: solid;
+  border-color: #7fc3eb;
+  border-width: 0.4rem;
+  border-radius: 2rem !important;
+}
+.QTitleFootprint {
+  color: #4386c6;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-weight: bold !important;
+}
+
+.QCardRecommendations {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  border-style: solid;
+  border-color: #42a889;
+  border-width: 0.4rem;
+  border-radius: 2rem !important;
+  min-width: 650px !important;
+}
+
+.QTitleRecommendations {
+  color: #4386c6;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-weight: bold !important;
+  text-align: center !important;
+}
+
+.CardRecommendationBI {
+  border-radius: 2rem;
+  background-color: #d8f8ee !important;
+  max-width: 210px;
+  overflow: scroll !important;
+  max-height: 200px !important;
+}
+.CardRecommendationEasy {
+  border-radius: 2rem;
+  background-color: #c1e2f5 !important;
+  max-width: 210px;
+  max-height: 200px !important;
+  overflow: scroll !important;
+}
+
+.CardRecommendationFun {
+  border-radius: 2rem;
+  background-color: #fbceea !important;
+  max-width: 210px;
+  max-height: 200px !important;
+  overflow: scroll !important;
+}
+.QCardRecommendationType {
+  font-family: "Palanquin Dark", sans-serif !important;
+}
+
+.QCardRecommendationTitle {
+  font-size: 14px !important;
+  font-weight: bold !important;
+  font-family: "Palanquin Dark", sans-serif !important;
+}
+
+.QCardRecommendationSubTitle {
+  font-size: 12px !important;
+  font-family: "Palanquin Dark", sans-serif !important;
+}
+
+.QCardRecommendationText {
+  font-size: 12px !important;
+  font-family: "Palanquin Dark", sans-serif !important;
+}
+
+.QCardRecommendationButton {
+  font-size: 7px !important;
+  font-family: "Palanquin Dark", sans-serif !important;
+  color: #1976d2;
+  padding-left: 5px !important;
+}
+
+.QCardRecommendationButtonPadding {
+  padding-top: 0% !important;
+}
+.RecommendationsDiv {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+.ButtonAllRecommendationsDiv {
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+.ButtonAllRecommendations {
+  border: none;
+  background-color: white;
+  color: #4386c6;
+  border-radius: 0.5rem;
+  width: 90px;
+}
+.ButtonAllRecommendations:hover {
+  border: none;
+  cursor: pointer;
+  background-color: #f7fafd;
+}
+
+.ButtonBackRecommendationsDiv {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+
+.ButtonBackRecommendations {
+  border: none;
+  background-color: white;
+  color: #4386c6;
+  border-radius: 0.5rem;
+  width: 55px;
+  padding-bottom: 10px;
+}
+.ButtonBackRecommendations:hover {
+  border: none;
+  cursor: pointer;
+  background-color: #f7fafd;
+}
+
+/* FULL SINGLE RECOMMENDATION */
+
+.QCardFullRecommendation {
+  max-width: 650px;
+  border-style: solid;
+  border-color: #42a889;
+  border-width: 0.4rem;
+  border-radius: 2rem !important;
+}
+.RecommendationFullText {
+  font-size: 16px !important;
+  font-family: "Palanquin Dark", sans-serif !important;
+}
+.AccordionRecommendation {
+  margin-left: 20px;
+}
+.RecommendationCardLink:hover {
+  text-decoration: none !important;
+  color: black;
+}
+
+.FullRecommendationBackButtonDiv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end !important;
+  margin-right: 10px;
+  font-family: "Palanquin Dark", sans-serif !important;
+}
+
+.QTitleFullRecommendation {
+  color: #4386c6;
+  font-weight: bold !important;
+  font-family: "Palanquin Dark", sans-serif !important;
+}
+.QSubTitleFullRecommendation {
+  font-family: "Palanquin Dark", sans-serif !important;
+}
+
+@media screen and (max-width: 650px) {
+  .ResultsDiv {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+    margin: 5px;
+  }
+
+  .QCardFootprint {
+    min-width: 20 !important;
+    margin: 5px;
+  }
+
+  .QCardDiv {
+    min-width: 30 !important;
+  }
+
+  .QCardRecommendations {
+    min-width: 30px !important;
+    margin: 5px;
+  }
+
+  .RecommendationsDiv {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+  }
+
+  .QCardRecommendationTitle {
+    font-size: 10px !important;
+    font-weight: bold !important;
+  }
+
+  .QCardRecommendationSubTitle {
+    font-size: 9px !important;
+  }
+
+  .QCardRecommendationText {
+    font-size: 10px !important;
+  }
+
+  .QCardRecommendationButton {
+    font-size: 7px !important;
+    padding: 0% !important;
+  }
+  .QCardFullRecommendation {
+    max-width: 345px;
+  }
 }
