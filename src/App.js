@@ -50,8 +50,8 @@ function App() {
           <Route path="/Q17" element={<Q17 />} />
           <Route path="/Results" element={<Results />} />
           <Route path="/AllRecommendations" element={<AllRecommendations />} />
-          <Route path="/insulateyourhome" element={<R1B />} />
-          <Route path="/smarthomecontrol" element={<R2B />} />
+          <Route path="/R1B" element={<R1B />} />
+          <Route path="/R2B" element={<R2B />} />
         </Routes>
       </ResultsContextProvider>
     </div>

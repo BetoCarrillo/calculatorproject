@@ -4,6 +4,9 @@
   background-size: cover;
   overflow: auto;
 }
+.PaddingBottomPage {
+  padding-bottom: 15px;
+}
 
 .StartButtonDiv {
   padding-top: 25%;
@@ -282,6 +285,10 @@
 }
 .AccordionRecommendation {
   margin-left: 20px;
+}
+.RecommendationCardLink {
+  text-decoration: none !important;
+  color: black;
 }
 .RecommendationCardLink:hover {
   text-decoration: none !important;

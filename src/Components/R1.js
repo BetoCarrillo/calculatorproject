@@ -7,22 +7,19 @@ import {
   Typography,
   CardActionArea,
 } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // import Card from "@mui/material/Card";
 
 function R1() {
   const redirectR1B = useNavigate();
 
   const handleMore = () => {
-    redirectR1B("/insulateyourhome");
+    redirectR1B("/R1B");
   };
   return (
     <div className="item-a">
       <Card style={{ overflow: "scroll" }} className="CardRecommendationBI">
-        <CardActionArea
-          href="/insulateyourhome"
-          className="RecommendationCardLink"
-        >
+        <Link to="/R1B" className="RecommendationCardLink">
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}
@@ -56,7 +53,7 @@ function R1() {
               Learn More
             </Button>
           </CardActions>
-        </CardActionArea>
+        </Link>
       </Card>
     </div>
   );

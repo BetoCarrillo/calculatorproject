@@ -7,7 +7,7 @@ import {
   CardMedia,
 } from "@mui/material";
 import Card from "@mui/material/Card";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
 import Retrofit from "../styles/Retrofit.jpeg";
@@ -15,10 +15,14 @@ import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import Collapse from "@mui/material/Collapse";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { ResultsContext } from "../Context/context";
 
 function R1B() {
+  const { setInputQ1, inputQ1 } = useContext(ResultsContext);
   const [expanded, setExpanded] = useState(false);
   const redirectResults = useNavigate();
+
+  console.log("inputQ1", inputQ1);
 
   const handlePrev = () => {
     redirectResults("/Results");
