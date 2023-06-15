@@ -81,16 +81,16 @@ function Q15() {
                   label="Natural ventilation"
                   onClick={handleChange}
                 />
-                <FormControlLabel
+                {/* <FormControlLabel
                   value="other"
                   control={<Radio />}
                   label="Other"
                   onClick={handleChange}
-                />
+                /> */}
                 <FormControlLabel
-                  value="don't know"
+                  value="None"
                   control={<Radio />}
-                  label="Do not know"
+                  label="None"
                   onClick={handleChange}
                 />
               </RadioGroup>
@@ -104,7 +104,7 @@ function Q15() {
               Next
             </Button>
             <Button size="small" onClick={handleSkip}>
-              Skip
+              End
             </Button>
           </CardActions>
         </Card>

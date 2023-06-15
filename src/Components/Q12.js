@@ -73,7 +73,7 @@ function Q12() {
               Next
             </Button>
             <Button size="small" onClick={handleSkip}>
-              Skip
+              End
             </Button>
           </CardActions>
         </Card>

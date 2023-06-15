@@ -72,9 +72,9 @@ function Q16() {
                 />
 
                 <FormControlLabel
-                  value="Bottled gas"
+                  value="Heating Oil"
                   control={<Radio />}
-                  label="Bottled gas"
+                  label="Heating Oil"
                   onClick={handleChange}
                 />
                 <FormControlLabel
@@ -83,18 +83,13 @@ function Q16() {
                   label="Biogas (biomethane)"
                   onClick={handleChange}
                 />
-                <FormControlLabel
-                  value="none"
-                  control={<Radio />}
-                  label="None"
-                  onClick={handleChange}
-                />
-                <FormControlLabel
+
+                {/* <FormControlLabel
                   value="other"
                   control={<Radio />}
                   label="Other"
                   onClick={handleChange}
-                />
+                /> */}
                 <FormControlLabel
                   value="don't know"
                   control={<Radio />}
@@ -112,7 +107,7 @@ function Q16() {
               Next
             </Button>
             <Button size="small" onClick={handleSkip}>
-              Skip
+              End
             </Button>
           </CardActions>
         </Card>

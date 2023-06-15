@@ -132,6 +132,10 @@
 
 /* FOOTPRINT & BIGGEST IMPACTS RESULT DIV */
 
+.disable {
+  display: none;
+}
+
 .FootprintBiggestDiv {
   display: flex;
   flex-direction: column;

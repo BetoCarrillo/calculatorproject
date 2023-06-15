@@ -56,7 +56,7 @@ function AllRecommendations() {
             size="small"
             onClick={handleResults}
           >
-            Back
+            BACK
           </button>
         </div>
       </Card>

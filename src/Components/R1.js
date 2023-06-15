@@ -14,12 +14,13 @@ function R1() {
   const redirectR1B = useNavigate();
 
   const handleMore = () => {
-    redirectR1B("/R1B");
+    redirectR1B("/insulateyourhome");
   };
+
   return (
     <div className="item-a">
       <Card style={{ overflow: "scroll" }} className="CardRecommendationBI">
-        <Link to="/R1B" className="RecommendationCardLink">
+        <Link to="/insulateyourhome" className="RecommendationCardLink">
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}

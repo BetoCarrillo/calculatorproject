@@ -75,7 +75,7 @@ function Q8() {
               Next
             </Button>
             <Button size="small" onClick={handleSkip}>
-              Skip
+              End
             </Button>
           </CardActions>
         </Card>

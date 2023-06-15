@@ -38,6 +38,7 @@ function Q5() {
 
   const handleNext = () => {
     setInputQ5(valueQ5);
+    console.log("valueQ5", valueQ5);
     redirectQ6("/Q6");
   };
 
@@ -57,7 +58,7 @@ function Q5() {
               component="div"
               className="QTitle"
             >
-              How is it insulated?
+              What is well insulated?
             </Typography>
             <Table responsive="sm">
               <tbody>
@@ -185,7 +186,7 @@ function Q5() {
               Next
             </Button>
             <Button size="small" onClick={handleSkip}>
-              Skip
+              End
             </Button>
           </CardActions>
         </Card>

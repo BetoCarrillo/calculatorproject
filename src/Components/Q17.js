@@ -69,7 +69,7 @@ function Q17() {
               Done
             </Button>
             <Button size="small" onClick={handleSkip}>
-              Skip
+              End
             </Button>
           </CardActions>
         </Card>

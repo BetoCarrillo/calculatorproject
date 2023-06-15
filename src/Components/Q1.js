@@ -15,20 +15,11 @@ import { ResultsContext } from "../Context/context";
 
 function Q1() {
   const { setInputQ1 } = useContext(ResultsContext);
-  // const [country, setCountry] = useState();
-
-  // const handleChange = () => {
-  //   let country = `germany`;
-  //   console.log(country);
-  //   setValueCountry(country);
-  // };
 
   const handleChange = (event) => {
     let valueQ1 = event.target.value;
     console.log(valueQ1);
     setInputQ1(valueQ1);
-    // setCountry((currentCountry) => currentCountry + valueQ1);
-    // console.log(country);
   };
 
   const redirectLanding = useNavigate();
@@ -47,10 +38,6 @@ function Q1() {
     redirectResults("/Results");
   };
 
-  // useEffect(() => {
-  //   console.log("useffectrun");
-  // }, []);
-
   return (
     <div className="QCardDiv">
       <h1 className="AreaHeading">HOUSING</h1>
@@ -65,14 +52,6 @@ function Q1() {
             >
               In which country do you live?
             </Typography>
-            {/* <Dropdown>
-                <Dropdown.Button>Select country</Dropdown.Button>
-                <Dropdown.Menu aria-labelledby="dropdownMenuButton">
-                  <Dropdown.Item>Germany</Dropdown.Item>
-                  <Dropdown.Item>United Kingdom</Dropdown.Item>
-                  <Dropdown.Item>Action</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown> */}
             <FormControl>
               <RadioGroup
                 aria-labelledby="demo-controlled-radio-buttons-group"
@@ -120,7 +99,7 @@ function Q1() {
               Next
             </Button>
             <Button size="small" onClick={handleSkip}>
-              Skip
+              End
             </Button>
           </CardActions>
         </Card>

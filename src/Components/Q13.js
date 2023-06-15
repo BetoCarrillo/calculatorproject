@@ -64,9 +64,9 @@ function Q13() {
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="Renewable grix"
+                  value="- mixed sources"
                   control={<Radio />}
-                  label="Renewable grix"
+                  label="- mixed sources"
                   onClick={handleChange}
                 />
                 <FormControlLabel
@@ -76,9 +76,9 @@ function Q13() {
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="other"
+                  value="100% renewable"
                   control={<Radio />}
-                  label="Other"
+                  label="100% renewable"
                   onClick={handleChange}
                 />
               </RadioGroup>
@@ -92,7 +92,7 @@ function Q13() {
               Next
             </Button>
             <Button size="small" onClick={handleSkip}>
-              Skip
+              End
             </Button>
           </CardActions>
         </Card>
