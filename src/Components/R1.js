@@ -18,7 +18,7 @@ function R1() {
   };
 
   return (
-    <div className="item-a">
+    <div>
       <Card style={{ overflow: "scroll" }} className="CardRecommendationBI">
         <Link to="/insulateyourhome" className="RecommendationCardLink">
           <CardContent>

@@ -64,9 +64,9 @@ function Q13() {
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="- mixed sources"
+                  value="Mixed sources"
                   control={<Radio />}
-                  label="- mixed sources"
+                  label="Mixed sources"
                   onClick={handleChange}
                 />
                 <FormControlLabel

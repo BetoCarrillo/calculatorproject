@@ -9,12 +9,18 @@
 }
 
 .StartButtonDiv {
-  padding-top: 25%;
+  padding-top: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   align-content: center;
+  gap: 10px;
+}
+
+.InfoButton {
+  color: gray;
+  cursor: pointer;
 }
 
 .StartButton {
@@ -135,6 +141,10 @@
 .disable {
   display: none;
 }
+.MuiCardContent-root {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
 
 .FootprintBiggestDiv {
   display: flex;
@@ -152,6 +162,7 @@
   border-width: 0.4rem;
   border-radius: 2rem !important;
 }
+
 .QTitleFootprint {
   color: #4386c6;
   font-family: "Palanquin Dark", sans-serif !important;
@@ -167,6 +178,7 @@
   border-width: 0.4rem;
   border-radius: 2rem !important;
   min-width: 650px !important;
+  margin: 5px;
 }
 
 .QTitleRecommendations {
@@ -177,23 +189,23 @@
 }
 
 .CardRecommendationBI {
-  border-radius: 2rem;
+  border-radius: 1rem !important;
   background-color: #d8f8ee !important;
   max-width: 210px;
   overflow: scroll !important;
   max-height: 200px !important;
 }
 .CardRecommendationEasy {
-  border-radius: 2rem;
-  background-color: #c1e2f5 !important;
+  border-radius: 1rem !important;
+  background-color: #cce7f6 !important;
   max-width: 210px;
   max-height: 200px !important;
   overflow: scroll !important;
 }
 
 .CardRecommendationFun {
-  border-radius: 2rem;
-  background-color: #fbceea !important;
+  border-radius: 1rem !important;
+  background-color: #fad5ec !important;
   max-width: 210px;
   max-height: 200px !important;
   overflow: scroll !important;
@@ -230,8 +242,9 @@
 }
 .RecommendationsDiv {
   display: grid;
+
   grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
 }
@@ -272,6 +285,32 @@
   border: none;
   cursor: pointer;
   background-color: #f7fafd;
+}
+
+.DisableRecommendation {
+  display: none;
+}
+
+/* EXTERNAL LINKS */
+.CardExternalLinksDiv {
+  display: flex;
+  gap: 5px;
+}
+
+.QCardExternalLinks {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: #095366;
+  border-width: 0.4rem;
+  border-radius: 2rem !important;
+  min-width: auto !important;
+}
+
+.CardExternalLinks {
+  border-radius: 1rem !important;
+  background-color: #fbd3a1 !important;
+  max-width: 210px;
 }
 
 /* FULL SINGLE RECOMMENDATION */
@@ -363,5 +402,17 @@
   }
   .QCardFullRecommendation {
     max-width: 345px;
+  }
+
+  .QCardExternalLinks {
+    margin: 5px;
+  }
+  .CardExternalLinksDiv {
+    /* display: flex;
+    flex-direction: column;
+    gap: 5px; */
+    grid-template-columns: 50% 50;
+    grid-template-rows: 50 50;
+    grid-auto-flow: row;
   }
 }

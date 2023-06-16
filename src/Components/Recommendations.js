@@ -41,35 +41,31 @@ function Recommendations() {
   // console.log(inputQ5);
   const redirectRecommendations = useNavigate();
   const handleAllRecommendations = () => {
-    redirectRecommendations("/AllRecommendations");
+    redirectRecommendations("/RecommendationsLinks");
   };
 
-  console.log("inputQ1", inputQ1);
+  console.log("inputQ5String", inputQ5.toString());
 
   if (
-    inputQ5 ===
-    [
-      "Doors and windows ",
-      "Roof and attic ",
-      "Floors and ceilings ",
-      "Outer walls ",
-      "Ducts and Pipes",
-    ]
+    inputQ5.toString ===
+    "Doors and windows ,Roof and attic ,Floors and ceilings ,Outer walls ,Ducts and Pipes"
   ) {
     console.log("yes");
   } else {
     console.log("no");
   }
 
-  if (inputQ1 === "Germany") {
-    console.log("yes");
-  } else {
-    console.log("no");
-  }
+  // useEffect(() => {
+  //   console.log("useeffectrun");
+  // }, [inputQ1]);
 
-  useEffect(() => {
-    console.log("useeffectrun");
-  }, [inputQ1]);
+  // [
+  //   "Doors and windows ",
+  //   "Roof and attic ",
+  //   "Floors and ceilings ",
+  //   "Outer walls ",
+  //   "Ducts and Pipes",
+  // ];
 
   return (
     <div>
@@ -85,22 +81,40 @@ function Recommendations() {
               Recommendations{" "}
             </Typography>
             <div className="RecommendationsDiv">
-              {/* {inputQ5 === ["yes"] ? <div className="disable"></div> : <R1 />} */}
-              {/* {inputQ2 === "Heat pump" ? (
-                <div className="disable"></div>
+              {inputQ5.toString() ===
+              "Doors and windows ,Roof and attic ,Floors and ceilings ,Outer walls ,Ducts and Pipes" ? (
+                <div className="DisableRecommendation">not</div>
+              ) : (
+                <R1 />
+              )}
+              {inputQ14 || inputQ15 === "Heat pump" ? (
+                <div className="DisableRecommendation">not</div>
               ) : (
                 <R2 />
-              )} */}
-              <R1 />
-              <R2 />
-              <R3 />
-              {/* <R4 />
-              <R5 />
-              <R6 /> */}
+              )}
+              {inputQ6 === "yes" ? (
+                <div className="DisableRecommendation">not</div>
+              ) : (
+                <R3 />
+              )}
+              {inputQ3 === "Rent" ? <R4 /> : <R5 />}
+              {inputQ13 === "Solar" ? (
+                <div className="DisableRecommendation">not</div>
+              ) : (
+                <R6 />
+              )}
               <R7 />
-              <R8 />
-              {/* <R9 /> */}
-              <R10 />
+              {inputQ7 === "yes" ? (
+                <div className="DisableRecommendation">not</div>
+              ) : (
+                <R8 />
+              )}
+              {inputQ15 === "Natural ventilation" ? (
+                <div className="DisableRecommendation">not</div>
+              ) : (
+                <R9 />
+              )}
+              {/* <R10 /> */}
               {/* <R11 />
               <R12 /> */}
             </div>

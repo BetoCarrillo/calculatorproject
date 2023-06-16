@@ -43,6 +43,7 @@ function Q5() {
   };
 
   const handleSkip = () => {
+    setInputQ5(valueQ5);
     redirectResults("/Results");
   };
 

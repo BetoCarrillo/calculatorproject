@@ -22,7 +22,9 @@ function Landing() {
         >
           Start
         </Button>
+        <span class="material-symbols-outlined InfoButton">info</span>
       </div>
+
       <div className="CClogo">
         <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         <p className="PoweredbyText">Powered by</p>

@@ -11,7 +11,7 @@ import {
 
 function R7() {
   return (
-    <div className="item-b">
+    <div>
       <Card className="CardRecommendationEasy">
         <CardActionArea>
           <CardContent>

@@ -21,7 +21,7 @@ import Q17 from "./Components/Q17";
 import Q16 from "./Components/Q16";
 import Results from "../src/Views/Results";
 import { ResultsContextProvider } from "./Context/context";
-import AllRecommendations from "./Views/AllRecommendations";
+import RecommendationsLinks from "./Views/RecommendationsLinks";
 import R1B from "./Components/R1B";
 import R2B from "./Components/R2B";
 
@@ -49,7 +49,10 @@ function App() {
           <Route path="/Q16" element={<Q16 />} />
           <Route path="/Q17" element={<Q17 />} />
           <Route path="/Results" element={<Results />} />
-          <Route path="/AllRecommendations" element={<AllRecommendations />} />
+          <Route
+            path="/RecommendationsLinks"
+            element={<RecommendationsLinks />}
+          />
           <Route path="/insulateyourhome" element={<R1B />} />
           <Route path="/smarthomecontrol" element={<R2B />} />
         </Routes>

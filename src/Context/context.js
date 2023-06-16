@@ -7,7 +7,7 @@ export const ResultsContextProvider = (props) => {
   const [inputQ2, setInputQ2] = useState(null);
   const [inputQ3, setInputQ3] = useState(null);
   const [inputQ4, setInputQ4] = useState(null);
-  const [inputQ5, setInputQ5] = useState(null);
+  const [inputQ5, setInputQ5] = useState("");
   const [inputQ6, setInputQ6] = useState(null);
   const [inputQ7, setInputQ7] = useState(null);
   const [inputQ8, setInputQ8] = useState(null);
