@@ -116,7 +116,7 @@ function Q4() {
         </Card>
       </div>
       <div className="QNumber"> 4/17</div>
-      <div className="CClogo">
+      <div>
         <a
           href="https://changeclubs.global/"
           target={"_blank"}

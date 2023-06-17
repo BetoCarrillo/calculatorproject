@@ -56,6 +56,7 @@ function Q12() {
             </Typography>
             <FormControl>
               <TextField
+                type="number"
                 placeholder="type consumption"
                 label="kW"
                 variant="filled"

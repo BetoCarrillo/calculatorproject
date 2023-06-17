@@ -473,23 +473,16 @@ function Footprint() {
           if (inputQ16 === "Biogas") {
             // console.log("Biogas", inputQ16);
             setQ16Calc(4500 * TO1);
-            // console.log("Q16Calc", Q16Calc);
           }
         }
         if (inputQ2 === "Apartment") {
-          // console.log("inputQ2", inputQ2);
           if (inputQ16 === "Solar Energy") {
-            // console.log("Solar Energy", inputQ16);
             setQ16Calc(0);
-            // console.log("Q16Calc", Q16Calc);
           }
         }
         if (inputQ2 === "Apartment") {
-          // console.log("inputQ2", inputQ2);
           if (inputQ16 === "don't know") {
-            // console.log("don't know", inputQ16);
             setQ16Calc(2196);
-            // console.log("Q16Calc", Q16Calc);
           }
         }
       }

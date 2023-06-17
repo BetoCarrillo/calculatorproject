@@ -52,6 +52,7 @@ function Q17() {
             </Typography>
             <FormControl>
               <TextField
+                type="number"
                 placeholder="type in here.."
                 label="€"
                 variant="filled"

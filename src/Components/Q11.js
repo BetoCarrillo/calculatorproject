@@ -58,6 +58,7 @@ function Q11() {
             </Typography>
             <FormControl>
               <TextField
+                type="number"
                 placeholder="type # of people"
                 label="include yourself"
                 variant="filled"
