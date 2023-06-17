@@ -32,13 +32,13 @@ function AllExternalDocuments() {
             component="div"
             className="QTitleRecommendations"
           >
-            External Resources s
+            External Resources
           </Typography>
           <div className="CardExternalLinksDiv">
             <Card className="CardExternalLinks">
               <a
-                href="/https://drawdown.org/sectors/buildings"
-                target={"_blank"}
+                href="https://drawdown.org/sectors/buildings"
+                target="_blank"
                 rel="noreferrer"
                 className="RecommendationCardLink"
               >
@@ -69,8 +69,8 @@ function AllExternalDocuments() {
             </Card>
             <Card className="CardExternalLinks">
               <a
-                href="/https://drawdown.org/sectors/buildings"
-                target={"_blank"}
+                href="https://single-market-economy.ec.europa.eu/industry/sustainability/buildings-and-construction_en"
+                target="_blank"
                 rel="noreferrer"
                 className="RecommendationCardLink"
               >
@@ -101,8 +101,8 @@ function AllExternalDocuments() {
             </Card>
             <Card className="CardExternalLinks">
               <a
-                href="/https://drawdown.org/sectors/buildings"
-                target={"_blank"}
+                href="https://www.unep.org/news-and-stories/press-release/co2-emissions-buildings-and-construction-hit-new-high-leaving-sector"
+                target="_blank"
                 rel="noreferrer"
                 className="RecommendationCardLink"
               >
@@ -133,16 +133,16 @@ function AllExternalDocuments() {
             </Card>
           </div>
         </CardContent>
-        <div className="ButtonBackRecommendationsDiv">
-          <button
-            className="ButtonBackRecommendations"
-            size="small"
-            onClick={handleResults}
-          >
-            BACK
-          </button>
-        </div>
       </Card>
+      {/* <div className="ButtonBackRecommendationsDiv">
+        <button
+          className="ButtonBackRecommendations"
+          size="small"
+          onClick={handleResults}
+        >
+          BACK
+        </button>
+      </div> */}
     </div>
   );
 }

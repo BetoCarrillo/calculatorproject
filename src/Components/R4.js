@@ -11,9 +11,12 @@ import {
 
 function R4() {
   return (
-    <div className="item-d">
+    <div>
       <Card className="CardRecommendationBI">
-        <CardActionArea>
+        <CardActionArea
+          href="/rentsustainably"
+          className="RecommendationCardLink"
+        >
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}
@@ -37,11 +40,11 @@ function R4() {
               Some tips if you rent your property
             </Typography>
           </CardContent>
-          <CardActions className="QCardRecommendationButtonPadding">
+          {/* <CardActions className="QCardRecommendationButtonPadding">
             <div size="small" className="QCardRecommendationButton">
               LEARN MORE
             </div>
-          </CardActions>
+          </CardActions> */}
         </CardActionArea>
       </Card>
     </div>

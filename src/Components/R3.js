@@ -11,9 +11,12 @@ import {
 
 function R3() {
   return (
-    <div className="item-a">
+    <div>
       <Card className="CardRecommendationBI">
-        <CardActionArea>
+        <CardActionArea
+          href="/smarthomecontrol"
+          className="RecommendationCardLink"
+        >
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}
@@ -39,11 +42,11 @@ function R3() {
               and turn them off.
             </Typography>
           </CardContent>
-          <CardActions className="QCardRecommendationButtonPadding">
+          {/* <CardActions className="QCardRecommendationButtonPadding">
             <div size="small" className="QCardRecommendationButton">
               LEARN MORE
             </div>
-          </CardActions>
+          </CardActions> */}
         </CardActionArea>
       </Card>
     </div>

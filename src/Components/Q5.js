@@ -67,7 +67,7 @@ function Q5() {
                   <td>
                     <input
                       type="checkbox"
-                      value="Doors and windows "
+                      value="Doors & windows "
                       onClick={handleChange}
                     ></input>
                   </td>
@@ -78,7 +78,7 @@ function Q5() {
                     {" "}
                     <input
                       type="checkbox"
-                      value="Roof and attic "
+                      value="Roof & attic "
                       onClick={handleChange}
                     ></input>
                   </td>
@@ -89,7 +89,7 @@ function Q5() {
                     {" "}
                     <input
                       type="checkbox"
-                      value="Floors and ceilings "
+                      value="Floors & ceilings "
                       onClick={handleChange}
                     ></input>
                   </td>
@@ -111,7 +111,7 @@ function Q5() {
                     {" "}
                     <input
                       type="checkbox"
-                      value="Ducts and Pipes"
+                      value="Ducts & Pipes"
                       onClick={handleChange}
                     ></input>
                   </td>
@@ -194,7 +194,13 @@ function Q5() {
       </div>
       <div className="QNumber"> 5/17</div>
       <div className="CClogo">
-        <img src={CClogo} alt="Change Clubs logo" height={50}></img>
+        <a
+          href="https://changeclubs.global/"
+          target={"_blank"}
+          rel={"noreferrer"}
+        >
+          <img src={CClogo} alt="Change Clubs logo" height={50}></img>
+        </a>
         <p className="PoweredbyText">Powered by</p>
       </div>
     </div>

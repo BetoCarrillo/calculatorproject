@@ -129,7 +129,13 @@ function Q14() {
       </div>
       <div className="QNumber">14/17</div>
       <div>
-        <img src={CClogo} alt="Change Clubs logo" height={50}></img>
+        <a
+          href="https://changeclubs.global/"
+          target={"_blank"}
+          rel={"noreferrer"}
+        >
+          <img src={CClogo} alt="Change Clubs logo" height={50}></img>
+        </a>
         <p className="PoweredbyText">Powered by</p>
       </div>
     </div>

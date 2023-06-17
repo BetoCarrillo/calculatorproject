@@ -18,24 +18,24 @@ import { ResultsContext } from "../Context/context";
 
 function Recommendations() {
   const {
-    SetInputQ1,
-    inputQ1,
-    inputQ2,
+    // SetInputQ1,
+    // inputQ1,
+    // inputQ2,
     inputQ3,
-    inputQ4,
+    // inputQ4,
     inputQ5,
     inputQ6,
     inputQ7,
-    inputQ8,
-    inputQ9,
-    inputQ10,
-    inputQ11,
-    inputQ12,
+    // inputQ8,
+    // inputQ9,
+    // inputQ10,
+    // inputQ11,
+    // inputQ12,
     inputQ13,
     inputQ14,
     inputQ15,
-    inputQ16,
-    inputQ17,
+    // inputQ16,
+    // inputQ17,
   } = useContext(ResultsContext);
 
   // console.log(inputQ5);
@@ -44,16 +44,16 @@ function Recommendations() {
     redirectRecommendations("/RecommendationsLinks");
   };
 
-  console.log("inputQ5String", inputQ5.toString());
+  // console.log("inputQ5String", inputQ5.toString());
 
-  if (
-    inputQ5.toString ===
-    "Doors and windows ,Roof and attic ,Floors and ceilings ,Outer walls ,Ducts and Pipes"
-  ) {
-    console.log("yes");
-  } else {
-    console.log("no");
-  }
+  // if (
+  //   inputQ5.toString ===
+  //   "Doors and windows ,Roof and attic ,Floors and ceilings ,Outer walls ,Ducts and Pipes"
+  // ) {
+  //   console.log("yes");
+  // } else {
+  //   console.log("no");
+  // }
 
   // useEffect(() => {
   //   console.log("useeffectrun");
@@ -82,7 +82,7 @@ function Recommendations() {
             </Typography>
             <div className="RecommendationsDiv">
               {inputQ5.toString() ===
-              "Doors and windows ,Roof and attic ,Floors and ceilings ,Outer walls ,Ducts and Pipes" ? (
+              "Doors & windows ,Roof & attic ,Floors & ceilings ,Outer walls ,Ducts & Pipes" ? (
                 <div className="DisableRecommendation">not</div>
               ) : (
                 <R1 />

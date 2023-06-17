@@ -3,11 +3,11 @@ import Card from "@mui/material/Card";
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
-import Retrofit from "../styles/Retrofit.jpeg";
+import Housesustainable from "../styles/Housesustainable.jpeg";
 
 import { ResultsContext } from "../Context/context";
 
-function R2B() {
+function R4B() {
   const { setInputQ1, inputQ1, inputQ5 } = useContext(ResultsContext);
 
   const redirectResults = useNavigate();
@@ -27,7 +27,7 @@ function R2B() {
             <CardMedia
               component="img"
               height="140"
-              image={Retrofit}
+              image={Housesustainable}
               alt="retrofityourhome"
             />
             <CardContent>
@@ -37,7 +37,7 @@ function R2B() {
                 component="div"
                 className="QTitleFullRecommendation"
               >
-                Upgrade to heat pump
+                Rent sustainably
               </Typography>
               <Typography
                 sx={{ mb: 2 }}
@@ -48,14 +48,41 @@ function R2B() {
               </Typography>
 
               <Typography variant="body2" className="RecommendationFullText">
-                Electric powered high-efficiency heat pumps transfer heat from a
-                cold space to a hot one. So in winter, the pump transfers energy
-                from the outside to inside of the building and in summer it
-                pumps hot air from the inside to the outside. Heat pumps can
-                replace conventional heating, air conditioning and ventilation
-                systems – and reduce fossil fuel consumption and greenhouse gas
-                emissions like that. If you live in a place with cold winters,
-                you might have to insulate your home first
+                <ul>
+                  <li>
+                    Choose a convenient location. Try to be close to your
+                    workplace or your most frequent locations if realistic.
+                  </li>
+                  <li>Look for newer, more energy-efficient buildings.</li>
+                  <li>
+                    Ask about the year of construction or retrofitting.
+                    Depending on where you live, there might be an energy audit
+                    for the specific building.
+                  </li>
+                  <li>
+                    Ask how the building or house is heated and who is the
+                    electricity provider. If you can, choose a flat or home that
+                    has a climate-friendly heating system and clean electricity.
+                  </li>
+                  <li>
+                    If your laws allow it, change your energy provider to a
+                    clean or renewable one.
+                  </li>
+                  <li>
+                    Check out the appliances in the flat/house: Energy-efficient
+                    ones make a huge difference – for the environment and your
+                    wallet!
+                  </li>
+                  <li>
+                    Consider installing window tints. A low-cost solution when
+                    you can’t retrofit the insulation of your windows.
+                  </li>
+                  <li>
+                    Put potted trees in strategic locations to block the sun
+                    during the hottest times of the day.
+                  </li>
+                  <li>Think green!</li>
+                </ul>
               </Typography>
             </CardContent>
             <div className="FullRecommendationBackButtonDiv">
@@ -81,4 +108,4 @@ function R2B() {
   );
 }
 
-export default R2B;
+export default R4B;

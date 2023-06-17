@@ -7,12 +7,10 @@ import Retrofit from "../styles/Retrofit.jpeg";
 
 import { ResultsContext } from "../Context/context";
 
-function R2B() {
+function R8B() {
   const { setInputQ1, inputQ1, inputQ5 } = useContext(ResultsContext);
 
   const redirectResults = useNavigate();
-
-  console.log("inputQ1", inputQ1);
 
   const handlePrev = () => {
     redirectResults("/Results");
@@ -24,12 +22,6 @@ function R2B() {
       <div>
         <Card className="QCardFullRecommendation">
           <Card>
-            <CardMedia
-              component="img"
-              height="140"
-              image={Retrofit}
-              alt="retrofityourhome"
-            />
             <CardContent>
               <Typography
                 gutterBottom
@@ -37,25 +29,26 @@ function R2B() {
                 component="div"
                 className="QTitleFullRecommendation"
               >
-                Upgrade to heat pump
+                Upgrade to LED light bulbs
               </Typography>
               <Typography
                 sx={{ mb: 2 }}
                 color="text.secondary"
                 className="QSubTitleFullRecommendation"
               >
-                Biggest Impact
+                Easy to do
               </Typography>
 
-              <Typography variant="body2" className="RecommendationFullText">
-                Electric powered high-efficiency heat pumps transfer heat from a
-                cold space to a hot one. So in winter, the pump transfers energy
-                from the outside to inside of the building and in summer it
-                pumps hot air from the inside to the outside. Heat pumps can
-                replace conventional heating, air conditioning and ventilation
-                systems – and reduce fossil fuel consumption and greenhouse gas
-                emissions like that. If you live in a place with cold winters,
-                you might have to insulate your home first
+              <Typography
+                sx={{ mb: 2 }}
+                color="text.secondary"
+                className="QInsulationsDiv"
+              >
+                Maintain your room at an adequate temperature.
+              </Typography>
+              <Typography variant="body2" className="InsulationFullText">
+                This can reduce your electricity consumption by up to 80% and
+                they also have a longer lifespan than traditional light bulbs.
               </Typography>
             </CardContent>
             <div className="FullRecommendationBackButtonDiv">
@@ -81,4 +74,4 @@ function R2B() {
   );
 }
 
-export default R2B;
+export default R8B;

@@ -11,9 +11,9 @@ import {
 
 function R12() {
   return (
-    <div className="item-b">
+    <div>
       <Card className="CardRecommendationFun">
-        <CardActionArea>
+        <CardActionArea href="/familycuddle" className="RecommendationCardLink">
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}
@@ -34,11 +34,11 @@ function R12() {
               Housing
             </Typography>
           </CardContent>
-          <CardActions className="QCardRecommendationButtonPadding">
+          {/* <CardActions className="QCardRecommendationButtonPadding">
             <div size="small" className="QCardRecommendationButton">
               LEARN MORE
             </div>
-          </CardActions>
+          </CardActions> */}
         </CardActionArea>
       </Card>
     </div>

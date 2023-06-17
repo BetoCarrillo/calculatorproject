@@ -11,9 +11,12 @@ import {
 
 function R5() {
   return (
-    <div className="item-a">
+    <div>
       <Card className="CardRecommendationBI">
-        <CardActionArea>
+        <CardActionArea
+          href="/ownsustainably"
+          className="RecommendationCardLink"
+        >
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}
@@ -37,11 +40,11 @@ function R5() {
               Some tips if you own your property
             </Typography>
           </CardContent>
-          <CardActions className="QCardRecommendationButtonPadding">
+          {/* <CardActions className="QCardRecommendationButtonPadding">
             <div size="small" className="QCardRecommendationButton">
               LEARN MORE
             </div>
-          </CardActions>
+          </CardActions> */}
         </CardActionArea>
       </Card>
     </div>

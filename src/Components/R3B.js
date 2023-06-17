@@ -7,12 +7,10 @@ import Retrofit from "../styles/Retrofit.jpeg";
 
 import { ResultsContext } from "../Context/context";
 
-function R2B() {
+function R3B() {
   const { setInputQ1, inputQ1, inputQ5 } = useContext(ResultsContext);
 
   const redirectResults = useNavigate();
-
-  console.log("inputQ1", inputQ1);
 
   const handlePrev = () => {
     redirectResults("/Results");
@@ -37,7 +35,7 @@ function R2B() {
                 component="div"
                 className="QTitleFullRecommendation"
               >
-                Upgrade to heat pump
+                Install smart homecontrols
               </Typography>
               <Typography
                 sx={{ mb: 2 }}
@@ -48,14 +46,12 @@ function R2B() {
               </Typography>
 
               <Typography variant="body2" className="RecommendationFullText">
-                Electric powered high-efficiency heat pumps transfer heat from a
-                cold space to a hot one. So in winter, the pump transfers energy
-                from the outside to inside of the building and in summer it
-                pumps hot air from the inside to the outside. Heat pumps can
-                replace conventional heating, air conditioning and ventilation
-                systems – and reduce fossil fuel consumption and greenhouse gas
-                emissions like that. If you live in a place with cold winters,
-                you might have to insulate your home first
+                Besides controlling the room to the adequate temperature,
+                installing a smart home control will help you regulate the
+                lights and turn them off in case you forget or you leave the
+                room. There are also smart controls for heating radiators. Also
+                leak sensors can be added to control any leaks and save water
+                from being wasted.
               </Typography>
             </CardContent>
             <div className="FullRecommendationBackButtonDiv">
@@ -81,4 +77,4 @@ function R2B() {
   );
 }
 
-export default R2B;
+export default R3B;

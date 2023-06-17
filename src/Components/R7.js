@@ -13,7 +13,10 @@ function R7() {
   return (
     <div>
       <Card className="CardRecommendationEasy">
-        <CardActionArea>
+        <CardActionArea
+          href="/roomtemperature"
+          className="RecommendationCardLink"
+        >
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}
@@ -38,11 +41,11 @@ function R7() {
               are some tips to make it easy.
             </Typography>
           </CardContent>
-          <CardActions className="QCardRecommendationButtonPadding">
+          {/* <CardActions className="QCardRecommendationButtonPadding">
             <div size="small" className="QCardRecommendationButton">
               LEARN MORE
             </div>
-          </CardActions>
+          </CardActions> */}
         </CardActionArea>
       </Card>
     </div>

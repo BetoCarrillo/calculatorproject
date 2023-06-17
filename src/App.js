@@ -24,6 +24,16 @@ import { ResultsContextProvider } from "./Context/context";
 import RecommendationsLinks from "./Views/RecommendationsLinks";
 import R1B from "./Components/R1B";
 import R2B from "./Components/R2B";
+import R3B from "./Components/R3B";
+import R4B from "./Components/R4B";
+import R5B from "./Components/R5B";
+import R6B from "./Components/R6B";
+import R7B from "./Components/R7B";
+import R8B from "./Components/R8B";
+import R9B from "./Components/R9B";
+import R10B from "./Components/R10B";
+import R11B from "./Components/R11B";
+import R12B from "./Components/R12B";
 
 function App() {
   return (
@@ -54,7 +64,17 @@ function App() {
             element={<RecommendationsLinks />}
           />
           <Route path="/insulateyourhome" element={<R1B />} />
-          <Route path="/smarthomecontrol" element={<R2B />} />
+          <Route path="/heatpump" element={<R2B />} />
+          <Route path="/smarthomecontrol" element={<R3B />} />
+          <Route path="/rentsustainably" element={<R4B />} />
+          <Route path="/ownsustainably" element={<R5B />} />
+          <Route path="/solarenergy" element={<R6B />} />
+          <Route path="/roomtemperature" element={<R7B />} />
+          <Route path="/ledbulbs" element={<R8B />} />
+          <Route path="/ventilation" element={<R9B />} />
+          <Route path="/detective" element={<R10B />} />
+          <Route path="/solarcooker" element={<R11B />} />
+          <Route path="/familycuddle" element={<R12B />} />
         </Routes>
       </ResultsContextProvider>
     </div>

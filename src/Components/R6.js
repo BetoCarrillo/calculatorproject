@@ -11,9 +11,9 @@ import {
 
 function R6() {
   return (
-    <div className="item-a">
+    <div>
       <Card className="CardRecommendationBI">
-        <CardActionArea>
+        <CardActionArea href="/solarenergy" className="RecommendationCardLink">
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}
@@ -38,11 +38,11 @@ function R6() {
               in reducing greenhouse gas emissions and mitigating climate change
             </Typography>
           </CardContent>
-          <CardActions className="QCardRecommendationButtonPadding">
+          {/* <CardActions className="QCardRecommendationButtonPadding">
             <div size="small" className="QCardRecommendationButton">
               LEARN MORE
             </div>
-          </CardActions>
+          </CardActions> */}
         </CardActionArea>
       </Card>
     </div>

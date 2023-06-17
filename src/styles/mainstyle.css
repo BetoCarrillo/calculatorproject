@@ -72,6 +72,16 @@
   gap: 5px;
 }
 
+.QCardDivRecommendationsLinks {
+  min-width: 300;
+  justify-content: flex-end !important;
+  display: flex;
+  align-items: center;
+  /* max-height: 100vh; */
+  flex-direction: column;
+  gap: 5px;
+}
+
 .QCard {
   display: flex;
   flex-direction: column;
@@ -215,31 +225,31 @@
 }
 
 .QCardRecommendationTitle {
-  font-size: 14px !important;
+  font-size: 13px !important;
   font-weight: bold !important;
   font-family: "Palanquin Dark", sans-serif !important;
 }
 
 .QCardRecommendationSubTitle {
-  font-size: 12px !important;
+  font-size: 10px !important;
   font-family: "Palanquin Dark", sans-serif !important;
 }
 
 .QCardRecommendationText {
-  font-size: 12px !important;
+  font-size: 10px !important;
   font-family: "Palanquin Dark", sans-serif !important;
 }
 
-.QCardRecommendationButton {
+/* .QCardRecommendationButton {
   font-size: 7px !important;
   font-family: "Palanquin Dark", sans-serif !important;
   color: #1976d2;
   padding-left: 5px !important;
-}
+} */
 
-.QCardRecommendationButtonPadding {
+/* .QCardRecommendationButtonPadding {
   padding-top: 0% !important;
-}
+} */
 .RecommendationsDiv {
   display: grid;
 
@@ -268,23 +278,22 @@
 }
 
 .ButtonBackRecommendationsDiv {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 15px;
+  padding-right: 35px;
+  align-self: flex-end;
 }
 
 .ButtonBackRecommendations {
   border: none;
-  background-color: white;
+  background-color: #f9ce64;
   color: #4386c6;
   border-radius: 0.5rem;
   width: 55px;
-  padding-bottom: 10px;
+  padding: 5px;
 }
 .ButtonBackRecommendations:hover {
   border: none;
   cursor: pointer;
-  background-color: #f7fafd;
+  background-color: #e9c873;
 }
 
 .DisableRecommendation {
@@ -326,9 +335,7 @@
   font-size: 16px !important;
   font-family: "Palanquin Dark", sans-serif !important;
 }
-.AccordionRecommendation {
-  margin-left: 20px;
-}
+
 .RecommendationCardLink {
   text-decoration: none !important;
   color: black;
@@ -355,6 +362,17 @@
   font-family: "Palanquin Dark", sans-serif !important;
 }
 
+.QInsulationsDiv {
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-weight: bold !important;
+  color: black !important;
+}
+.InsulationFullText {
+  font-size: 14px !important;
+  font-family: "Palanquin Dark", sans-serif !important;
+  padding-bottom: 20px;
+}
+
 @media screen and (max-width: 650px) {
   .ResultsDiv {
     display: flex;
@@ -369,6 +387,10 @@
   }
 
   .QCardDiv {
+    min-width: 30 !important;
+  }
+
+  .QCardDivRecommendationsLinks {
     min-width: 30 !important;
   }
 

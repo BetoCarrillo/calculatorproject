@@ -11,11 +11,11 @@ import { Link, useNavigate } from "react-router-dom";
 // import Card from "@mui/material/Card";
 
 function R1() {
-  const redirectR1B = useNavigate();
+  // const redirectR1B = useNavigate();
 
-  const handleMore = () => {
-    redirectR1B("/insulateyourhome");
-  };
+  // const handleMore = () => {
+  //   redirectR1B("/insulateyourhome");
+  // };
 
   return (
     <div>
@@ -42,10 +42,10 @@ function R1() {
             </Typography>
             <Typography variant="body2" className="QCardRecommendationText">
               Insulation is one of the most cost-efficient ways to make your
-              home energy efficient, keeping a healthy indoor temperature.
+              home energy efficient.
             </Typography>
           </CardContent>
-          <CardActions className="QCardRecommendationButtonPadding">
+          {/* <CardActions className="QCardRecommendationButtonPadding">
             <Button
               onClick={handleMore}
               size="small"
@@ -53,7 +53,7 @@ function R1() {
             >
               Learn More
             </Button>
-          </CardActions>
+          </CardActions> */}
         </Link>
       </Card>
     </div>

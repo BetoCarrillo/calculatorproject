@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 export const ResultsContext = createContext();
 
 export const ResultsContextProvider = (props) => {
-  const [inputQ1, setInputQ1] = useState(null);
+  const [inputQ1, setInputQ1] = useState("Germany");
   const [inputQ2, setInputQ2] = useState(null);
   const [inputQ3, setInputQ3] = useState(null);
   const [inputQ4, setInputQ4] = useState(null);
@@ -14,7 +14,7 @@ export const ResultsContextProvider = (props) => {
   const [inputQ9, setInputQ9] = useState(null);
   const [inputQ10, setInputQ10] = useState(null);
   const [inputQ11, setInputQ11] = useState(null);
-  const [inputQ12, setInputQ12] = useState(null);
+  const [inputQ12, setInputQ12] = useState(0);
   const [inputQ13, setInputQ13] = useState(null);
   const [inputQ14, setInputQ14] = useState(null);
   const [inputQ15, setInputQ15] = useState(null);

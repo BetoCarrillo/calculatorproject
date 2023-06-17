@@ -3,11 +3,11 @@ import Card from "@mui/material/Card";
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
-import Retrofit from "../styles/Retrofit.jpeg";
+import Housesustainable from "../styles/Housesustainable.jpeg";
 
 import { ResultsContext } from "../Context/context";
 
-function R2B() {
+function R5B() {
   const { setInputQ1, inputQ1, inputQ5 } = useContext(ResultsContext);
 
   const redirectResults = useNavigate();
@@ -27,7 +27,7 @@ function R2B() {
             <CardMedia
               component="img"
               height="140"
-              image={Retrofit}
+              image={Housesustainable}
               alt="retrofityourhome"
             />
             <CardContent>
@@ -37,7 +37,7 @@ function R2B() {
                 component="div"
                 className="QTitleFullRecommendation"
               >
-                Upgrade to heat pump
+                Own sustainably
               </Typography>
               <Typography
                 sx={{ mb: 2 }}
@@ -48,14 +48,32 @@ function R2B() {
               </Typography>
 
               <Typography variant="body2" className="RecommendationFullText">
-                Electric powered high-efficiency heat pumps transfer heat from a
-                cold space to a hot one. So in winter, the pump transfers energy
-                from the outside to inside of the building and in summer it
-                pumps hot air from the inside to the outside. Heat pumps can
-                replace conventional heating, air conditioning and ventilation
-                systems – and reduce fossil fuel consumption and greenhouse gas
-                emissions like that. If you live in a place with cold winters,
-                you might have to insulate your home first
+                <ul>
+                  <li>The smaller, the better.</li>
+                  <li>Choose an eco and climate-friendly design.</li>
+                  <li>Use sustainable building materials.</li>
+                  <li>Limit the environmental impact of the construction.</li>
+                  <li>
+                    Incorporate water efficiency and good sewage solutions.
+                  </li>
+                  <li>
+                    Set the orientation of your home to use the sun and wind to
+                    your convenience – or avoid direct impact.
+                  </li>
+                  <li>
+                    Avoid cabinetry and plumbing fixtures containing chemicals.
+                  </li>
+                  <li>
+                    Protect the surroundings making sure constructions aren’t
+                    intrusive to nature and biodiversity around your home.
+                  </li>
+                  <li>Install solar panels if possible.</li>
+                  <li>
+                    Choose native plants for your garden, they are better for
+                    the environment than exotic ones.
+                  </li>
+                  <li>Think green!</li>
+                </ul>
               </Typography>
             </CardContent>
             <div className="FullRecommendationBackButtonDiv">
@@ -81,4 +99,4 @@ function R2B() {
   );
 }
 
-export default R2B;
+export default R5B;

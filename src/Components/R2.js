@@ -11,19 +11,16 @@ import { useNavigate } from "react-router-dom";
 // import Card from "@mui/material/Card";
 
 function R2() {
-  const redirectR1B = useNavigate();
+  // const redirectR1B = useNavigate();
 
-  const handleMore = () => {
-    redirectR1B("/smarthomecontrol");
-  };
+  // const handleMore = () => {
+  //   redirectR1B("/smarthomecontrol");
+  // };
 
   return (
-    <div className="item-a">
+    <div>
       <Card style={{ overflow: "scroll" }} className="CardRecommendationBI">
-        <CardActionArea
-          href="/smarthomecontrol"
-          className="RecommendationCardLink"
-        >
+        <CardActionArea href="/heatpump" className="RecommendationCardLink">
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}
@@ -44,11 +41,11 @@ function R2() {
               Housing
             </Typography>
             <Typography variant="body2" className="QCardRecommendationText">
-              They replace conventional heating, A/C and ventilation systems and
+              It replaces conventional heating, A/C and ventilation systems and
               reduce fossil fuel consumption and greenhouse gas emissions.
             </Typography>
           </CardContent>
-          <CardActions className="QCardRecommendationButtonPadding">
+          {/* <CardActions className="QCardRecommendationButtonPadding">
             <Button
               size="small"
               className="QCardRecommendationButton"
@@ -56,7 +53,7 @@ function R2() {
             >
               Learn More
             </Button>
-          </CardActions>
+          </CardActions> */}
         </CardActionArea>
       </Card>
     </div>

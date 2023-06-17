@@ -13,7 +13,7 @@ function R8() {
   return (
     <div className="item-b">
       <Card className="CardRecommendationEasy">
-        <CardActionArea>
+        <CardActionArea href="/ledbulbs" className="RecommendationCardLink">
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}
@@ -38,11 +38,11 @@ function R8() {
               also have a longer lifespan than traditional light bulbs.
             </Typography>
           </CardContent>
-          <CardActions className="QCardRecommendationButtonPadding">
+          {/* <CardActions className="QCardRecommendationButtonPadding">
             <div size="small" className="QCardRecommendationButton">
               LEARN MORE
             </div>
-          </CardActions>
+          </CardActions> */}
         </CardActionArea>
       </Card>
     </div>
