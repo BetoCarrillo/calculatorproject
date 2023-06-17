@@ -65,22 +65,22 @@ function Q16() {
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="Methane"
+                  value="Methane (natural gas)"
                   control={<Radio />}
                   label="Methane (natural gas)"
                   onClick={handleChange}
                 />
 
                 <FormControlLabel
-                  value="Heating Oil"
+                  value="Biogas"
                   control={<Radio />}
-                  label="Heating Oil"
+                  label="Biogas"
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="Biogas"
+                  value="Solar Energy"
                   control={<Radio />}
-                  label="Biogas (biomethane)"
+                  label="Solar Energy"
                   onClick={handleChange}
                 />
 

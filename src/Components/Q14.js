@@ -81,12 +81,12 @@ function Q14() {
                   label=" Heating oil"
                   onClick={handleChange}
                 />
-                <FormControlLabel
+                {/* <FormControlLabel
                   value="Bottled gas"
                   control={<Radio />}
                   label="Bottled gas"
                   onClick={handleChange}
-                />
+                /> */}
                 <FormControlLabel
                   value="Wood pellets"
                   control={<Radio />}
@@ -105,12 +105,12 @@ function Q14() {
                   label="None"
                   onClick={handleChange}
                 />
-                <FormControlLabel
+                {/* <FormControlLabel
                   value="don't know"
                   control={<Radio />}
                   label="Do not know"
                   onClick={handleChange}
-                />
+                /> */}
               </RadioGroup>
             </FormControl>
           </CardContent>
