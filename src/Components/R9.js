@@ -7,13 +7,14 @@ import {
   Typography,
   CardActionArea,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 // import Card from "@mui/material/Card";
 
 function R9() {
   return (
     <div>
       <Card className="CardRecommendationEasy">
-        <CardActionArea href="/ventilation" className="RecommendationCardLink">
+        <Link to="/ventilation" className="RecommendationCardLink">
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}
@@ -43,7 +44,7 @@ function R9() {
               LEARN MORE
             </div>
           </CardActions> */}
-        </CardActionArea>
+        </Link>
       </Card>
     </div>
   );

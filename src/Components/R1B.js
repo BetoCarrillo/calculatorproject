@@ -18,15 +18,15 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { ResultsContext } from "../Context/context";
 
 function R1B() {
-  const { setInputQ1, inputQ1, inputQ5 } = useContext(ResultsContext);
+  const { setInputQ1, inputQ1, inputQ5, inputQ2 } = useContext(ResultsContext);
   const [expanded, setExpanded] = useState(false);
   const redirectResults = useNavigate();
-
-  console.log("inputQ1", inputQ1);
 
   const handlePrev = () => {
     redirectResults("/Results");
   };
+
+  console.log("inputQ2", inputQ2);
 
   const ExpandMore = styled((props) => {
     const { expand, ...other } = props;

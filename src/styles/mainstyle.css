@@ -32,6 +32,7 @@
 .StartButton:hover {
   background-color: #d98e02 !important;
 }
+
 .CClogo {
   text-align: center;
   width: 100%;
@@ -91,6 +92,7 @@
   border-width: 0.4rem;
   border-radius: 2rem !important;
 }
+
 .QTitle {
   color: #4386c6;
   font-family: "Palanquin Dark", sans-serif !important;
@@ -106,12 +108,25 @@
 }
 
 .checkboxText {
-  line-height: 1.5;
+  line-height: 2.5;
   scale: 1.1;
 }
 
 .QNumber {
   color: white;
+}
+
+/* ANSWERS RESULTS */
+
+.StartOverButton {
+  background-color: #f79521 !important;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-size: 8px !important;
+}
+
+.StartOverButton:hover {
+  background-color: #d98e02 !important;
+  border: 0% !important;
 }
 
 .ResultsDiv {
@@ -121,19 +136,19 @@
   padding-bottom: 15px;
 }
 
-.TableDiv {
+/* .TableDiv {
   display: flex;
   justify-content: center;
-}
+} */
 
 .TableResults {
-  width: 300px !important;
+  width: 330px !important;
 }
 
 .ResultTableQuestions {
   font-family: "Palanquin Dark", sans-serif !important;
   color: #7fc3eb;
-  width: 130px;
+  width: 140px;
   font-size: 14px;
   font-weight: bold;
 }
@@ -147,6 +162,10 @@
 }
 
 /* FOOTPRINT & BIGGEST IMPACTS RESULT DIV */
+
+.CO2Text {
+  font-size: 12px;
+}
 
 .disable {
   display: none;
@@ -165,12 +184,32 @@
 .QCardFootprint {
   min-width: 700;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   border-style: solid;
   border-color: #7fc3eb;
   border-width: 0.4rem;
   border-radius: 2rem !important;
+  padding-bottom: 10px;
+}
+.QCardFootprintTitleRadio {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.IconPadding {
+  padding-top: 7px;
+}
+
+.QCardFootprintRadio {
+  display: flex;
+  flex-direction: row !important;
+}
+.FootprintRadioText {
+  font-family: "Palanquin Dark", sans-serif !important;
+}
+.TooltipText {
+  white-space: pre-line;
 }
 
 .QTitleFootprint {
@@ -178,6 +217,8 @@
   font-family: "Palanquin Dark", sans-serif !important;
   font-weight: bold !important;
 }
+
+/* RECOMMENDATIONS */
 
 .QCardRecommendations {
   display: flex;
@@ -252,7 +293,6 @@
 } */
 .RecommendationsDiv {
   display: grid;
-
   grid-auto-flow: column;
   grid-template-columns: 1fr 1fr 1fr1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -298,6 +338,16 @@
 
 .DisableRecommendation {
   display: none;
+}
+
+.CalculationTotal {
+  background-color: #f9d9d9;
+  border-radius: 4rem;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: auto;
+  font-family: "Palanquin Dark", sans-serif !important;
 }
 
 /* EXTERNAL LINKS */
@@ -440,5 +490,9 @@
 
   .PaddingBottomPage {
     padding-bottom: 5px;
+  }
+
+  .QCardFootprintTitleRadio {
+    gap: 5px;
   }
 }

@@ -7,7 +7,7 @@ import {
   Typography,
   CardActionArea,
 } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // import Card from "@mui/material/Card";
 
 function R2() {
@@ -20,7 +20,7 @@ function R2() {
   return (
     <div>
       <Card style={{ overflow: "scroll" }} className="CardRecommendationBI">
-        <CardActionArea href="/heatpump" className="RecommendationCardLink">
+        <Link to="/heatpump" className="RecommendationCardLink">
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}
@@ -54,7 +54,7 @@ function R2() {
               Learn More
             </Button>
           </CardActions> */}
-        </CardActionArea>
+        </Link>
       </Card>
     </div>
   );

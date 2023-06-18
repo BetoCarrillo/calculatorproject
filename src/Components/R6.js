@@ -7,13 +7,14 @@ import {
   Typography,
   CardActionArea,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 // import Card from "@mui/material/Card";
 
 function R6() {
   return (
     <div>
       <Card className="CardRecommendationBI">
-        <CardActionArea href="/solarenergy" className="RecommendationCardLink">
+        <Link to="/solarenergy" className="RecommendationCardLink">
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}
@@ -35,7 +36,8 @@ function R6() {
             </Typography>
             <Typography variant="body2" className="QCardRecommendationText">
               As a renewable source of power, solar energy has an important role
-              in reducing greenhouse gas emissions and mitigating climate change
+              in reducing greenhouse gas emissions and mitigating climate
+              change.
             </Typography>
           </CardContent>
           {/* <CardActions className="QCardRecommendationButtonPadding">
@@ -43,7 +45,7 @@ function R6() {
               LEARN MORE
             </div>
           </CardActions> */}
-        </CardActionArea>
+        </Link>
       </Card>
     </div>
   );

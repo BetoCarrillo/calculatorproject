@@ -26,6 +26,8 @@ function Answers() {
     inputQ15,
     inputQ16,
     inputQ17,
+    setCalcTotal,
+    CalcTotal,
   } = useContext(ResultsContext);
 
   const handleChange = (event) => {
@@ -57,178 +59,207 @@ function Answers() {
             Answers{" "}
           </Typography>
 
-          <div className="TableDiv">
-            <table responsive="m" className="TableResults">
-              <tbody>
-                <tr>
-                  <td className="ResultTableQuestions">
+          <table responsive="m" className="TableResults">
+            <tbody>
+              <tr>
+                <td className="ResultTableQuestions">
+                  {" "}
+                  <Link className="ResultTableQuestions" to="/Q1">
                     {" "}
-                    <Link className="ResultTableQuestions" to="/Q1">
-                      {" "}
-                      Country:{" "}
-                    </Link>{" "}
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ1}</td>
-                </tr>
-                <tr>
-                  <td>
-                    <Link className="ResultTableQuestions" to="/Q2">
-                      {" "}
-                      Type of building:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ2}</td>
-                </tr>
-                <tr>
-                  <td>
+                    Country:{" "}
+                  </Link>{" "}
+                </td>
+                <td className="ResultTableAnswers">{inputQ1}</td>
+              </tr>
+              <tr>
+                <td>
+                  <Link className="ResultTableQuestions" to="/Q2">
                     {" "}
-                    <Link className="ResultTableQuestions" to="/Q3">
-                      {" "}
-                      Property:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ3}</td>
-                </tr>
-                <tr>
-                  <td>
+                    Type of building:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">{inputQ2}</td>
+              </tr>
+              <tr>
+                <td>
+                  {" "}
+                  <Link className="ResultTableQuestions" to="/Q3">
                     {" "}
-                    <Link className="ResultTableQuestions" to="/Q4">
-                      {" "}
-                      Built or retrofitted:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ4}</td>
-                </tr>
-                <tr>
-                  <td>
-                    <Link className="ResultTableQuestions" to="/Q5">
-                      {" "}
-                      Insultation:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ5}</td>
-                </tr>
-                <tr>
-                  <td>
-                    <Link className="ResultTableQuestions" to="/Q6">
-                      {" "}
-                      Smart homecontrol:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ6}</td>
-                </tr>
-                <tr>
-                  <td>
-                    <Link className="ResultTableQuestions" to="/Q7">
-                      {" "}
-                      LED bulbs:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ7}</td>
-                </tr>
-                <tr>
-                  <td>
+                    Property:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">{inputQ3}</td>
+              </tr>
+              <tr>
+                <td>
+                  {" "}
+                  <Link className="ResultTableQuestions" to="/Q4">
                     {" "}
-                    <Link className="ResultTableQuestions" to="/Q8">
-                      {" "}
-                      Size:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ8} m2</td>
-                </tr>
-                <tr>
-                  <td>
+                    Built or retrofitted:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">{inputQ4}</td>
+              </tr>
+              <tr>
+                <td>
+                  <Link className="ResultTableQuestions" to="/Q5">
                     {" "}
-                    <Link className="ResultTableQuestions" to="/Q9">
-                      {" "}
-                      Bedrooms:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ9}</td>
-                </tr>
-                <tr>
-                  <td>
-                    <Link className="ResultTableQuestions" to="/Q10">
-                      {" "}
-                      Windows:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ10}</td>
-                </tr>
-                <tr>
-                  <td>
-                    <Link className="ResultTableQuestions" to="/Q11">
-                      {" "}
-                      People:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ11}</td>
-                </tr>
-                <tr>
-                  <td>
-                    <Link className="ResultTableQuestions" to="/Q12">
-                      {" "}
-                      Annual consumption:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ12} kW</td>
-                </tr>
-                <tr>
-                  <td>
-                    <Link className="ResultTableQuestions" to="/Q13">
-                      {" "}
-                      Energy source:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ13}</td>
-                </tr>
-                <tr>
-                  <td>
-                    <Link className="ResultTableQuestions" to="/Q14">
-                      {" "}
-                      Heating system:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ14}</td>
-                </tr>
-                <tr>
-                  <td>
+                    Insultation:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">{inputQ5}</td>
+              </tr>
+              <tr>
+                <td>
+                  <Link className="ResultTableQuestions" to="/Q6">
                     {" "}
-                    <Link className="ResultTableQuestions" to="/Q15">
-                      {" "}
-                      Cooling system:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ15}</td>
-                </tr>
-                <tr>
-                  <td>
-                    <Link className="ResultTableQuestions" to="/Q16">
-                      {" "}
-                      Water heating:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">{inputQ16}</td>
-                </tr>
-                <tr>
-                  <td>
+                    Smart homecontrol:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">{inputQ6}</td>
+              </tr>
+              <tr>
+                <td>
+                  <Link className="ResultTableQuestions" to="/Q7">
                     {" "}
-                    <Link className="ResultTableQuestions" to="/Q17">
+                    LED bulbs:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">{inputQ7}</td>
+              </tr>
+              <tr>
+                <td>
+                  {" "}
+                  <Link className="ResultTableQuestions" to="/Q8">
+                    {" "}
+                    Size:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">
+                  {" "}
+                  {isNaN(CalcTotal) ? (
+                    <div className="DisableRecommendation">
                       {" "}
-                      Monthly bill:{" "}
-                    </Link>
-                  </td>
-                  <td className="ResultTableAnswers">€{inputQ17}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+                      CALCULATION NOT READY
+                    </div>
+                  ) : (
+                    <span> {inputQ8} m2</span>
+                  )}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {" "}
+                  <Link className="ResultTableQuestions" to="/Q9">
+                    {" "}
+                    Bedrooms:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">{inputQ9}</td>
+              </tr>
+              <tr>
+                <td>
+                  <Link className="ResultTableQuestions" to="/Q10">
+                    {" "}
+                    Windows:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">{inputQ10}</td>
+              </tr>
+              <tr>
+                <td>
+                  <Link className="ResultTableQuestions" to="/Q11">
+                    {" "}
+                    People:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">{inputQ11}</td>
+              </tr>
+              <tr>
+                <td>
+                  <Link className="ResultTableQuestions" to="/Q12">
+                    {" "}
+                    Annual consumption:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">
+                  {" "}
+                  {isNaN(CalcTotal) ? (
+                    <div className="DisableRecommendation">
+                      {" "}
+                      CALCULATION NOT READY
+                    </div>
+                  ) : (
+                    <span> {inputQ12} kW</span>
+                  )}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <Link className="ResultTableQuestions" to="/Q13">
+                    {" "}
+                    Energy source:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">{inputQ13}</td>
+              </tr>
+              <tr>
+                <td>
+                  <Link className="ResultTableQuestions" to="/Q14">
+                    {" "}
+                    Heating system:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">{inputQ14}</td>
+              </tr>
+              <tr>
+                <td>
+                  {" "}
+                  <Link className="ResultTableQuestions" to="/Q15">
+                    {" "}
+                    Cooling system:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">{inputQ15}</td>
+              </tr>
+              <tr>
+                <td>
+                  <Link className="ResultTableQuestions" to="/Q16">
+                    {" "}
+                    Water heating:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">{inputQ16}</td>
+              </tr>
+              <tr>
+                <td>
+                  {" "}
+                  <Link className="ResultTableQuestions" to="/Q17">
+                    {" "}
+                    Monthly bill:{" "}
+                  </Link>
+                </td>
+                <td className="ResultTableAnswers">
+                  {isNaN(CalcTotal) ? (
+                    <div className="DisableRecommendation">
+                      {" "}
+                      CALCULATION NOT READY
+                    </div>
+                  ) : (
+                    <span> €{inputQ17}</span>
+                  )}
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </CardContent>
         <CardActions>
-          <Button size="small" onClick={handlePrev}>
-            Previous
-          </Button>
-          <Button size="small" onClick={handleNext}>
+          <Button
+            size="small"
+            variant="contained"
+            className="StartOverButton"
+            onClick={handleNext}
+          >
             Start over
           </Button>
         </CardActions>

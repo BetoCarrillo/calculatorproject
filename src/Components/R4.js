@@ -7,16 +7,14 @@ import {
   Typography,
   CardActionArea,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 // import Card from "@mui/material/Card";
 
 function R4() {
   return (
     <div>
       <Card className="CardRecommendationBI">
-        <CardActionArea
-          href="/rentsustainably"
-          className="RecommendationCardLink"
-        >
+        <Link to="/rentsustainably" className="RecommendationCardLink">
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}
@@ -37,7 +35,7 @@ function R4() {
               Housing
             </Typography>
             <Typography variant="body2" className="QCardRecommendationText">
-              Some tips if you rent your property
+              Get some tips if you rent your property
             </Typography>
           </CardContent>
           {/* <CardActions className="QCardRecommendationButtonPadding">
@@ -45,7 +43,7 @@ function R4() {
               LEARN MORE
             </div>
           </CardActions> */}
-        </CardActionArea>
+        </Link>
       </Card>
     </div>
   );

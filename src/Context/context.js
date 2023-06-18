@@ -10,7 +10,7 @@ export const ResultsContextProvider = (props) => {
   const [inputQ5, setInputQ5] = useState("");
   const [inputQ6, setInputQ6] = useState(null);
   const [inputQ7, setInputQ7] = useState(null);
-  const [inputQ8, setInputQ8] = useState(null);
+  const [inputQ8, setInputQ8] = useState(0);
   const [inputQ9, setInputQ9] = useState(null);
   const [inputQ10, setInputQ10] = useState(null);
   const [inputQ11, setInputQ11] = useState(null);
@@ -19,7 +19,8 @@ export const ResultsContextProvider = (props) => {
   const [inputQ14, setInputQ14] = useState(null);
   const [inputQ15, setInputQ15] = useState(null);
   const [inputQ16, setInputQ16] = useState(null);
-  const [inputQ17, setInputQ17] = useState(null);
+  const [inputQ17, setInputQ17] = useState(0);
+  const [CalcTotal, setCalcTotal] = useState();
 
   return (
     <ResultsContext.Provider
@@ -58,6 +59,8 @@ export const ResultsContextProvider = (props) => {
         setInputQ16,
         inputQ17,
         setInputQ17,
+        setCalcTotal,
+        CalcTotal,
       }}
     >
       {props.children}

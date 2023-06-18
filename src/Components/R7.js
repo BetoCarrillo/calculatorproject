@@ -7,16 +7,14 @@ import {
   Typography,
   CardActionArea,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 // import Card from "@mui/material/Card";
 
 function R7() {
   return (
     <div>
       <Card className="CardRecommendationEasy">
-        <CardActionArea
-          href="/roomtemperature"
-          className="RecommendationCardLink"
-        >
+        <Link to="/roomtemperature" className="RecommendationCardLink">
           <CardContent>
             <Typography
               sx={{ fontSize: 9 }}
@@ -37,8 +35,8 @@ function R7() {
               Housing
             </Typography>
             <Typography variant="body2" className="QCardRecommendationText">
-              Controlling your room temperature can make the difference. Here
-              are some tips to make it easy.
+              Controlling your room temperature can make the difference. Get
+              some tips to make it easy.
             </Typography>
           </CardContent>
           {/* <CardActions className="QCardRecommendationButtonPadding">
@@ -46,7 +44,7 @@ function R7() {
               LEARN MORE
             </div>
           </CardActions> */}
-        </CardActionArea>
+        </Link>
       </Card>
     </div>
   );

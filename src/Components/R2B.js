@@ -8,11 +8,12 @@ import Retrofit from "../styles/Retrofit.jpeg";
 import { ResultsContext } from "../Context/context";
 
 function R2B() {
-  const { setInputQ1, inputQ1, inputQ5 } = useContext(ResultsContext);
+  const { setInputQ1, inputQ1, inputQ5, inputQ2 } = useContext(ResultsContext);
 
   const redirectResults = useNavigate();
 
   console.log("inputQ1", inputQ1);
+  console.log("inputQ2", inputQ2);
 
   const handlePrev = () => {
     redirectResults("/Results");

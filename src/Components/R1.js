@@ -42,7 +42,7 @@ function R1() {
             </Typography>
             <Typography variant="body2" className="QCardRecommendationText">
               Insulation is one of the most cost-efficient ways to make your
-              home energy efficient.
+              home energy efficient. Learn how to insulate your home.
             </Typography>
           </CardContent>
           {/* <CardActions className="QCardRecommendationButtonPadding">

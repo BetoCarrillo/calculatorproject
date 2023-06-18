@@ -19,13 +19,14 @@ function RecommendationsLinks() {
       <AllRecommendations />
       <AllExternalDocuments />
       <div className="ButtonBackRecommendationsDiv ">
-        <button
-          className="ButtonBackRecommendations"
+        <Button
           size="small"
+          variant="contained"
+          className="StartOverButton"
           onClick={handleResults}
         >
           BACK
-        </button>
+        </Button>
       </div>
       <div>
         <a

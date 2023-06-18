@@ -37,6 +37,38 @@ function AllExternalDocuments() {
           <div className="CardExternalLinksDiv">
             <Card className="CardExternalLinks">
               <a
+                href="https://changeclubs.global/housing/"
+                target="_blank"
+                rel="noreferrer"
+                className="RecommendationCardLink"
+              >
+                <CardContent>
+                  <Typography
+                    sx={{ fontSize: 9 }}
+                    color="text.secondary"
+                    gutterBottom
+                    className="QCardRecommendationType"
+                  >
+                    Housing
+                  </Typography>
+                  <Typography
+                    component="div"
+                    className="QCardRecommendationTitle"
+                  >
+                    Housing Module
+                  </Typography>
+                  <Typography
+                    sx={{ mb: 1 }}
+                    color="text.secondary"
+                    className="QCardRecommendationSubTitle"
+                  >
+                    Change Clubs
+                  </Typography>
+                </CardContent>
+              </a>
+            </Card>
+            <Card className="CardExternalLinks">
+              <a
                 href="https://drawdown.org/sectors/buildings"
                 target="_blank"
                 rel="noreferrer"

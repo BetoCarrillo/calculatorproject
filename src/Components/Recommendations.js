@@ -120,12 +120,14 @@ function Recommendations() {
             </div>
 
             <div className="ButtonAllRecommendationsDiv">
-              <button
-                className="ButtonAllRecommendations"
+              <Button
+                size="small"
+                variant="contained"
+                className="StartOverButton"
                 onClick={handleAllRecommendations}
               >
-                ALL
-              </button>
+                ALL RECOMMENDATIONS
+              </Button>
             </div>
           </CardContent>
           <div></div>

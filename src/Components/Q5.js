@@ -51,7 +51,7 @@ function Q5() {
     <div className="QCardDiv">
       <h1 className="AreaHeading">HOUSING</h1>
       <div>
-        <Card sx={{ maxWidth: 450 }} className="QCard">
+        <Card sx={{ maxWidth: 450 }} className=" QCard ">
           <CardContent>
             <Typography
               gutterBottom
