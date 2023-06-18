@@ -61,7 +61,12 @@ function R2B() {
             </CardContent>
             <div className="FullRecommendationBackButtonDiv">
               {" "}
-              <Button size="small" onClick={handlePrev}>
+              <Button
+                size="small"
+                variant="contained"
+                className="StartOverButton "
+                onClick={handlePrev}
+              >
                 Back
               </Button>
             </div>

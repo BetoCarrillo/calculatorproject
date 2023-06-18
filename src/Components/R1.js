@@ -11,11 +11,11 @@ import { Link, useNavigate } from "react-router-dom";
 // import Card from "@mui/material/Card";
 
 function R1() {
-  // const redirectR1B = useNavigate();
+  const redirectR1B = useNavigate();
 
-  // const handleMore = () => {
-  //   redirectR1B("/insulateyourhome");
-  // };
+  const handleMore = () => {
+    redirectR1B("/insulateyourhome");
+  };
 
   return (
     <div>
@@ -45,15 +45,17 @@ function R1() {
               home energy efficient. Learn how to insulate your home.
             </Typography>
           </CardContent>
-          {/* <CardActions className="QCardRecommendationButtonPadding">
+          <CardActions className="QCardRecommendationButtonPadding">
             <Button
               onClick={handleMore}
               size="small"
               className="QCardRecommendationButton"
             >
-              Learn More
+              <span className="material-symbols-outlined QCardRecommendationButtonIcon">
+                read_more
+              </span>
             </Button>
-          </CardActions> */}
+          </CardActions>
         </Link>
       </Card>
     </div>

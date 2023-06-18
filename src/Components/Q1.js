@@ -91,15 +91,16 @@ function Q1() {
               </RadioGroup>
             </FormControl>
           </CardContent>
-          <CardActions>
+          <CardActions className="QCardButtons">
+            <Button size="small" onClick={handleSkip}>
+              End
+            </Button>
+
             <Button size="small" onClick={handlePrev}>
               Previous
             </Button>
             <Button size="small" onClick={handleNext}>
               Next
-            </Button>
-            <Button size="small" onClick={handleSkip}>
-              End
             </Button>
           </CardActions>
         </Card>

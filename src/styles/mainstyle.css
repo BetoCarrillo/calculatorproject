@@ -63,6 +63,8 @@
   margin: 0%;
 }
 
+/* QUESTIONS */
+
 .QCardDiv {
   min-width: 300;
   justify-content: center !important;
@@ -118,6 +120,18 @@
 
 /* ANSWERS RESULTS */
 
+.editIcon {
+  font-size: 15px;
+  padding-top: 10px !important;
+  color: rgb(102, 102, 102);
+  padding-bottom: 10px !important;
+}
+.editText {
+  font-size: 10px;
+
+  color: rgb(102, 102, 102);
+}
+
 .StartOverButton {
   background-color: #f79521 !important;
   font-family: "Palanquin Dark", sans-serif !important;
@@ -172,7 +186,7 @@
 }
 .MuiCardContent-root {
   padding-top: 8px !important;
-  padding-bottom: 8px !important;
+  padding-bottom: 0px !important;
 }
 
 .FootprintBiggestDiv {
@@ -230,6 +244,7 @@
   border-radius: 2rem !important;
   min-width: 650px !important;
   margin: 5px;
+  padding-bottom: 10px;
 }
 
 .QTitleRecommendations {
@@ -281,16 +296,22 @@
   font-family: "Palanquin Dark", sans-serif !important;
 }
 
-/* .QCardRecommendationButton {
-  font-size: 7px !important;
+.QCardRecommendationButton {
   font-family: "Palanquin Dark", sans-serif !important;
-  color: #1976d2;
+  color: lightgray;
   padding-left: 5px !important;
-} */
+}
 
-/* .QCardRecommendationButtonPadding {
+.QCardRecommendationButtonPadding {
   padding-top: 0% !important;
-} */
+  justify-content: flex-end;
+}
+.QCardRecommendationButtonIcon {
+  color: rgb(142, 142, 142);
+  font-size: 15px;
+  border: 0% !important;
+  /* font-variation-settings: "wght" 1000; */
+}
 .RecommendationsDiv {
   display: grid;
   grid-auto-flow: column;
@@ -380,6 +401,7 @@
   border-color: #42a889;
   border-width: 0.4rem;
   border-radius: 2rem !important;
+  padding-bottom: 10px;
 }
 .RecommendationFullText {
   font-size: 16px !important;
@@ -401,6 +423,8 @@
   align-items: flex-end !important;
   margin-right: 10px;
   font-family: "Palanquin Dark", sans-serif !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .QTitleFullRecommendation {

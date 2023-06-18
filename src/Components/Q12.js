@@ -32,12 +32,16 @@ function Q12() {
   };
 
   const handleNext = () => {
-    console.log(inputQ12);
     redirectQ13("/Q13");
   };
 
   const handleSkip = () => {
     redirectResults("/Results");
+  };
+
+  const handleAverage = () => {
+    setInputQ12(150);
+    redirectQ13("/Q13");
   };
 
   return (
@@ -67,14 +71,17 @@ function Q12() {
             </FormControl>
           </CardContent>
           <CardActions>
+            <Button size="small" onClick={handleSkip}>
+              End
+            </Button>
             <Button size="small" onClick={handlePrev}>
               Previous
             </Button>
+            <Button size="small" onClick={handleAverage}>
+              Use Average
+            </Button>
             <Button size="small" onClick={handleNext}>
               Next
-            </Button>
-            <Button size="small" onClick={handleSkip}>
-              End
             </Button>
           </CardActions>
         </Card>

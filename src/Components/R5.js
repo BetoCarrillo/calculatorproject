@@ -7,10 +7,16 @@ import {
   Typography,
   CardActionArea,
 } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // import Card from "@mui/material/Card";
 
 function R5() {
+  const redirectR = useNavigate();
+
+  const handleMore = () => {
+    redirectR("/ownsustainably");
+  };
+
   return (
     <div>
       <Card className="CardRecommendationBI">
@@ -38,11 +44,17 @@ function R5() {
               Get some tips if you own your property
             </Typography>
           </CardContent>
-          {/* <CardActions className="QCardRecommendationButtonPadding">
-            <div size="small" className="QCardRecommendationButton">
-              LEARN MORE
-            </div>
-          </CardActions> */}
+          <CardActions className="QCardRecommendationButtonPadding">
+            <Button
+              onClick={handleMore}
+              size="small"
+              className="QCardRecommendationButton"
+            >
+              <span className="material-symbols-outlined QCardRecommendationButtonIcon">
+                read_more
+              </span>
+            </Button>
+          </CardActions>
         </Link>
       </Card>
     </div>

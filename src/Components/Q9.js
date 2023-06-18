@@ -63,14 +63,14 @@ function Q9() {
             </FormControl>
           </CardContent>
           <CardActions>
+            <Button size="small" onClick={handleSkip}>
+              End
+            </Button>
             <Button size="small" onClick={handlePrev}>
               Previous
             </Button>
             <Button size="small" onClick={handleNext}>
               Next
-            </Button>
-            <Button size="small" onClick={handleSkip}>
-              End
             </Button>
           </CardActions>
         </Card>

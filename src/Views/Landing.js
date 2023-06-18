@@ -13,14 +13,6 @@ function Landing() {
     redirectQ1("/Q1");
   };
 
-  const Instructions = `
-  Answer the questions to get to know your CO2 footprint and specific recommendations for the Housing Module.Average data from your location will be used if you don’t know an answer. 
-
-Go straight to the recommendations at any time with the end button. 
-
-Have fun!
-  `;
-
   return (
     <div>
       <div className="StartButtonDiv">
@@ -39,7 +31,7 @@ Have fun!
                 "Answer the questions and get to know your CO2 footprint with specific recommendations for the housing module.",
                 <br></br>,
 
-                "Average data from your location will be used if you don’t know an answer.",
+                "Average data from Germany will be used if you don’t know an answer.",
                 <br></br>,
 
                 "Go straight to the recommendations at any time with the end button. ",

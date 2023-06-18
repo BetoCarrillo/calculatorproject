@@ -50,7 +50,7 @@ function Q15() {
               component="div"
               className="QTitle"
             >
-              What cooling system do you use?
+              What cooling system do you use the most?
             </Typography>
             <FormControl>
               <RadioGroup
@@ -97,14 +97,14 @@ function Q15() {
             </FormControl>
           </CardContent>
           <CardActions>
+            <Button size="small" onClick={handleSkip}>
+              End
+            </Button>
             <Button size="small" onClick={handlePrev}>
               Previous
             </Button>
             <Button size="small" onClick={handleNext}>
               Next
-            </Button>
-            <Button size="small" onClick={handleSkip}>
-              End
             </Button>
           </CardActions>
         </Card>

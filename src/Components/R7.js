@@ -7,10 +7,16 @@ import {
   Typography,
   CardActionArea,
 } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // import Card from "@mui/material/Card";
 
 function R7() {
+  const redirectR = useNavigate();
+
+  const handleMore = () => {
+    redirectR("/roomtemperature");
+  };
+
   return (
     <div>
       <Card className="CardRecommendationEasy">
@@ -39,11 +45,17 @@ function R7() {
               some tips to make it easy.
             </Typography>
           </CardContent>
-          {/* <CardActions className="QCardRecommendationButtonPadding">
-            <div size="small" className="QCardRecommendationButton">
-              LEARN MORE
-            </div>
-          </CardActions> */}
+          <CardActions className="QCardRecommendationButtonPadding">
+            <Button
+              onClick={handleMore}
+              size="small"
+              className="QCardRecommendationButton"
+            >
+              <span className="material-symbols-outlined QCardRecommendationButtonIcon">
+                read_more
+              </span>
+            </Button>
+          </CardActions>
         </Link>
       </Card>
     </div>

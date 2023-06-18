@@ -58,7 +58,6 @@ function Answers() {
           >
             Answers{" "}
           </Typography>
-
           <table responsive="m" className="TableResults">
             <tbody>
               <tr>
@@ -252,6 +251,10 @@ function Answers() {
               </tr>
             </tbody>
           </table>
+          <div>
+            <span class="material-symbols-outlined editIcon">edit_note</span>{" "}
+            <span className="editText">Edit by clicking on each question.</span>
+          </div>
         </CardContent>
         <CardActions>
           <Button

@@ -11,11 +11,11 @@ import { Link, useNavigate } from "react-router-dom";
 // import Card from "@mui/material/Card";
 
 function R2() {
-  // const redirectR1B = useNavigate();
+  const redirectR = useNavigate();
 
-  // const handleMore = () => {
-  //   redirectR1B("/smarthomecontrol");
-  // };
+  const handleMore = () => {
+    redirectR("/heatpump");
+  };
 
   return (
     <div>
@@ -45,15 +45,17 @@ function R2() {
               reduce fossil fuel consumption and greenhouse gas emissions.
             </Typography>
           </CardContent>
-          {/* <CardActions className="QCardRecommendationButtonPadding">
+          <CardActions className="QCardRecommendationButtonPadding">
             <Button
+              onClick={handleMore}
               size="small"
               className="QCardRecommendationButton"
-              onClick={handleMore}
             >
-              Learn More
+              <span className="material-symbols-outlined QCardRecommendationButtonIcon">
+                read_more
+              </span>
             </Button>
-          </CardActions> */}
+          </CardActions>
         </Link>
       </Card>
     </div>

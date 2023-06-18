@@ -78,21 +78,21 @@ function Q13() {
                 <FormControlLabel
                   value="100% renewable"
                   control={<Radio />}
-                  label="100% renewable"
+                  label="Other 100% renewable"
                   onClick={handleChange}
                 />
               </RadioGroup>
             </FormControl>
           </CardContent>
           <CardActions>
+            <Button size="small" onClick={handleSkip}>
+              End
+            </Button>
             <Button size="small" onClick={handlePrev}>
               Previous
             </Button>
             <Button size="small" onClick={handleNext}>
               Next
-            </Button>
-            <Button size="small" onClick={handleSkip}>
-              End
             </Button>
           </CardActions>
         </Card>
