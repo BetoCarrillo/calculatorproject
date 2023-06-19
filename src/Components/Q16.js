@@ -6,7 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "../styles/mainstyle.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
@@ -19,7 +19,6 @@ function Q16() {
 
   const handleChange = (event) => {
     let valueQ16 = event.target.value;
-    console.log(valueQ16);
     setInputQ16(valueQ16);
   };
 
@@ -114,13 +113,13 @@ function Q16() {
       </div>
       <div className="QNumber">16/17</div>
       <div>
-        <a
-          href="https://changeclubs.global/"
+        <Link
+          to="https://changeclubs.global/"
           target={"_blank"}
           rel={"noreferrer"}
         >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
-        </a>
+        </Link>
         <p className="PoweredbyText">Powered by</p>
       </div>
     </div>

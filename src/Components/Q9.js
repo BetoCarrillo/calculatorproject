@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "../styles/mainstyle.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
 import FormControl from "@mui/material/FormControl";
 import { TextField } from "@mui/material";
@@ -29,7 +29,6 @@ function Q9() {
   };
 
   const handleNext = () => {
-    console.log(inputQ9);
     redirectQ10("/Q10");
   };
 
@@ -78,13 +77,13 @@ function Q9() {
 
       <div className="QNumber">9/17</div>
       <div className="CClogo">
-        <a
-          href="https://changeclubs.global/"
+        <Link
+          to="https://changeclubs.global/"
           target={"_blank"}
           rel={"noreferrer"}
         >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
-        </a>
+        </Link>
         <p className="PoweredbyText">Powered by</p>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import { Button, CardContent, Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AllExternalDocuments from "../Components/AllExternalDocuments";
 
 import AllRecommendations from "../Components/AllRecommendations";
@@ -29,13 +29,13 @@ function RecommendationsLinks() {
         </Button>
       </div>
       <div>
-        <a
-          href="https://changeclubs.global/"
+        <Link
+          to="https://changeclubs.global/"
           target={"_blank"}
           rel={"noreferrer"}
         >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
-        </a>
+        </Link>
         <p className="PoweredbyText">Powered by</p>
       </div>
     </div>

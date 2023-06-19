@@ -1,7 +1,7 @@
 import { Button, CardContent, Typography, CardMedia } from "@mui/material";
 import Card from "@mui/material/Card";
 import React, { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
 import Housesustainable from "../styles/Housesustainable.jpeg";
 
@@ -11,8 +11,6 @@ function R4B() {
   const { setInputQ1, inputQ1, inputQ5 } = useContext(ResultsContext);
 
   const redirectResults = useNavigate();
-
-  console.log("inputQ1", inputQ1);
 
   const handlePrev = () => {
     redirectResults("/Results");
@@ -98,13 +96,13 @@ function R4B() {
         </Card>
       </div>
       <div>
-        <a
-          href="https://changeclubs.global/"
+        <Link
+          to="https://changeclubs.global/"
           target={"_blank"}
           rel={"noreferrer"}
         >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
-        </a>
+        </Link>
         <p className="PoweredbyText">Powered by</p>
       </div>
     </div>

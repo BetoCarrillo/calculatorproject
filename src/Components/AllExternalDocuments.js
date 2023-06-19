@@ -36,8 +36,8 @@ function AllExternalDocuments() {
           </Typography>
           <div className="CardExternalLinksDiv">
             <Card className="CardExternalLinks">
-              <a
-                href="https://changeclubs.global/housing/"
+              <Link
+                to="https://changeclubs.global/housing/"
                 target="_blank"
                 rel="noreferrer"
                 className="RecommendationCardLink"
@@ -65,11 +65,11 @@ function AllExternalDocuments() {
                     Change Clubs
                   </Typography>
                 </CardContent>
-              </a>
+              </Link>
             </Card>
             <Card className="CardExternalLinks">
-              <a
-                href="https://drawdown.org/sectors/buildings"
+              <Link
+                to="https://drawdown.org/sectors/buildings"
                 target="_blank"
                 rel="noreferrer"
                 className="RecommendationCardLink"
@@ -97,11 +97,11 @@ function AllExternalDocuments() {
                     Project Drawdown
                   </Typography>
                 </CardContent>
-              </a>
+              </Link>
             </Card>
             <Card className="CardExternalLinks">
-              <a
-                href="https://single-market-economy.ec.europa.eu/industry/sustainability/buildings-and-construction_en"
+              <Link
+                to="https://single-market-economy.ec.europa.eu/industry/sustainability/buildings-and-construction_en"
                 target="_blank"
                 rel="noreferrer"
                 className="RecommendationCardLink"
@@ -129,11 +129,11 @@ function AllExternalDocuments() {
                     European Commission
                   </Typography>
                 </CardContent>
-              </a>
+              </Link>
             </Card>
             <Card className="CardExternalLinks">
-              <a
-                href="https://www.unep.org/news-and-stories/press-release/co2-emissions-buildings-and-construction-hit-new-high-leaving-sector"
+              <Link
+                to="https://www.unep.org/news-and-stories/press-release/co2-emissions-buildings-and-construction-hit-new-high-leaving-sector"
                 target="_blank"
                 rel="noreferrer"
                 className="RecommendationCardLink"
@@ -161,7 +161,7 @@ function AllExternalDocuments() {
                     United Nations
                   </Typography>
                 </CardContent>
-              </a>
+              </Link>
             </Card>
           </div>
         </CardContent>

@@ -1,6 +1,4 @@
 import {
-  Button,
-  CardActions,
   CardContent,
   FormControl,
   FormControlLabel,
@@ -36,7 +34,7 @@ function Footprint() {
       if (inputQ2 === "Detached house") {
         // console.log("inputQ2", inputQ2);
         if (inputQ8 > 0) {
-          console.log("M2MORE0", inputQ8);
+          // console.log("M2MORE0", inputQ8);
           // let inputQ8Number = Number(inputQ8);
           // console.log("inputQ8Number", inputQ8Number);
           setQ12Calc(inputQ8 * 150 * 0.488);
@@ -225,7 +223,7 @@ function Footprint() {
       if (inputQ2 === "Apartment") {
         // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Heating oil") {
-          console.log("Heating oil", inputQ14);
+          // console.log("Heating oil", inputQ14);
           setQ14Calc(0.35 * 10000);
           // console.log("Q14Calc", Q14Calc);
         }
@@ -516,7 +514,7 @@ function Footprint() {
   const handleChangeBiogas = (event) => {};
 
   useEffect(() => {
-    console.log("useeffect run");
+    // console.log("useeffect run");
     handleChangeKg();
     Q12Calculation();
     Q14Calculation();

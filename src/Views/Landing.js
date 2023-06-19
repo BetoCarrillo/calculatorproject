@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import CClogo from "../styles/CClogo.png";
 import Q1 from "../Components/Q1";
 import "../styles/mainstyle.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Fade, Tooltip, Zoom } from "@mui/material";
 
 function Landing() {
@@ -58,13 +58,13 @@ function Landing() {
         </Tooltip>
       </div>
       <div className="CClogo">
-        <a
-          href="https://changeclubs.global/"
+        <Link
+          to="https://changeclubs.global/"
           target={"_blank"}
           rel={"noreferrer"}
         >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
-        </a>
+        </Link>
         <p className="PoweredbyText">Powered by</p>
       </div>
     </div>

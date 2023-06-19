@@ -18,54 +18,21 @@ import { ResultsContext } from "../Context/context";
 
 function Recommendations() {
   const {
-    // SetInputQ1,
-    // inputQ1,
-    // inputQ2,
     inputQ3,
-    // inputQ4,
+
     inputQ5,
     inputQ6,
     inputQ7,
-    // inputQ8,
-    // inputQ9,
-    // inputQ10,
-    // inputQ11,
-    // inputQ12,
+
     inputQ13,
     inputQ14,
     inputQ15,
-    // inputQ16,
-    // inputQ17,
   } = useContext(ResultsContext);
 
-  // console.log(inputQ5);
   const redirectRecommendations = useNavigate();
   const handleAllRecommendations = () => {
     redirectRecommendations("/RecommendationsLinks");
   };
-
-  // console.log("inputQ5String", inputQ5.toString());
-
-  // if (
-  //   inputQ5.toString ===
-  //   "Doors and windows ,Roof and attic ,Floors and ceilings ,Outer walls ,Ducts and Pipes"
-  // ) {
-  //   console.log("yes");
-  // } else {
-  //   console.log("no");
-  // }
-
-  // useEffect(() => {
-  //   console.log("useeffectrun");
-  // }, [inputQ1]);
-
-  // [
-  //   "Doors and windows ",
-  //   "Roof and attic ",
-  //   "Floors and ceilings ",
-  //   "Outer walls ",
-  //   "Ducts and Pipes",
-  // ];
 
   return (
     <div>

@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import Card from "@mui/material/Card";
 import React, { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
 import Retrofit from "../styles/Retrofit.jpeg";
 import { styled } from "@mui/material/styles";
@@ -26,8 +26,6 @@ function R1B() {
     redirectResults("/Results");
   };
 
-  console.log("inputQ2", inputQ2);
-
   const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
     return <IconButton {...other} />;
@@ -40,12 +38,10 @@ function R1B() {
   }));
 
   const handleExpandClick = (e) => {
-    console.log(e);
     setExpanded(!expanded);
   };
 
   const expandAccordeon = (e) => {
-    console.log(e);
     setExpanded(!expanded);
   };
 
@@ -351,13 +347,13 @@ function R1B() {
       </div>
 
       <div>
-        <a
-          href="https://changeclubs.global/"
+        <Link
+          to="https://changeclubs.global/"
           target={"_blank"}
           rel={"noreferrer"}
         >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
-        </a>
+        </Link>
         <p className="PoweredbyText">Powered by</p>
       </div>
     </div>

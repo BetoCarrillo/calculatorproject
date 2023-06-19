@@ -1,7 +1,7 @@
 import { Button, CardContent, Typography, CardMedia } from "@mui/material";
 import Card from "@mui/material/Card";
 import React, { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
 import Retrofit from "../styles/Retrofit.jpeg";
 
@@ -40,13 +40,13 @@ function R11B() {
 
             <Typography variant="body2" className="InsulationFullText">
               Learn how to do it{" "}
-              <a
-                href="https://www.ecowatch.com/solar-oven-cooker-diy.html"
+              <Link
+                to="https://www.ecowatch.com/solar-oven-cooker-diy.html"
                 target={"_blank"}
                 rel={"noreferrer"}
               >
                 here.
-              </a>{" "}
+              </Link>{" "}
             </Typography>
           </CardContent>
           <div className="FullRecommendationBackButtonDiv">
@@ -63,13 +63,13 @@ function R11B() {
         </Card>
       </div>
       <div>
-        <a
+        <Link
           href="https://changeclubs.global/"
           target={"_blank"}
           rel={"noreferrer"}
         >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
-        </a>
+        </Link>
         <p className="PoweredbyText">Powered by</p>
       </div>
     </div>

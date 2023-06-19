@@ -32,7 +32,6 @@ function Answers() {
 
   const handleChange = (event) => {
     let valueQ2 = event.target.value;
-    console.log(valueQ2);
   };
 
   const redirectQ17 = useNavigate();
