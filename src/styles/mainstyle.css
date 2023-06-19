@@ -23,6 +23,20 @@
   cursor: pointer;
 }
 
+.TooltipButton {
+  color: gray;
+  border: none !important;
+  background-color: #f9ce64;
+  cursor: pointer;
+  padding: 2px;
+}
+.TooltipButtonz:hover {
+  color: gray;
+  border: none !important;
+  background-color: #f9ce64;
+  box-decoration-break: none;
+}
+
 .StartButton {
   background-color: #f79521 !important;
   font-family: "Palanquin Dark", sans-serif !important;
@@ -304,12 +318,14 @@
 
 .QCardRecommendationButtonPadding {
   padding-top: 0% !important;
+  padding-bottom: 0% !important;
   justify-content: flex-end;
 }
 .QCardRecommendationButtonIcon {
   color: rgb(142, 142, 142);
   font-size: 15px;
   border: 0% !important;
+  padding: 0%;
   /* font-variation-settings: "wght" 1000; */
 }
 .RecommendationsDiv {
@@ -404,6 +420,7 @@
   border-radius: 2rem !important;
   padding-bottom: 10px;
 }
+
 .RecommendationFullText {
   font-size: 16px !important;
   font-family: "Palanquin Dark", sans-serif !important;

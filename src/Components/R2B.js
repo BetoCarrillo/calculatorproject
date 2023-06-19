@@ -24,53 +24,51 @@ function R2B() {
       <h1 className="AreaHeading">HOUSING</h1>
       <div>
         <Card className="QCardFullRecommendation">
-          <Card>
-            <CardMedia
-              component="img"
-              height="140"
-              image={Retrofit}
-              alt="retrofityourhome"
-            />
-            <CardContent>
-              <Typography
-                gutterBottom
-                variant="h5"
-                component="div"
-                className="QTitleFullRecommendation"
-              >
-                Upgrade to heat pump
-              </Typography>
-              <Typography
-                sx={{ mb: 2 }}
-                color="text.secondary"
-                className="QSubTitleFullRecommendation"
-              >
-                Biggest Impact
-              </Typography>
+          <CardMedia
+            component="img"
+            height="140"
+            image={Retrofit}
+            alt="retrofityourhome"
+          />
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              className="QTitleFullRecommendation"
+            >
+              Upgrade to heat pump
+            </Typography>
+            <Typography
+              sx={{ mb: 2 }}
+              color="text.secondary"
+              className="QSubTitleFullRecommendation"
+            >
+              Biggest Impact
+            </Typography>
 
-              <Typography variant="body2" className="RecommendationFullText">
-                Electric powered high-efficiency heat pumps transfer heat from a
-                cold space to a hot one. So in winter, the pump transfers energy
-                from the outside to inside of the building and in summer it
-                pumps hot air from the inside to the outside. Heat pumps can
-                replace conventional heating, air conditioning and ventilation
-                systems – and reduce fossil fuel consumption and greenhouse gas
-                emissions like that. If you live in a place with cold winters,
-                you might have to insulate your home first
-              </Typography>
-            </CardContent>
-            <div className="FullRecommendationBackButtonDiv">
-              {" "}
-              <Button
-                size="small"
-                variant="contained"
-                className="StartOverButton "
-                onClick={handlePrev}
-              >
-                Back
-              </Button>
-            </div>
-          </Card>
+            <Typography variant="body2" className="RecommendationFullText">
+              Electric powered high-efficiency heat pumps transfer heat from a
+              cold space to a hot one. So in winter, the pump transfers energy
+              from the outside to inside of the building and in summer it pumps
+              hot air from the inside to the outside. Heat pumps can replace
+              conventional heating, air conditioning and ventilation systems –
+              and reduce fossil fuel consumption and greenhouse gas emissions
+              like that. If you live in a place with cold winters, you might
+              have to insulate your home first
+            </Typography>
+          </CardContent>
+          <div className="FullRecommendationBackButtonDiv">
+            {" "}
+            <Button
+              size="small"
+              variant="contained"
+              className="StartOverButton "
+              onClick={handlePrev}
+            >
+              Back
+            </Button>
+          </div>
         </Card>
       </div>
       <div>

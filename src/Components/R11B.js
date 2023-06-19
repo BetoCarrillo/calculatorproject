@@ -21,47 +21,45 @@ function R11B() {
       <h1 className="AreaHeading">HOUSING</h1>
       <div>
         <Card className="QCardFullRecommendation">
-          <Card>
-            <CardContent>
-              <Typography
-                gutterBottom
-                variant="h5"
-                component="div"
-                className="QTitleFullRecommendation"
-              >
-                Have a Do-it-yourself (DIY) solar cooker party.
-              </Typography>
-              <Typography
-                sx={{ mb: 2 }}
-                color="text.secondary"
-                className="QSubTitleFullRecommendation"
-              >
-                Fun tip
-              </Typography>
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              className="QTitleFullRecommendation"
+            >
+              Have a Do-it-yourself (DIY) solar cooker party.
+            </Typography>
+            <Typography
+              sx={{ mb: 2 }}
+              color="text.secondary"
+              className="QSubTitleFullRecommendation"
+            >
+              Fun tip
+            </Typography>
 
-              <Typography variant="body2" className="InsulationFullText">
-                Learn how to do it{" "}
-                <a
-                  href="https://www.ecowatch.com/solar-oven-cooker-diy.html"
-                  target={"_blank"}
-                  rel={"noreferrer"}
-                >
-                  here.
-                </a>{" "}
-              </Typography>
-            </CardContent>
-            <div className="FullRecommendationBackButtonDiv">
-              {" "}
-              <Button
-                size="small"
-                variant="contained"
-                className="StartOverButton "
-                onClick={handlePrev}
+            <Typography variant="body2" className="InsulationFullText">
+              Learn how to do it{" "}
+              <a
+                href="https://www.ecowatch.com/solar-oven-cooker-diy.html"
+                target={"_blank"}
+                rel={"noreferrer"}
               >
-                Back
-              </Button>
-            </div>
-          </Card>
+                here.
+              </a>{" "}
+            </Typography>
+          </CardContent>
+          <div className="FullRecommendationBackButtonDiv">
+            {" "}
+            <Button
+              size="small"
+              variant="contained"
+              className="StartOverButton "
+              onClick={handlePrev}
+            >
+              Back
+            </Button>
+          </div>
         </Card>
       </div>
       <div>

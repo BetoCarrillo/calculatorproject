@@ -11,12 +11,6 @@ import { Link, useNavigate } from "react-router-dom";
 // import Card from "@mui/material/Card";
 
 function R9() {
-  const redirectR = useNavigate();
-
-  const handleMore = () => {
-    redirectR("/ventilation");
-  };
-
   return (
     <div>
       <Card className="CardRecommendationEasy">
@@ -46,15 +40,16 @@ function R9() {
             </Typography>
           </CardContent>
           <CardActions className="QCardRecommendationButtonPadding">
-            <Button
-              onClick={handleMore}
+            <Link
+              to="/ventilation"
+              // onClick={handleMore}
               size="small"
               className="QCardRecommendationButton"
             >
               <span className="material-symbols-outlined QCardRecommendationButtonIcon">
-                read_more
+                add_circle
               </span>
-            </Button>
+            </Link>
           </CardActions>
         </Link>
       </Card>

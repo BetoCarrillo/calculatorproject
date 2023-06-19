@@ -21,41 +21,39 @@ function R10B() {
       <h1 className="AreaHeading">HOUSING</h1>
       <div>
         <Card className="QCardFullRecommendation">
-          <Card>
-            <CardContent>
-              <Typography
-                gutterBottom
-                variant="h5"
-                component="div"
-                className="QTitleFullRecommendation"
-              >
-                Play detective
-              </Typography>
-              <Typography
-                sx={{ mb: 2 }}
-                color="text.secondary"
-                className="QSubTitleFullRecommendation"
-              >
-                Fun tip
-              </Typography>
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              className="QTitleFullRecommendation"
+            >
+              Play detective
+            </Typography>
+            <Typography
+              sx={{ mb: 2 }}
+              color="text.secondary"
+              className="QSubTitleFullRecommendation"
+            >
+              Fun tip
+            </Typography>
 
-              <Typography variant="body2" className="InsulationFullText">
-                Go around your house and find all the areas where energy/heat is
-                being used and brainstorm ways to reduce it and fix it.
-              </Typography>
-            </CardContent>
-            <div className="FullRecommendationBackButtonDiv">
-              {" "}
-              <Button
-                size="small"
-                variant="contained"
-                className="StartOverButton "
-                onClick={handlePrev}
-              >
-                Back
-              </Button>
-            </div>
-          </Card>
+            <Typography variant="body2" className="InsulationFullText">
+              Go around your house and find all the areas where energy/heat is
+              being used and brainstorm ways to reduce it and fix it.
+            </Typography>
+          </CardContent>
+          <div className="FullRecommendationBackButtonDiv">
+            {" "}
+            <Button
+              size="small"
+              variant="contained"
+              className="StartOverButton "
+              onClick={handlePrev}
+            >
+              Back
+            </Button>
+          </div>
         </Card>
       </div>
       <div>

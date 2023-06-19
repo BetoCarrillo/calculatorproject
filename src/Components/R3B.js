@@ -21,51 +21,49 @@ function R3B() {
       <h1 className="AreaHeading">HOUSING</h1>
       <div>
         <Card className="QCardFullRecommendation">
-          <Card>
-            <CardMedia
-              component="img"
-              height="140"
-              image={Retrofit}
-              alt="retrofityourhome"
-            />
-            <CardContent>
-              <Typography
-                gutterBottom
-                variant="h5"
-                component="div"
-                className="QTitleFullRecommendation"
-              >
-                Install smart homecontrols
-              </Typography>
-              <Typography
-                sx={{ mb: 2 }}
-                color="text.secondary"
-                className="QSubTitleFullRecommendation"
-              >
-                Biggest Impact
-              </Typography>
+          <CardMedia
+            component="img"
+            height="140"
+            image={Retrofit}
+            alt="retrofityourhome"
+          />
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              className="QTitleFullRecommendation"
+            >
+              Install smart homecontrols
+            </Typography>
+            <Typography
+              sx={{ mb: 2 }}
+              color="text.secondary"
+              className="QSubTitleFullRecommendation"
+            >
+              Biggest Impact
+            </Typography>
 
-              <Typography variant="body2" className="RecommendationFullText">
-                Besides controlling the room to the adequate temperature,
-                installing a smart home control will help you regulate the
-                lights and turn them off in case you forget or you leave the
-                room. There are also smart controls for heating radiators. Also
-                leak sensors can be added to control any leaks and save water
-                from being wasted.
-              </Typography>
-            </CardContent>
-            <div className="FullRecommendationBackButtonDiv">
-              {" "}
-              <Button
-                size="small"
-                variant="contained"
-                className="StartOverButton "
-                onClick={handlePrev}
-              >
-                Back
-              </Button>
-            </div>
-          </Card>
+            <Typography variant="body2" className="RecommendationFullText">
+              Besides controlling the room to the adequate temperature,
+              installing a smart home control will help you regulate the lights
+              and turn them off in case you forget or you leave the room. There
+              are also smart controls for heating radiators. Also leak sensors
+              can be added to control any leaks and save water from being
+              wasted.
+            </Typography>
+          </CardContent>
+          <div className="FullRecommendationBackButtonDiv">
+            {" "}
+            <Button
+              size="small"
+              variant="contained"
+              className="StartOverButton "
+              onClick={handlePrev}
+            >
+              Back
+            </Button>
+          </div>
         </Card>
       </div>
       <div>

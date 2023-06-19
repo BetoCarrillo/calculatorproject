@@ -21,48 +21,46 @@ function R8B() {
       <h1 className="AreaHeading">HOUSING</h1>
       <div>
         <Card className="QCardFullRecommendation">
-          <Card>
-            <CardContent>
-              <Typography
-                gutterBottom
-                variant="h5"
-                component="div"
-                className="QTitleFullRecommendation"
-              >
-                Upgrade to LED light bulbs
-              </Typography>
-              <Typography
-                sx={{ mb: 2 }}
-                color="text.secondary"
-                className="QSubTitleFullRecommendation"
-              >
-                Easy to do
-              </Typography>
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              className="QTitleFullRecommendation"
+            >
+              Upgrade to LED light bulbs
+            </Typography>
+            <Typography
+              sx={{ mb: 2 }}
+              color="text.secondary"
+              className="QSubTitleFullRecommendation"
+            >
+              Easy to do
+            </Typography>
 
-              <Typography
-                sx={{ mb: 2 }}
-                color="text.secondary"
-                className="QInsulationsDiv"
-              >
-                Maintain your room at an adequate temperature.
-              </Typography>
-              <Typography variant="body2" className="InsulationFullText">
-                This can reduce your electricity consumption by up to 80% and
-                they also have a longer lifespan than traditional light bulbs.
-              </Typography>
-            </CardContent>
-            <div className="FullRecommendationBackButtonDiv">
-              {" "}
-              <Button
-                size="small"
-                variant="contained"
-                className="StartOverButton "
-                onClick={handlePrev}
-              >
-                Back
-              </Button>
-            </div>
-          </Card>
+            <Typography
+              sx={{ mb: 2 }}
+              color="text.secondary"
+              className="QInsulationsDiv"
+            >
+              Maintain your room at an adequate temperature.
+            </Typography>
+            <Typography variant="body2" className="InsulationFullText">
+              This can reduce your electricity consumption by up to 80% and they
+              also have a longer lifespan than traditional light bulbs.
+            </Typography>
+          </CardContent>
+          <div className="FullRecommendationBackButtonDiv">
+            {" "}
+            <Button
+              size="small"
+              variant="contained"
+              className="StartOverButton "
+              onClick={handlePrev}
+            >
+              Back
+            </Button>
+          </div>
         </Card>
       </div>
       <div>

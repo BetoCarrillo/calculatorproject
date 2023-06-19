@@ -252,8 +252,12 @@ function Answers() {
             </tbody>
           </table>
           <div>
-            <span class="material-symbols-outlined editIcon">edit_note</span>{" "}
-            <span className="editText">Edit by clicking on each question.</span>
+            <span className="material-symbols-outlined editIcon">
+              edit_note
+            </span>{" "}
+            <span className="editText">
+              Edit the answers by clicking each question.
+            </span>
           </div>
         </CardContent>
         <CardActions>

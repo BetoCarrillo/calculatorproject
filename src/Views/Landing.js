@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "@mui/material/Button";
 import CClogo from "../styles/CClogo.png";
 import Q1 from "../Components/Q1";
@@ -7,6 +7,8 @@ import { useNavigate } from "react-router-dom";
 import { Fade, Tooltip, Zoom } from "@mui/material";
 
 function Landing() {
+  const [showTooltip, setShowTooltip] = useState(false);
+
   const redirectQ1 = useNavigate();
 
   const handleStart = () => {
@@ -41,8 +43,18 @@ function Landing() {
               ]}
             </span>
           }
+          open={showTooltip}
+          onOpen={() => setShowTooltip(true)}
+          onClose={() => setShowTooltip(false)}
         >
-          <span className="material-symbols-outlined InfoButton">info</span>
+          <span
+            variant="outlined"
+            color="primary"
+            onClick={() => setShowTooltip(!showTooltip)}
+            className="TooltipButton"
+          >
+            <span className="material-symbols-outlined ">info</span>
+          </span>
         </Tooltip>
       </div>
       <div className="CClogo">

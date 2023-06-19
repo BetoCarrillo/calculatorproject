@@ -42,15 +42,16 @@ function R10() {
             </Typography>
           </CardContent>
           <CardActions className="QCardRecommendationButtonPadding">
-            <Button
-              onClick={handleMore}
+            <Link
+              to="/detective"
+              // onClick={handleMore}
               size="small"
               className="QCardRecommendationButton"
             >
               <span className="material-symbols-outlined QCardRecommendationButtonIcon">
-                read_more
+                add_circle
               </span>
-            </Button>
+            </Link>
           </CardActions>
         </Link>
       </Card>
