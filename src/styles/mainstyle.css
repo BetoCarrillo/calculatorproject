@@ -385,6 +385,7 @@
   border-width: 0.4rem;
   border-radius: 2rem !important;
   min-width: auto !important;
+  padding-bottom: 10px;
 }
 
 .CardExternalLinks {
