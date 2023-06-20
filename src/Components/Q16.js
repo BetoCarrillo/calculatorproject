@@ -66,7 +66,7 @@ function Q16() {
                 <FormControlLabel
                   value="Methane (natural gas)"
                   control={<Radio />}
-                  label="Methane (natural gas)"
+                  label="Gas or Heating Oil"
                   onClick={handleChange}
                 />
 
