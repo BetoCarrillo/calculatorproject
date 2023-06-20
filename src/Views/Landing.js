@@ -26,6 +26,7 @@ function Landing() {
           Start
         </Button>
         <Tooltip
+          disableInteractive
           disableTouchListener
           leaveDelay={15000}
           TransitionComponent={Zoom}
