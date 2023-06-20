@@ -26,7 +26,8 @@ function Landing() {
           Start
         </Button>
         <Tooltip
-          leaveDelay={1000}
+          disableTouchListener
+          leaveDelay={15000}
           TransitionComponent={Zoom}
           title={
             <span>
@@ -53,6 +54,7 @@ function Landing() {
             color="primary"
             onClick={() => setShowTooltip(!showTooltip)}
             className="TooltipButton"
+            leaveDelay={15000}
           >
             <span className="material-symbols-outlined ">info</span>
           </span>
