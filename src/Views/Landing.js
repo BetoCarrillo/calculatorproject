@@ -26,7 +26,7 @@ function Landing() {
           Start
         </Button>
         <Tooltip
-          enterNextDelay={2000}
+          TransitionProps={{ timeout: 1500 }}
           TransitionComponent={Zoom}
           title={
             <span>
