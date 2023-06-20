@@ -21,7 +21,7 @@ function Footprint() {
     CalcTotal,
     setCalcTotal,
   } = useContext(ResultsContext);
-
+  const [Trucks, setTrucks] = useState();
   const [Q12Calc, setQ12Calc] = useState();
   const [Q14Calc, setQ14Calc] = useState();
   const [Q15Calc, setQ15Calc] = useState();
@@ -30,47 +30,25 @@ function Footprint() {
 
   const Q12Calculation = () => {
     if (inputQ1 === "Germany") {
-      // console.log("inputQ1", inputQ1);
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ8 > 0) {
-          // console.log("M2MORE0", inputQ8);
-          // let inputQ8Number = Number(inputQ8);
-          // console.log("inputQ8Number", inputQ8Number);
           setQ12Calc(inputQ8 * 150 * 0.488);
-          // console.log("Q12CalcMORE0", Q12Calc);
         } else {
-          // console.log("M20LESS", inputQ8);
           setQ12Calc(9516);
-          // console.log("M20LESS", Q12Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ8 > 0) {
-          // console.log("M2MORE0", inputQ8);
-          // let inputQ8Number = Number(inputQ8);
-          // console.log("inputQ8Number", inputQ8Number);
           setQ12Calc(inputQ8 * 120 * 0.488);
-          // console.log("Q12CalcMORE0", Q12Calc);
         } else {
-          // console.log("M20LESS", inputQ8);
           setQ12Calc(6441, 6);
-          // console.log("M20LESS", Q12Calc);
         }
       }
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ8 > 0) {
-          // console.log("M2MORE0", inputQ8);
-          // let inputQ8Number = Number(inputQ8);
-          // console.log("inputQ8Number", inputQ8Number);
           setQ12Calc(inputQ8 * 100 * 0.488);
-          // console.log("Q12CalcMORE0", Q12Calc);
         } else {
-          // console.log("M20LESS", inputQ8);
           setQ12Calc(2928);
-          // console.log("M20LESS", Q12Calc);
         }
       }
     }
@@ -82,166 +60,105 @@ function Footprint() {
     let ApartConsumption = 10000;
 
     if (inputQ1 === "Germany") {
-      // console.log("inputQ1", inputQ1);
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Heat pump") {
-          // console.log("Heatpump", inputQ14);
           setQ14Calc(0 * 20000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Electricity") {
-          // console.log("Electricity", inputQ14);
           setQ14Calc(0.6 * 20000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Methane") {
-          // console.log("Methane", inputQ14);
           setQ14Calc(0.3 * 20000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Heating oil") {
-          // console.log("Heating oil", inputQ14);
           setQ14Calc(0.35 * 20000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Wood pellets") {
-          // console.log("Wood pellets", inputQ14);
           setQ14Calc(0.05 * 20000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Biogas") {
-          // console.log("Biogas", inputQ14);
           setQ14Calc(0 * 20000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "none") {
-          // console.log("none", inputQ14);
           setQ14Calc(0);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Heat pump") {
-          // console.log("Heatpump", inputQ14);
           setQ14Calc(0 * 15000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Electricity") {
-          // console.log("Electricity", inputQ14);
           setQ14Calc(0.6 * 15000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Methane") {
-          // console.log("Methane", inputQ14);
           setQ14Calc(0.3 * 15000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Heating oil") {
-          // console.log("Heating oil", inputQ14);
           setQ14Calc(0.35 * 15000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Wood pellets") {
-          // console.log("Wood pellets", inputQ14);
           setQ14Calc(0.05 * 15000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Biogas") {
-          // console.log("Biogas", inputQ14);
           setQ14Calc(0);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
 
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "none") {
-          // console.log("none", inputQ14);
           setQ14Calc(0);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Heat pump") {
-          // console.log("Heatpump", inputQ14);
           setQ14Calc(0 * 10000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Electricity") {
-          // console.log("Electricity", inputQ14);
           setQ14Calc(0.6 * 10000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Methane") {
-          console.log("Methane", inputQ14);
           setQ14Calc(0.3 * 10000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Heating oil") {
-          // console.log("Heating oil", inputQ14);
           setQ14Calc(0.35 * 10000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Wood pellets") {
-          // console.log("Wood pellets", inputQ14);
           setQ14Calc(0.05 * 10000);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "Biogas") {
-          // console.log("Biogas", inputQ14);
           setQ14Calc(0);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
       if (inputQ2 === "Apartment") {
@@ -257,9 +174,7 @@ function Footprint() {
     if (inputQ1 === "Germany") {
       if (inputQ2 === "Detached house") {
         if (inputQ15 === "Heat pump") {
-          // console.log("Heatpump", inputQ15);
           setQ15Calc(750 * TO1);
-          // console.log("Q15Calc", Q15Calc);
         }
       }
       if (inputQ2 === "Detached house") {
@@ -306,7 +221,6 @@ function Footprint() {
       if (inputQ2 === "Semi-detached house") {
         if (inputQ15 === "none") {
           setQ15Calc(0);
-          // console.log("Q15Calc", Q15Calc);
         }
       }
       if (inputQ2 === "Apartment") {
@@ -421,17 +335,29 @@ function Footprint() {
   };
 
   const handleChangeKg = (event) => {
+    setTrucks(false);
+    // console.log("TrucksTon", Trucks);
     setCalcTotal(kg);
   };
   const handleChangeTon = (event) => {
+    setTrucks(false);
+    // console.log("TrucksTon", Trucks);
     setCalcTotal(kg / 1000);
   };
 
   const handleChangeTruck = (event) => {
-    let Trucks = Math.round(kg / 9600);
-    setCalcTotal(Trucks);
-    console.log(CalcTotal);
+    let TrucksRounded = Math.round(kg / 9600);
+    setTrucks(true);
+    setCalcTotal(TrucksRounded);
+    // console.log("TrucksTruck", Trucks);
+    // return Trucks;
   };
+
+  // let Trucks = Math.round(kg / 9600);
+  // let Trucks = 2;
+  // let TrucksDigits = String(Trucks).split("");
+  // console.log("TrucksDigits", TrucksDigits);
+
   // const handleChangeTruck = (event) => {
   // setCalcTotal(Trucks);
 
@@ -453,6 +379,7 @@ function Footprint() {
     Q14Calculation();
     Q15Calculation();
     Q16Calculation();
+    setTrucks();
   }, [Q12Calc, Q14Calc, Q15Calc, Q16Calc]);
 
   return (
@@ -515,7 +442,27 @@ function Footprint() {
                 </RadioGroup>
               </FormControl>
             </CardContent>
-            {isNaN(CalcTotal) ? (
+            {Trucks !== true && !isNaN(CalcTotal) ? (
+              <div className="DisableRecommendation"> Trucks not shown</div>
+            ) : (
+              <div className="CalculationTotal">
+                <span className="CO2Text">
+                  Your footprint is equivalent for &nbsp;
+                </span>
+                <span className="TrucksNumber"> {CalcTotal} </span>
+                <span className="CO2Text">
+                  {" "}
+                  &nbsp; German truck annually &nbsp;
+                </span>
+
+                {/* <span className="material-symbols-outlined IconPadding">
+                  {" "}
+                  local_shipping
+                </span> */}
+              </div>
+            )}
+
+            {!isNaN(CalcTotal) && Trucks === true ? (
               <div className="DisableRecommendation">
                 {" "}
                 CALCULATION NOT READY
@@ -528,8 +475,14 @@ function Footprint() {
             )}
 
             {/* {CalcTotal &&
-              CalcTotal.toString().map((truck) => (
-                <span className="material-symbols-outlined IconPadding">
+              CalcTotal.map((_truck, i) => (
+                <span className="material-symbols-outlined IconPadding" key={i}>
+                  local_shipping
+                </span>
+              ))} */}
+            {/* {TrucksDigits &&
+              TrucksDigits.map((_truck, i) => (
+                <span className="material-symbols-outlined IconPadding" key={i}>
                   local_shipping
                 </span>
               ))} */}
