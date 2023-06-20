@@ -27,8 +27,6 @@ function Landing() {
         </Button>
         <Tooltip
           disableInteractive
-          disableTouchListener
-          leaveDelay={15000}
           TransitionComponent={Zoom}
           title={
             <span>
