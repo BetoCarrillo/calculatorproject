@@ -26,6 +26,7 @@ function Landing() {
           Start
         </Button>
         <Tooltip
+          // TransitionProps={{ timeout: 1000 }}
           TransitionComponent={Zoom}
           title={
             <span>

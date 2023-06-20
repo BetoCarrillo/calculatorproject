@@ -245,11 +245,8 @@ function Footprint() {
         }
       }
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ14 === "none") {
-          // console.log("none", inputQ14);
           setQ14Calc(0);
-          // console.log("Q14Calc", Q14Calc);
         }
       }
     }
@@ -258,9 +255,7 @@ function Footprint() {
     let TO1 = 0.488;
 
     if (inputQ1 === "Germany") {
-      // console.log("inputQ1", inputQ1);
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ15 === "Heat pump") {
           // console.log("Heatpump", inputQ15);
           setQ15Calc(750 * TO1);
@@ -268,116 +263,75 @@ function Footprint() {
         }
       }
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ15 === "Fans") {
-          // console.log("Fans", inputQ15);
           setQ15Calc(300 * TO1);
-          // console.log("Q15Calc", Q15Calc);
         }
       }
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ15 === "A/C") {
-          // console.log("A/C", inputQ15);
           setQ15Calc(2000 * TO1);
-          // console.log("Q15Calc", Q15Calc);
         }
       }
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ15 === "Natural ventilation") {
-          // console.log("Natural ventilation", inputQ15);
           setQ15Calc(0);
-          // console.log("Q15Calc", Q15Calc);
         }
       }
 
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ15 === "none") {
-          // console.log("none", inputQ15);
           setQ15Calc(0);
-          // console.log("Q15Calc", Q15Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ15 === "Heat pump") {
-          // console.log("Heatpump", inputQ15);
           setQ15Calc(750 * 0.488);
-          // console.log("Q15Calc", Q15Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ15 === "Fans") {
-          // console.log("Fans", inputQ15);
           setQ15Calc(300 * TO1);
-          // console.log("Q15Calc", Q15Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ15 === "A/C") {
-          // console.log("A/C", inputQ15);
           setQ15Calc(2000 * TO1);
-          // console.log("Q15Calc", Q15Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ15 === "Natural ventilation") {
-          // console.log("Natural ventilation", inputQ15);
           setQ15Calc(0);
-          // console.log("Q15Calc", Q15Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ15 === "none") {
-          // console.log("none", inputQ15);
           setQ15Calc(0);
           // console.log("Q15Calc", Q15Calc);
         }
       }
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ15 === "Heat pump") {
-          // console.log("Heatpump", inputQ15);
           setQ15Calc(650 * TO1);
-          // console.log("Q15Calc", Q15Calc);
         }
       }
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ15 === "Fans") {
-          // console.log("Fans", inputQ15);
           setQ15Calc(200 * TO1);
-          // console.log("Q15Calc", Q15Calc);
         }
       }
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ15 === "A/C") {
-          // console.log("A/C", inputQ15);
           setQ15Calc(1500 * TO1);
-          // console.log("Q15Calc", Q15Calc);
         }
       }
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ15 === "Natural ventilation") {
-          // console.log("Natural ventilation", inputQ15);
           setQ15Calc(0);
-          // console.log("Q15Calc", Q15Calc);
         }
       }
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ15 === "none") {
-          // console.log("none", inputQ15);
           setQ15Calc(0);
-          // console.log("Q15Calc", Q15Calc);
         }
       }
     }
@@ -386,109 +340,70 @@ function Footprint() {
   const Q16Calculation = () => {
     let TO1 = 0.488;
     if (inputQ1 === "Germany") {
-      // console.log("inputQ1", inputQ1);
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ16 === "Electricity") {
-          // console.log("Electricity", inputQ16);
           setQ16Calc(4500 * TO1);
-          // console.log("Q16Calc", Q16Calc);
         }
       }
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ16 === "Methane (natural gas)") {
-          // console.log("Methane (natural gas)", inputQ16);
           setQ16Calc(6000 * TO1);
-          // console.log("Q16Calc", Q16Calc);
         }
       }
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ16 === "Biogas") {
-          // console.log("Biogas", inputQ16);
           setQ16Calc(7000 * TO1);
-          // console.log("Q16Calc", Q16Calc);
         }
       }
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ16 === "Solar Energy") {
-          // console.log("Solar Energy", inputQ16);
           setQ16Calc(0);
-          // console.log("Q16Calc", Q16Calc);
         }
       }
       if (inputQ2 === "Detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ16 === "don't know") {
-          // console.log("don't know", inputQ16);
           setQ16Calc(2196);
-          // console.log("Q16Calc", Q16Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ16 === "Electricity") {
-          // console.log("Electricity", inputQ16);
           setQ16Calc(4500 * TO1);
-          // console.log("Q16Calc", Q16Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ16 === "Methane (natural gas)") {
-          // console.log("Methane (natural gas)", inputQ16);
           setQ16Calc(6000 * TO1);
-          // console.log("Q16Calc", Q16Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ16 === "Biogas") {
-          // console.log("Biogas", inputQ16);
           setQ16Calc(7000);
-          // console.log("Q16Calc", Q16Calc);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ16 === "Solar Energy") {
-          // console.log("Solar Energy", inputQ16);
           setQ16Calc(0);
-          // console.log("Q16Calc", Q16Calc);
         }
       }
 
       if (inputQ2 === "Semi-detached house") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ16 === "don't know") {
-          // console.log("don't know", inputQ16);
           setQ16Calc(2196);
-          // console.log("Q16Calc", Q16Calc);
         }
       }
 
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ16 === "Electricity") {
-          // console.log("Electricity", inputQ16);
           setQ16Calc(2500 * TO1);
-          // console.log("Q16Calc", Q16Calc);
         }
       }
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ16 === "Methane (natural gas)") {
-          // console.log("Methane (natural gas)", inputQ16);
           setQ16Calc(3000 * TO1);
-          // console.log("Q16Calc", Q16Calc);
         }
       }
       if (inputQ2 === "Apartment") {
-        // console.log("inputQ2", inputQ2);
         if (inputQ16 === "Biogas") {
-          // console.log("Biogas", inputQ16);
           setQ16Calc(4500 * TO1);
         }
       }
@@ -511,7 +426,25 @@ function Footprint() {
   const handleChangeTon = (event) => {
     setCalcTotal(kg / 1000);
   };
-  const handleChangeBiogas = (event) => {};
+
+  const handleChangeTruck = (event) => {
+    let Trucks = Math.round(kg / 9600);
+    setCalcTotal(Trucks);
+    console.log(CalcTotal);
+  };
+  // const handleChangeTruck = (event) => {
+  // setCalcTotal(Trucks);
+
+  //   const pushTucks = (Truck) => {
+  //     if (Truck.length)
+  //       Trucks.push(
+  //         <span className="material-symbols-outlined IconPadding">
+  //           local_shipping
+  //         </span>
+  //       );
+  //     return Trucks;
+  //   };
+  // };
 
   useEffect(() => {
     // console.log("useeffect run");
@@ -570,14 +503,14 @@ function Footprint() {
                   />
 
                   <FormControlLabel
-                    value="Biogas"
+                    value="truck"
                     control={<Radio />}
                     label={
                       <span className="material-symbols-outlined IconPadding">
                         local_shipping
                       </span>
                     }
-                    onClick={handleChangeBiogas}
+                    onClick={handleChangeTruck}
                   />
                 </RadioGroup>
               </FormControl>
@@ -593,6 +526,13 @@ function Footprint() {
                 {CalcTotal} <span className="CO2Text">CO2e/year</span>{" "}
               </div>
             )}
+
+            {/* {CalcTotal &&
+              CalcTotal.toString().map((truck) => (
+                <span className="material-symbols-outlined IconPadding">
+                  local_shipping
+                </span>
+              ))} */}
           </Card>
         )}
       </div>
