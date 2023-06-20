@@ -447,7 +447,7 @@ function Footprint() {
             ) : (
               <div className="CalculationTotal">
                 <span className="CO2Text">
-                  Your footprint is equivalent for &nbsp;
+                  Your footprint is equivalent to &nbsp;
                 </span>
                 <span className="TrucksNumber"> {CalcTotal} </span>
                 <span className="CO2Text">
