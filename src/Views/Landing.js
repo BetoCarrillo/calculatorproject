@@ -26,10 +26,11 @@ function Landing() {
           Start
         </Button>
         <Tooltip
-          disableInteractive
+          disableTouchListener
           TransitionComponent={Zoom}
           title={
             <span>
+              {" "}
               {[
                 "Answer the questions and get to know your CO2 footprint with specific recommendations for the housing module.",
                 <br></br>,
