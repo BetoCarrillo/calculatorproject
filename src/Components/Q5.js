@@ -49,8 +49,8 @@ function Q5() {
     <div className="QCardDiv">
       <h1 className="AreaHeading">HOUSING</h1>
       <div>
-        <Card sx={{ maxWidth: 450 }} className=" QCard ">
-          <CardContent>
+        <Card className=" QCard ">
+          <CardContent className="QCardContent">
             <Typography
               gutterBottom
               variant="h5"
@@ -59,135 +59,100 @@ function Q5() {
             >
               What is well insulated?
             </Typography>
-            <Table responsive="sm">
-              <tbody>
-                <tr className="checkboxText">
-                  <td>
-                    <input
-                      type="checkbox"
-                      value="Doors & windows "
-                      onClick={handleChange}
-                    ></input>
-                  </td>
-                  <td className="Qtext">Doors and windows</td>
-                </tr>
-                <tr className="checkboxText">
-                  <td>
-                    {" "}
-                    <input
-                      type="checkbox"
-                      value="Roof & attic "
-                      onClick={handleChange}
-                    ></input>
-                  </td>
-                  <td className="Qtext">Roof and attic</td>
-                </tr>
-                <tr className="checkboxText">
-                  <td>
-                    {" "}
-                    <input
-                      type="checkbox"
-                      value="Floors & ceilings "
-                      onClick={handleChange}
-                    ></input>
-                  </td>
-                  <td className="Qtext">Floors and ceilings</td>
-                </tr>
-                <tr className="checkboxText">
-                  <td>
-                    {" "}
-                    <input
-                      type="checkbox"
-                      value="Outer walls "
-                      onClick={handleChange}
-                    ></input>
-                  </td>
-                  <td className="Qtext">Outer walls</td>
-                </tr>
-                <tr className="checkboxText">
-                  <td>
-                    {" "}
-                    <input
-                      type="checkbox"
-                      value="Ducts & Pipes"
-                      onClick={handleChange}
-                    ></input>
-                  </td>
-                  <td className="Qtext">Ducts and Pipes</td>
-                </tr>
-                <tr className="checkboxText">
-                  <td>
-                    {" "}
-                    <input
-                      type="checkbox"
-                      value="None"
-                      onClick={handleChange}
-                    ></input>
-                  </td>
-                  <td className="Qtext">None</td>
-                </tr>
-              </tbody>
-            </Table>
-
-            {/* <FormControl>
-              <RadioGroup
-                aria-labelledby="demo-controlled-radio-buttons-group"
-                name="controlled-radio-buttons-group"
-              >
-                <FormControlLabel
-                  control={<Checkbox />}
-                  label="Doors and windows"
-                />
-                <FormControlLabel
-                  control={<Checkbox />}
-                  label="Roof and attic"
-                  size=""
-                  onClick={handleChange}
-                />
-                <FormControlLabel
-                  control={<Checkbox />}
-                  label="Floors and ceilings"
-                  onClick={handleChange}
-                />
-                <FormControlLabel control={<Checkbox />} label="Outer walls" />
-                <FormControlLabel
-                  value="Doors and windows"
-                  control={<Radio />}
-                  label="Doors and windows"
-                  onClick={handleChange}
-                />
-                <FormControlLabel
-                  value="roofandattic"
-                  control={<Radio />}
-                  label="Roof and attic"
-                  onClick={handleChange}
-                />
-                <FormControlLabel
-                  value="floorsandceilings"
-                  control={<Radio />}
-                  label="Floors and ceilings"
-                  onClick={handleChange}
-                />
-                <FormControlLabel
-                  value="outerwalls"
-                  control={<Radio />}
-                  label="Outer walls"
-                  onClick={handleChange}
-                />
-              </RadioGroup>
-            </FormControl> */}
+            <br></br>
+            <div>
+              <Table responsive="sm">
+                <tbody>
+                  <tr className="checkboxText">
+                    <td>
+                      <input
+                        type="checkbox"
+                        value="Doors & windows "
+                        onClick={handleChange}
+                      ></input>
+                    </td>
+                    <td className="Qtext"> &nbsp; &nbsp;Doors and windows</td>
+                  </tr>
+                  <tr className="checkboxText">
+                    <td>
+                      {" "}
+                      <input
+                        type="checkbox"
+                        value="Roof & attic "
+                        onClick={handleChange}
+                      ></input>
+                    </td>
+                    <td className="Qtext">&nbsp; &nbsp;Roof and attic</td>
+                  </tr>
+                  <tr className="checkboxText">
+                    <td>
+                      {" "}
+                      <input
+                        type="checkbox"
+                        value="Floors & ceilings "
+                        onClick={handleChange}
+                      ></input>
+                    </td>
+                    <td className="Qtext">&nbsp; &nbsp;Floors and ceilings</td>
+                  </tr>
+                  <tr className="checkboxText">
+                    <td>
+                      {" "}
+                      <input
+                        type="checkbox"
+                        value="Outer walls "
+                        onClick={handleChange}
+                      ></input>
+                    </td>
+                    <td className="Qtext">&nbsp; &nbsp;Outer walls</td>
+                  </tr>
+                  <tr className="checkboxText">
+                    <td>
+                      {" "}
+                      <input
+                        type="checkbox"
+                        value="Ducts & Pipes"
+                        onClick={handleChange}
+                      ></input>
+                    </td>
+                    <td className="Qtext">&nbsp; &nbsp;Ducts and Pipes</td>
+                  </tr>
+                  <tr className="checkboxText">
+                    <td>
+                      {" "}
+                      <input
+                        type="checkbox"
+                        value="None"
+                        onClick={handleChange}
+                      ></input>
+                    </td>
+                    <td className="Qtext">&nbsp; &nbsp;None</td>
+                  </tr>
+                </tbody>
+              </Table>
+            </div>
           </CardContent>
-          <CardActions>
-            <Button size="small" onClick={handleSkip}>
-              End
-            </Button>
-            <Button size="small" onClick={handlePrev}>
-              Previous
-            </Button>
-            <Button size="small" onClick={handleNext}>
-              Next
-            </Button>
-          </CardActions>
+          <div className="QCardButtons">
+            <CardActions className="QButtons">
+              <Button size="small" onClick={handlePrev}>
+                <span className="material-symbols-outlined">
+                  arrow_left_alt
+                </span>
+              </Button>
+              <Button size="small" onClick={handleNext}>
+                <span className="material-symbols-outlined">
+                  arrow_right_alt
+                </span>
+              </Button>{" "}
+              <Button
+                size="small"
+                onClick={handleSkip}
+                className="ButtonSkipAll"
+              >
+                Skip all
+              </Button>
+            </CardActions>
+          </div>
         </Card>
       </div>
       <div className="QNumber"> 5/17</div>
@@ -199,7 +164,7 @@ function Q5() {
         >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         </Link>
-        <p className="PoweredbyText">Powered by</p>
+        <p className="PoweredbyText">Powered</p>
       </div>
     </div>
   );

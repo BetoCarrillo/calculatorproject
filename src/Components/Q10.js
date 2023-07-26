@@ -42,8 +42,8 @@ function Q10() {
     <div className="QCardDiv">
       <h1 className="AreaHeading">HOUSING</h1>
       <div>
-        <Card sx={{ maxWidth: 450 }} className="QCard">
-          <CardContent>
+        <Card className="QCard">
+          <CardContent className="QCardContent">
             <Typography
               gutterBottom
               variant="h5"
@@ -52,10 +52,12 @@ function Q10() {
             >
               How are most of the windows?
             </Typography>
+            <br></br>
             <FormControl>
               <RadioGroup
                 aria-labelledby="demo-controlled-radio-buttons-group"
                 name="controlled-radio-buttons-group"
+                className="Qtext"
               >
                 <FormControlLabel
                   value="Single panel"
@@ -78,17 +80,27 @@ function Q10() {
               </RadioGroup>
             </FormControl>
           </CardContent>
-          <CardActions>
-            <Button size="small" onClick={handleSkip}>
-              End
-            </Button>
-            <Button size="small" onClick={handlePrev}>
-              Previous
-            </Button>
-            <Button size="small" onClick={handleNext}>
-              Next
-            </Button>
-          </CardActions>
+          <div className="QCardButtons">
+            <CardActions className="QButtons">
+              <Button size="small" onClick={handlePrev}>
+                <span className="material-symbols-outlined">
+                  arrow_left_alt
+                </span>
+              </Button>
+              <Button size="small" onClick={handleNext}>
+                <span className="material-symbols-outlined">
+                  arrow_right_alt
+                </span>
+              </Button>{" "}
+              <Button
+                size="small"
+                onClick={handleSkip}
+                className="ButtonSkipAll"
+              >
+                Skip all
+              </Button>
+            </CardActions>
+          </div>
         </Card>
       </div>
       <div className="QNumber">10/17</div>
@@ -100,7 +112,7 @@ function Q10() {
         >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         </Link>
-        <p className="PoweredbyText">Powered by</p>
+        <p className="PoweredbyText">Powered</p>
       </div>
     </div>
   );

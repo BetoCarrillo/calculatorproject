@@ -48,8 +48,8 @@ function Q12() {
     <div className="QCardDiv">
       <h1 className="AreaHeading">HOUSING</h1>
       <div>
-        <Card sx={{ maxWidth: 450 }} className="QCard">
-          <CardContent>
+        <Card className="QCard">
+          <CardContent className="QCardContent">
             <Typography
               gutterBottom
               variant="h5"
@@ -58,6 +58,7 @@ function Q12() {
             >
               What is your annual electricity consumption?
             </Typography>
+            <br></br>
             <FormControl>
               <TextField
                 type="number"
@@ -69,21 +70,37 @@ function Q12() {
                 onChange={handleInput}
               />
             </FormControl>
+            <br></br>
+            <Button
+              size="small"
+              onClick={handleAverage}
+              className="ButtonAverageText"
+            >
+              Use average
+            </Button>
           </CardContent>
-          <CardActions>
-            <Button size="small" onClick={handleSkip}>
-              End
-            </Button>
-            <Button size="small" onClick={handlePrev}>
-              Previous
-            </Button>
-            <Button size="small" onClick={handleAverage}>
-              Use Average
-            </Button>
-            <Button size="small" onClick={handleNext}>
-              Next
-            </Button>
-          </CardActions>
+
+          <div className="QCardButtons">
+            <CardActions className="QButtons">
+              <Button size="small" onClick={handlePrev}>
+                <span className="material-symbols-outlined">
+                  arrow_left_alt
+                </span>
+              </Button>
+              <Button size="small" onClick={handleNext}>
+                <span className="material-symbols-outlined">
+                  arrow_right_alt
+                </span>
+              </Button>{" "}
+              <Button
+                size="small"
+                onClick={handleSkip}
+                className="ButtonSkipAll"
+              >
+                Skip all
+              </Button>
+            </CardActions>
+          </div>
         </Card>
       </div>
 
@@ -96,7 +113,7 @@ function Q12() {
         >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         </Link>
-        <p className="PoweredbyText">Powered by</p>
+        <p className="PoweredbyText">Powered</p>
       </div>
     </div>
   );

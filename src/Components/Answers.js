@@ -133,7 +133,8 @@ function Answers() {
                     Size:{" "}
                   </Link>
                 </td>
-                <td className="ResultTableAnswers">
+                <td className="ResultTableAnswers">{inputQ8}</td>
+                {/* <td className="ResultTableAnswers">
                   {" "}
                   {isNaN(CalcTotal) ? (
                     <div className="DisableRecommendation">
@@ -143,7 +144,7 @@ function Answers() {
                   ) : (
                     <span> {inputQ8} m2</span>
                   )}
-                </td>
+                </td> */}
               </tr>
               <tr>
                 <td>
@@ -180,7 +181,8 @@ function Answers() {
                     Annual consumption:{" "}
                   </Link>
                 </td>
-                <td className="ResultTableAnswers">
+                <td className="ResultTableAnswers">{inputQ12}</td>
+                {/* <td className="ResultTableAnswers">
                   {" "}
                   {isNaN(CalcTotal) ? (
                     <div className="DisableRecommendation">
@@ -190,7 +192,7 @@ function Answers() {
                   ) : (
                     <span> {inputQ12} kW</span>
                   )}
-                </td>
+                </td> */}
               </tr>
               <tr>
                 <td>
@@ -237,7 +239,8 @@ function Answers() {
                     Monthly bill:{" "}
                   </Link>
                 </td>
-                <td className="ResultTableAnswers">
+                <td className="ResultTableAnswers">{inputQ17}</td>
+                {/* <td className="ResultTableAnswers">
                   {isNaN(CalcTotal) ? (
                     <div className="DisableRecommendation">
                       {" "}
@@ -246,7 +249,7 @@ function Answers() {
                   ) : (
                     <span> €{inputQ17}</span>
                   )}
-                </td>
+                </td> */}
               </tr>
             </tbody>
           </table>

@@ -40,70 +40,50 @@ function Q1() {
   return (
     <div className="QCardDiv">
       <h1 className="AreaHeading">HOUSING</h1>
-      <div>
-        <Card sx={{ maxWidth: 450 }} className="QCard">
-          <CardContent>
-            <Typography
-              gutterBottom
-              variant="h5"
-              component="div"
-              className="QTitle"
-            >
-              In which country do you live?
-            </Typography>
-            <FormControl>
-              <RadioGroup
-                aria-labelledby="demo-controlled-radio-buttons-group"
-                name="controlled-radio-buttons-group"
-                className="Qtext"
-              >
-                <FormControlLabel
-                  value="Germany"
-                  control={<Radio />}
-                  label="Germany"
-                  onClick={handleChange}
-                />
-                {/* <FormControlLabel
-                  value="United Kingdom"
-                  control={<Radio />}
-                  label="United Kingdom"
-                  onClick={handleChange}
-                />
-                <FormControlLabel
-                  value="Netherlands"
-                  control={<Radio />}
-                  label="Netherlands"
-                  onClick={handleChange}
-                />
-                <FormControlLabel
-                  value="France"
-                  control={<Radio />}
-                  label="France"
-                  onClick={handleChange}
-                />
-                <FormControlLabel
-                  value="Other"
-                  control={<Radio />}
-                  label="Other"
-                  onClick={handleChange}
-                /> */}
-              </RadioGroup>
-            </FormControl>
-          </CardContent>
-          <CardActions className="QCardButtons">
-            <Button size="small" onClick={handleSkip}>
-              End
-            </Button>
 
+      <Card className="QCard">
+        <CardContent className="QCardContent">
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            className="QTitle"
+          >
+            In which country do you live?
+          </Typography>
+          <br></br>
+          <FormControl>
+            <RadioGroup
+              aria-labelledby="demo-controlled-radio-buttons-group"
+              name="controlled-radio-buttons-group"
+              className="Qtext"
+            >
+              <FormControlLabel
+                value="Germany"
+                control={<Radio />}
+                checked
+                label="Germany"
+                onClick={handleChange}
+              />
+            </RadioGroup>
+          </FormControl>
+        </CardContent>
+
+        <div className="QCardButtons">
+          <CardActions className="QButtons">
             <Button size="small" onClick={handlePrev}>
-              Previous
+              <span className="material-symbols-outlined">arrow_left_alt</span>
             </Button>
             <Button size="small" onClick={handleNext}>
-              Next
+              <span className="material-symbols-outlined">arrow_right_alt</span>
+            </Button>{" "}
+            <Button size="small" onClick={handleSkip} className="ButtonSkipAll">
+              Skip all
             </Button>
           </CardActions>
-        </Card>
-      </div>
+        </div>
+      </Card>
+
       <div className="QNumber"> 1/17</div>
       <div className="CClogo">
         <Link
@@ -113,7 +93,7 @@ function Q1() {
         >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         </Link>
-        <p className="PoweredbyText">Powered by</p>
+        <p className="PoweredbyText">Powered</p>
       </div>
     </div>
   );

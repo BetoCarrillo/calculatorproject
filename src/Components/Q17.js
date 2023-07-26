@@ -35,12 +35,17 @@ function Q17() {
     redirectResults("/Results");
   };
 
+  const handleAverage = () => {
+    setInputQ17(600);
+    redirectResults("/Results");
+  };
+
   return (
     <div className="QCardDiv">
       <h1 className="AreaHeading">HOUSING</h1>
       <div>
-        <Card sx={{ maxWidth: 450 }} className="QCard">
-          <CardContent>
+        <Card className="QCard">
+          <CardContent className="QCardContent">
             <Typography
               gutterBottom
               variant="h5"
@@ -49,10 +54,11 @@ function Q17() {
             >
               How much is your monthly electricity bill?
             </Typography>
+            <br></br>
             <FormControl>
               <TextField
                 type="number"
-                placeholder="type in here.."
+                placeholder={inputQ17 !== 0 ? "type in here.." : inputQ17}
                 label="€"
                 variant="filled"
                 color="primary"
@@ -60,18 +66,36 @@ function Q17() {
                 onChange={handleInput}
               />
             </FormControl>
+            <br></br>
+            <Button
+              size="small"
+              onClick={handleAverage}
+              className="ButtonAverageText"
+            >
+              Use average
+            </Button>
           </CardContent>
-          <CardActions>
-            <Button size="small" onClick={handleSkip}>
-              End
-            </Button>
-            <Button size="small" onClick={handlePrev}>
-              Previous
-            </Button>
-            <Button size="small" onClick={handleNext}>
-              Done
-            </Button>
-          </CardActions>
+          <div className="QCardButtons">
+            <CardActions className="QButtons">
+              <Button size="small" onClick={handlePrev}>
+                <span className="material-symbols-outlined">
+                  arrow_left_alt
+                </span>
+              </Button>
+              <Button size="small" onClick={handleNext}>
+                <span className="material-symbols-outlined">
+                  arrow_right_alt
+                </span>
+              </Button>{" "}
+              <Button
+                size="small"
+                onClick={handleSkip}
+                className="ButtonSkipAll"
+              >
+                Skip all
+              </Button>
+            </CardActions>
+          </div>
         </Card>
       </div>
       <div className="QNumber">17/17</div>
@@ -83,7 +107,7 @@ function Q17() {
         >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         </Link>
-        <p className="PoweredbyText">Powered by</p>
+        <p className="PoweredbyText">Powered</p>
       </div>
     </div>
   );

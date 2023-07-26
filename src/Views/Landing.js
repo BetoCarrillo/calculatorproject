@@ -33,13 +33,16 @@ function Landing() {
               {[
                 "Answer the questions and get to know your CO2 footprint with specific recommendations for the housing module.",
                 <br></br>,
-
-                "Average data from Germany will be used if you don’t know an answer.",
                 <br></br>,
-
-                "Go straight to the recommendations at any time with the end button. ",
+                "Average data from Germany will be used if you don’t know any answer.",
                 <br></br>,
-
+                <br></br>,
+                "Go straight to the recommendations at any time with the results button.",
+                <br></br>,
+                <br></br>,
+                "Please email any feedback to: info@changeclubs.global",
+                <br></br>,
+                <br></br>,
                 "Have fun!",
               ]}
             </span>
@@ -59,7 +62,7 @@ function Landing() {
           </span>
         </Tooltip>
       </div>
-      <div className="CClogo">
+      <div className="CClogo" style={{ paddingTop: 200 }}>
         <Link
           to="https://changeclubs.global/"
           target={"_blank"}

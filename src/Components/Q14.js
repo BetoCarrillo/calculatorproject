@@ -14,11 +14,10 @@ import CClogo from "../styles/CClogo.png";
 import { ResultsContext } from "../Context/context";
 
 function Q14() {
-  const { setInputQ14 } = useContext(ResultsContext);
+  const { inputQ14, setInputQ14 } = useContext(ResultsContext);
 
   const handleChange = (event) => {
-    let valueQ14 = event.target.value;
-
+    let valueQ14 = event.target.textContent;
     setInputQ14(valueQ14);
   };
 
@@ -42,8 +41,8 @@ function Q14() {
     <div className="QCardDiv">
       <h1 className="AreaHeading">HOUSING</h1>
       <div>
-        <Card sx={{ maxWidth: 450 }} className="QCard">
-          <CardContent>
+        <Card className="QCard">
+          <CardContent className="QCardContent">
             <Typography
               gutterBottom
               variant="h5"
@@ -52,10 +51,64 @@ function Q14() {
             >
               How do you heat your home?
             </Typography>
-            <FormControl>
+            <br></br>
+            <div className="btn-group">
+              <button
+                type="button"
+                className="btn btn-default dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                {inputQ14 === null ? (
+                  <span className="caret">Choose a type</span>
+                ) : (
+                  <span className="caretText"> {inputQ14}</span>
+                )}
+              </button>
+              <ul className="dropdown-menu scrollable-menu" role="menu">
+                <li>
+                  <p href="#Heatpump" onClick={handleChange}>
+                    {" "}
+                    Heat pump
+                  </p>
+                </li>
+                <li>
+                  <p href="#Electricity" onClick={handleChange}>
+                    Electricity
+                  </p>
+                </li>
+                <li>
+                  <p href="#Methane(naturalgas)" onClick={handleChange}>
+                    Methane (natural gas)
+                  </p>
+                </li>
+                <li>
+                  <p href="#Heatingoil" onClick={handleChange}>
+                    Heating oil
+                  </p>
+                </li>
+                <li>
+                  <p href="#Woodpellets" onClick={handleChange}>
+                    Wood pellets
+                  </p>
+                </li>
+                <li>
+                  <p href="#Biogas" onClick={handleChange}>
+                    Biogas
+                  </p>
+                </li>
+                <li>
+                  <p href="#None" onClick={handleChange}>
+                    None
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            {/* <FormControl>
               <RadioGroup
                 aria-labelledby="demo-controlled-radio-buttons-group"
                 name="controlled-radio-buttons-group"
+                className="Qtext"
               >
                 <FormControlLabel
                   value="Heat pump"
@@ -81,12 +134,7 @@ function Q14() {
                   label=" Heating oil"
                   onClick={handleChange}
                 />
-                {/* <FormControlLabel
-                  value="Bottled gas"
-                  control={<Radio />}
-                  label="Bottled gas"
-                  onClick={handleChange}
-                /> */}
+
                 <FormControlLabel
                   value="Wood pellets"
                   control={<Radio />}
@@ -105,30 +153,34 @@ function Q14() {
                   label="None"
                   onClick={handleChange}
                 />
-                {/* <FormControlLabel
-                  value="don't know"
-                  control={<Radio />}
-                  label="Do not know"
-                  onClick={handleChange}
-                /> */}
               </RadioGroup>
-            </FormControl>
+            </FormControl> */}
           </CardContent>
-          <CardActions>
-            <Button size="small" onClick={handleSkip}>
-              End
-            </Button>
-            <Button size="small" onClick={handlePrev}>
-              Previous
-            </Button>
-            <Button size="small" onClick={handleNext}>
-              Next
-            </Button>
-          </CardActions>
+          <div className="QCardButtons">
+            <CardActions className="QButtons">
+              <Button size="small" onClick={handlePrev}>
+                <span className="material-symbols-outlined">
+                  arrow_left_alt
+                </span>
+              </Button>
+              <Button size="small" onClick={handleNext}>
+                <span className="material-symbols-outlined">
+                  arrow_right_alt
+                </span>
+              </Button>{" "}
+              <Button
+                size="small"
+                onClick={handleSkip}
+                className="ButtonSkipAll"
+              >
+                Skip all
+              </Button>
+            </CardActions>
+          </div>
         </Card>
       </div>
       <div className="QNumber">14/17</div>
-      <div>
+      <div className="CClogo">
         <Link
           to="https://changeclubs.global/"
           target={"_blank"}
@@ -136,7 +188,7 @@ function Q14() {
         >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         </Link>
-        <p className="PoweredbyText">Powered by</p>
+        <p className="PoweredbyText">Powered</p>
       </div>
     </div>
   );

@@ -51,15 +51,8 @@
   text-align: center;
   width: 100%;
   margin: auto 0;
-  position: absolute;
-  bottom: 0;
-}
-.CClogoTwo {
-  text-align: center;
-  width: 100%;
-  margin: auto 0;
   position: sticky;
-  bottom: 0;
+  bottom: 1;
 }
 
 .PoweredbyText {
@@ -80,23 +73,12 @@
 /* QUESTIONS */
 
 .QCardDiv {
-  min-width: 300;
+  /* min-width: 300; */
   justify-content: center !important;
   display: flex;
   align-items: center;
-  /* max-height: 100vh; */
   flex-direction: column;
-  gap: 5px;
-}
-
-.QCardDivRecommendationsLinks {
-  min-width: 300;
-  justify-content: flex-end !important;
-  display: flex;
-  align-items: center;
-  /* max-height: 100vh; */
-  flex-direction: column;
-  gap: 5px;
+  gap: 25px;
 }
 
 .QCard {
@@ -107,20 +89,63 @@
   border-color: #f79521;
   border-width: 0.4rem;
   border-radius: 2rem !important;
+  min-width: 32rem;
+  max-width: 32rem;
+  min-height: 24.5rem;
+  justify-content: space-between;
+}
+.QCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  /* flex-wrap: nowrap !important; */
+}
+
+.scrollable-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+  font-family: "Palanquin", sans-serif !important;
+  font-size: 14px;
+}
+
+.caret {
+  font-family: "Palanquin", sans-serif !important;
+}
+
+.caretText {
+  font-family: "Palanquin", sans-serif !important;
 }
 
 .QTitle {
   color: #4386c6;
   font-family: "Palanquin Dark", sans-serif !important;
   font-weight: bold !important;
-  text-align: center !important;
+  text-align: center;
 }
 
 .Qtext {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Palanquin", sans-serif !important;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.00938em;
+  align-self: center;
+}
+
+.QCardButtons {
+  min-width: 29rem;
+}
+
+.QButtons {
+  margin-left: 9.5rem !important;
+}
+
+.ButtonSkipAll {
+  margin-left: 5rem !important;
+}
+
+.ButtonAverage {
+  margin-left: 1.9rem !important;
 }
 
 .checkboxText {
@@ -130,6 +155,52 @@
 
 .QNumber {
   color: white;
+}
+
+/* DROPWDOWN FOR QUESTIONS */
+
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
 }
 
 /* ANSWERS RESULTS */
@@ -251,6 +322,15 @@
 }
 
 /* RECOMMENDATIONS */
+
+.QCardDivRecommendationsLinks {
+  min-width: 300;
+  justify-content: flex-end !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
 
 .QCardRecommendations {
   display: flex;
@@ -469,6 +549,8 @@
   padding-bottom: 20px;
 }
 
+/* MEDIA */
+
 @media screen and (max-width: 650px) {
   .ResultsDiv {
     display: flex;
@@ -478,13 +560,34 @@
   }
 
   .QCardFootprint {
-    min-width: 20 !important;
+    min-width: 10 !important;
     margin: 5px;
   }
 
-  .QCardDiv {
-    min-width: 30 !important;
+  .QCard {
+    min-height: 26rem !important;
+    min-width: 22rem !important;
+    max-width: 22rem !important;
   }
+
+  .QCardButtons {
+    min-width: 29rem;
+  }
+
+  .ButtonSkipAll {
+    margin-left: 1rem !important;
+  }
+
+  .ButtonAverage {
+    /* margin-left: 0rem !important; */
+  }
+  /* .ButtonAverageText {
+    font-size: 12px !important;
+  } */
+
+  /* .QCardDiv {
+    min-width: 1 !important;
+  }  */
 
   .QCardDivRecommendationsLinks {
     min-width: 30 !important;
@@ -534,9 +637,9 @@
     grid-auto-flow: row;
   }
 
-  .PaddingBottomPage {
+  /* .PaddingBottomPage {
     padding-bottom: 5px;
-  }
+  } */
 
   .QCardFootprintTitleRadio {
     gap: 5px;
