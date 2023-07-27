@@ -78,7 +78,7 @@ function Q1() {
               <span className="material-symbols-outlined">arrow_right_alt</span>
             </Button>{" "}
             <Button size="small" onClick={handleSkip} className="ButtonSkipAll">
-              {!isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
+              {isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
             </Button>
           </CardActions>
         </div>

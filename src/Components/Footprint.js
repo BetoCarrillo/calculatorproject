@@ -61,12 +61,15 @@ function Footprint() {
 
     if (inputQ1 === "Germany") {
       if (inputQ2 === "Detached house") {
-        if (inputQ14 === "Heat pump") {
+        console.log("inputQ2", inputQ2);
+        if (inputQ14 === "Heatpump") {
+          console.log("inputQ14", inputQ14);
           setQ14Calc(0 * 20000);
         }
       }
       if (inputQ2 === "Detached house") {
         if (inputQ14 === "Electricity") {
+          console.log("inputQ14", inputQ14);
           setQ14Calc(0.6 * 20000);
         }
       }
@@ -76,12 +79,12 @@ function Footprint() {
         }
       }
       if (inputQ2 === "Detached house") {
-        if (inputQ14 === "Heating oil") {
+        if (inputQ14 === "Heatingoil") {
           setQ14Calc(0.35 * 20000);
         }
       }
       if (inputQ2 === "Detached house") {
-        if (inputQ14 === "Wood pellets") {
+        if (inputQ14 === "Woodpellets") {
           setQ14Calc(0.05 * 20000);
         }
       }
@@ -96,7 +99,7 @@ function Footprint() {
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        if (inputQ14 === "Heat pump") {
+        if (inputQ14 === "Heatpump") {
           setQ14Calc(0 * 15000);
         }
       }
@@ -111,12 +114,12 @@ function Footprint() {
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        if (inputQ14 === "Heating oil") {
+        if (inputQ14 === "Heatingoil") {
           setQ14Calc(0.35 * 15000);
         }
       }
       if (inputQ2 === "Semi-detached house") {
-        if (inputQ14 === "Wood pellets") {
+        if (inputQ14 === "Woodpellets") {
           setQ14Calc(0.05 * 15000);
         }
       }
@@ -132,7 +135,7 @@ function Footprint() {
         }
       }
       if (inputQ2 === "Flat") {
-        if (inputQ14 === "Heat pump") {
+        if (inputQ14 === "Heatpump") {
           setQ14Calc(0 * 10000);
         }
       }
@@ -147,12 +150,12 @@ function Footprint() {
         }
       }
       if (inputQ2 === "Flat") {
-        if (inputQ14 === "Heating oil") {
+        if (inputQ14 === "Heatingoil") {
           setQ14Calc(0.35 * 10000);
         }
       }
       if (inputQ2 === "Flat") {
-        if (inputQ14 === "Wood pellets") {
+        if (inputQ14 === "Woodpellets") {
           setQ14Calc(0.05 * 10000);
         }
       }

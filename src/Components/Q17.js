@@ -58,7 +58,7 @@ function Q17() {
             <FormControl>
               <TextField
                 type="number"
-                placeholder={inputQ17 !== 0 ? "type in here.." : inputQ17}
+                placeholder={inputQ17 !== Number ? "type in here.." : inputQ17}
                 label="€"
                 variant="filled"
                 color="primary"
@@ -92,7 +92,7 @@ function Q17() {
                 onClick={handleSkip}
                 className="ButtonSkipAll"
               >
-                {!isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
+                {isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
               </Button>
             </CardActions>
           </div>

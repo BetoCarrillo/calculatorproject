@@ -17,8 +17,10 @@ function Q14() {
   const { CalcTotal, inputQ14, setInputQ14 } = useContext(ResultsContext);
 
   const handleChange = (event) => {
-    let valueQ14 = event.target.textContent;
+    let valueQ14 = event.target.id;
+    console.log("valueQ14", valueQ14);
     setInputQ14(valueQ14);
+    console.log("inputQ14", inputQ14);
   };
 
   const redirectQ13 = useNavigate();
@@ -66,38 +68,54 @@ function Q14() {
               </button>
               <ul className="dropdown-menu scrollable-menu" role="menu">
                 <li>
-                  <p href="#Heatpump" onClick={handleChange}>
+                  <p href="#Heat pump" onClick={handleChange} id="Heatpump">
                     {" "}
                     Heat pump
                   </p>
                 </li>
                 <li>
-                  <p href="#Electricity" onClick={handleChange}>
+                  <p
+                    href="#Electricity"
+                    onClick={handleChange}
+                    id="Electricity"
+                  >
                     Electricity
                   </p>
                 </li>
                 <li>
-                  <p href="#Methane(naturalgas)" onClick={handleChange}>
+                  <p
+                    href="#Methane (natural gas)"
+                    onClick={handleChange}
+                    id="Methane"
+                  >
                     Methane (natural gas)
                   </p>
                 </li>
                 <li>
-                  <p href="#Heatingoil" onClick={handleChange}>
+                  <p
+                    href="#Heatingoil oil"
+                    onClick={handleChange}
+                    id="Heatingoil"
+                  >
                     Heating oil
                   </p>
                 </li>
                 <li>
-                  <p href="#Woodpellets" onClick={handleChange}>
+                  <p
+                    href="#Wood pellets"
+                    onClick={handleChange}
+                    id="Woodpellets"
+                  >
                     Wood pellets
                   </p>
                 </li>
                 <li>
-                  <p href="#Biogas" onClick={handleChange}>
+                  <p href="#Biogas" onClick={handleChange} id="Biogas">
                     Biogas
                   </p>
                 </li>
                 <li>
-                  <p href="#None" onClick={handleChange}>
+                  <p href="#None" onClick={handleChange} id="none">
                     None
                   </p>
                 </li>
@@ -173,7 +191,7 @@ function Q14() {
                 onClick={handleSkip}
                 className="ButtonSkipAll"
               >
-                {!isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
+                {isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
               </Button>
             </CardActions>
           </div>

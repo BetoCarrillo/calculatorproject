@@ -91,7 +91,7 @@ function Q7() {
                 onClick={handleSkip}
                 className="ButtonSkipAll"
               >
-                {!isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
+                {isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
               </Button>
             </CardActions>
           </div>
