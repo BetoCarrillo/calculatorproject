@@ -29,7 +29,7 @@ function Landing() {
           disableTouchListener
           TransitionComponent={Zoom}
           title={
-            <span>
+            <span className="TooltipText">
               {" "}
               {[
                 "Answer the questions and get to know your CO2 footprint with specific recommendations for the housing module.",
@@ -59,11 +59,11 @@ function Landing() {
             className="TooltipButton"
             leaveDelay={15000}
           >
-            <span className="material-symbols-outlined ">info</span>
+            <span className="material-symbols-outlined "> info</span>
           </span>
         </Tooltip>
       </div>
-      <div className="CClogo" style={{ paddingTop: 200 }}>
+      <div className="CClogo" style={{ paddingTop: 150 }}>
         <Link
           to="https://changeclubs.global/"
           target={"_blank"}
@@ -71,7 +71,7 @@ function Landing() {
         >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         </Link>
-        <p className="PoweredbyText">Powered by</p>
+        <p className="PoweredbyText">Powered</p>
       </div>
     </div>
   );

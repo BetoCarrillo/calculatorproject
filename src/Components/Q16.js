@@ -15,7 +15,7 @@ import CClogo from "../styles/CClogo.png";
 import { ResultsContext } from "../Context/context";
 
 function Q16() {
-  const { setInputQ16 } = useContext(ResultsContext);
+  const { CalcTotal, setInputQ16 } = useContext(ResultsContext);
 
   const handleChange = (event) => {
     let valueQ16 = event.target.value;
@@ -66,7 +66,7 @@ function Q16() {
                   onClick={handleChange}
                 />
                 <FormControlLabel
-                  value="Methane (natural gas)"
+                  value="Gas or Heating Oil"
                   control={<Radio />}
                   label="Gas or Heating Oil"
                   onClick={handleChange}
@@ -117,7 +117,7 @@ function Q16() {
                 onClick={handleSkip}
                 className="ButtonSkipAll"
               >
-                Skip all
+                {!isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
               </Button>
             </CardActions>
           </div>

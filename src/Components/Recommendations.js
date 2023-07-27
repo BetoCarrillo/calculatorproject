@@ -17,17 +17,8 @@ import { useNavigate } from "react-router-dom";
 import { ResultsContext } from "../Context/context";
 
 function Recommendations() {
-  const {
-    inputQ3,
-
-    inputQ5,
-    inputQ6,
-    inputQ7,
-
-    inputQ13,
-    inputQ14,
-    inputQ15,
-  } = useContext(ResultsContext);
+  const { inputQ3, inputQ5, inputQ6, inputQ7, inputQ13, inputQ14, inputQ15 } =
+    useContext(ResultsContext);
 
   const redirectRecommendations = useNavigate();
   const handleAllRecommendations = () => {

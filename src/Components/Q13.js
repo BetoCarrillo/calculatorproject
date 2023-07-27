@@ -14,7 +14,7 @@ import CClogo from "../styles/CClogo.png";
 import { ResultsContext } from "../Context/context";
 
 function Q13() {
-  const { setInputQ13 } = useContext(ResultsContext);
+  const { CalcTotal, setInputQ13 } = useContext(ResultsContext);
 
   const handleChange = (event) => {
     let valueQ13 = event.target.value;
@@ -102,7 +102,7 @@ function Q13() {
                 onClick={handleSkip}
                 className="ButtonSkipAll"
               >
-                Skip all
+                {!isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
               </Button>
             </CardActions>
           </div>

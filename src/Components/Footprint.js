@@ -44,7 +44,7 @@ function Footprint() {
           setQ12Calc(6441, 6);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ8 > 0) {
           setQ12Calc(inputQ8 * 100 * 0.488);
         } else {
@@ -131,37 +131,37 @@ function Footprint() {
           setQ14Calc(0);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ14 === "Heat pump") {
           setQ14Calc(0 * 10000);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ14 === "Electricity") {
           setQ14Calc(0.6 * 10000);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ14 === "Methane") {
           setQ14Calc(0.3 * 10000);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ14 === "Heating oil") {
           setQ14Calc(0.35 * 10000);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ14 === "Wood pellets") {
           setQ14Calc(0.05 * 10000);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ14 === "Biogas") {
           setQ14Calc(0);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ14 === "none") {
           setQ14Calc(0);
         }
@@ -223,27 +223,27 @@ function Footprint() {
           setQ15Calc(0);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ15 === "Heat pump") {
           setQ15Calc(650 * TO1);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ15 === "Fans") {
           setQ15Calc(200 * TO1);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ15 === "A/C") {
           setQ15Calc(1500 * TO1);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ15 === "Natural ventilation") {
           setQ15Calc(0);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ15 === "none") {
           setQ15Calc(0);
         }
@@ -306,27 +306,27 @@ function Footprint() {
         }
       }
 
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ16 === "Electricity") {
           setQ16Calc(2500 * TO1);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ16 === "Methane (natural gas)") {
           setQ16Calc(3000 * TO1);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ16 === "Biogas") {
           setQ16Calc(4500 * TO1);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ16 === "Solar Energy") {
           setQ16Calc(0);
         }
       }
-      if (inputQ2 === "Apartment") {
+      if (inputQ2 === "Flat") {
         if (inputQ16 === "don't know") {
           setQ16Calc(2196);
         }

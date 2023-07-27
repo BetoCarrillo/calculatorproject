@@ -12,7 +12,7 @@ import { TextField } from "@mui/material";
 import { ResultsContext } from "../Context/context";
 
 function Q12() {
-  const { inputQ12, setInputQ12 } = useContext(ResultsContext);
+  const { CalcTotal, inputQ12, setInputQ12 } = useContext(ResultsContext);
   // const handleChange = (event) => {
   //   let valueQ2 = event.target.value;
   //   console.log(valueQ2);
@@ -97,7 +97,7 @@ function Q12() {
                 onClick={handleSkip}
                 className="ButtonSkipAll"
               >
-                Skip all
+                {!isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
               </Button>
             </CardActions>
           </div>

@@ -16,7 +16,7 @@ import { ResultsContext } from "../Context/context";
 import { Table } from "@mui/material";
 
 function Q5() {
-  const { setInputQ5 } = useContext(ResultsContext);
+  const { CalcTotal, setInputQ5 } = useContext(ResultsContext);
 
   const valueQ5 = [];
 
@@ -149,7 +149,7 @@ function Q5() {
                 onClick={handleSkip}
                 className="ButtonSkipAll"
               >
-                Skip all
+                {!isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
               </Button>
             </CardActions>
           </div>

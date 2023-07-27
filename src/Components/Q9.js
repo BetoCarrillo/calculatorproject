@@ -12,7 +12,7 @@ import { TextField } from "@mui/material";
 import { ResultsContext } from "../Context/context";
 
 function Q9() {
-  const { inputQ9, setInputQ9 } = useContext(ResultsContext);
+  const { CalcTotal, inputQ9, setInputQ9 } = useContext(ResultsContext);
   // const [inputQ9, setInputQ9] = useState(null);
 
   const redirectQ8 = useNavigate();
@@ -79,7 +79,7 @@ function Q9() {
                 onClick={handleSkip}
                 className="ButtonSkipAll"
               >
-                Skip all
+                {!isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
               </Button>
             </CardActions>
           </div>

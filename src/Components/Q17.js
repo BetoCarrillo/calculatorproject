@@ -13,7 +13,7 @@ import { ResultsContext } from "../Context/context";
 
 function Q17() {
   // const [inputQ17, setInputQ17] = useState(null);
-  const { inputQ17, setInputQ17 } = useContext(ResultsContext);
+  const { CalcTotal, inputQ17, setInputQ17 } = useContext(ResultsContext);
 
   const redirectQ16 = useNavigate();
   const redirectQ1 = useNavigate();
@@ -92,7 +92,7 @@ function Q17() {
                 onClick={handleSkip}
                 className="ButtonSkipAll"
               >
-                Skip all
+                {!isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
               </Button>
             </CardActions>
           </div>

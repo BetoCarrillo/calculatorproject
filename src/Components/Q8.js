@@ -12,7 +12,7 @@ import CClogo from "../styles/CClogo.png";
 import { ResultsContext } from "../Context/context";
 
 function Q8() {
-  const { inputQ8, setInputQ8 } = useContext(ResultsContext);
+  const { CalcTotal, inputQ8, setInputQ8 } = useContext(ResultsContext);
 
   const redirectQ7 = useNavigate();
   const redirectQ9 = useNavigate();
@@ -81,7 +81,7 @@ function Q8() {
                 onClick={handleSkip}
                 className="ButtonSkipAll"
               >
-                Skip all
+                {!isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
               </Button>
             </CardActions>
           </div>

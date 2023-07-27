@@ -20,7 +20,7 @@ export const ResultsContextProvider = (props) => {
   const [inputQ15, setInputQ15] = useState(null);
   const [inputQ16, setInputQ16] = useState(null);
   const [inputQ17, setInputQ17] = useState(0);
-  const [CalcTotal, setCalcTotal] = useState();
+  const [CalcTotal, setCalcTotal] = useState(null);
 
   return (
     <ResultsContext.Provider
