@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 function Results() {
   return (
-    <div className="QCardDiv">
+    <div className="QCardDiv divbackgroundHousing">
       <h1 className="AreaHeading">HOUSING</h1>
       <div className="ResultsDiv">
         <Answers />

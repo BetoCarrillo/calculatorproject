@@ -14,7 +14,7 @@ function RecommendationsLinks() {
     redirectResults("/Results");
   };
   return (
-    <div className="QCardDivRecommendationsLinks">
+    <div className="QCardDivRecommendationsLinks divbackgroundHousing">
       <h1 className="AreaHeading">HOUSING</h1>
       <AllRecommendations />
       <AllExternalDocuments />

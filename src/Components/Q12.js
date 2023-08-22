@@ -45,7 +45,7 @@ function Q12() {
   };
 
   return (
-    <div className="QCardDiv">
+    <div className="QCardDiv divbackgroundHousing">
       <h1 className="AreaHeading">HOUSING</h1>
       <div>
         <Card className="QCard">

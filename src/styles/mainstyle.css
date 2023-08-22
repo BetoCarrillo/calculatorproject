@@ -1,21 +1,363 @@
-.divbackground {
-  background-color: #f9ce64;
-  height: 100vh;
-  background-size: cover;
-  overflow: auto;
-}
+/* MAIN APP */
+
 .PaddingBottomPage {
   padding-bottom: 15px;
 }
 
-.StartButtonDiv {
-  padding-top: 25%;
+.divbackground {
+  background-color: #212329;
+  height: 100vh;
+  background-size: cover;
+  overflow: auto;
+}
+.ViewDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
+  gap: 25px;
+}
+
+.StartCard {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  border-style: solid;
+  animation: change-color 60s linear infinite;
+  /* border-color: #095366; */
+  border-width: 0.1rem;
+  border-radius: 2rem !important;
+  /* min-width: 32rem; */
+  max-width: 60rem;
+  /* min-height: 24.5rem; */
+  /* justify-content: space-between; */
+}
+
+.StartCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  margin: 2%;
+  font-family: "Palanquin", sans-serif;
+  font-size: 18px;
+  /* flex-wrap: nowrap !important; */
+}
+
+.StartListTitle {
+  font-family: "Palanquin Dark", sans-serif;
+  font-size: 20px;
+}
+.StartLastList {
+  margin: 0%;
+}
+
+.StartButtonsDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.StartListNumber {
+  font-weight: bold;
+}
+
+.StartButton {
+  background-color: #f79521 !important;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-size: 20px !important;
+  /* font-weight: bold !important; */
+}
+.StartButton:hover {
+  opacity: 0.8;
+  /* background-color: #d98e02 !important; */
+}
+
+.FeedbackButton {
+  background-color: #42a889 !important;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-size: 20px !important;
+}
+
+.FeedbackButton:hover {
+  opacity: 0.8;
+}
+
+/* Animation Start Page */
+
+/* .change-color {
+  animation-name: change-color;
+  animation-duration: 3s;
+} */
+
+@keyframes change-color {
+  0% {
+    border-color: #095366;
+  }
+  20% {
+    border-color: #a12173;
+  }
+  35% {
+    border-color: #ee4347;
+  }
+  42% {
+    border-color: #f79521;
+  }
+  50% {
+    border-color: #f9ce64;
+  }
+  62% {
+    border-color: #98cb63;
+  }
+  75% {
+    border-color: #42a889;
+  }
+  88% {
+    border-color: #7fc3eb;
+  }
+  100% {
+    border-color: #4386c6;
+  }
+}
+
+/* MODULES */
+
+.ModulesCard {
+  color: white;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-size: 25px;
+  /* max-width: 58rem; */
+}
+
+.ModulesCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ModulesCardNames {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.container {
+  position: relative;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.DietModule {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-content: center;
-  gap: 30px;
+  gap: 25px;
+  background-color: #a12173;
+  border-radius: 1rem;
+  height: 13rem;
+  width: 13rem;
+}
+.DietModule:hover {
+  background-color: white;
+}
+
+.DietImage:hover > * {
+  filter: opacity(0.5) drop-shadow(0 0 0 #a12173) !important;
+  display: block;
+  overflow: visible;
+}
+
+.MobilityModule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #ee4347;
+  border-radius: 1rem;
+  height: 13rem;
+  width: 13rem;
+}
+
+.MobilityModule:hover {
+  background-color: white;
+}
+
+.MobilityModule:hover > * {
+  filter: opacity(0.5) drop-shadow(0 0 0 #ee4347) !important;
+  display: block;
+  overflow: visible;
+}
+
+.EnergyModule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #f79521;
+  border-radius: 1rem;
+  height: 13rem;
+  width: 13rem;
+}
+.EnergyModule:hover {
+  background-color: white;
+}
+
+.EnergyModule:hover > * {
+  filter: opacity(0.5) drop-shadow(0 0 0 #f79521) !important;
+  display: block;
+  overflow: visible;
+}
+
+.HousingModule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #f9ce64;
+  border-radius: 1rem;
+  height: 13rem;
+  width: 13rem;
+}
+
+.BiodiversityModule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  background-color: #98cb63;
+  border-radius: 1rem;
+  height: 13rem;
+  width: 13rem;
+}
+
+.BiodiversityModule:hover {
+  background-color: white;
+}
+
+.BiodiversityModule:hover > * {
+  filter: opacity(0.5) drop-shadow(0 0 0 #98cb63) !important;
+  display: block;
+  overflow: visible;
+}
+
+.WasteModule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #42a889;
+  border-radius: 1rem;
+  height: 13rem;
+  width: 13rem;
+}
+
+.WasteModule:hover {
+  background-color: white;
+}
+
+.WasteModule:hover > * {
+  filter: opacity(0.5) drop-shadow(0 0 0 #42a889) !important;
+  display: block;
+  overflow: visible;
+}
+
+.LifestyleModule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #7fc3eb;
+  border-radius: 1rem;
+  height: 13rem;
+  width: 13rem;
+}
+
+.LifestyleModule:hover {
+  background-color: white;
+}
+
+.LifestyleModule:hover > * {
+  filter: opacity(0.5) drop-shadow(0 0 0 #7fc3eb) !important;
+  display: block;
+  overflow: visible;
+}
+
+.FinanceModule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #4386c6;
+  border-radius: 1rem;
+  height: 13rem;
+  width: 13rem;
+}
+
+.FinanceModule:hover {
+  background-color: white;
+}
+
+.FinanceModule:hover > * {
+  filter: opacity(0.5) drop-shadow(0 0 0 #4386c6) !important;
+  display: block;
+  overflow: visible;
+}
+
+.GoBeyongModule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #095366;
+  border-radius: 1rem;
+  height: 13rem;
+  width: 13rem;
+}
+
+.GoBeyongModule:hover {
+  background-color: white;
+}
+
+.GoBeyongModule:hover > * {
+  filter: opacity(0.5) drop-shadow(0 0 0 #095366) !important;
+  display: block;
+  overflow: visible;
+}
+
+/* HOUSING */
+.divbackgroundHousing {
+  background-color: #f9ce64;
+  height: 100vh;
+  background-size: cover;
+  overflow: auto;
 }
 
 .InfoButton {
@@ -41,16 +383,6 @@
   font-size: 12px;
   white-space: pre-line;
   font-family: "Palanquin", sans-serif !important;
-}
-
-.StartButton {
-  background-color: #f79521 !important;
-  font-family: "Palanquin Dark", sans-serif !important;
-  font-size: 20px !important;
-}
-
-.StartButton:hover {
-  background-color: #d98e02 !important;
 }
 
 .CClogo {

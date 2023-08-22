@@ -13,7 +13,7 @@ import { Link, useNavigate } from "react-router-dom";
 function R1() {
   return (
     <div>
-      <Card style={{ overflow: "scroll" }} className="CardRecommendationBI">
+      <Card style={{ overflow: "scroll" }} className="CardRecommendationBI ">
         <Link to="/insulateyourhome" className="RecommendationCardLink">
           <CardContent>
             <Typography

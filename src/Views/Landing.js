@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Button from "@mui/material/Button";
 import CClogo from "../styles/CClogo.png";
-import Q1 from "../Components/Q1";
 import "../styles/mainstyle.css";
 import { Link, useNavigate } from "react-router-dom";
 import { Fade, Tooltip, Zoom } from "@mui/material";
@@ -16,7 +15,7 @@ function Landing() {
   };
 
   return (
-    <div>
+    <div className="divbackgroundHousing ">
       <div className="StartButtonDiv">
         <Button
           variant="contained"

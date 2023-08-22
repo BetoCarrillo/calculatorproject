@@ -27,7 +27,7 @@ function Recommendations() {
 
   return (
     <div>
-      <div className="PaddingBottomPage">
+      <div className="PaddingBottomPage ">
         <Card className="QCardRecommendations">
           <CardContent>
             <Typography
