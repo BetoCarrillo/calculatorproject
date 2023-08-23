@@ -47,18 +47,22 @@ function Modules() {
             </div>
           </div>
           <div className="ModulesCardNames">
-            <div className="HousingModule container HousingImage" to="/Q1">
+            {/* <div className="HousingModule container HousingImage">
               <div>
                 <img src={Housing} alt="HousingModule" height={100}></img>
               </div>{" "}
               <div>HOUSING</div>
-            </div>
-            {/* <Link className="HousingModule container HousingImage" to="/Q1">
+            </div> */}
+            <Link
+              className="HousingModule container HousingImage"
+              style={{ textDecoration: "none", color: "white" }}
+              to="/Q1"
+            >
               <div>
                 <img src={Housing} alt="HousingModule" height={100}></img>
               </div>{" "}
               <div>HOUSING</div>
-            </Link> */}
+            </Link>
             <div className="BiodiversityModule container BiodiversityImage">
               {" "}
               <div>
