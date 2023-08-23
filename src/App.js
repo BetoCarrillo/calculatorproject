@@ -42,9 +42,9 @@ function App() {
     <div>
       <ResultsContextProvider>
         <Routes>
-          <Route path="/Start" element={<Start />} />
+          <Route path="/" element={<Start />} />
           <Route path="/Modules" element={<Modules />} />
-          <Route path="/" element={<Landing />} />
+          {/* <Route path="/" element={<Landing />} /> */}
           <Route path="/Q1" element={<Q1 />} />
           <Route path="/Q2" element={<Q2 />} />
           <Route path="/Q3" element={<Q3 />} />
