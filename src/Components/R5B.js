@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
-import Housesustainable from "../styles/Housesustainable.jpeg";
+import Housesustainable from "../styles/Pictures/Housesustainable.jpeg";
 
 import { ResultsContext } from "../Context/context";
 

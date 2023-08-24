@@ -1,9 +1,9 @@
-import Landing from "./Views/Landing";
+// import Landing from "./Views/Landing";
 import Q1 from "./Components/Q1";
 import Q2 from "./Components/Q2";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import "./styles/mainstyle.css";
+// import "./styles/mainstyle.css";
 import Q3 from "./Components/Q3";
 import Q4 from "./Components/Q4";
 import Q5 from "./Components/Q5";

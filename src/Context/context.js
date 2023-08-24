@@ -3,7 +3,10 @@ import { createContext, useState } from "react";
 export const ResultsContext = createContext();
 
 export const ResultsContextProvider = (props) => {
+  // Energy
+  const [inputQ1Energy, setInputQ1Energy] = useState(null);
   const [inputQ1, setInputQ1] = useState("Germany");
+
   const [inputQ2, setInputQ2] = useState(null);
   const [inputQ3, setInputQ3] = useState(null);
   const [inputQ4, setInputQ4] = useState(null);
@@ -25,6 +28,8 @@ export const ResultsContextProvider = (props) => {
   return (
     <ResultsContext.Provider
       value={{
+        inputQ1Energy,
+        setInputQ1Energy,
         inputQ1,
         setInputQ1,
         inputQ2,

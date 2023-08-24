@@ -10,7 +10,7 @@ import Card from "@mui/material/Card";
 import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
-import Retrofit from "../styles/Retrofit.jpeg";
+import Retrofit from "../styles/Pictures/Retrofit.jpeg";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import Collapse from "@mui/material/Collapse";

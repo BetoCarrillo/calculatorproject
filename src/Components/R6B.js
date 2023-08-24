@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
-import Solarenergy from "../styles/Solarenergy.jpeg";
+import Solarenergy from "../styles/Pictures/Solarenergy.jpeg";
 
 import { ResultsContext } from "../Context/context";
 

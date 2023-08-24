@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
-import Retrofit from "../styles/Retrofit.jpeg";
+import Retrofit from "../styles/Pictures/Retrofit.jpeg";
 
 import { ResultsContext } from "../Context/context";
 

@@ -4,7 +4,7 @@
   padding-bottom: 15px;
 }
 
-.divbackground {
+.MainDivBackground {
   background-color: #212329;
   height: 100vh;
   background-size: cover;
@@ -16,8 +16,8 @@
   justify-content: center !important;
   align-items: center;
   gap: 25px;
-  padding-top: 6rem;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
 }
 
 .StartCard {
@@ -28,7 +28,7 @@
   border-style: solid;
   animation: change-color 60s linear infinite;
   /* border-color: #095366; */
-  border-width: 0.1rem;
+  border-width: 0.2rem;
   border-radius: 2rem !important;
   /* min-width: 32rem; */
   max-width: 60rem;
@@ -176,8 +176,8 @@
   gap: 25px;
   background-color: #a12173;
   border-radius: 1rem;
-  height: 13rem;
-  width: 13rem;
+  height: 12rem;
+  width: 12rem;
 }
 .DietModule:hover {
   background-color: white;
@@ -197,8 +197,8 @@
   gap: 25px;
   background-color: #ee4347;
   border-radius: 1rem;
-  height: 13rem;
-  width: 13rem;
+  height: 12rem;
+  width: 12rem;
 }
 
 .MobilityModule:hover {
@@ -219,8 +219,8 @@
   gap: 25px;
   background-color: #f79521;
   border-radius: 1rem;
-  height: 13rem;
-  width: 13rem;
+  height: 12rem;
+  width: 12rem;
 }
 .EnergyModule:hover {
   background-color: white;
@@ -240,8 +240,8 @@
   gap: 25px;
   background-color: #f9ce64;
   border-radius: 1rem;
-  height: 13rem;
-  width: 13rem;
+  height: 12rem;
+  width: 12rem;
 }
 
 .HousingModule:hover {
@@ -256,8 +256,8 @@
   gap: 0px;
   background-color: #98cb63;
   border-radius: 1rem;
-  height: 13rem;
-  width: 13rem;
+  height: 12rem;
+  width: 12rem;
 }
 
 .BiodiversityModule:hover {
@@ -278,8 +278,8 @@
   gap: 25px;
   background-color: #42a889;
   border-radius: 1rem;
-  height: 13rem;
-  width: 13rem;
+  height: 12rem;
+  width: 12rem;
 }
 
 .WasteModule:hover {
@@ -300,8 +300,8 @@
   gap: 25px;
   background-color: #7fc3eb;
   border-radius: 1rem;
-  height: 13rem;
-  width: 13rem;
+  height: 12rem;
+  width: 12rem;
 }
 
 .LifestyleModule:hover {
@@ -322,8 +322,8 @@
   gap: 25px;
   background-color: #4386c6;
   border-radius: 1rem;
-  height: 13rem;
-  width: 13rem;
+  height: 12rem;
+  width: 12rem;
 }
 
 .FinanceModule:hover {
@@ -344,8 +344,8 @@
   gap: 25px;
   background-color: #095366;
   border-radius: 1rem;
-  height: 13rem;
-  width: 13rem;
+  height: 12rem;
+  width: 12rem;
 }
 
 .GoBeyongModule:hover {
@@ -356,6 +356,17 @@
   filter: opacity(0.5) drop-shadow(0 0 0 #095366) !important;
   display: block;
   overflow: visible;
+}
+
+/* FOR ALL MODULES */
+
+.AreaHeading {
+  color: white;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-weight: bolder !important;
+  font-size: 4rem;
+  margin: 0%;
+  margin: 0%;
 }
 
 /* HOUSING */
@@ -392,25 +403,17 @@
 }
 
 .CClogo {
-  text-align: center;
+  text-align: end;
   width: 100%;
   margin: auto 0;
   position: sticky;
-  bottom: 1;
+  bottom: 0;
 }
 
 .PoweredbyText {
   color: black;
   font-family: "Palanquin Dark", sans-serif !important;
   font-size: 9px;
-  margin: 0%;
-}
-.AreaHeading {
-  color: white;
-  font-family: "Palanquin Dark", sans-serif !important;
-  font-weight: bolder !important;
-  font-size: 4rem;
-  margin: 0%;
   margin: 0%;
 }
 
@@ -469,7 +472,7 @@
 }
 
 .Qtext {
-  font-family: "Palanquin", sans-serif !important;
+  font-family: "Palanquin Dark", sans-serif !important;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.00938em;

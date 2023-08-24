@@ -11,7 +11,7 @@ function Start() {
     redirectQ1("/Modules");
   };
   return (
-    <div className="divbackground ViewDiv">
+    <div className="MainDivBackground ViewDiv">
       <div>
         <Link
           to="https://changeclubs.global/"
@@ -51,9 +51,9 @@ function Start() {
             positive impact.
             <br></br> <span className="StartListTitle">8)</span>
             The overall summary displays your entire impact and the progress of
-            your change journey ** under development **<br></br>
-            <br></br>We appreciate any feedback provided with the feedback form
-            or by sending us an email to: info@changeclubs.global.{" "}
+            your change journey **under development**<br></br>
+            <br></br>We appreciate any feedback provided with the feedback
+            button or by sending us an email to: info@changeclubs.global.{" "}
           </p>
           <p className="StartLastList"> Have fun! </p>
         </div>

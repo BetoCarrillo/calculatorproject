@@ -1,19 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
-import Diet from "../styles/diet.png";
-import Mobility from "../styles/mobility.png";
-import Energy from "../styles/energy.png";
-import Housing from "../styles/housing.png";
-import Biodiversity from "../styles/biodiversity.png";
-import Waste from "../styles/waste.png";
-import Lifestyle from "../styles/lifestyle.png";
-import Finance from "../styles/finance.png";
-import GoBeyond from "../styles/gobeyond.png";
+import Diet from "../styles/Pictures/diet.png";
+import Mobility from "../styles/Pictures/mobility.png";
+import Energy from "../styles/Pictures/energy.png";
+import Housing from "../styles/Pictures/housing.png";
+import Biodiversity from "../styles/Pictures/biodiversity.png";
+import Waste from "../styles/Pictures/waste.png";
+import Lifestyle from "../styles/Pictures/lifestyle.png";
+import Finance from "../styles/Pictures/finance.png";
+import GoBeyond from "../styles/Pictures/gobeyond.png";
 
 function Modules() {
   return (
-    <div className="divbackground ViewDiv">
+    <div className="MainDivBackground ViewDiv">
       <div className="ModulesCard">
         <div className="ModulesCardContent">
           <div className="ModulesCardNames">
@@ -124,7 +124,7 @@ function Modules() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="ChangeClubsLogo">
         <Link
           to="https://changeclubs.global/"
           target={"_blank"}
