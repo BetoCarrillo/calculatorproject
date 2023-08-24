@@ -223,13 +223,7 @@
   width: 12rem;
 }
 .EnergyModule:hover {
-  background-color: white;
-}
-
-.EnergyModule:hover > * {
-  filter: opacity(0.5) drop-shadow(0 0 0 #f79521) !important;
-  display: block;
-  overflow: visible;
+  background-color: #f7972150;
 }
 
 .HousingModule {

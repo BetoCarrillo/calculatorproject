@@ -36,15 +36,16 @@ function Modules() {
               </div>
               <div>MOBILITY</div>
             </div>
-            <div className="EnergyModule container EnergyImage">
+            <Link
+              className="EnergyModule container EnergyImage"
+              style={{ textDecoration: "none", color: "white" }}
+              to="/Q1Energy"
+            >
               <div>
                 <img src={Energy} alt="EnergyModule" height={100}></img>
-              </div>
-              <div class="middle">
-                <div class="text">COMING SOON..</div>
-              </div>
+              </div>{" "}
               <div>ENERGY</div>
-            </div>
+            </Link>
           </div>
           <div className="ModulesCardNames">
             {/* <div className="HousingModule container HousingImage">
