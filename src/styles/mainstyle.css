@@ -244,6 +244,10 @@
   width: 13rem;
 }
 
+.HousingModule:hover {
+  background-color: #f9cf6477;
+}
+
 .BiodiversityModule {
   display: flex;
   flex-direction: column;

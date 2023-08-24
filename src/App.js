@@ -36,6 +36,7 @@ import R11B from "./Components/R11B";
 import R12B from "./Components/R12B";
 import Start from "./Views/Start";
 import Modules from "./Views/Modules";
+import Q1Energy from "./Components/Energy/Q1Energy";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path="/" element={<Start />} />
           <Route path="/Modules" element={<Modules />} />
           {/* <Route path="/" element={<Landing />} /> */}
+          <Route path="/Q1Energy" element={<Q1Energy />} />
           <Route path="/Q1" element={<Q1 />} />
           <Route path="/Q2" element={<Q2 />} />
           <Route path="/Q3" element={<Q3 />} />

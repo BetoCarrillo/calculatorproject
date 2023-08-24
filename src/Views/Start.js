@@ -24,7 +24,7 @@ function Start() {
       <div className="StartCard change-color">
         <div className="StartCardContent">
           <p>
-            This platform is currently under development to provide guidance to
+            This is a platform currently under development to guide and support
             Change Club's members in the journey to a more sustainable
             lifestyle.
           </p>
@@ -34,23 +34,26 @@ function Start() {
             into the Change Clubs Modules' areas.<br></br>{" "}
             <span className="StartListTitle">2)</span> Answer each question to
             get to know your footprint and specific recommendations for you in
-            each module.<br></br> <span className="StartListTitle">3)</span> In
-            case you don't know any answer, average data from Germany will be
-            used.
+            each module.<br></br> <span className="StartListTitle">3)</span>{" "}
+            Average data from Germany will be used in case you don't know an
+            answer.
             <br></br> <span className="StartListTitle">4)</span> During the
             questions, use the arrows to navigate. At any time, you can go
             straight to the recommendations with the skip all button.<br></br>{" "}
-            <span className="StartListTitle">5)</span> Required answers for your
-            footprint calculation are identified with "*".<br></br>{" "}
+            <span className="StartListTitle">5)</span> Required answers to
+            calculate your impact are identified with " * ".<br></br>{" "}
             <span className="StartListTitle">6)</span> After answering the
-            questions, you will see your footprint per module and specific
+            questions, you will see your impact per module and specific
             recommendations for you to start your the change. Click on each
-            recommendation to know more information and resources.<br></br>{" "}
-            <span className="StartListTitle">7)</span> The overall summary
-            displays your entire footprint and the progress of your Change
-            Club's journey ** under development **<br></br>
+            recommendation to know more information and additional resources.
+            <br></br> <span className="StartListTitle">7)</span> You will
+            accumulate stars for each completed action depending on their
+            positive impact.
+            <br></br> <span className="StartListTitle">8)</span>
+            The overall summary displays your entire impact and the progress of
+            your change journey ** under development **<br></br>
             <br></br>We appreciate any feedback provided with the feedback form
-            or by sending us an email to info@changeclubs.global.{" "}
+            or by sending us an email to: info@changeclubs.global.{" "}
           </p>
           <p className="StartLastList"> Have fun! </p>
         </div>
