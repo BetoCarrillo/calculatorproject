@@ -9,7 +9,7 @@ function Q3Energy() {
   const { inputQ3Energy, setInputQ3Energy } = useContext(ResultsContext);
 
   const handleChange = (event) => {
-    let valueQ3Energy = event.target.id;
+    let valueQ3Energy = event.target.value;
     setInputQ3Energy(valueQ3Energy);
     // console.log("inputQ3Energy", inputQ3Energy);
   };

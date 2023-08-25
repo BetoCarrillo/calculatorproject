@@ -9,7 +9,7 @@ function Q4Energy() {
   const { inputQ4Energy, setInputQ4Energy } = useContext(ResultsContext);
 
   const handleChange = (event) => {
-    let valueQ4Energy = event.target.id;
+    let valueQ4Energy = event.target.value;
     setInputQ4Energy(valueQ4Energy);
     // console.log("inputQ4Energy", inputQ4Energy);
   };
