@@ -28,7 +28,7 @@ function Modules() {
           <div className="ModulesCardNames">
             <div className="DietModule container DietImage">
               <div>
-                <img src={Diet} alt="DietModule" height={100}></img>
+                <img src={Diet} alt="DietModule" className="ModulesImage"></img>
               </div>
               <div className="middle">
                 <div className="text">COMING SOON..</div>
@@ -37,7 +37,11 @@ function Modules() {
             </div>
             <div className="MobilityModule container MobilityImage">
               <div>
-                <img src={Mobility} alt="MobilityModule " height={100}></img>
+                <img
+                  src={Mobility}
+                  alt="MobilityModule "
+                  className="ModulesImage"
+                ></img>
               </div>
 
               <div className="middle">
@@ -51,7 +55,11 @@ function Modules() {
               to="/Q1Energy"
             >
               <div>
-                <img src={Energy} alt="EnergyModule" height={100}></img>
+                <img
+                  src={Energy}
+                  alt="EnergyModule"
+                  className="ModulesImage"
+                ></img>
               </div>{" "}
               <div>ENERGY</div>
             </Link>
@@ -69,7 +77,11 @@ function Modules() {
               to="/Q1"
             >
               <div>
-                <img src={Housing} alt="HousingModule" height={100}></img>
+                <img
+                  src={Housing}
+                  alt="HousingModule"
+                  className="ModulesImage"
+                ></img>
               </div>{" "}
               <div>HOUSING</div>
             </Link>
@@ -79,7 +91,7 @@ function Modules() {
                 <img
                   src={Biodiversity}
                   alt="BiodiversityModule"
-                  height={100}
+                  className="ModulesImage"
                 ></img>{" "}
               </div>
               <div className="middle">
@@ -92,7 +104,11 @@ function Modules() {
             <div className="WasteModule container WasteImage">
               {" "}
               <div>
-                <img src={Waste} alt="WasteModule" height={100}></img>
+                <img
+                  src={Waste}
+                  alt="WasteModule"
+                  className="ModulesImage"
+                ></img>
               </div>
               <div className="middle">
                 <div className="text">COMING SOON..</div>
@@ -104,7 +120,11 @@ function Modules() {
             <div className="LifestyleModule container LifestyleImage">
               {" "}
               <div>
-                <img src={Lifestyle} alt="LifestyleModule" height={100}></img>
+                <img
+                  src={Lifestyle}
+                  alt="LifestyleModule"
+                  className="ModulesImage"
+                ></img>
               </div>
               <div className="middle">
                 <div className="text">COMING SOON..</div>
@@ -114,7 +134,11 @@ function Modules() {
             <div className="FinanceModule container FinanceImage">
               {" "}
               <div>
-                <img src={Finance} alt="FinanceModule" height={100}></img>
+                <img
+                  src={Finance}
+                  alt="FinanceModule"
+                  className="ModulesImage"
+                ></img>
               </div>
               <div className="middle">
                 <div className="text">COMING SOON..</div>
@@ -124,7 +148,11 @@ function Modules() {
             <div className="GoBeyongModule container GoBeyondImage">
               {" "}
               <div>
-                <img src={GoBeyond} alt="GoBeyondModule" height={100}></img>
+                <img
+                  src={GoBeyond}
+                  alt="GoBeyondModule"
+                  className="ModulesImage"
+                ></img>
               </div>
               <div className="middle">
                 <div className="text">COMING SOON..</div>

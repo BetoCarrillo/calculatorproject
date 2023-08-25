@@ -164,6 +164,10 @@
   font-weight: bold;
 }
 
+.ModulesImage {
+  height: 100px;
+}
+
 .DietModule {
   display: flex;
   flex-direction: column;
@@ -362,6 +366,7 @@
 /* MEDIA SMALL SCREEN */
 
 @media screen and (max-width: 650px) {
+  /* START */
   .StartCard {
     max-width: 24rem;
   }
@@ -387,6 +392,106 @@
   .FeedbackButton {
     width: 10rem;
     font-size: 16px !important;
+  }
+
+  /* MODULES */
+  .ModulesCard {
+    font-size: 20px;
+    padding-bottom: 1rem;
+  }
+
+  .ModulesCardContent {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ModulesCardNames {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ModulesImage {
+    height: 30px;
+  }
+
+  .DietModule {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    height: 4.5rem;
+    width: 21rem;
+  }
+
+  .MobilityModule {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    height: 4.5rem;
+    width: 21rem;
+  }
+
+  .EnergyModule {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    height: 4.5rem;
+    width: 21rem;
+  }
+  .HousingModule {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    height: 4.5rem;
+    width: 21rem;
+  }
+
+  .BiodiversityModule {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    height: 4.5rem;
+    width: 21rem;
+  }
+
+  .WasteModule {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    height: 4.5rem;
+    width: 21rem;
+  }
+
+  .LifestyleModule {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    height: 4.5rem;
+    width: 21rem;
+  }
+
+  .FinanceModule {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    height: 4.5rem;
+    width: 21rem;
+  }
+
+  .GoBeyongModule {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    height: 4.5rem;
+    width: 21rem;
   }
 }
 
