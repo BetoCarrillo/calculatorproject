@@ -29,13 +29,13 @@ function Q2Energy() {
         <div className="EnergyCardContent">
           <div className="EnergyCardTitle">How do you heat your home?</div>
           <div className="DropdownDiv">
-            {inputQ2Energy === null ? (
+            {inputQ2Energy === "" ? (
               <button
                 type="button"
                 className="btn btn-default DropdownButton"
                 data-toggle="dropdown"
               >
-                {inputQ2Energy === null ? (
+                {inputQ2Energy === "" ? (
                   <span className="caret">Choose</span>
                 ) : (
                   <span

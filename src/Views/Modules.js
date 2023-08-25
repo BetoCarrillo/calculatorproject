@@ -21,8 +21,8 @@ function Modules() {
               <div>
                 <img src={Diet} alt="DietModule" height={100}></img>
               </div>
-              <div class="middle">
-                <div class="text">COMING SOON..</div>
+              <div className="middle">
+                <div className="text">COMING SOON..</div>
               </div>
               <div>DIET</div>
             </div>
@@ -31,8 +31,8 @@ function Modules() {
                 <img src={Mobility} alt="MobilityModule " height={100}></img>
               </div>
 
-              <div class="middle">
-                <div class="text">COMING SOON..</div>
+              <div className="middle">
+                <div className="text">COMING SOON..</div>
               </div>
               <div>MOBILITY</div>
             </div>
@@ -73,8 +73,8 @@ function Modules() {
                   height={100}
                 ></img>{" "}
               </div>
-              <div class="middle">
-                <div class="text">COMING SOON..</div>
+              <div className="middle">
+                <div className="text">COMING SOON..</div>
               </div>
               <div>
                 BIODIVERSITY <br></br> AND NATURE
@@ -85,8 +85,8 @@ function Modules() {
               <div>
                 <img src={Waste} alt="WasteModule" height={100}></img>
               </div>
-              <div class="middle">
-                <div class="text">COMING SOON..</div>
+              <div className="middle">
+                <div className="text">COMING SOON..</div>
               </div>
               <div>WASTE</div>
             </div>
@@ -97,8 +97,8 @@ function Modules() {
               <div>
                 <img src={Lifestyle} alt="LifestyleModule" height={100}></img>
               </div>
-              <div class="middle">
-                <div class="text">COMING SOON..</div>
+              <div className="middle">
+                <div className="text">COMING SOON..</div>
               </div>{" "}
               <div>LIFESTYLE</div>
             </div>
@@ -107,8 +107,8 @@ function Modules() {
               <div>
                 <img src={Finance} alt="FinanceModule" height={100}></img>
               </div>
-              <div class="middle">
-                <div class="text">COMING SOON..</div>
+              <div className="middle">
+                <div className="text">COMING SOON..</div>
               </div>
               <div>FINANCE</div>
             </div>
@@ -117,8 +117,8 @@ function Modules() {
               <div>
                 <img src={GoBeyond} alt="GoBeyondModule" height={100}></img>
               </div>
-              <div class="middle">
-                <div class="text">COMING SOON..</div>
+              <div className="middle">
+                <div className="text">COMING SOON..</div>
               </div>
               <div>GO BEYOND</div>
             </div>
