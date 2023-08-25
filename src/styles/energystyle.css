@@ -51,7 +51,7 @@
 
 .EnergyCardtext {
   font-family: "Palanquin", sans-serif !important;
-  font-size: 16px;
+  font-size: 20px !important;
   font-weight: 400;
   letter-spacing: 0.00938em;
   align-self: center;
@@ -174,7 +174,8 @@
   font-family: "Palanquin", sans-serif;
   margin: 0%;
   border-radius: 0.2rem;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 1.8;
 }
 
 .EnergyDropdownOption:hover {
@@ -301,6 +302,8 @@
 }
 
 .EnergyCardButtonsSkip {
+  display: flex;
+  flex-direction: row;
   width: 8rem;
   height: 1rem;
   font-size: 10px;
@@ -341,4 +344,62 @@
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .EnergyCard {
+    width: 23rem;
+    height: 20rem;
+  }
+
+  .EnergyCardContent {
+    width: 23rem;
+  }
+
+  .EnergyCardTitle {
+    font-size: 16px;
+  }
+
+  .EnergyCardtext {
+    font-family: "Palanquin", sans-serif !important;
+    font-size: 16px !important;
+  }
+
+  .EnergyDropdownOption {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .DropdownButton {
+    width: 12rem;
+    font-family: "Palanquin", sans-serif !important;
+    font-size: 16px;
+    padding: 2%;
+  }
+
+  .EnergyCardButtonsDiv {
+    width: 22rem;
+  }
+
+  .EnergyCardButtonsSkip {
+    height: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    /* padding: 1px; */
+    /* font-family: "Palanquin-Dark", sans-serif !important; */
+  }
+
+  .OptionDivMultipleInputs {
+    font-family: "Palanquin", sans-serif !important;
+    font-size: 12px;
+    width: 22rem;
+    gap: 15px;
+  }
+
+  .SliderValuesDiv {
+    width: 14rem;
+    font-size: 10px;
+    font-family: "Palanquin", sans-serif !important;
+  }
 }

@@ -382,6 +382,7 @@
 
   .StartButtonsDiv {
     gap: 15px;
+    padding-bottom: 1rem;
   }
 
   .StartButton {

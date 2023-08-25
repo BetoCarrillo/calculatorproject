@@ -33,7 +33,7 @@ function Q6Energy() {
           <div className="OptionDiv">
             {inputQ6Energy === "Yes" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Yes
                   <input
                     type="radio"
@@ -47,7 +47,7 @@ function Q6Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Yes
                   <input
                     type="radio"
@@ -61,7 +61,7 @@ function Q6Energy() {
             )}
             {inputQ6Energy === "No" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   No
                   <input
                     type="radio"
@@ -75,7 +75,7 @@ function Q6Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   No
                   <input
                     type="radio"

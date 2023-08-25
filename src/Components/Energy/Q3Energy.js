@@ -33,7 +33,7 @@ function Q3Energy() {
           <div className="OptionDiv">
             {inputQ3Energy === "Heat pump" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Heat pump
                   <input
                     type="radio"
@@ -47,7 +47,7 @@ function Q3Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Heat pump
                   <input
                     type="radio"
@@ -61,7 +61,7 @@ function Q3Energy() {
             )}
             {inputQ3Energy === "Fans" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Fans
                   <input
                     type="radio"
@@ -75,7 +75,7 @@ function Q3Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Fans
                   <input
                     type="radio"
@@ -89,7 +89,7 @@ function Q3Energy() {
             )}
             {inputQ3Energy === "A/C" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   A/C
                   <input
                     type="radio"
@@ -103,7 +103,7 @@ function Q3Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   A/C
                   <input
                     type="radio"
@@ -117,7 +117,7 @@ function Q3Energy() {
             )}
             {inputQ3Energy === "Natural ventilation" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Natural ventilation
                   <input
                     type="radio"
@@ -131,7 +131,7 @@ function Q3Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Natural ventilation
                   <input
                     type="radio"
@@ -145,7 +145,7 @@ function Q3Energy() {
             )}{" "}
             {inputQ3Energy === "None" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   None
                   <input
                     type="radio"
@@ -159,7 +159,7 @@ function Q3Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   None
                   <input
                     type="radio"

@@ -31,7 +31,7 @@ function Q5Energy() {
           <div className="OptionDiv">
             {inputQ5Energy === "Hard drive" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Hard drive
                   <input
                     type="radio"
@@ -45,7 +45,7 @@ function Q5Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Hard drive
                   <input
                     type="radio"
@@ -59,7 +59,7 @@ function Q5Energy() {
             )}
             {inputQ5Energy === "Cloud service" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Cloud service
                   <input
                     type="radio"
@@ -73,7 +73,7 @@ function Q5Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Cloud service
                   <input
                     type="radio"

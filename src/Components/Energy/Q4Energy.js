@@ -33,7 +33,7 @@ function Q4Energy() {
           <div className="OptionDiv">
             {inputQ4Energy === "Electricity" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Electricity
                   <input
                     type="radio"
@@ -47,7 +47,7 @@ function Q4Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Electricity
                   <input
                     type="radio"
@@ -61,7 +61,7 @@ function Q4Energy() {
             )}
             {inputQ4Energy === "Gas or Heating oil" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Gas or Heating oil
                   <input
                     type="radio"
@@ -75,7 +75,7 @@ function Q4Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Gas or Heating oil
                   <input
                     type="radio"
@@ -89,7 +89,7 @@ function Q4Energy() {
             )}
             {inputQ4Energy === "Biogas" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Biogas
                   <input
                     type="radio"
@@ -103,7 +103,7 @@ function Q4Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Biogas
                   <input
                     type="radio"
@@ -117,7 +117,7 @@ function Q4Energy() {
             )}
             {inputQ4Energy === "Solar energy" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Solar energy
                   <input
                     type="radio"
@@ -131,7 +131,7 @@ function Q4Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Solar energy
                   <input
                     type="radio"
@@ -145,7 +145,7 @@ function Q4Energy() {
             )}{" "}
             {inputQ4Energy === "I don't know" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   I don't know
                   <input
                     type="radio"
@@ -159,7 +159,7 @@ function Q4Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   I don't know
                   <input
                     type="radio"

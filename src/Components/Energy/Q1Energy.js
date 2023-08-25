@@ -33,7 +33,7 @@ function Q1Energy() {
           <div className="OptionDiv">
             {inputQ1Energy === "Normal grid" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Normal grid
                   <input
                     type="radio"
@@ -47,7 +47,7 @@ function Q1Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Normal grid
                   <input
                     type="radio"
@@ -61,7 +61,7 @@ function Q1Energy() {
             )}
             {inputQ1Energy === "Mixed sources" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Mixed sources
                   <input
                     type="radio"
@@ -75,7 +75,7 @@ function Q1Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Mixed sources
                   <input
                     type="radio"
@@ -89,7 +89,7 @@ function Q1Energy() {
             )}
             {inputQ1Energy === "Solar energy" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Solar energy
                   <input
                     type="radio"
@@ -103,7 +103,7 @@ function Q1Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   Solar energy
                   <input
                     type="radio"
@@ -117,7 +117,7 @@ function Q1Energy() {
             )}
             {inputQ1Energy === "100% renewable" ? (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   100% renewable
                   <input
                     type="radio"
@@ -131,7 +131,7 @@ function Q1Energy() {
               </span>
             ) : (
               <span>
-                <label className="RadioLabel">
+                <label className="RadioLabel EnergyCardtext">
                   100% renewable
                   <input
                     type="radio"
