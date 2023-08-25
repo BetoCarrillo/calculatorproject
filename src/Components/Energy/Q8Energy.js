@@ -30,7 +30,7 @@ function Q8Energy() {
           <div className="EnergyCardTitle">
             Are most of your appliances energy efficient?
           </div>
-          <div className="OptionDiv">
+          <div className="OptionDivBigTitleSmallScreen">
             {inputQ8Energy === "Yes" ? (
               <span>
                 <label className="RadioLabel EnergyCardtext">
