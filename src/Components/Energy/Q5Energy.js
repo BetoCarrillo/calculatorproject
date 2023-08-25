@@ -5,21 +5,21 @@ import ProgressBar from "../progressbar";
 import { ResultsContext } from "../../Context/context";
 import CClogo from "../../styles/CClogo.png";
 
-function Q1Energy() {
-  const { inputQ1Energy, setInputQ1Energy } = useContext(ResultsContext);
+function Q5Energy() {
+  const { inputQ5Energy, setInputQ5Energy } = useContext(ResultsContext);
 
   const handleChange = (event) => {
-    let valueQ1Energy = event.target.value;
-    setInputQ1Energy(valueQ1Energy);
+    let valueQ5Energy = event.target.value;
+    setInputQ5Energy(valueQ5Energy);
     // console.log("inputQ1Energy", inputQ1Energy);
   };
 
   const testData = [
-    { bgcolor: "#095366", completed: 11.1, question: 1, totalquestions: 9 },
+    { bgcolor: "#095366", completed: 55.5, question: 5, totalquestions: 9 },
   ];
 
   const handleSave = () => {
-    console.log("inputQ1Energy", inputQ1Energy);
+    console.log("inputQ5Energy", inputQ5Energy);
   };
 
   return (
@@ -27,18 +27,16 @@ function Q1Energy() {
       <h1 className="AreaHeading">ENERGY</h1>
       <div className="EnergyCard">
         <div className="EnergyCardContent">
-          <div className="EnergyCardTitle">
-            What energy source do you use at home?
-          </div>
+          <div className="EnergyCardTitle">How do you store your data?</div>
           <div className="OptionDiv">
-            {inputQ1Energy === "Normal grid" ? (
+            {inputQ5Energy === "Hard drive" ? (
               <span>
                 <label className="RadioLabel">
-                  Normal grid
+                  Hard drive
                   <input
                     type="radio"
                     name="radio"
-                    value="Normal grid"
+                    value="Hard drive"
                     onClick={handleChange}
                     checked
                   ></input>
@@ -48,26 +46,26 @@ function Q1Energy() {
             ) : (
               <span>
                 <label className="RadioLabel">
-                  Normal grid
+                  Hard drive
                   <input
                     type="radio"
                     name="radio"
-                    value="Normal grid"
+                    value="Hard drive"
                     onClick={handleChange}
                   ></input>
                   <span className="checkmark"></span>
                 </label>
               </span>
             )}
-            {inputQ1Energy === "Mixed sources" ? (
+            {inputQ5Energy === "Cloud service" ? (
               <span>
                 <label className="RadioLabel">
-                  Mixed sources
+                  Cloud service
                   <input
                     type="radio"
                     name="radio"
                     onClick={handleChange}
-                    value="Mixed sources"
+                    value="Cloud service"
                     checked
                   ></input>
                   <span className="checkmark"></span>
@@ -76,86 +74,29 @@ function Q1Energy() {
             ) : (
               <span>
                 <label className="RadioLabel">
-                  Mixed sources
+                  Cloud service
                   <input
                     type="radio"
                     name="radio"
                     onClick={handleChange}
-                    value="Mixed sources"
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            )}
-            {inputQ1Energy === "Solar energy" ? (
-              <span>
-                <label className="RadioLabel">
-                  Solar energy
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="Solar energy"
-                    checked
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            ) : (
-              <span>
-                <label className="RadioLabel">
-                  Solar energy
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="Solar energy"
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            )}
-            {inputQ1Energy === "100% renewable" ? (
-              <span>
-                <label className="RadioLabel">
-                  100% renewable
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="100% renewable"
-                    checked
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            ) : (
-              <span>
-                <label className="RadioLabel">
-                  100% renewable
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="100% renewable"
+                    value="Cloud service"
                   ></input>
                   <span className="checkmark"></span>
                 </label>
               </span>
             )}
           </div>
-
           <div className="EnergyCardButtonsDiv">
             <div className="EnergyCardButtonsLeftDiv"></div>
             <div className="EnergyCardButtonsNavigation">
-              <Link to="/Modules" className="EnergyNavigationButtonsLink">
+              <Link to="/Q4Energy" className="EnergyNavigationButtonsLink">
                 <span className="material-symbols-outlined EnergyNavigationButtons">
                   arrow_left_alt
                 </span>
               </Link>
               <Link
                 onClick={handleSave}
-                to="/Q2Energy"
+                to="/Q6Energy"
                 className="EnergyNavigationButtonsLink"
               >
                 <span className="material-symbols-outlined EnergyNavigationButtons">
@@ -195,4 +136,4 @@ function Q1Energy() {
   );
 }
 
-export default Q1Energy;
+export default Q5Energy;

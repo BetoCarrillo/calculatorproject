@@ -5,21 +5,21 @@ import ProgressBar from "../progressbar";
 import { ResultsContext } from "../../Context/context";
 import CClogo from "../../styles/CClogo.png";
 
-function Q1Energy() {
-  const { inputQ1Energy, setInputQ1Energy } = useContext(ResultsContext);
+function Q6Energy() {
+  const { inputQ6Energy, setInputQ6Energy } = useContext(ResultsContext);
 
   const handleChange = (event) => {
-    let valueQ1Energy = event.target.value;
-    setInputQ1Energy(valueQ1Energy);
+    let valueQ6Energy = event.target.value;
+    setInputQ6Energy(valueQ6Energy);
     // console.log("inputQ1Energy", inputQ1Energy);
   };
 
   const testData = [
-    { bgcolor: "#095366", completed: 11.1, question: 1, totalquestions: 9 },
+    { bgcolor: "#095366", completed: 66.6, question: 6, totalquestions: 9 },
   ];
 
   const handleSave = () => {
-    console.log("inputQ1Energy", inputQ1Energy);
+    console.log("inputQ6Energy", inputQ6Energy);
   };
 
   return (
@@ -28,17 +28,17 @@ function Q1Energy() {
       <div className="EnergyCard">
         <div className="EnergyCardContent">
           <div className="EnergyCardTitle">
-            What energy source do you use at home?
+            Do you often listen to music-videos?
           </div>
           <div className="OptionDiv">
-            {inputQ1Energy === "Normal grid" ? (
+            {inputQ6Energy === "Yes" ? (
               <span>
                 <label className="RadioLabel">
-                  Normal grid
+                  Yes
                   <input
                     type="radio"
                     name="radio"
-                    value="Normal grid"
+                    value="Yes"
                     onClick={handleChange}
                     checked
                   ></input>
@@ -48,26 +48,26 @@ function Q1Energy() {
             ) : (
               <span>
                 <label className="RadioLabel">
-                  Normal grid
+                  Yes
                   <input
                     type="radio"
                     name="radio"
-                    value="Normal grid"
+                    value="Yes"
                     onClick={handleChange}
                   ></input>
                   <span className="checkmark"></span>
                 </label>
               </span>
             )}
-            {inputQ1Energy === "Mixed sources" ? (
+            {inputQ6Energy === "No" ? (
               <span>
                 <label className="RadioLabel">
-                  Mixed sources
+                  No
                   <input
                     type="radio"
                     name="radio"
                     onClick={handleChange}
-                    value="Mixed sources"
+                    value="No"
                     checked
                   ></input>
                   <span className="checkmark"></span>
@@ -76,86 +76,29 @@ function Q1Energy() {
             ) : (
               <span>
                 <label className="RadioLabel">
-                  Mixed sources
+                  No
                   <input
                     type="radio"
                     name="radio"
                     onClick={handleChange}
-                    value="Mixed sources"
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            )}
-            {inputQ1Energy === "Solar energy" ? (
-              <span>
-                <label className="RadioLabel">
-                  Solar energy
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="Solar energy"
-                    checked
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            ) : (
-              <span>
-                <label className="RadioLabel">
-                  Solar energy
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="Solar energy"
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            )}
-            {inputQ1Energy === "100% renewable" ? (
-              <span>
-                <label className="RadioLabel">
-                  100% renewable
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="100% renewable"
-                    checked
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            ) : (
-              <span>
-                <label className="RadioLabel">
-                  100% renewable
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="100% renewable"
+                    value="No"
                   ></input>
                   <span className="checkmark"></span>
                 </label>
               </span>
             )}
           </div>
-
           <div className="EnergyCardButtonsDiv">
             <div className="EnergyCardButtonsLeftDiv"></div>
             <div className="EnergyCardButtonsNavigation">
-              <Link to="/Modules" className="EnergyNavigationButtonsLink">
+              <Link to="/Q5Energy" className="EnergyNavigationButtonsLink">
                 <span className="material-symbols-outlined EnergyNavigationButtons">
                   arrow_left_alt
                 </span>
               </Link>
               <Link
                 onClick={handleSave}
-                to="/Q2Energy"
+                to="/Q7Energy"
                 className="EnergyNavigationButtonsLink"
               >
                 <span className="material-symbols-outlined EnergyNavigationButtons">
@@ -195,4 +138,4 @@ function Q1Energy() {
   );
 }
 
-export default Q1Energy;
+export default Q6Energy;

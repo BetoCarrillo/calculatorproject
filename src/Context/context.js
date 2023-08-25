@@ -5,8 +5,19 @@ export const ResultsContext = createContext();
 export const ResultsContextProvider = (props) => {
   // Energy
   const [inputQ1Energy, setInputQ1Energy] = useState(null);
-  const [inputQ1, setInputQ1] = useState("Germany");
+  const [inputQ2Energy, setInputQ2Energy] = useState(null);
+  const [inputQ3Energy, setInputQ3Energy] = useState(null);
+  const [inputQ4Energy, setInputQ4Energy] = useState(null);
+  const [inputQ5Energy, setInputQ5Energy] = useState(null);
+  const [inputQ6Energy, setInputQ6Energy] = useState(null);
+  const [inputQ7AEnergy, setInputQ7AEnergy] = useState("2");
+  const [inputQ7BEnergy, setInputQ7BEnergy] = useState("2");
+  const [inputQ7CEnergy, setInputQ7CEnergy] = useState("2");
+  const [inputQ7DEnergy, setInputQ7DEnergy] = useState("2");
+  const [inputQ8Energy, setInputQ8Energy] = useState(null);
+  const [inputQ9Energy, setInputQ9Energy] = useState(null);
 
+  const [inputQ1, setInputQ1] = useState("Germany");
   const [inputQ2, setInputQ2] = useState(null);
   const [inputQ3, setInputQ3] = useState(null);
   const [inputQ4, setInputQ4] = useState(null);
@@ -28,8 +39,34 @@ export const ResultsContextProvider = (props) => {
   return (
     <ResultsContext.Provider
       value={{
+        // Energy
         inputQ1Energy,
         setInputQ1Energy,
+        inputQ2Energy,
+        setInputQ2Energy,
+        inputQ3Energy,
+        setInputQ3Energy,
+        inputQ4Energy,
+        setInputQ4Energy,
+        inputQ5Energy,
+        setInputQ5Energy,
+        inputQ5Energy,
+        setInputQ5Energy,
+        inputQ6Energy,
+        setInputQ6Energy,
+        inputQ7AEnergy,
+        setInputQ7AEnergy,
+        inputQ7BEnergy,
+        setInputQ7BEnergy,
+        inputQ7CEnergy,
+        setInputQ7CEnergy,
+        inputQ7DEnergy,
+        setInputQ7DEnergy,
+        inputQ8Energy,
+        setInputQ8Energy,
+        inputQ9Energy,
+        setInputQ9Energy,
+        //
         inputQ1,
         setInputQ1,
         inputQ2,

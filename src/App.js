@@ -37,6 +37,14 @@ import R12B from "./Components/R12B";
 import Start from "./Views/Start";
 import Modules from "./Views/Modules";
 import Q1Energy from "./Components/Energy/Q1Energy";
+import Q2Energy from "./Components/Energy/Q2Energy";
+import Q3Energy from "./Components/Energy/Q3Energy";
+import Q4Energy from "./Components/Energy/Q4Energy";
+import Q5Energy from "./Components/Energy/Q5Energy";
+import Q6Energy from "./Components/Energy/Q6Energy";
+import Q7Energy from "./Components/Energy/Q7Energy";
+import Q8Energy from "./Components/Energy/Q8Energy";
+import Q9Energy from "./Components/Energy/Q9Energy";
 
 function App() {
   return (
@@ -47,6 +55,14 @@ function App() {
           <Route path="/Modules" element={<Modules />} />
           {/* <Route path="/" element={<Landing />} /> */}
           <Route path="/Q1Energy" element={<Q1Energy />} />
+          <Route path="/Q2Energy" element={<Q2Energy />} />
+          <Route path="/Q3Energy" element={<Q3Energy />} />
+          <Route path="/Q4Energy" element={<Q4Energy />} />
+          <Route path="/Q5Energy" element={<Q5Energy />} />
+          <Route path="/Q6Energy" element={<Q6Energy />} />
+          <Route path="/Q7Energy" element={<Q7Energy />} />
+          <Route path="/Q8Energy" element={<Q8Energy />} />
+          <Route path="/Q9Energy" element={<Q9Energy />} />
           <Route path="/Q1" element={<Q1 />} />
           <Route path="/Q2" element={<Q2 />} />
           <Route path="/Q3" element={<Q3 />} />

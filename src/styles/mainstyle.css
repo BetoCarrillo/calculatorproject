@@ -444,18 +444,10 @@
 
 .scrollable-menu {
   height: auto;
-  max-height: 200px;
+  max-height: 280px;
   overflow-x: hidden;
   font-family: "Palanquin", sans-serif !important;
   font-size: 14px;
-}
-
-.caret {
-  font-family: "Palanquin", sans-serif !important;
-}
-
-.caretText {
-  font-family: "Palanquin", sans-serif !important;
 }
 
 .QTitle {
