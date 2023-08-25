@@ -276,7 +276,7 @@
   flex-direction: row;
   color: #095366;
   opacity: 0.8;
-  width: 2rem;
+  width: 3rem;
   justify-content: center;
 }
 
@@ -284,11 +284,29 @@
   text-decoration: none;
 }
 
+.EnergyNavigationButtonsLinkResults {
+  width: 3rem;
+  font-family: "Palanquin Dark", sans-serif !important;
+  color: #095366;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.EnergyNavigationButtonsLinkResults:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #095366;
+  border-radius: 0.2rem;
+  opacity: 1;
+}
+
 .EnergyCardButtonsSkip {
   width: 8rem;
+  height: 1rem;
+  font-size: 10px;
   text-align: center !important;
   margin-right: 5px !important;
-  /* font-family: "Palanquin-Dark", sans-serif !important; */
+  font-family: "Palanquin Dark", sans-serif !important;
   /* margin-left: 5rem !important; */
 }
 

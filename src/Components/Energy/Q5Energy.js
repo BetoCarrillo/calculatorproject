@@ -106,7 +106,7 @@ function Q5Energy() {
             </div>
             <div className="EnergyCardButtonsSkip">
               <Link to="/Results" className="EnergyCardButtonsSkipLink">
-                <div>Skip questions</div>
+                <div>Skip to recommendations</div>
               </Link>
             </div>
 

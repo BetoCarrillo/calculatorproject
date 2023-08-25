@@ -90,32 +90,28 @@ function Q9Energy() {
           </div>
           <div className="EnergyCardButtonsDiv">
             <div className="EnergyCardButtonsLeftDiv"></div>
-            <div className="EnergyCardButtonsNavigation">
-              <Link to="/Q8Energy" className="EnergyNavigationButtonsLink">
-                <span className="material-symbols-outlined EnergyNavigationButtons">
-                  arrow_left_alt
-                </span>
-              </Link>
-              <div>
-                {" "}
-                <span className="EnergyNavigationButtons"></span>
+            <div className="EnergyCardButtonsDiv">
+              <div className="EnergyCardButtonsLeftDiv"></div>
+              <div className="EnergyCardButtonsNavigation">
+                <Link to="/Q8Energy" className="EnergyNavigationButtonsLink">
+                  <span className="material-symbols-outlined EnergyNavigationButtons">
+                    arrow_left_alt
+                  </span>
+                </Link>
+                <Link
+                  // onClick={handleSave}
+                  to="/Results"
+                  className="EnergyNavigationButtonsLinkResults"
+                >
+                  <div className="EnergyNavigationButtonsResults">Results</div>
+                </Link>
               </div>
-              {/* <Link
-                onClick={handleSave}
-                to="/"
-                className="EnergyNavigationButtonsLink"
-              >
-                <span className="material-symbols-outlined EnergyNavigationButtons">
-                  arrow_right_alt
-                </span>
-              </Link> */}
+              <div className="EnergyCardButtonsSkip">
+                <Link to="/Results" className="EnergyCardButtonsSkipLink">
+                  {/* <div>Skip to recommendations</div> */}
+                </Link>
+              </div>
             </div>
-            <div className="EnergyCardButtonsSkip">
-              <Link to="/Results" className="EnergyCardButtonsSkipLink">
-                <div>Results</div>
-              </Link>
-            </div>
-
             {/*            
                 {isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
          */}

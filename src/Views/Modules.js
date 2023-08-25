@@ -14,6 +14,15 @@ import GoBeyond from "../styles/Pictures/gobeyond.png";
 function Modules() {
   return (
     <div className="MainDivBackground ViewDiv">
+      <div>
+        <Link
+          to="https://changeclubs.global/"
+          target={"_blank"}
+          rel={"noreferrer"}
+        >
+          <img src={CClogo} alt="Change Clubs logo" height={100}></img>
+        </Link>
+      </div>
       <div className="ModulesCard">
         <div className="ModulesCardContent">
           <div className="ModulesCardNames">
@@ -125,7 +134,7 @@ function Modules() {
           </div>
         </div>
       </div>
-      <div className="ChangeClubsLogo">
+      {/* <div className="ChangeClubsLogo">
         <Link
           to="https://changeclubs.global/"
           target={"_blank"}
@@ -133,7 +142,7 @@ function Modules() {
         >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }
