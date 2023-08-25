@@ -64,8 +64,8 @@
   padding-top: 15px;
 }
 
-.OptionDivBigTitle {
-  height: 175px;
+.OptionDivBigTitleSmallScreen {
+  height: 13rem;
   padding-top: 15px;
 }
 
@@ -163,6 +163,11 @@
   font-family: "Palanquin", sans-serif !important;
   font-size: 20px;
   padding: 2%;
+  text-decoration: none !important;
+}
+
+.caret .caretText {
+  text-decoration: none;
 }
 
 .DropdownButton:hover {
@@ -401,5 +406,10 @@
     width: 14rem;
     font-size: 10px;
     font-family: "Palanquin", sans-serif !important;
+  }
+
+  .OptionDivBigTitleSmallScreen {
+    height: 175px;
+    padding-top: 15px;
   }
 }

@@ -30,7 +30,7 @@ function Q3Energy() {
           <div className="EnergyCardTitle">
             What cooling system do you use most at home?
           </div>
-          <div className="OptionDiv">
+          <div className="OptionDivBigTitleSmallScreen">
             {inputQ3Energy === "Heat pump" ? (
               <span>
                 <label className="RadioLabel EnergyCardtext">
