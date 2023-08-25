@@ -49,9 +49,9 @@ function Start() {
             <br></br> <span className="StartListTitle">7)</span> You will
             accumulate stars for each completed action depending on their
             positive impact.
-            <br></br> <span className="StartListTitle">8)</span>
-            The overall summary displays your entire impact and the progress of
-            your change journey **under development**<br></br>
+            <br></br> <span className="StartListTitle">8)</span> The overall
+            summary displays your entire impact and the progress of your change
+            journey **under development**<br></br>
             <br></br>We appreciate any feedback provided with the feedback
             button or by sending us an email to: info@changeclubs.global.{" "}
           </p>

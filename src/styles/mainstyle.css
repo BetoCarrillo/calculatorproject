@@ -1,8 +1,8 @@
 /* MAIN APP */
 
-.PaddingBottomPage {
+/* .PaddingBottomPage {
   padding-bottom: 15px;
-}
+} */
 
 .MainDivBackground {
   background-color: #212329;
@@ -24,16 +24,11 @@
   color: white;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   border-style: solid;
   animation: change-color 60s linear infinite;
-  /* border-color: #095366; */
   border-width: 0.2rem;
   border-radius: 2rem !important;
-  /* min-width: 32rem; */
   max-width: 60rem;
-  /* min-height: 24.5rem; */
-  /* justify-content: space-between; */
 }
 
 .StartCardContent {
@@ -43,7 +38,6 @@
   margin: 2%;
   font-family: "Palanquin", sans-serif;
   font-size: 18px;
-  /* flex-wrap: nowrap !important; */
 }
 
 .StartListTitle {
@@ -54,14 +48,14 @@
   margin: 0%;
 }
 
+.StartListNumber {
+  font-weight: bold;
+}
+
 .StartButtonsDiv {
   display: flex;
   flex-direction: row;
   gap: 30px;
-}
-
-.StartListNumber {
-  font-weight: bold;
 }
 
 .StartButton {
@@ -69,7 +63,6 @@
   background-color: #f79521 !important;
   font-family: "Palanquin Dark", sans-serif !important;
   font-size: 20px !important;
-  /* font-weight: bold !important; */
 }
 .StartButton:hover {
   opacity: 0.8;
@@ -364,6 +357,37 @@
   font-size: 4rem;
   margin: 0%;
   margin: 0%;
+}
+
+/* MEDIA SMALL SCREEN */
+
+@media screen and (max-width: 650px) {
+  .StartCard {
+    max-width: 24rem;
+  }
+
+  .StartCardContent {
+    font-size: 16px;
+    margin: 3%;
+    line-height: 1.6;
+  }
+  .StartListTitle {
+    font-size: 18px;
+  }
+
+  .StartButtonsDiv {
+    gap: 15px;
+  }
+
+  .StartButton {
+    width: 10rem;
+    font-size: 16px !important;
+  }
+
+  .FeedbackButton {
+    width: 10rem;
+    font-size: 16px !important;
+  }
 }
 
 /* HOUSING */
@@ -914,17 +938,6 @@
   .ButtonSkipAll {
     margin-left: 1rem !important;
   }
-
-  .ButtonAverage {
-    /* margin-left: 0rem !important; */
-  }
-  /* .ButtonAverageText {
-    font-size: 12px !important;
-  } */
-
-  /* .QCardDiv {
-    min-width: 1 !important;
-  }  */
 
   .QCardDivRecommendationsLinks {
     min-width: 30 !important;

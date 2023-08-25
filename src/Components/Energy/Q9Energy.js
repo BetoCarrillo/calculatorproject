@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "../../styles/energystyle.css";
 import { Link } from "react-router-dom";
 import ProgressBar from "../progressbar";
