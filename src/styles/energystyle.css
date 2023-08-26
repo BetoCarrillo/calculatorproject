@@ -164,12 +164,8 @@
   font-size: 20px;
   padding: 2%;
   text-decoration: none !important;
+  color: black;
 }
-
-.caret .caretText {
-  text-decoration: none;
-}
-
 .DropdownButton:hover {
   color: white;
   background-color: #095366;
@@ -312,7 +308,8 @@
   width: 8rem;
   height: 1rem;
   font-size: 10px;
-  text-align: center !important;
+  /* text-align: center !important; */
+  align-content: flex-start !important;
   margin-right: 5px !important;
   font-family: "Palanquin Dark", sans-serif !important;
   /* margin-left: 5rem !important; */
@@ -320,7 +317,8 @@
 
 .EnergyCardButtonsSkip:hover {
   width: 8rem;
-  text-align: center !important;
+  align-content: center !important;
+  /* text-align: center !important; */
   margin-right: 5px !important;
   color: white !important;
   background-color: #095366;
@@ -387,12 +385,16 @@
   }
 
   .EnergyCardButtonsSkip {
-    height: 100%;
+    height: 80%;
     flex-direction: row;
-    justify-content: flex-start;
+    text-align: center;
+    font-size: 8px !important;
+    margin-right: 10px !important;
+  }
 
-    /* padding: 1px; */
-    /* font-family: "Palanquin-Dark", sans-serif !important; */
+  .EnergyCardButtonsSkip:hover {
+    font-size: 8px !important;
+    margin-right: 10px !important;
   }
 
   .OptionDivMultipleInputs {

@@ -36,7 +36,16 @@ function Q2Energy() {
                 data-toggle="dropdown"
               >
                 {inputQ2Energy === "" ? (
-                  <span className="caret">Choose</span>
+                  <span
+                    className="caret"
+                    style={{
+                      color: "black",
+                      textDecoration: "none",
+                      fontFamily: "Palanquin",
+                    }}
+                  >
+                    Choose
+                  </span>
                 ) : (
                   <span
                     className="caretText"
