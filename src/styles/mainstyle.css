@@ -693,12 +693,12 @@
   border: 0% !important;
 }
 
-.ResultsDiv {
+/* .ResultsDiv {
   display: flex;
   flex-direction: row;
   gap: 15px;
   padding-bottom: 15px;
-}
+} */
 
 /* .TableDiv {
   display: flex;
@@ -926,11 +926,9 @@
 
 .CalculationTotal {
   background-color: #f9d9d9;
-  border-radius: 4rem;
-  padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: auto;
+  border-radius: 1rem;
+  /* padding: 10px; */
+  width: 100%;
   font-family: "Palanquin Dark", sans-serif !important;
 }
 
@@ -1015,12 +1013,12 @@
 /* MEDIA */
 
 @media screen and (max-width: 650px) {
-  .ResultsDiv {
+  /* .ResultsDiv {
     display: flex;
     flex-direction: column-reverse;
     gap: 5px;
     margin: 5px;
-  }
+  } */
 
   .TooltipText {
     font-size: 16px;

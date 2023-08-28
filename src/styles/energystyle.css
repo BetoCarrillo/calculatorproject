@@ -3,6 +3,7 @@
   height: 100vh;
   background-size: cover;
   overflow: auto;
+  /* width: 100%; */
 }
 
 .EnergyMainFlex {
@@ -12,6 +13,7 @@
   align-items: center;
   flex-direction: column;
   gap: 25px;
+  /* width: 100%; */
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -309,7 +311,7 @@
   height: 1rem;
   font-size: 10px;
   /* text-align: center !important; */
-  align-content: flex-start !important;
+  justify-content: center !important;
   margin-right: 5px !important;
   font-family: "Palanquin Dark", sans-serif !important;
   /* margin-left: 5rem !important; */
@@ -347,6 +349,370 @@
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
+}
+
+/* RESULTS */
+
+.ResultsMainDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 100%;
+  width: 95%;
+}
+.RecommendationsResultsDiv {
+  width: 72%;
+  height: 100%;
+}
+
+.FootprintAnswersResultsDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28%;
+  height: 100%;
+  gap: 5px;
+}
+
+/* RECOMMENDATIONS */
+
+.EnergyCardRecResults {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-color: #095366;
+  border-width: 0.2rem;
+  border-radius: 2rem !important;
+}
+
+.EnergyCardContentRecResults {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  gap: 15px;
+}
+
+.EnergyCardTitleRecResults {
+  font-size: 22px;
+  color: #095366;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-weight: bold !important;
+  text-align: center;
+}
+
+.OptionDivRecResults {
+  /* height: 100%; */
+  padding-top: 15px;
+}
+
+/* FOOTPRINT */
+
+.EnergyCardFootprintResults {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-color: #095366;
+  border-width: 0.2rem;
+  border-radius: 2rem !important;
+}
+
+.EnergyCardContentFootprintResults {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  gap: 15px;
+  padding-bottom: 12px;
+  width: 95%;
+}
+
+.EnergyCardTitleFootprintResults {
+  color: #095366;
+  font-size: 22px;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-weight: bold !important;
+  text-align: center;
+}
+
+.OptionDivFootprintResults {
+  width: 100%;
+  flex-wrap: wrap;
+  height: auto;
+}
+.OptionDivFootprintResultsRadioDiv {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+/* RADIO FOOTPRINT */
+
+.RadioLabelEnergyFootprint {
+  font-family: "Palanquin", sans-serif !important;
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.RadioLabelEnergyFootprint input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmarkEnergyFootprint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.RadioLabelEnergyFootprint:hover input ~ .checkmarkEnergyFootprint {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.RadioLabelEnergyFootprint input:checked ~ .checkmarkEnergyFootprint {
+  background-color: #095366;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarkEnergyFootprint:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.RadioLabelEnergyFootprint input:checked ~ .checkmarkEnergyFootprint:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.RadioLabelEnergyFootprint .checkmarkEnergyFootprint:after {
+  top: 7px;
+  left: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+}
+
+.ResultsDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.ResultsOutput {
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-size: 18px;
+  background-color: #f9d9d9;
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+.ResultsOutput:hover {
+  background-color: #ee4347;
+  color: white;
+}
+
+/* ANSWERS */
+
+.EnergyCardAnswers {
+  /* width: 100%; */
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-color: #095366;
+  border-width: 0.2rem;
+  border-radius: 2rem !important;
+}
+
+.EnergyCardContentAnswers {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  gap: 15px;
+  width: 100%;
+}
+
+.EnergyCardTitleAnswers {
+  font-size: 22px;
+  color: #095366;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-weight: bold !important;
+  text-align: center;
+}
+
+.OptionDivAnswers {
+  padding-left: 4%;
+  padding-right: 4%;
+  height: auto;
+  width: 100%;
+}
+
+.TableAnswers {
+  display: flex;
+  flex-direction: column;
+}
+
+.TableRow {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.TableColumnQuestions {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 7px;
+}
+
+.TableColumnAns {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 7px;
+}
+
+.TableText {
+  font-family: "Palanquin", sans-serif !important;
+  font-size: 14px;
+}
+
+.StartOverButtonDiv {
+  padding-bottom: 12px;
+}
+
+.StartOverButton {
+  width: 6rem;
+  background-color: #f79521 !important;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-size: 12px !important;
+  padding: 0% !important;
+}
+.StartOverButton:hover {
+  opacity: 0.8;
+  /* background-color: #d98e02 !important; */
+}
+
+.DropdownDivAnswers {
+  /* width: 100%; */
+}
+
+.DropdownButtonAnswers {
+  font-family: "Palanquin", sans-serif !important;
+  font-size: 14px;
+  padding: 2%;
+  text-decoration: none !important;
+  color: black;
+}
+.DropdownButtonAnswers:hover {
+  color: white;
+  background-color: #095366;
+}
+
+.dropddown-toggle-own {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin: 0%;
+  width: 100%;
+  /* border: 0% !important; */
+  justify-content: flex-start;
+}
+
+.EnergyDropdownOptionAnswers {
+  width: 100%;
+  font-family: "Palanquin", sans-serif;
+  margin: 0%;
+  border-radius: 0.2rem;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #095366;
+}
+
+.EnergyDropdownOptionAnswers:hover {
+  color: white;
+  background-color: #095366;
+  height: 100%;
+}
+
+.AnswerInput {
+  display: flex;
+  width: 100%;
+  border: 0%;
+  white-space: wrap;
+  flex-wrap: nowrap !important;
+  justify-content: space-between;
+  color: #095366;
+}
+
+.AnswerInput:hover {
+  color: white;
+  background-color: #095366;
+}
+
+.ownbutton {
+  width: 100% !important;
+  /* white-space: wrap; */
+  display: inline-block;
+  justify-content: flex-start;
+
+  /* flex-wrap: nowrap !important; */
+  /* text-align: start; */
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0px solid transparent;
+  padding: 0.27rem 0rem;
+
+  border-radius: 0.25rem;
+  /* margin-right: 5px; */
+}
+.arrowdown {
+  margin-right: 5px;
+}
+.SavingInputAnswer {
+  text-align: start;
 }
 
 @media screen and (max-width: 650px) {

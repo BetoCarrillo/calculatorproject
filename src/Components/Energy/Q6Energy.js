@@ -38,7 +38,7 @@ function Q6Energy() {
                   <input
                     type="radio"
                     name="radio"
-                    value="Yes"
+                    value="Music-videos"
                     onClick={handleChange}
                     checked
                   ></input>
@@ -52,7 +52,7 @@ function Q6Energy() {
                   <input
                     type="radio"
                     name="radio"
-                    value="Yes"
+                    value="Music-videos"
                     onClick={handleChange}
                   ></input>
                   <span className="checkmark"></span>
@@ -67,7 +67,7 @@ function Q6Energy() {
                     type="radio"
                     name="radio"
                     onClick={handleChange}
-                    value="No"
+                    value="Music only"
                     checked
                   ></input>
                   <span className="checkmark"></span>
@@ -81,7 +81,7 @@ function Q6Energy() {
                     type="radio"
                     name="radio"
                     onClick={handleChange}
-                    value="No"
+                    value="Music only"
                   ></input>
                   <span className="checkmark"></span>
                 </label>
@@ -107,7 +107,7 @@ function Q6Energy() {
               </Link>
             </div>
             <div className="EnergyCardButtonsSkip">
-              <Link to="/Results" className="EnergyCardButtonsSkipLink">
+              <Link to="/EnergyResults" className="EnergyCardButtonsSkipLink">
                 <div>Skip to recommendations</div>
               </Link>
             </div>
@@ -130,7 +130,11 @@ function Q6Energy() {
         ))}
       </div>
       <div className="ChangeClubsLogo">
-        <Link to="/Results" target={"_blank"} rel={"noreferrer"}>
+        <Link
+          to="https://changeclubs.global/"
+          target={"_blank"}
+          rel={"noreferrer"}
+        >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         </Link>
       </div>

@@ -100,17 +100,16 @@ function Q9Energy() {
                 </Link>
                 <Link
                   // onClick={handleSave}
-                  to="/Results"
+                  to="/EnergyResults"
                   className="EnergyNavigationButtonsLinkResults"
                 >
                   <div className="EnergyNavigationButtonsResults">Results</div>
                 </Link>
               </div>
-              <div className="EnergyCardButtonsSkip">
-                <Link to="/Results" className="EnergyCardButtonsSkipLink">
-                  {/* <div>Skip to recommendations</div> */}
-                </Link>
-              </div>
+              <div
+                className="EnergyCardButtonsSkip"
+                style={{ visibility: "hidden" }}
+              ></div>
             </div>
             {/*            
                 {isNaN(CalcTotal) ? <span>Back</span> : <span>Skip all</span>}
@@ -130,7 +129,11 @@ function Q9Energy() {
         ))}
       </div>
       <div className="ChangeClubsLogo">
-        <Link to="/Results" target={"_blank"} rel={"noreferrer"}>
+        <Link
+          target={"_blank"}
+          rel={"noreferrer"}
+          to="https://changeclubs.global/"
+        >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         </Link>
       </div>

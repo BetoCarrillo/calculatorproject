@@ -1,0 +1,57 @@
+{inputQ2Energy === "" ? (
+<button type="button" className=" ownbutton DropdownButtonAnswers dropddown-toggle-own " data-toggle="dropdown" style={{
+    width: "auto" , }}>
+    <div className=" AnswerInput" style={{ textDecoration: "none" , fontFamily: "Palanquin" , }}>
+        Choose
+        <div className="dropdown-toggle arrowdown"></div>
+    </div>
+</button>
+) : (
+<button type="button" className="ownbutton DropdownButtonAnswers dropddown-toggle-own " data-toggle="dropdown" style={{
+    width: "auto" , }}>
+    <div className=" AnswerInput" style={{ fontFamily: "Palanquin" , }}>
+        {inputQ2Energy}
+        <div className="dropdown-toggle arrowdown"></div>
+    </div>
+</button>
+)}
+
+<ul className="dropdown-menu scrollable-menu" role="menu">
+    <li>
+        <p href="#Heat pump" onClick={handleChangeQ2} id="Heat pump" className="EnergyDropdownOptionAnswers">
+            {" "}
+            Heat pump
+        </p>
+    </li>
+    <li>
+        <p href="#Electricity" onClick={handleChangeQ2} id="Electricity" className="EnergyDropdownOptionAnswers">
+            Electricity
+        </p>
+    </li>
+    <li>
+        <p href="#Methane (natural gas)" onClick={handleChangeQ2} id="Methane (natural gas)"
+            className="EnergyDropdownOptionAnswers">
+            Methane (natural gas)
+        </p>
+    </li>
+    <li>
+        <p href="#Heating oil" onClick={handleChangeQ2} id="Heating oil" className="EnergyDropdownOptionAnswers">
+            Heating oil
+        </p>
+    </li>
+    <li>
+        <p href="#Wood pellets" onClick={handleChangeQ2} id="Wood pellets" className="EnergyDropdownOptionAnswers">
+            Wood pellets
+        </p>
+    </li>
+    <li>
+        <p href="#Biogas" onClick={handleChangeQ2} id="Biogas" className="EnergyDropdownOptionAnswers">
+            Biogas
+        </p>
+    </li>
+    <li>
+        <p href="#None" onClick={handleChangeQ2} id="None" className="EnergyDropdownOptionAnswers">
+            None
+        </p>
+    </li>
+</ul>

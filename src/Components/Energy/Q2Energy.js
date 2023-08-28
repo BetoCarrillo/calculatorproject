@@ -67,7 +67,14 @@ function Q2Energy() {
                 style={{ backgroundColor: "#095366" }}
               >
                 {inputQ2Energy === "" ? (
-                  <span className="caret">Choose</span>
+                  <span
+                    className="caret"
+                    style={{
+                      fontFamily: "Palanquin",
+                    }}
+                  >
+                    Choose
+                  </span>
                 ) : (
                   <span
                     className="caretText"
@@ -176,7 +183,7 @@ function Q2Energy() {
               </Link>
             </div>
             <div className="EnergyCardButtonsSkip">
-              <Link to="/Results" className="EnergyCardButtonsSkipLink">
+              <Link to="/EnergyResults" className="EnergyCardButtonsSkipLink">
                 <div>Skip to recommendations</div>
               </Link>
             </div>
@@ -199,7 +206,11 @@ function Q2Energy() {
         ))}
       </div>
       <div className="ChangeClubsLogo">
-        <Link to="/Results" target={"_blank"} rel={"noreferrer"}>
+        <Link
+          to="https://changeclubs.global/"
+          target={"_blank"}
+          rel={"noreferrer"}
+        >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         </Link>
       </div>

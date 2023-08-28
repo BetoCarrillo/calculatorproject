@@ -9,12 +9,12 @@ export const ResultsContextProvider = (props) => {
   const [inputQ3Energy, setInputQ3Energy] = useState("Fans");
   const [inputQ4Energy, setInputQ4Energy] = useState("Electricity");
   const [inputQ5Energy, setInputQ5Energy] = useState("Hard drive");
-  const [inputQ6Energy, setInputQ6Energy] = useState("Yes");
+  const [inputQ6Energy, setInputQ6Energy] = useState("Music-videos");
   const [inputQ7AEnergy, setInputQ7AEnergy] = useState("2");
   const [inputQ7BEnergy, setInputQ7BEnergy] = useState("2");
   const [inputQ7CEnergy, setInputQ7CEnergy] = useState("2");
   const [inputQ7DEnergy, setInputQ7DEnergy] = useState("2");
-  const [inputQ8Energy, setInputQ8Energy] = useState("No");
+  const [inputQ8Energy, setInputQ8Energy] = useState("Not energy efficient");
   const [inputQ9Energy, setInputQ9Energy] = useState("No");
 
   const [inputQ1, setInputQ1] = useState("Germany");

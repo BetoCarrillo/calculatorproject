@@ -14,8 +14,19 @@ function Q7Energy() {
 
   const handleValueHome = (event) => {
     let value = event.target.value;
-    // setValue(value);
     setInputQ7AEnergy(value);
+    // if (inputQ7AEnergy === "2") {
+    //   setInputQ7AEnergy("I'm not aware");
+    // }
+    // if (inputQ7AEnergy === "2") {
+    //   setInputQ7AEnergy("I'm aware but can use some tips");
+    // }
+    // if (inputQ7AEnergy === "3") {
+    //   setInputQ7AEnergy("I'm a master");
+    // }
+
+    // setValue(value);
+
     // console.log(value);
 
     // setInputQ7Energy(valueQ7Energy);
@@ -320,7 +331,7 @@ function Q7Energy() {
               </Link>
             </div>
             <div className="EnergyCardButtonsSkip">
-              <Link to="/Results" className="EnergyCardButtonsSkipLink">
+              <Link to="/EnergyResults" className="EnergyCardButtonsSkipLink">
                 <div>Skip to recommendations</div>
               </Link>
             </div>
@@ -343,7 +354,11 @@ function Q7Energy() {
         ))}
       </div>
       <div className="ChangeClubsLogo">
-        <Link to="/Results" target={"_blank"} rel={"noreferrer"}>
+        <Link
+          to="https://changeclubs.global/"
+          target={"_blank"}
+          rel={"noreferrer"}
+        >
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         </Link>
       </div>
