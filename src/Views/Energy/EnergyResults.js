@@ -1,14 +1,20 @@
 import React, { useContext } from "react";
 import "../../styles/energystyle.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ResultsContext } from "../../Context/context";
 import CClogo from "../../styles/CClogo.png";
 import RecommendationsResultsEnergy from "../../Components/Energy/RecommendationsResultsEnergy";
 import FootprintResultsEnergy from "../../Components/Energy/FootprintResultsEnergy";
 import AnswersEnergy from "../../Components/Energy/AnswersEnergy";
+import { Button } from "@mui/material";
 
 function EnergyResults() {
   //   const { inputQ1Energy, setInputQ1Energy } = useContext(ResultsContext);
+
+  const redirectSummary = useNavigate();
+  const handleStart = () => {
+    redirectSummary("");
+  };
 
   return (
     <div className="EnergyDivBackground EnergyMainFlex">
@@ -17,6 +23,13 @@ function EnergyResults() {
         <div className="RecommendationsResultsDiv">
           {" "}
           <RecommendationsResultsEnergy />
+          <Button
+            variant="contained"
+            className="SummaryButton"
+            onClick={handleStart}
+          >
+            OVERALL SUMMARY
+          </Button>
         </div>
         <div className="FootprintAnswersResultsDiv">
           <FootprintResultsEnergy />
