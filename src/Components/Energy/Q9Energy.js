@@ -128,7 +128,7 @@ function Q9Energy() {
           />
         ))}
       </div>
-      <div className="ChangeClubsLogo">
+      <div className="ChangeClubsLogo CClogo">
         <Link
           target={"_blank"}
           rel={"noreferrer"}

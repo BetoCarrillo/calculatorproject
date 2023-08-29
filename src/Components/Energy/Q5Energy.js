@@ -127,7 +127,7 @@ function Q5Energy() {
           />
         ))}
       </div>
-      <div className="ChangeClubsLogo">
+      <div className="ChangeClubsLogo CClogo">
         <Link to="/EnergyResults" target={"_blank"} rel={"noreferrer"}>
           <img src={CClogo} alt="Change Clubs logo" height={50}></img>
         </Link>

@@ -349,10 +349,15 @@
 .ChangeClubsLogo {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 100%;
 }
 
+.CClogo {
+  margin: auto 0;
+  position: sticky;
+  bottom: 0;
+}
 /* RESULTS */
 
 .ResultsMainDiv {

@@ -205,7 +205,7 @@ function Q2Energy() {
           />
         ))}
       </div>
-      <div className="ChangeClubsLogo">
+      <div className="ChangeClubsLogo CClogo">
         <Link
           to="https://changeclubs.global/"
           target={"_blank"}
