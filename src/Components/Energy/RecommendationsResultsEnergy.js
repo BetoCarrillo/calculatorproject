@@ -13,10 +13,54 @@ import { Button } from "@mui/material";
 function RecommendationsResultsEnergy() {
   //   const { inputQ1Energy, setInputQ1Energy } = useContext(ResultsContext);
 
+  const {
+    inputQ1Energy,
+    setInputQ1Energy,
+    inputQ2Energy,
+    setInputQ2Energy,
+    inputQ3Energy,
+    setInputQ3Energy,
+    inputQ4Energy,
+    setInputQ4Energy,
+    inputQ5Energy,
+    setInputQ5Energy,
+    inputQ6Energy,
+    setInputQ6Energy,
+    inputQ7AEnergy,
+    setInputQ7AEnergy,
+    inputQ7BEnergy,
+    setInputQ7BEnergy,
+    inputQ7CEnergy,
+    setInputQ7CEnergy,
+    inputQ8Energy,
+    setInputQ8Energy,
+    inputQ9Energy,
+    setInputQ9Energy,
+    inputQ7DEnergy,
+    setInputQ7DEnergy,
+  } = useContext(ResultsContext);
+
+  const UserRecommendationAnswers = {
+    Q1Energy: inputQ1Energy,
+    Q2Energy: inputQ2Energy,
+    Q3Energy: inputQ3Energy,
+    Q4Energy: inputQ4Energy,
+    Q5Energy: inputQ5Energy,
+    Q6Energy: inputQ6Energy,
+    Q7AEnergy: inputQ7AEnergy,
+    Q7BEnergy: inputQ7BEnergy,
+    Q7CEnergy: inputQ7CEnergy,
+    Q7DEnergy: inputQ7DEnergy,
+    Q8Energy: inputQ9Energy,
+    Q9Energy: inputQ9Energy,
+  };
+
   const redirectAllRecommendations = useNavigate();
   const handleStart = () => {
     redirectAllRecommendations("");
   };
+
+  console.log("UserRecommendationAnswers", UserRecommendationAnswers);
 
   return (
     <div className="EnergyCardRecResults">

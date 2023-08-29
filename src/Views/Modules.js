@@ -74,7 +74,7 @@ function Modules() {
             <Link
               className="HousingModule container HousingImage"
               style={{ textDecoration: "none", color: "white" }}
-              to="/Q1"
+              to=""
             >
               <div>
                 <img
@@ -83,6 +83,9 @@ function Modules() {
                   className="ModulesImage"
                 ></img>
               </div>{" "}
+              <div className="middle">
+                <div className="text">COMING SOON..</div>
+              </div>
               <div>HOUSING</div>
             </Link>
             <div className="BiodiversityModule container BiodiversityImage">
@@ -95,7 +98,9 @@ function Modules() {
                 ></img>{" "}
               </div>
               <div className="middle">
-                <div className="text">COMING SOON..</div>
+                <div className="text" style={{ paddingBottom: "20px" }}>
+                  COMING SOON..
+                </div>
               </div>
               <div>
                 BIODIVERSITY <br></br> AND NATURE

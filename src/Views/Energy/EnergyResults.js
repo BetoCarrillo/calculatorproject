@@ -9,7 +9,7 @@ import AnswersEnergy from "../../Components/Energy/AnswersEnergy";
 import { Button } from "@mui/material";
 
 function EnergyResults() {
-  //   const { inputQ1Energy, setInputQ1Energy } = useContext(ResultsContext);
+  // const { inputQ1Energy, setInputQ1Energy, } = useContext(ResultsContext);
 
   const redirectSummary = useNavigate();
   const handleStart = () => {

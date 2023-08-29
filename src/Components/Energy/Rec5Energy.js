@@ -16,8 +16,8 @@ function RecEnergy5() {
         <div className="EnergyCardTypeRecSummary">
           <div>Easy to do</div>
           <div>
-            <span class="material-symbols-outlined RecStarGold">star</span>{" "}
-            <span class="material-symbols-outlined RecStarGold">star</span>{" "}
+            <span className="material-symbols-outlined RecStarGold">star</span>{" "}
+            <span className="material-symbols-outlined RecStarGold">star</span>{" "}
           </div>
         </div>
         <div className="EnergyCardTitleRecSummary">Be energy aware</div>

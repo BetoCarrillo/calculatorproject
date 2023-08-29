@@ -239,7 +239,13 @@
 }
 
 .HousingModule:hover {
-  background-color: #f9cf6477;
+  background-color: white;
+}
+
+.HousingModule:hover > * {
+  filter: opacity(0.5) drop-shadow(0 0 0 #f9ce64) !important;
+  display: block;
+  overflow: visible;
 }
 
 .BiodiversityModule {

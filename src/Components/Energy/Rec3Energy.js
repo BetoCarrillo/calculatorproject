@@ -16,7 +16,7 @@ function RecEnergy3() {
         <div className="EnergyCardTypeRecSummary">
           <div>Fun Tip</div>
           <div>
-            <span class="material-symbols-outlined RecStarGold">star</span>
+            <span className="material-symbols-outlined RecStarGold">star</span>
           </div>
         </div>
         <div className="EnergyCardTitleRecSummary">Save energy</div>
