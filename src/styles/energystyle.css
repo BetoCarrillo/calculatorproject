@@ -1,5 +1,6 @@
 .EnergyDivBackground {
   background-color: #f79521;
+  min-height: 100vh;
   height: 100%;
   background-size: cover;
   overflow: auto;
@@ -9,6 +10,7 @@
 .EnergyMainFlex {
   /* min-width: 300; */
   /* justify-content: center !important; */
+
   display: flex;
   align-items: center;
   flex-direction: column;
