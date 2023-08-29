@@ -23,18 +23,20 @@ function EnergyResults() {
         <div className="RecommendationsResultsDiv">
           {" "}
           <RecommendationsResultsEnergy />
-          <Button
-            variant="contained"
-            className="SummaryButton"
-            onClick={handleStart}
-          >
-            OVERALL SUMMARY
-          </Button>
         </div>
         <div className="FootprintAnswersResultsDiv">
           <FootprintResultsEnergy />
           <AnswersEnergy />
         </div>
+      </div>
+      <div>
+        <Button
+          variant="contained"
+          className="SummaryButton"
+          onClick={handleStart}
+        >
+          OVERALL SUMMARY
+        </Button>
       </div>
       <div className="ChangeClubsLogo">
         <Link to="/Results" target={"_blank"} rel={"noreferrer"}>

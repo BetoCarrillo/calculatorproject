@@ -16,10 +16,9 @@ function RecEnergy2() {
         <div className="EnergyCardTypeRecSummary">
           <div>Biggest Impact</div>
           <div>
-            <img src={yellowstar} alt="YellowStar" height={20} RecStar></img>
-            <img src={yellowstar} alt="YellowStar" height={20} RecStar></img>
-            <img src={yellowstar} alt="YellowStar" height={20} RecStar></img>
-            {/* <div class="material-symbols-outlined RecStar">grade</div> */}
+            <span class="material-symbols-outlined RecStarGold">star</span>
+            <span class="material-symbols-outlined RecStarGold">star</span>
+            <span class="material-symbols-outlined RecStarGold">star</span>
           </div>
         </div>
         <div className="EnergyCardTitleRecSummary">

@@ -13,19 +13,14 @@ function RecEnergy6() {
         <div className="EnergyCardTypeRecSummary">
           <div>Fun Tip</div>
           <div>
-            <img src={yellowstar} alt="YellowStar" height={20} RecStar></img>
-
-            {/* <div class="material-symbols-outlined RecStar">grade</div> */}
+            <img src={yellowstar} alt="YellowStar" height={20}></img>
           </div>
         </div>
-        <div className="EnergyCardTitleRecSummary">
-          Change to a clean energy provider
-        </div>
+        <div className="EnergyCardTitleRecSummary">Save Energy</div>
         <div className="EnergyCardModuleRecSummary">Energy</div>
         <div className="OptionDivRecSummary">
-          Energy is fundamental to our society and our economic and social
-          development. Therefore, we must achieve a sustainable and needs-based
-          energy supply to be climate-neutral.
+          Have a candlelight dinner or go back to the past with a lights-off
+          evening
         </div>
         <Link
           // to=""

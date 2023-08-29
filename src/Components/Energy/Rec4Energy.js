@@ -13,10 +13,8 @@ function RecEnergy4() {
         <div className="EnergyCardTypeRecSummary">
           <div>Easy to do</div>
           <div>
-            <img src={yellowstar} alt="YellowStar" height={20} RecStar></img>
-            <img src={yellowstar} alt="YellowStar" height={20} RecStar></img>
-
-            {/* <div class="material-symbols-outlined RecStar">grade</div> */}
+            <img src={yellowstar} alt="YellowStar" height={20}></img>
+            <img src={yellowstar} alt="YellowStar" height={20}></img>
           </div>
         </div>
         <div className="EnergyCardTitleRecSummary">Be energy aware</div>

@@ -26,13 +26,11 @@ function RecommendationsResultsEnergy() {
           <RecEnergy2 />
           <RecEnergy5 />
           <RecEnergy3 />
-          <RecEnergy4 />
           <RecEnergy1 />
-
+          <RecEnergy4 />
           <RecEnergy6 />
           <div className="AllRecButtonDiv">
             <div></div>
-
             <Button
               variant="contained"
               className="AllRecButton"

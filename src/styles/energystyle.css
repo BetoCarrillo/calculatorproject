@@ -1,6 +1,6 @@
 .EnergyDivBackground {
   background-color: #f79521;
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   overflow: auto;
   /* width: 100%; */
@@ -347,7 +347,7 @@
 .ChangeClubsLogo {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   height: 100%;
 }
 
@@ -357,7 +357,7 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
-  height: 100%;
+  align-items: stretch;
   width: 95%;
 }
 .RecommendationsResultsDiv {
@@ -375,7 +375,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 28%;
-  height: 100%;
+  align-items: stretch;
   gap: 5px;
 }
 
@@ -397,7 +397,7 @@
 
 .EnergyCardRecResults {
   width: 100%;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
   min-height: auto;
 
   background-color: white;
@@ -419,7 +419,7 @@
 }
 
 .EnergyCardTitleRecResults {
-  font-size: 22px;
+  font-size: 24px;
   color: #095366;
   font-family: "Palanquin Dark", sans-serif !important;
   font-weight: bold !important;
@@ -433,8 +433,6 @@
   gap: 15px;
   justify-content: center;
   padding-top: 15px;
-
-  /* justify-content: stretch; */
 }
 
 .EnergyCardRecSummary {
@@ -528,11 +526,6 @@
   padding: 0%;
   /* font-variation-settings: "wght" 1000; */
 }
-.RecStar {
-  color: gold;
-  fill: gold !important;
-  /* font-variation-settings: "FILL" 1 !important; */
-}
 
 .AllRecButtonDiv {
   width: 100%;
@@ -552,6 +545,10 @@
 .AllRecButton:hover {
   opacity: 0.8;
   /* background-color: #d98e02 !important; */
+}
+
+.RecStarGold {
+  color: gold;
 }
 
 /* FOOTPRINT */
@@ -581,7 +578,7 @@
 
 .EnergyCardTitleFootprintResults {
   color: #095366;
-  font-size: 22px;
+  font-size: 24px;
   font-family: "Palanquin Dark", sans-serif !important;
   font-weight: bold !important;
   text-align: center;
@@ -712,7 +709,7 @@
 }
 
 .EnergyCardTitleAnswers {
-  font-size: 22px;
+  font-size: 24px;
   color: #095366;
   font-family: "Palanquin Dark", sans-serif !important;
   font-weight: bold !important;
@@ -919,5 +916,49 @@
   .OptionDivBigTitleSmallScreen {
     height: 184px;
     padding-top: 15px;
+  }
+
+  .ResultsMainDiv {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .RecommendationsResultsDiv {
+    width: 100%;
+  }
+
+  .FootprintAnswersResultsDiv {
+    width: 100%;
+  }
+
+  .EnergyCardRecSummary {
+    width: 95%;
+    height: 100%;
+  }
+
+  .OptionDivRecResults {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    padding-top: 0px;
+  }
+
+  .OptionDivRecSummary {
+    display: none;
+  }
+
+  .EnergyCardContentRecSummary {
+    width: 95%;
+    height: auto;
+    margin: 1%;
+    gap: 1px;
+  }
+
+  .AllRecButtonDiv {
+    padding-top: 10px;
+    justify-content: center;
+    margin-right: 0%;
   }
 }
