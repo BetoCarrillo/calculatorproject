@@ -27,7 +27,7 @@ function Q1Energy() {
       <h1 className="AreaHeading">ENERGY</h1>
       <div className="EnergyCard">
         <div className="EnergyCardContent">
-          <div className="EnergyCardTitle">
+          <div className="EnergyCardTitle Q1Title">
             What type of electricity do you use at home?
           </div>
           <div className="OptionDiv">

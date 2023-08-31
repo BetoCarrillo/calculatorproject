@@ -457,7 +457,6 @@
   flex-direction: column;
   align-items: center;
   border-style: solid;
-
   border-width: 2px;
   border-radius: 1rem !important;
 }
@@ -565,7 +564,7 @@
   background-color: #f79521 !important;
   font-family: "Palanquin Dark", sans-serif !important;
   font-size: 12px !important;
-  padding: 0% !important;
+  padding: 0.1rem 0rem !important;
 }
 .AllRecButton:hover {
   opacity: 0.8;
@@ -875,12 +874,197 @@
   background-color: #f79521 !important;
   font-family: "Palanquin Dark", sans-serif !important;
   font-size: 12px !important;
-  padding: 0% !important;
+  padding: 0.1rem 0rem !important;
 }
 .StartOverButton:hover {
   opacity: 0.8;
   /* background-color: #d98e02 !important; */
 }
+
+/* ALL RECOMMENDATIONS AND RESOURCES */
+
+.RecommendationsMainDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* align-items: stretch; */
+  width: 95%;
+}
+
+.EnergyCardRecommendations {
+  width: 100%;
+  padding-bottom: 17px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* align-items: stretch; */
+  border-style: solid;
+  border-color: #095366;
+  border-width: 0.2rem;
+  border-radius: 2rem !important;
+}
+
+.EnergyCardContentRecommendations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.EnergyCardTitleRecommendations {
+  font-size: 24px;
+  color: #095366;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-weight: bold !important;
+  text-align: center;
+}
+
+.OptionDivRecommendations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.DropdownDivFilter {
+  align-self: flex-end;
+  margin-right: 4%;
+}
+
+.DropdownButtonFilter {
+  width: 2rem;
+  padding: 2%;
+  text-decoration: none !important;
+  color: #095366;
+}
+.DropdownButtonFilter:hover {
+  color: white;
+  background-color: #095366;
+}
+
+.EnergyDropdownOptionFilter {
+  font-family: "Palanquin", sans-serif;
+  margin: 0%;
+  border-radius: 0.2rem;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.EnergyDropdownOptionFilter:hover {
+  color: white;
+  background-color: #095366;
+  height: 100%;
+}
+
+.BackButtonDiv {
+  padding-bottom: 12px;
+  align-self: flex-end;
+  margin-right: 4%;
+}
+
+.BackButton {
+  width: 6rem;
+  background-color: #f79521 !important;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-size: 12px !important;
+  padding: 0.1rem 0rem !important;
+}
+.BackButton:hover {
+  opacity: 0.8;
+  /* background-color: #d98e02 !important; */
+}
+
+.EnergyCardResources {
+  width: auto;
+  padding-bottom: 17px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* align-items: stretch; */
+  border-style: solid;
+  border-color: #095366;
+  border-width: 0.2rem;
+  border-radius: 2rem !important;
+}
+
+.EnergyCardContentResources {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  gap: 15px;
+}
+
+.EnergyCardTitleResources {
+  font-size: 24px;
+  color: #095366;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-weight: bold !important;
+  text-align: center;
+}
+
+.OptionDivResources {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.EnergyCardContentSingleResource {
+  width: 96%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  margin: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+  gap: 10px;
+}
+.EnergyCardContentSingleResource:hover {
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+}
+
+.EnergyCardSingleResource {
+  border-color: #f79521;
+  width: 30%;
+  max-height: 60%;
+  background-color: white;
+  display: flex;
+  margin-left: 3%;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 1rem !important;
+}
+
+.FeedbackButtonReco {
+  border-radius: 0.2rem;
+  width: 20rem;
+  color: white;
+  text-align: center;
+  background-color: #42a889 !important;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-size: 24px !important;
+  padding: 6%;
+  /* padding-left: 16%; */
+  /* padding-right: 16%; */
+}
+
+.FeedbackButtonReco:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (max-width: 650px) {
   .EnergyCard {
     width: 23rem;
@@ -893,6 +1077,10 @@
 
   .EnergyCardTitle {
     font-size: 16px;
+  }
+
+  .Q1Title {
+    font-size: 15px;
   }
 
   .EnergyCardtext {

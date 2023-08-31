@@ -46,6 +46,7 @@ import Q7Energy from "./Components/Energy/Q7Energy";
 import Q8Energy from "./Components/Energy/Q8Energy";
 import Q9Energy from "./Components/Energy/Q9Energy";
 import EnergyResults from "./Views/Energy/EnergyResults";
+import EnergyRecommendations from "./Views/Energy/EnergyRecommendations";
 
 function App() {
   return (
@@ -65,6 +66,11 @@ function App() {
           <Route path="/Q8Energy" element={<Q8Energy />} />
           <Route path="/Q9Energy" element={<Q9Energy />} />
           <Route path="/EnergyResults" element={<EnergyResults />} />
+          <Route
+            path="/EnergyRecommendations"
+            element={<EnergyRecommendations />}
+          />
+
           <Route path="/Q1" element={<Q1 />} />
           <Route path="/Q2" element={<Q2 />} />
           <Route path="/Q3" element={<Q3 />} />

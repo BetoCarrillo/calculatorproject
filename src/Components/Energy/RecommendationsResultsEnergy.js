@@ -155,7 +155,7 @@ function RecommendationsResultsEnergy() {
 
   const redirectAllRecommendations = useNavigate();
   const handleStart = () => {
-    redirectAllRecommendations("");
+    redirectAllRecommendations("/EnergyRecommendations");
   };
 
   // useEffect(() => {
@@ -241,30 +241,6 @@ function RecommendationsResultsEnergy() {
           ) : (
             <></>
           )}
-
-          {/* {UserRecommendations &&
-            UserRecommendations.map((recommendation, i) =>
-              recommendation[i] > 6 ? (
-                <span>
-                  {" "}
-                  <RecEnergy7 />
-                  <RecEnergy8 />
-                  <RecEnergy9 />
-                </span>
-              ) : (
-                <span></span>
-              )
-            )} */}
-
-          {/* <RecEnergy2 />
-          <RecEnergy5 />
-          <RecEnergy7 /> */}
-          {/* <RecEnergy3 /> */}
-          {/* <RecEnergy1 />
-          <RecEnergy4 />
-          <RecEnergy8 /> */}
-          {/* <RecEnergy6 /> */}
-          {/* <RecEnergy9 /> */}
           <div className="AllRecButtonDiv">
             <div></div>
             <Button

@@ -17,7 +17,7 @@ function RecEnergy8() {
           </div>
         </div>
         <div className="EnergyCardTitleRecSummary">
-          Drink your morning coffee in a room naturally warmed by the sun
+          Drink your morning coffee in a room naturally warmed by the sun.
         </div>
         <div className="EnergyCardModuleRecSummary">Energy</div>
         <div className="OptionDivRecSummary">Enjoy!</div>

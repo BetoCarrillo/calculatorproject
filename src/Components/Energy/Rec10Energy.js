@@ -24,7 +24,7 @@ function RecEnergy10() {
         <div className="EnergyCardModuleRecSummary">Energy</div>
         <div className="OptionDivRecSummary">
           We can make a big difference by changing to a clean heating system.
-          Learn why here.
+          Learn why.
         </div>
         <Link
           // to=""

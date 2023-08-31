@@ -10,7 +10,7 @@ function FootprintResultsEnergy() {
   const [results, setResults] = useState("kg");
 
   const handleChangeFootprintTrucks = (event) => {
-    setResults("trucks");
+    setResults("truck");
   };
 
   const handleChangeFootprintKG = (event) => {

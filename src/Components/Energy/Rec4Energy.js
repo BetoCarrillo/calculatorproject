@@ -20,9 +20,9 @@ function RecEnergy4() {
         <div className="EnergyCardTitleRecSummary">Be energy aware</div>
         <div className="EnergyCardModuleRecSummary">Energy</div>
         <div className="OptionDivRecSummary">
-          Being energy-aware means protecting theclimate and saving money at the
-          same time. Here are some simple steps to integrate energy-aware habits
-          in your daily life.
+          Being energy-aware means protecting the climate and saving money at
+          the same time. Here are some simple steps to integrate energy-aware
+          habits in your daily life.
         </div>
         <Link
           // to=""

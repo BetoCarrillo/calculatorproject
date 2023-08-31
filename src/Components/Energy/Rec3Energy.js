@@ -23,8 +23,8 @@ function RecEnergy3() {
         </div>
         <div className="EnergyCardModuleRecSummary">Energy</div>
         <div className="OptionDivRecSummary">
-          Making items and devices you need to use on a daily basis energy
-          efficient will result in valuable energy savings.
+          Making items and devices you use on a daily basis energy efficient
+          will result in many savings. Learn more.
         </div>
         <Link
           // to=""

@@ -20,7 +20,7 @@ function RecEnergy9() {
           Enjoy a day or weekend without electronic devices.
         </div>
         <div className="EnergyCardModuleRecSummary">Energy</div>
-        <div className="OptionDivRecSummary">This also helps you detox</div>
+        <div className="OptionDivRecSummary">This also helps you detox.</div>
         <Link
           // to=""
           size="small"

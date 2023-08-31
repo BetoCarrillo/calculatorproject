@@ -23,7 +23,7 @@ function RecEnergy6() {
         <div className="EnergyCardModuleRecSummary">Energy</div>
         <div className="OptionDivRecSummary">
           Reducing the use of hot water will make a big difference in our lives
-          and in the impact to the environment. Learn why here.
+          and in the impact to the environment. Learn why.
         </div>
         <Link
           // to=""
