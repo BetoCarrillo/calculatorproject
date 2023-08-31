@@ -9,7 +9,7 @@ function RecEnergy1() {
   //   const { inputQ1Energy, setInputQ1Energy } = useContext(ResultsContext);
 
   return (
-    <div className="EnergyCardRecSummary">
+    <div className="EnergyCardRecSummary BiggestImpact">
       <Link className="EnergyCardContentRecSummary">
         <div className="EnergyCardTypeRecSummary">
           <div>Biggest Impact</div>
@@ -24,9 +24,8 @@ function RecEnergy1() {
         </div>
         <div className="EnergyCardModuleRecSummary">Energy</div>
         <div className="OptionDivRecSummary">
-          Energy is fundamental to our society and our economic and social
-          development. Therefore, we must achieve a sustainable and needs-based
-          energy supply to be climate-neutral.
+          We can make a big difference by changing to a clean energy provider.
+          Learn why here.
         </div>
         <Link
           // to=""

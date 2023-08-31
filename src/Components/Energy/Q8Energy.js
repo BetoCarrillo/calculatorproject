@@ -38,7 +38,7 @@ function Q8Energy() {
                   <input
                     type="radio"
                     name="radio"
-                    value="Energy Efficient"
+                    value="Efficient"
                     onClick={handleChange}
                     checked
                   ></input>
@@ -52,7 +52,7 @@ function Q8Energy() {
                   <input
                     type="radio"
                     name="radio"
-                    value="Energy efficient"
+                    value="Efficient"
                     onClick={handleChange}
                   ></input>
                   <span className="checkmark"></span>
@@ -67,7 +67,7 @@ function Q8Energy() {
                     type="radio"
                     name="radio"
                     onClick={handleChange}
-                    value="Not energy efficient"
+                    value="Not efficient"
                     checked
                   ></input>
                   <span className="checkmark"></span>
@@ -81,7 +81,7 @@ function Q8Energy() {
                     type="radio"
                     name="radio"
                     onClick={handleChange}
-                    value="Not energy efficient"
+                    value="Not efficient"
                   ></input>
                   <span className="checkmark"></span>
                 </label>

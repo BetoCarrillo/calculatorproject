@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ResultsContext } from "../../Context/context";
 import yellowstar from "../../styles/Pictures/yellowstar.png";
 
-function RecEnergy3() {
+function RecEnergy10() {
   //   const { inputQ1Energy, setInputQ1Energy } = useContext(ResultsContext);
 
   return (
@@ -19,12 +19,12 @@ function RecEnergy3() {
           </div>
         </div>
         <div className="EnergyCardTitleRecSummary">
-          Invest in energy efficient appliances
+          Upgrade to a renewable heating system
         </div>
         <div className="EnergyCardModuleRecSummary">Energy</div>
         <div className="OptionDivRecSummary">
-          Making items and devices you need to use on a daily basis energy
-          efficient will result in valuable energy savings.
+          We can make a big difference by changing to a clean heating system.
+          Learn why here.
         </div>
         <Link
           // to=""
@@ -45,4 +45,4 @@ function RecEnergy3() {
   );
 }
 
-export default RecEnergy3;
+export default RecEnergy10;

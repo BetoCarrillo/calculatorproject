@@ -8,27 +8,21 @@ function RecEnergy2() {
   //   const { inputQ1Energy, setInputQ1Energy } = useContext(ResultsContext);
 
   return (
-    <div
-      className="EnergyCardRecSummary"
-      style={{ backgroundColor: "#98cb63" }}
-    >
+    <div className="EnergyCardRecSummary BiggestImpact">
       <Link className="EnergyCardContentRecSummary">
         <div className="EnergyCardTypeRecSummary">
           <div>Biggest Impact</div>
           <div>
-            <span className="material-symbols-outlined RecStarGold">star</span>
-            <span className="material-symbols-outlined RecStarGold">star</span>
-            <span className="material-symbols-outlined RecStarGold">star</span>
+            <img src={yellowstar} alt="YellowStar" height={20}></img>
+            <img src={yellowstar} alt="YellowStar" height={20}></img>
+            <img src={yellowstar} alt="YellowStar" height={20}></img>
           </div>
         </div>
-        <div className="EnergyCardTitleRecSummary">
-          Change to a clean energy provider
-        </div>
+        <div className="EnergyCardTitleRecSummary">Save energy</div>
         <div className="EnergyCardModuleRecSummary">Energy</div>
         <div className="OptionDivRecSummary">
-          Energy is fundamental to our society and our economic and social
-          development. Therefore, we must achieve a sustainable and needs-based
-          energy supply to be climate-neutral.
+          We can also have a positive impact on the climate and the environment
+          by reducing our energy consumption. Learn more ways to save energy.
         </div>
         <Link
           // to=""

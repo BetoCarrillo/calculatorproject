@@ -70,7 +70,11 @@
 }
 
 .FeedbackButton {
+  border-radius: 0.2rem;
   width: 12rem;
+  color: white;
+  text-align: center;
+  padding-top: 6px;
   background-color: #42a889 !important;
   font-family: "Palanquin Dark", sans-serif !important;
   font-size: 20px !important;
@@ -78,6 +82,8 @@
 
 .FeedbackButton:hover {
   opacity: 0.8;
+  text-decoration: none;
+  color: white;
 }
 
 /* Animation Start Page */

@@ -52,7 +52,14 @@ function AnswersEnergy() {
   };
   const handleChangeQ4 = (event) => {
     let valueQ4Energy = event.target.id;
-    setInputQ4Energy(valueQ4Energy);
+    if (valueQ4Energy === "Central heating system") {
+      setInputQ4Energy(inputQ2Energy);
+      console.log("CC", inputQ4Energy);
+    } else {
+      setInputQ4Energy(valueQ4Energy);
+      console.log("other", inputQ4Energy);
+    }
+
     // console.log("inputQ2Energy", inputQ2Energy);
   };
   const handleChangeQ5 = (event) => {
@@ -91,7 +98,7 @@ function AnswersEnergy() {
 
   const redirectStartOver = useNavigate();
   const handleStart = () => {
-    redirectStartOver("/Q1Energy");
+    redirectStartOver("/");
   };
 
   return (
@@ -106,7 +113,7 @@ function AnswersEnergy() {
               </div> */}
             <div className="TableRow">
               <div className="TableColumnQuestions TableText">
-                Energy source
+                Electricity type
               </div>
               <div className="TableColumnAns TableText">
                 {inputQ1Energy === "" ? (
@@ -244,25 +251,16 @@ function AnswersEnergy() {
                 <ul className="dropdown-menu scrollable-menu" role="menu">
                   <li>
                     <p
-                      href="#Heat pump"
+                      href="#Heat exchanger"
                       onClick={handleChangeQ2}
-                      id="Heat pump"
+                      id="Heat exchanger"
                       className="EnergyDropdownOptionAnswers"
                     >
                       {" "}
-                      Heat pump
+                      Heat exchanger
                     </p>
                   </li>
-                  <li>
-                    <p
-                      href="#Electricity"
-                      onClick={handleChangeQ2}
-                      id="Electricity"
-                      className="EnergyDropdownOptionAnswers"
-                    >
-                      Electricity
-                    </p>
-                  </li>
+
                   <li>
                     <p
                       href="#Methane (natural gas)"
@@ -301,6 +299,16 @@ function AnswersEnergy() {
                       className="EnergyDropdownOptionAnswers"
                     >
                       Biogas
+                    </p>
+                  </li>
+                  <li>
+                    <p
+                      href="#Wood"
+                      onClick={handleChangeQ2}
+                      id="Wood"
+                      className="EnergyDropdownOptionAnswers"
+                    >
+                      Wood
                     </p>
                   </li>
                   <li>
@@ -466,33 +474,35 @@ function AnswersEnergy() {
                 <ul className="dropdown-menu scrollable-menu" role="menu">
                   <li>
                     <p
-                      href="Electricity"
+                      href="Heat exchanger"
                       onClick={handleChangeQ4}
-                      id="Electricity"
+                      id="Heat exchanger"
                       className="EnergyDropdownOptionAnswers"
                     >
                       {" "}
-                      Electricity
+                      Heat exchanger
                     </p>
                   </li>
                   <li>
                     <p
-                      href="Gas or Heating oil"
+                      href="Gas heater"
                       onClick={handleChangeQ4}
-                      id="Gas or Heating oil"
+                      id="Gas heater"
                       className="EnergyDropdownOptionAnswers"
                     >
-                      Gas or Heating oil
+                      {" "}
+                      Gas heater
                     </p>
                   </li>
                   <li>
                     <p
-                      href="Biogas"
+                      href="Electric heater"
                       onClick={handleChangeQ4}
-                      id="Biogas"
+                      id="Electric heater"
                       className="EnergyDropdownOptionAnswers"
                     >
-                      Biogas
+                      {" "}
+                      Electric heater
                     </p>
                   </li>
                   <li>
@@ -507,12 +517,32 @@ function AnswersEnergy() {
                   </li>
                   <li>
                     <p
+                      href="Biogas"
+                      onClick={handleChangeQ4}
+                      id="Biogas"
+                      className="EnergyDropdownOptionAnswers"
+                    >
+                      Biogas
+                    </p>
+                  </li>
+                  <li>
+                    <p
                       href="I don't know"
                       onClick={handleChangeQ4}
                       id="I don't know"
                       className="EnergyDropdownOptionAnswers"
                     >
                       I don't know
+                    </p>
+                  </li>
+                  <li>
+                    <p
+                      href="Central heating system"
+                      onClick={handleChangeQ4}
+                      id="Central heating system"
+                      className="EnergyDropdownOptionAnswers"
+                    >
+                      Central heating system
                     </p>
                   </li>
                 </ul>
@@ -582,6 +612,16 @@ function AnswersEnergy() {
                       className="EnergyDropdownOptionAnswers"
                     >
                       Cloud service
+                    </p>
+                  </li>
+                  <li>
+                    <p
+                      href="Both"
+                      onClick={handleChangeQ5}
+                      id="Both"
+                      className="EnergyDropdownOptionAnswers"
+                    >
+                      Both
                     </p>
                   </li>
                 </ul>

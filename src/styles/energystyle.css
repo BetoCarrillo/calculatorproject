@@ -370,11 +370,11 @@
 }
 .RecommendationsResultsDiv {
   width: 72%;
-  height: 100%;
+  height: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: baseline;
   gap: 10px;
 }
 
@@ -403,16 +403,21 @@
 
 /* RECOMMENDATIONS */
 
+.RecommendationFilter {
+  display: none;
+  visibility: hidden;
+  background-color: black !important;
+  font-size: 1px;
+}
+
 .EnergyCardRecResults {
   width: 100%;
   padding-bottom: 17px;
-  min-height: auto;
-
   background-color: white;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   border-style: solid;
   border-color: #095366;
   border-width: 0.2rem;
@@ -452,9 +457,21 @@
   flex-direction: column;
   align-items: center;
   border-style: solid;
-  border-color: #98cb63;
+
   border-width: 2px;
   border-radius: 1rem !important;
+}
+
+.BiggestImpact {
+  border-color: #98cb63;
+}
+
+.EasyToDo {
+  border-color: #7fc3eb;
+}
+
+.FunTip {
+  border-color: #fad5ec;
 }
 
 .EnergyCardContentRecSummary {
@@ -556,6 +573,10 @@
 }
 
 .RecStarGold {
+  color: white;
+}
+
+.RecStarGold:hover {
   color: gold;
 }
 
@@ -932,6 +953,7 @@
   }
 
   .RecommendationsResultsDiv {
+    flex-direction: column;
     width: 100%;
   }
 
@@ -953,7 +975,7 @@
     padding-top: 0px;
   }
 
-  .OptionDivRecSummary {
+  .EnergyCardModuleRecSummary {
     display: none;
   }
 

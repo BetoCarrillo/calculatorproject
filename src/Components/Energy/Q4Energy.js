@@ -6,10 +6,11 @@ import { ResultsContext } from "../../Context/context";
 import CClogo from "../../styles/CClogo.png";
 
 function Q4Energy() {
-  const { inputQ4Energy, setInputQ4Energy } = useContext(ResultsContext);
+  const { inputQ2Energy, inputQ4Energy, setInputQ4Energy } =
+    useContext(ResultsContext);
 
   const handleChange = (event) => {
-    let valueQ4Energy = event.target.value;
+    let valueQ4Energy = event.target.id;
     setInputQ4Energy(valueQ4Energy);
     // console.log("inputQ4Energy", inputQ4Energy);
   };
@@ -30,147 +31,141 @@ function Q4Energy() {
           <div className="EnergyCardTitle">
             How do you heat your water at home?
           </div>
-          <div className="OptionDiv">
-            {inputQ4Energy === "Electricity" ? (
-              <span>
-                <label className="RadioLabel EnergyCardtext">
-                  Electricity
-                  <input
-                    type="radio"
-                    name="radio"
-                    value="Electricity"
-                    onClick={handleChange}
-                    checked
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
+          <div className="DropdownDiv">
+            {inputQ4Energy === "" ? (
+              <button
+                type="button"
+                className="btn btn-default DropdownButton"
+                data-toggle="dropdown"
+              >
+                {inputQ4Energy === "" ? (
+                  <span
+                    className="caret"
+                    style={{
+                      color: "black",
+                      textDecoration: "none",
+                      fontFamily: "Palanquin",
+                    }}
+                  >
+                    Choose
+                  </span>
+                ) : (
+                  <span
+                    className="caretText"
+                    style={{
+                      backgroundColor: "#095366",
+                      color: "white",
+                      fontFamily: "Palanquin",
+                    }}
+                  >
+                    {inputQ4Energy}
+                  </span>
+                )}
+              </button>
             ) : (
-              <span>
-                <label className="RadioLabel EnergyCardtext">
-                  Electricity
-                  <input
-                    type="radio"
-                    name="radio"
-                    value="Electricity"
-                    onClick={handleChange}
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
+              <button
+                type="button"
+                className="btn btn-default DropdownButton"
+                data-toggle="dropdown"
+                style={{ backgroundColor: "#095366" }}
+              >
+                {inputQ4Energy === "" ? (
+                  <span
+                    className="caret"
+                    style={{
+                      fontFamily: "Palanquin",
+                    }}
+                  >
+                    Choose
+                  </span>
+                ) : (
+                  <span
+                    className="caretText"
+                    style={{
+                      backgroundColor: "#095366",
+                      color: "white",
+                      fontFamily: "Palanquin",
+                    }}
+                  >
+                    {inputQ4Energy}
+                  </span>
+                )}
+              </button>
             )}
-            {inputQ4Energy === "Gas or Heating oil" ? (
-              <span>
-                <label className="RadioLabel EnergyCardtext">
-                  Gas or Heating oil
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="Gas or Heating oil"
-                    checked
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            ) : (
-              <span>
-                <label className="RadioLabel EnergyCardtext">
-                  Gas or Heating oil
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="Gas or Heating oil"
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            )}
-            {inputQ4Energy === "Biogas" ? (
-              <span>
-                <label className="RadioLabel EnergyCardtext">
-                  Biogas
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="Biogas"
-                    checked
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            ) : (
-              <span>
-                <label className="RadioLabel EnergyCardtext">
-                  Biogas
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="Biogas"
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            )}
-            {inputQ4Energy === "Solar energy" ? (
-              <span>
-                <label className="RadioLabel EnergyCardtext">
+
+            <ul className="dropdown-menu scrollable-menu" role="menu">
+              <li>
+                <p
+                  href="#Heat exchanger"
+                  onClick={handleChange}
+                  id="Heat exchanger"
+                  className="EnergyDropdownOption"
+                >
+                  {" "}
+                  Heat exchanger
+                </p>
+              </li>
+              <li>
+                <p
+                  href="#Electric heater"
+                  onClick={handleChange}
+                  id="Electric heater"
+                  className="EnergyDropdownOption"
+                >
+                  Electric heater
+                </p>
+              </li>
+              <li>
+                <p
+                  href="#Gas heater"
+                  onClick={handleChange}
+                  id="Gas heater"
+                  className="EnergyDropdownOption"
+                >
+                  Gas heater
+                </p>
+              </li>
+              <li>
+                <p
+                  href="#Solar energy"
+                  onClick={handleChange}
+                  id="Solar energy"
+                  className="EnergyDropdownOption"
+                >
                   Solar energy
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="Solar energy"
-                    checked
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            ) : (
-              <span>
-                <label className="RadioLabel EnergyCardtext">
-                  Solar energy
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="Solar energy"
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            )}{" "}
-            {inputQ4Energy === "I don't know" ? (
-              <span>
-                <label className="RadioLabel EnergyCardtext">
+                </p>
+              </li>
+              <li>
+                <p
+                  href="#Biogas"
+                  onClick={handleChange}
+                  id="Biogas"
+                  className="EnergyDropdownOption"
+                >
+                  Biogas
+                </p>
+              </li>
+              <li>
+                <p
+                  href="#I don't know"
+                  onClick={handleChange}
+                  id="I don't know"
+                  className="EnergyDropdownOption"
+                >
                   I don't know
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="I don't know"
-                    checked
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            ) : (
-              <span>
-                <label className="RadioLabel EnergyCardtext">
-                  I don't know
-                  <input
-                    type="radio"
-                    name="radio"
-                    onClick={handleChange}
-                    value="I don't know"
-                  ></input>
-                  <span className="checkmark"></span>
-                </label>
-              </span>
-            )}
+                </p>
+              </li>
+              <li>
+                <p
+                  href="#Central heating system"
+                  onClick={handleChange}
+                  id={`${inputQ2Energy}`}
+                  className="EnergyDropdownOption"
+                >
+                  Central heating system
+                </p>
+              </li>
+            </ul>
           </div>
           <div className="EnergyCardButtonsDiv">
             <div className="EnergyCardButtonsLeftDiv"></div>

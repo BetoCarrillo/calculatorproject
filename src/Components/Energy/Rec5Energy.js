@@ -8,23 +8,20 @@ function RecEnergy5() {
   //   const { inputQ1Energy, setInputQ1Energy } = useContext(ResultsContext);
 
   return (
-    <div
-      className="EnergyCardRecSummary"
-      style={{ backgroundColor: "#7fc3eb", borderColor: " #7fc3eb" }}
-    >
+    <div className="EnergyCardRecSummary EasyToDo">
       <Link className="EnergyCardContentRecSummary">
         <div className="EnergyCardTypeRecSummary">
           <div>Easy to do</div>
           <div>
-            <span className="material-symbols-outlined RecStarGold">star</span>{" "}
-            <span className="material-symbols-outlined RecStarGold">star</span>{" "}
+            <img src={yellowstar} alt="YellowStar" height={20}></img>
+            <img src={yellowstar} alt="YellowStar" height={20}></img>
           </div>
         </div>
-        <div className="EnergyCardTitleRecSummary">Be energy aware</div>
+        <div className="EnergyCardTitleRecSummary">Do your laundry wisely </div>
         <div className="EnergyCardModuleRecSummary">Energy</div>
         <div className="OptionDivRecSummary">
-          Being energy-aware means contributing to climate protection and saving
-          money at the same time.
+          The laundry room can be a site of massive savings, both money-wise and
+          energy-wise. Learn some small tips to make a big difference.
         </div>
         <Link
           // to=""

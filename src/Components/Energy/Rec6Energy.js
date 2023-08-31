@@ -8,19 +8,22 @@ function RecEnergy6() {
   //   const { inputQ1Energy, setInputQ1Energy } = useContext(ResultsContext);
 
   return (
-    <div className="EnergyCardRecSummary" style={{ borderColor: "#fad5ec" }}>
+    <div className="EnergyCardRecSummary EasyToDo">
       <Link className="EnergyCardContentRecSummary">
         <div className="EnergyCardTypeRecSummary">
-          <div>Fun Tip</div>
+          <div>Easy to do</div>
           <div>
+            <img src={yellowstar} alt="YellowStar" height={20}></img>
             <img src={yellowstar} alt="YellowStar" height={20}></img>
           </div>
         </div>
-        <div className="EnergyCardTitleRecSummary">Save Energy</div>
+        <div className="EnergyCardTitleRecSummary">
+          Reduce warm water usage and install efficient plumbing fixtures
+        </div>
         <div className="EnergyCardModuleRecSummary">Energy</div>
         <div className="OptionDivRecSummary">
-          Have a candlelight dinner or go back to the past with a lights-off
-          evening
+          Reducing the use of hot water will make a big difference in our lives
+          and in the impact to the environment. Learn why here.
         </div>
         <Link
           // to=""

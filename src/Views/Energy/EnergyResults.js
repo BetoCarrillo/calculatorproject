@@ -13,6 +13,7 @@ function EnergyResults() {
 
   const redirectSummary = useNavigate();
   const handleStart = () => {
+    alert("Sorry! We are under development. Come back soon!");
     redirectSummary("");
   };
 

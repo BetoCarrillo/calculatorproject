@@ -66,13 +66,21 @@ function Start() {
         >
           GET STARTED
         </Button>
-        <Button
+        <Link
+          to="https://forms.gle/ckhDjcG4PqAJMt7B9"
+          target="_blank"
+          rel="noreferrer"
+          className="FeedbackButton"
+        >
+          FEEDBACK
+        </Link>
+        {/* <Button
           variant="contained"
           className="FeedbackButton"
           onClick={handleStart}
         >
           FEEDBACK
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

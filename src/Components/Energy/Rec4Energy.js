@@ -8,7 +8,7 @@ function RecEnergy4() {
   //   const { inputQ1Energy, setInputQ1Energy } = useContext(ResultsContext);
 
   return (
-    <div className="EnergyCardRecSummary" style={{ borderColor: " #7fc3eb" }}>
+    <div className="EnergyCardRecSummary EasyToDo">
       <Link className="EnergyCardContentRecSummary">
         <div className="EnergyCardTypeRecSummary">
           <div>Easy to do</div>
@@ -20,8 +20,9 @@ function RecEnergy4() {
         <div className="EnergyCardTitleRecSummary">Be energy aware</div>
         <div className="EnergyCardModuleRecSummary">Energy</div>
         <div className="OptionDivRecSummary">
-          Being energy-aware means contributing to climate protection and saving
-          money at the same time.
+          Being energy-aware means protecting theclimate and saving money at the
+          same time. Here are some simple steps to integrate energy-aware habits
+          in your daily life.
         </div>
         <Link
           // to=""

@@ -93,16 +93,16 @@ function Q2Energy() {
             <ul className="dropdown-menu scrollable-menu" role="menu">
               <li>
                 <p
-                  href="#Heat pump"
+                  href="#Heat exchanger"
                   onClick={handleChange}
-                  id="Heat pump"
+                  id="Heat exchanger"
                   className="EnergyDropdownOption"
                 >
                   {" "}
-                  Heat pump
+                  Heat exchanger
                 </p>
               </li>
-              <li>
+              {/* <li>
                 <p
                   href="#Electricity"
                   onClick={handleChange}
@@ -111,7 +111,7 @@ function Q2Energy() {
                 >
                   Electricity
                 </p>
-              </li>
+              </li> */}
               <li>
                 <p
                   href="#Methane (natural gas)"
@@ -154,9 +154,19 @@ function Q2Energy() {
               </li>
               <li>
                 <p
+                  href="#Wood"
+                  onClick={handleChange}
+                  id="Wood"
+                  className="EnergyDropdownOption"
+                >
+                  Wood
+                </p>
+              </li>
+              <li>
+                <p
                   href="#None"
                   onClick={handleChange}
-                  id="None"
+                  id={`${inputQ2Energy}`}
                   className="EnergyDropdownOption"
                 >
                   None

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "../../styles/energystyle.css";
 import { Link } from "react-router-dom";
 import ProgressBar from "../progressbar";
@@ -28,7 +28,7 @@ function Q1Energy() {
       <div className="EnergyCard">
         <div className="EnergyCardContent">
           <div className="EnergyCardTitle">
-            What energy source do you use at home?
+            What type of electricity do you use at home?
           </div>
           <div className="OptionDiv">
             {inputQ1Energy === "Normal grid" ? (

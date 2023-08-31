@@ -84,6 +84,34 @@ function Q5Energy() {
                   <span className="checkmark"></span>
                 </label>
               </span>
+            )}{" "}
+            {inputQ5Energy === "Both" ? (
+              <span>
+                <label className="RadioLabel EnergyCardtext">
+                  Both
+                  <input
+                    type="radio"
+                    name="radio"
+                    onClick={handleChange}
+                    value="Both"
+                    checked
+                  ></input>
+                  <span className="checkmark"></span>
+                </label>
+              </span>
+            ) : (
+              <span>
+                <label className="RadioLabel EnergyCardtext">
+                  Both
+                  <input
+                    type="radio"
+                    name="radio"
+                    onClick={handleChange}
+                    value="Both"
+                  ></input>
+                  <span className="checkmark"></span>
+                </label>
+              </span>
             )}
           </div>
           <div className="EnergyCardButtonsDiv">
