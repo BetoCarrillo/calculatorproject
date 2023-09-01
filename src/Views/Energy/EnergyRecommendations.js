@@ -197,11 +197,13 @@ function EnergyRecommendations() {
                   target={"_blank"}
                   rel={"noreferrer"}
                 >
-                  <div className="EnergyCardTitleRecSummary">Energy Module</div>
-                  <div className="EnergyCardModuleRecSummary">
+                  <div className="EnergyCardTitleSingleResource">
+                    Energy Module
+                  </div>
+                  <div className="EnergyCardModuleSingleResource">
                     Change Clubs gGmbH
                   </div>
-                  <div className="OptionDivRecSummary">
+                  <div className="OptionDivSingleResource">
                     Moving together towards a sustainable life
                   </div>
                 </Link>
