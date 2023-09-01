@@ -940,6 +940,7 @@
   padding: 2%;
   text-decoration: none !important;
   color: #095366;
+  border-radius: 2rem;
 }
 .DropdownButtonFilter:hover {
   color: white;
@@ -949,7 +950,7 @@
 .EnergyDropdownOptionFilter {
   font-family: "Palanquin", sans-serif;
   margin: 0%;
-  border-radius: 0.2rem;
+  border-radius: 2rem;
   font-size: 18px;
   line-height: 1.8;
 }
@@ -1037,15 +1038,16 @@
   text-align: inherit;
   font: inherit;
   padding: 1%;
-  border-radius: 0.2rem;
+  border-radius: 2rem;
   color: #095366;
 }
 
 .ButtonShowMore:hover {
   color: white;
   background-color: #095366;
-  border-radius: 0.2rem;
+  border-radius: 2rem;
   padding: 1%;
+  outline: none;
 }
 
 .ArrowSpan {
@@ -1206,7 +1208,7 @@
   width: 95%;
   display: flex;
   flex-direction: column;
-  align-items: center !important;
+  align-items: flex-start !important;
   gap: 15px;
 }
 
@@ -1214,14 +1216,15 @@
   color: #095366;
   font-family: "Palanquin Dark", sans-serif !important;
   font-weight: bold !important;
-  text-align: center;
+  align-self: center;
   padding-top: 5px;
   font-size: 24px;
 }
 
 .EnergyCardtextFullReco {
+  width: 100%;
   font-family: "Palanquin", sans-serif !important;
-  font-size: 18px !important;
+  font-size: 20px;
   font-weight: 400;
   letter-spacing: 0.00938em;
   align-self: center;
@@ -1234,7 +1237,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
 }
 
@@ -1263,9 +1266,12 @@
 }
 
 .EnergyFullRecoBackButton {
+  width: 4rem;
+  text-align: center;
   color: white !important;
-  background-color: #f79521;
+  background-color: #095366;
   border-radius: 0.2rem;
+
   text-decoration: none;
   /* padding: 10px; */
   padding: 0.1rem 0rem !important;
@@ -1283,6 +1289,84 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
+}
+
+.BackFullRecoDiv {
+  align-self: flex-end;
+  margin-right: 12%;
+}
+
+.EnergyCardtextFullRecoSaveEnergy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 18px;
+  font-family: "Palanquin", sans-serif !important;
+  font-weight: 400;
+  letter-spacing: 0.00938em;
+  align-self: center;
+}
+
+.EnergyCardSaveEnergyOptions {
+  /* padding-top: 15px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  /* justify-content: center !important; */
+}
+.SaveEnergyButton {
+  cursor: pointer;
+  padding: 2%;
+  font-family: "Palanquin Dark", sans-serif !important;
+  color: white;
+  width: 95%;
+  border-radius: 2rem;
+  height: 100%;
+  /* padding-top: ; */
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-direction: column;
+  /* text-align: baseline !important; */
+}
+
+.SaveEnergyButton:hover {
+  opacity: 0.9;
+}
+.SaveEnergyOptionDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.SaveEnergyOptionTitle {
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-size: 20px !important;
+}
+
+.SaveEnergyOptionText {
+  margin-left: 4%;
+  margin-right: 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  font-family: "Palanquin ", sans-serif !important;
+}
+
+.arrowSaveEnergy {
+  /* background-color: white; */
+  /* border-radius: 2rem; */
+}
+
+.arrowSaveEnergy:hover {
+  /* background-color: white; */
+  border-radius: 2rem;
 }
 
 @media screen and (max-width: 650px) {
@@ -1417,5 +1501,24 @@
   .EnergyCardContentImportanceDiv {
     width: 8%;
     margin-right: 3%;
+  }
+
+  .EnergyCardtextFullReco {
+    font-size: 16px;
+  }
+
+  .SaveEnergyOptionTitle {
+    font-size: 16px !important;
+    margin: 2%;
+  }
+
+  .SaveEnergyOptionText {
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    font-family: "Palanquin ", sans-serif !important;
   }
 }

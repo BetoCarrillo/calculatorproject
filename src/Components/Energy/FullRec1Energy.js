@@ -78,22 +78,19 @@ function FullRec1Energy() {
           </div>
 
           <div className="EnergyCardButtonsDivFullReco">
-            <div className="EnergyFullRecoButtonDiv"></div>
             <Link
               //   to=""
               className="EnergyFullRecoButtonDiv"
             >
               <div className="EnergyFullRecoCompleteButton">COMPLETE</div>
             </Link>
-            <Link
-              to="/EnergyResults"
-              className="EnergyFullRecoButtonDiv"
-              style={{ alignSelf: "flex-end" }}
-            >
-              <div className="EnergyFullRecoBackButton">Back</div>
-            </Link>
           </div>
         </div>
+      </div>
+      <div className="BackFullRecoDiv">
+        <Link to="/EnergyResults" className="EnergyFullRecoButtonDiv">
+          <div className="EnergyFullRecoBackButton">Back</div>
+        </Link>
       </div>
       <div className="ChangeClubsLogo CClogo">
         <Link

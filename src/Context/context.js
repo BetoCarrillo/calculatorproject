@@ -36,14 +36,14 @@ export const ResultsContextProvider = (props) => {
     ) {
       UserRecommendations.push(1);
     }
-    if (inputQ7BEnergy === "3") {
-      UserRecommendations = UserRecommendations.filter(
-        (element) => element !== 2
-      );
-    }
-    if (!UserRecommendations.includes(2) && inputQ7BEnergy !== "3") {
-      UserRecommendations.push(2);
-    }
+    // if (inputQ7BEnergy === "3") {
+    //   UserRecommendations = UserRecommendations.filter(
+    //     (element) => element !== 2
+    //   );
+    // }
+    // if (!UserRecommendations.includes(2) && inputQ7BEnergy !== "3") {
+    //   UserRecommendations.push(2);
+    // }
 
     if (inputQ8Energy === "Energy efficient") {
       UserRecommendations = UserRecommendations.filter(

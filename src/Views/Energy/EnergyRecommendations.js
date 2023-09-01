@@ -24,7 +24,7 @@ function EnergyRecommendations() {
   const [ETD, setETD] = useState();
   const [FT, setFT] = useState();
   const [ALL, setALL] = useState(true);
-  const [IMP, setIMP] = useState(false);
+  const [IMP, setIMP] = useState(true);
   const redirectSummary = useNavigate();
 
   const handleStart = () => {
@@ -193,7 +193,7 @@ function EnergyRecommendations() {
           <div className="EnergyCardContentImportance">
             <div className="EnergyCardContentImportanceDiv"></div>
             <div className="EnergyCardTitleImportance ">
-              Why is energy Important
+              Why is energy important
             </div>
 
             <div className="EnergyCardContentImportanceDiv">

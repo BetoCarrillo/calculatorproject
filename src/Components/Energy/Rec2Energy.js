@@ -9,7 +9,7 @@ function RecEnergy2() {
 
   return (
     <div className="EnergyCardRecSummary BiggestImpact">
-      <Link className="EnergyCardContentRecSummary">
+      <Link className="EnergyCardContentRecSummary" to="/SaveEnergy">
         <div className="EnergyCardTypeRecSummary">
           <div>Biggest Impact</div>
           <div>
@@ -25,7 +25,7 @@ function RecEnergy2() {
           by reducing our energy consumption. Learn more ways to save energy.
         </div>
         <Link
-          // to=""
+          to="/SaveEnergy"
           size="small"
           className="RecommendationLearnMoreButtonDiv"
         >
