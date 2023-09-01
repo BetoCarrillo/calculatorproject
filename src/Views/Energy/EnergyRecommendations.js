@@ -24,6 +24,7 @@ function EnergyRecommendations() {
   const [ETD, setETD] = useState();
   const [FT, setFT] = useState();
   const [ALL, setALL] = useState(true);
+  const [IMP, setIMP] = useState(false);
   const redirectSummary = useNavigate();
 
   const handleStart = () => {
@@ -62,6 +63,10 @@ function EnergyRecommendations() {
     setETD(false);
     setFT(false);
     setALL(true);
+  };
+
+  const showImportance = (event) => {
+    setIMP(!IMP);
   };
 
   return (
@@ -183,6 +188,92 @@ function EnergyRecommendations() {
               </Button>
             </div>
           </div>
+        </div>
+        <div className="EnergyCardImportance">
+          <div className="EnergyCardContentImportance">
+            <div className="EnergyCardContentImportanceDiv"></div>
+            <div className="EnergyCardTitleImportance ">
+              Why is energy Important
+            </div>
+
+            <div className="EnergyCardContentImportanceDiv">
+              {!IMP ? (
+                <div className="ArrowDownImportanceDiv">
+                  <button
+                    href="Biggest Impact"
+                    onClick={showImportance}
+                    id="Biggest Impact"
+                    className="ButtonShowMore"
+                  >
+                    <div
+                      class="material-symbols-outlined ArrowSpan"
+                      style={{
+                        fontSize: "28px",
+                      }}
+                    >
+                      keyboard_arrow_down
+                    </div>
+                  </button>
+                </div>
+              ) : (
+                <div className="ArrowDownImportanceDiv">
+                  {" "}
+                  <button
+                    href="Biggest Impact"
+                    onClick={showImportance}
+                    id="Biggest Impact"
+                    className="ButtonShowMore"
+                  >
+                    <div
+                      class="material-symbols-outlined ArrowSpan"
+                      style={{
+                        fontSize: "28px",
+                      }}
+                    >
+                      keyboard_arrow_up
+                    </div>
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+          {IMP ? (
+            <div className="ImportanceText">
+              <div>
+                {" "}
+                Energy is all around us. It is responsible for making everything
+                happen: from listening to music, driving a car, turning on
+                electric lamps, or using your kitchen stove. The energy sector
+                consists of all the infrastructure needed to collect, produce,
+                distribute, store, and consume power for our homes, our
+                businesses and while we are on the go. From manufacturing to
+                agriculture; health care to transportation, we depend on a
+                stable energy supply.
+              </div>
+              <div>
+                {" "}
+                Today, fossil fuels still account for more than 80% of global
+                energy production, and contribute to roughly two-thirds of all
+                harmful greenhouse gas emissions, which must be urgently
+                reduced. 60% of our electricity still comes from fossil fuels,
+                such as gas, coal, and oil. By committing to reducing our energy
+                consumption and enhancing energy efficiency we can play an
+                important role in reducing the amount of fossil fuels burned
+                every day and the levels of carbon dioxide in the atmosphere.
+              </div>
+              <div>
+                This module is focused on the energy we need in our daily life
+                at home or at work, and gives recommendations on how to reduce
+                it and use it more efficiently. Recommendations regarding more
+                structural ways of saving energy – through retrofitting or
+                construction – may be found in the Housing module.
+                Recommendations related to energy in transportation are in the
+                Mobility module.
+              </div>
+            </div>
+          ) : (
+            <div></div>
+          )}
         </div>
         <div className="EnergyCardResources">
           <div className="EnergyCardContentResources">

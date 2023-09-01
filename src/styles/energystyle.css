@@ -977,6 +977,98 @@
   opacity: 0.8;
   /* background-color: #d98e02 !important; */
 }
+/* IMPORTANCE */
+
+.EnergyCardImportance {
+  width: 100%;
+  padding-bottom: 7px;
+  background-color: white;
+  display: flex;
+  /* justify-content: ; */
+  flex-direction: column;
+  /* align-items: stretch; */
+  border-style: solid;
+  border-color: #095366;
+  border-width: 0.2rem;
+  border-radius: 2rem !important;
+}
+
+.EnergyCardContentImportance {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.EnergyCardContentImportanceDiv {
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  width: 20%;
+  align-self: flex-end;
+  /* align-content: flex-end; */
+}
+
+.EnergyCardTitleImportance {
+  width: 80%;
+  font-size: 24px;
+  color: #095366;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-weight: bold !important;
+  text-align: center;
+}
+.ArrowDownImportanceDiv {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 14%;
+
+  /* flex-wrap: nowrap; */
+  /* width: 100%; */
+}
+
+.ButtonShowMore {
+  text-decoration: none;
+  appearance: none;
+  background-color: rgba(204, 204, 204, 0.485);
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  padding: 1%;
+  border-radius: 0.2rem;
+  color: #095366;
+}
+
+.ButtonShowMore:hover {
+  color: white;
+  background-color: #095366;
+  border-radius: 0.2rem;
+  padding: 1%;
+}
+
+.ArrowSpan {
+  display: flex;
+}
+
+.ImportanceText {
+  font-family: "Palanquin", sans-serif !important;
+  /* width: 95%; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 4%;
+}
+
+/* .OptionDivRecommendations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+} */
+/* RESOURCES */
 
 .EnergyCardResources {
   width: auto;
