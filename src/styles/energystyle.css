@@ -1011,7 +1011,7 @@
 }
 
 .EnergyCardTitleImportance {
-  width: 80%;
+  width: 90%;
   font-size: 24px;
   color: #095366;
   font-family: "Palanquin Dark", sans-serif !important;
@@ -1412,5 +1412,10 @@
     padding-top: 10px;
     justify-content: center;
     margin-right: 0%;
+  }
+
+  .EnergyCardContentImportanceDiv {
+    width: 8%;
+    margin-right: 3%;
   }
 }
