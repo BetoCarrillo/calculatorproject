@@ -47,6 +47,7 @@ import Q8Energy from "./Components/Energy/Q8Energy";
 import Q9Energy from "./Components/Energy/Q9Energy";
 import EnergyResults from "./Views/Energy/EnergyResults";
 import EnergyRecommendations from "./Views/Energy/EnergyRecommendations";
+import FullRec1Energy from "./Components/Energy/FullRec1Energy";
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
             path="/EnergyRecommendations"
             element={<EnergyRecommendations />}
           />
+          <Route path="/CleanEnergy" element={<FullRec1Energy />} />
 
           <Route path="/Q1" element={<Q1 />} />
           <Route path="/Q2" element={<Q2 />} />
