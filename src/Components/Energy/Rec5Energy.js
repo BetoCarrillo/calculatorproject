@@ -9,7 +9,7 @@ function RecEnergy5() {
 
   return (
     <div className="EnergyCardRecSummary EasyToDo">
-      <Link className="EnergyCardContentRecSummary">
+      <Link className="EnergyCardContentRecSummary" to="/WiseLaundry">
         <div className="EnergyCardTypeRecSummary">
           <div>Easy to do</div>
           <div>
@@ -24,7 +24,7 @@ function RecEnergy5() {
           energy-wise. Learn some small tips to make a big difference.
         </div>
         <Link
-          // to=""
+          to="/WiseLaundry"
           size="small"
           className="RecommendationLearnMoreButtonDiv"
         >

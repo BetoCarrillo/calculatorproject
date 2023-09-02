@@ -1309,16 +1309,32 @@
 .ExtraTipBackButton {
   width: 75%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-direction: row;
 }
 
 .ExtraTipDiv {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   font-family: "Palanquin", sans-serif !important;
   font-size: 18px;
   background-color: rgba(204, 204, 204, 0.78);
   border-radius: 1.5rem;
   padding: 10px;
+  gap: 5px;
+}
+
+.ExtraTipIconDiv {
+  width: auto;
+
+  height: 100%;
+  /* align-items: ; */
+}
+
+.ExtraTipIcon {
+  padding: 2%;
+  font-size: 30px;
 }
 
 .EnergyCardtextFullRecoSaveEnergy {
@@ -1335,7 +1351,7 @@
   align-self: center;
 }
 
-.EnergyCardSaveEnergyOptions {
+.EnergyCardColorOptions {
   /* padding-top: 15px; */
   width: 100%;
   display: flex;
@@ -1344,7 +1360,7 @@
   align-items: center;
   /* justify-content: center !important; */
 }
-.SaveEnergyButton {
+.EnergyCardColorOptionsEventDiv {
   cursor: pointer;
   padding: 2%;
   font-family: "Palanquin Dark", sans-serif !important;
@@ -1361,21 +1377,21 @@
   /* text-align: baseline !important; */
 }
 
-.SaveEnergyButton:hover {
+.EnergyCardColorOptionsEventDiv:hover {
   opacity: 1;
 }
-.SaveEnergyOptionDiv {
+.ColorOptionDiv {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.SaveEnergyOptionTitle {
+.ColorOptionTitle {
   font-family: "Palanquin Dark", sans-serif !important;
   font-size: 20px !important;
 }
 
-.SaveEnergyOptionText {
+.ColorOptionText {
   margin-left: 2%;
   margin-right: 2%;
   display: flex;
@@ -1385,12 +1401,14 @@
   font-family: "Palanquin", sans-serif !important;
 }
 
-.arrowSaveEnergy {
+.arrowColorOption {
+  line-height: 1.5 !important;
+  /* align-content: center; */
   /* background-color: white; */
   /* border-radius: 2rem; */
 }
 
-.arrowSaveEnergy:hover {
+.arrowColorOption:hover {
   /* background-color: white; */
   border-radius: 2rem;
 }
@@ -1538,18 +1556,24 @@
     margin-left: 0.5rem;
   }
 
-  .SaveEnergyOptionTitle {
+  .ColorOptionTitle {
     font-size: 16px !important;
     margin: 2%;
   }
 
-  .SaveEnergyOptionText {
+  .SaveEnergyButton {
+    gap: 0px;
+  }
+
+  .ColorOptionText {
     margin-left: 4%;
     margin-right: 4%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
     font-size: 16px;
-    font-family: "Palanquin ", sans-serif !important;
+  }
+
+  .arrowColorOption {
+    /* background-color: white; */
+    /* border-radius: 2rem; */
   }
 }

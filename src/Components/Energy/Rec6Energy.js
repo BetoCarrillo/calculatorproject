@@ -9,7 +9,7 @@ function RecEnergy6() {
 
   return (
     <div className="EnergyCardRecSummary EasyToDo">
-      <Link className="EnergyCardContentRecSummary">
+      <Link className="EnergyCardContentRecSummary" to="/ReduceWarmWater">
         <div className="EnergyCardTypeRecSummary">
           <div>Easy to do</div>
           <div>
@@ -26,7 +26,7 @@ function RecEnergy6() {
           and in the impact to the environment. Learn why.
         </div>
         <Link
-          // to=""
+          to="/ReduceWarmWater"
           size="small"
           className="RecommendationLearnMoreButtonDiv"
         >

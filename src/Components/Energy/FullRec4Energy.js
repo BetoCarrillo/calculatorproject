@@ -66,6 +66,18 @@ function FullRec4Energy() {
               are off.
             </div>
           </div>
+          <div className="ExtraTipDiv">
+            <div className="ExtraTipIconDiv">
+              <span class="material-symbols-outlined ExtraTipIcon ">
+                campaign
+              </span>{" "}
+            </div>
+            <div>
+              <span style={{ fontWeight: "bold" }}>Extra tip: </span> You can
+              connect several appliances to a power strip with a switch to
+              disconnect them all at the same time.
+            </div>
+          </div>
 
           <div className="EnergyCardButtonsDivFullReco">
             <Link
@@ -78,13 +90,6 @@ function FullRec4Energy() {
         </div>
       </div>
       <div className="ExtraTipBackButton">
-        <div className="ExtraTipDiv">
-          <span class="material-symbols-outlined">campaign</span>{" "}
-          <span style={{ fontWeight: "bold" }}>Extra tip:</span> You can connect
-          several appliances to a power strip with a switch to disconnect them
-          all at the same time.
-        </div>
-
         <Button to="/EnergyResults" className="EnergyFullRecoButtonBackDiv">
           <div className="EnergyFullRecoBackButton" onClick={handlePrev}>
             Back

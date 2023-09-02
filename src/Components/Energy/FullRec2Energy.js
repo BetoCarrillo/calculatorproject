@@ -77,28 +77,28 @@ function FullRec2Energy() {
           <div className="EnergyCardtextFullReco">
             Some ways to save energy are:
           </div>
-          <div className="EnergyCardSaveEnergyOptions">
+          <div className="EnergyCardColorOptions">
             <div
               onClick={showHumanPower}
-              className="SaveEnergyButton"
+              className="EnergyCardColorOptionsEventDiv"
               style={{ backgroundColor: "#a12173" }}
             >
-              <div className="SaveEnergyOptionDiv">
-                <div className="SaveEnergyOptionTitle">Use human power</div>{" "}
+              <div className="ColorOptionDiv">
+                <div className="ColorOptionTitle">Use human power</div>{" "}
                 {humanPower ? (
-                  <div className="material-symbols-outlined arrowSaveEnergy">
+                  <div className="material-symbols-outlined arrowColorOption">
                     {" "}
                     keyboard_arrow_up
                   </div>
                 ) : (
-                  <div className="material-symbols-outlined arrowSaveEnergy">
+                  <div className="material-symbols-outlined arrowColorOption">
                     {" "}
                     keyboard_arrow_down
                   </div>
                 )}
               </div>
               {humanPower ? (
-                <div className="SaveEnergyOptionText">
+                <div className="ColorOptionText">
                   Using human power instead of a device to do the same task or
                   job will help conserve energy. This can include cutting food
                   by hand and not a food processor, walking instead of driving,
@@ -113,30 +113,30 @@ function FullRec2Energy() {
           </div>
 
           {inputQ5Energy === "Cloud service" ? (
-            <div className="EnergyCardSaveEnergyOptions">
+            <div className="EnergyCardColorOptions">
               <div
                 onClick={showDataStore}
-                className="SaveEnergyButton"
+                className="EnergyCardColorOptionsEventDiv"
                 style={{ backgroundColor: "#ee4347" }}
               >
-                <div className="SaveEnergyOptionDiv">
-                  <div className="SaveEnergyOptionTitle">
+                <div className="ColorOptionDiv">
+                  <div className="ColorOptionTitle">
                     Store your data on a hard drive instead of cloud services
                   </div>{" "}
                   {dataStore ? (
-                    <div className="material-symbols-outlined arrowSaveEnergy">
+                    <div className="material-symbols-outlined arrowColorOption">
                       {" "}
                       keyboard_arrow_up
                     </div>
                   ) : (
-                    <div className="material-symbols-outlined arrowSaveEnergy">
+                    <div className="material-symbols-outlined arrowColorOption">
                       {" "}
                       keyboard_arrow_down
                     </div>
                   )}
                 </div>
                 {dataStore ? (
-                  <div className="SaveEnergyOptionText">
+                  <div className="ColorOptionText">
                     Cloud services consume large amounts of energy in their data
                     centres. If the storage space on your device is limited, try
                     storing the data on a memory stick or external hard drive.
@@ -150,31 +150,31 @@ function FullRec2Energy() {
             <div style={{ display: "none" }}></div>
           )}
 
-          <div className="EnergyCardSaveEnergyOptions">
+          <div className="EnergyCardColorOptions">
             <div
               onClick={showMusicStream}
-              className="SaveEnergyButton"
+              className="EnergyCardColorOptionsEventDiv"
               style={{ backgroundColor: "#f79521" }}
             >
-              <div className="SaveEnergyOptionDiv">
-                <div className="SaveEnergyOptionTitle">
+              <div className="ColorOptionDiv">
+                <div className="ColorOptionTitle">
                   When streaming music: listen to music only rather than
                   watching music-videos
                 </div>{" "}
                 {musicStream ? (
-                  <div className="material-symbols-outlined arrowSaveEnergy">
+                  <div className="material-symbols-outlined arrowColorOption">
                     {" "}
                     keyboard_arrow_up
                   </div>
                 ) : (
-                  <div className="material-symbols-outlined arrowSaveEnergy">
+                  <div className="material-symbols-outlined arrowColorOption">
                     {" "}
                     keyboard_arrow_down
                   </div>
                 )}
               </div>
               {musicStream ? (
-                <div className="SaveEnergyOptionText">
+                <div className="ColorOptionText">
                   Listening to music via audio streaming platforms creates far
                   fewer emissions than watching videos. The most
                   energy-efficient way is to store songs locally on your phone
@@ -188,41 +188,44 @@ function FullRec2Energy() {
           </div>
 
           {inputQ7BEnergy !== "3" ? (
-            <div className="EnergyCardSaveEnergyOptions">
+            <div className="EnergyCardColorOptions">
               <div
                 onClick={showCooking}
-                className="SaveEnergyButton"
+                className="EnergyCardColorOptionsEventDiv"
                 style={{ backgroundColor: "#98cb63" }}
               >
-                <div className="SaveEnergyOptionDiv">
-                  <div className="SaveEnergyOptionTitle">
+                <div className="ColorOptionDiv">
+                  <div className="ColorOptionTitle">
                     Save energy when you cook
                   </div>{" "}
                   {cooking ? (
-                    <div className="material-symbols-outlined arrowSaveEnergy">
+                    <div className="material-symbols-outlined arrowColorOption">
                       {" "}
                       keyboard_arrow_up
                     </div>
                   ) : (
-                    <div className="material-symbols-outlined arrowSaveEnergy">
+                    <div className="material-symbols-outlined arrowColorOption">
                       {" "}
                       keyboard_arrow_down
                     </div>
                   )}
                 </div>
                 {cooking ? (
-                  <div className="SaveEnergyOptionText">
+                  <div className="ColorOptionText">
                     {" "}
                     <div>
                       The kitchen is one place where you can adopt sustainable
                       practices without sacrificing comfort.
                     </div>
                     <div>
-                      1) Use a slow cooker as it requires the minimum amount of
+                      {" "}
+                      <span style={{ fontWeight: "bold" }}>1) </span>
+                      Use a slow cooker as it requires the minimum amount of
                       energy.
                     </div>
                     <div>
-                      2) Optimise your oven use. Try not to open the oven door
+                      <span style={{ fontWeight: "bold" }}>2) </span>
+                      Optimise your oven use. Try not to open the oven door
                       unless it is absolutely necessary and keep preheating time
                       to a minimum or do not preheat at all since it is often
                       unnecessary. Also, you can often turn off the oven before
@@ -233,13 +236,15 @@ function FullRec2Energy() {
                       and time first.
                     </div>
                     <div>
-                      3) If you cook with gas, consider switching to an electric
+                      <span style={{ fontWeight: "bold" }}>3) </span>
+                      If you cook with gas, consider switching to an electric
                       stove. Gas stoves lose heat through the burners, which
                       wastes a lot of energy.
                     </div>{" "}
                     <div>
-                      4) Use the size of pots and pans that cover the size of
-                      the stove heaters completely so unnecessary energy is not
+                      <span style={{ fontWeight: "bold" }}>4) </span>
+                      Use the size of pots and pans that cover the size of the
+                      stove heaters completely so unnecessary energy is not
                       wasted. Using a lid to cover the pot will reduce cooking
                       times and save energy too.
                     </div>
@@ -253,55 +258,67 @@ function FullRec2Energy() {
             <div style={{ display: "none" }}></div>
           )}
           {inputQ7CEnergy !== "3" ? (
-            <div className="EnergyCardSaveEnergyOptions">
+            <div className="EnergyCardColorOptions">
               <div
                 onClick={showFridge}
-                className="SaveEnergyButton"
+                className="EnergyCardColorOptionsEventDiv"
                 style={{ backgroundColor: "#42a889" }}
               >
-                <div className="SaveEnergyOptionDiv">
-                  <div className="SaveEnergyOptionTitle">
+                <div className="ColorOptionDiv">
+                  <div className="ColorOptionTitle">
                     Reduce energy usage of your fridge and freezer
                   </div>{" "}
                   {fridge ? (
-                    <div className="material-symbols-outlined arrowSaveEnergy">
+                    <div className="material-symbols-outlined arrowColorOption">
                       {" "}
                       keyboard_arrow_up
                     </div>
                   ) : (
-                    <div className="material-symbols-outlined arrowSaveEnergy">
+                    <div className="material-symbols-outlined arrowColorOption">
                       {" "}
                       keyboard_arrow_down
                     </div>
                   )}
                 </div>
                 {fridge ? (
-                  <div className="SaveEnergyOptionText">
+                  <div className="ColorOptionText">
                     <div>
                       The fridge and freezer are one of the kitchen appliances
                       that require more energy to operate. Some tips to save
                       energy while using the fridge and freezer are
                     </div>
 
-                    <div> 1) Close the door of the fridge. </div>
-                    <div> 2) Don’t over fill the fridge.</div>
                     <div>
-                      3) Let your food cool down before putting it in the fridge
-                      or freezer.
+                      <span style={{ fontWeight: "bold" }}>1) </span> Close the
+                      door of the fridge.{" "}
                     </div>
                     <div>
-                      4) Don’t put the fridge or freezer near sources of heat
-                      (such as the sun or the stove).
+                      {" "}
+                      <span style={{ fontWeight: "bold" }}>2) </span> Don’t over
+                      fill the fridge.
                     </div>
                     <div>
-                      5) Full freezers operate more efficiently than empty ones.
+                      <span style={{ fontWeight: "bold" }}>3) </span>
+                      Let your food cool down before putting it in the fridge or
+                      freezer.
                     </div>
                     <div>
-                      6) Regularly defrost your freezer. The more ice inside,
-                      the more energy it uses, and
+                      <span style={{ fontWeight: "bold" }}>4) </span>
+                      Don’t put the fridge or freezer near sources of heat (such
+                      as the sun or the stove).
                     </div>
                     <div>
-                      7) Freezers are affected less than a refrigerator when the
+                      <span style={{ fontWeight: "bold" }}>5) </span>
+                      Full freezers operate more efficiently than empty ones.
+                    </div>
+                    <div>
+                      <span style={{ fontWeight: "bold" }}>6) </span>
+                      Regularly defrost your freezer. The more ice inside, the
+                      more energy it uses, and
+                    </div>
+                    <div>
+                      <span style={{ fontWeight: "bold" }}>7) </span>
+                      Freezers are affected less than a refrigerator when the
                       door is opened because there is less uncontained air to
                       escape.
                     </div>
@@ -315,30 +332,30 @@ function FullRec2Energy() {
             <div style={{ display: "none" }}></div>
           )}
 
-          <div className="EnergyCardSaveEnergyOptions">
+          <div className="EnergyCardColorOptions">
             <div
               onClick={showComputer}
-              className="SaveEnergyButton"
+              className="EnergyCardColorOptionsEventDiv"
               style={{ backgroundColor: "#7fc3eb" }}
             >
-              <div className="SaveEnergyOptionDiv">
-                <div className="SaveEnergyOptionTitle">
+              <div className="ColorOptionDiv">
+                <div className="ColorOptionTitle">
                   Adjust your computer’s energy settings
                 </div>{" "}
                 {computer ? (
-                  <div className="material-symbols-outlined arrowSaveEnergy">
+                  <div className="material-symbols-outlined arrowColorOption">
                     {" "}
                     keyboard_arrow_up
                   </div>
                 ) : (
-                  <div className="material-symbols-outlined arrowSaveEnergy">
+                  <div className="material-symbols-outlined arrowColorOption">
                     {" "}
                     keyboard_arrow_down
                   </div>
                 )}
               </div>
               {computer ? (
-                <div className="SaveEnergyOptionText">
+                <div className="ColorOptionText">
                   Computers can be set to automatically enter a low-power
                   “sleep” mode when not in use. Also make sure you turn off
                   printers or scanners when they are not in use.
@@ -350,30 +367,30 @@ function FullRec2Energy() {
           </div>
 
           {inputQ3Energy !== "A/C" ? (
-            <div className="EnergyCardSaveEnergyOptions">
+            <div className="EnergyCardColorOptions">
               <div
                 onClick={showFans}
-                className="SaveEnergyButton"
+                className="EnergyCardColorOptionsEventDiv"
                 style={{ backgroundColor: "#4386c6" }}
               >
-                <div className="SaveEnergyOptionDiv">
-                  <div className="SaveEnergyOptionTitle">
+                <div className="ColorOptionDiv">
+                  <div className="ColorOptionTitle">
                     Use ceiling fans instead of air conditioning
                   </div>{" "}
                   {fans ? (
-                    <div className="material-symbols-outlined arrowSaveEnergy">
+                    <div className="material-symbols-outlined arrowColorOption">
                       {" "}
                       keyboard_arrow_up
                     </div>
                   ) : (
-                    <div className="material-symbols-outlined arrowSaveEnergy">
+                    <div className="material-symbols-outlined arrowColorOption">
                       {" "}
                       keyboard_arrow_down
                     </div>
                   )}
                 </div>
                 {fans ? (
-                  <div className="SaveEnergyOptionText">
+                  <div className="ColorOptionText">
                     Fans use significantly less energy than air conditioning to
                     achieve a cooling effect. In cold weather, set the fan to
                     drive air upward to break up the heat that rises and
@@ -388,30 +405,30 @@ function FullRec2Energy() {
             <div style={{ display: "none" }}></div>
           )}
 
-          <div className="EnergyCardSaveEnergyOptions">
+          <div className="EnergyCardColorOptions">
             <div
               onClick={showDishwasher}
-              className="SaveEnergyButton"
+              className="EnergyCardColorOptionsEventDiv"
               style={{ backgroundColor: "#095366" }}
             >
-              <div className="SaveEnergyOptionDiv">
-                <div className="SaveEnergyOptionTitle">
+              <div className="ColorOptionDiv">
+                <div className="ColorOptionTitle">
                   Use your dishwasher efficiently
                 </div>{" "}
                 {dishwasher ? (
-                  <div className="material-symbols-outlined arrowSaveEnergy">
+                  <div className="material-symbols-outlined arrowColorOption">
                     {" "}
                     keyboard_arrow_up
                   </div>
                 ) : (
-                  <div className="material-symbols-outlined arrowSaveEnergy">
+                  <div className="material-symbols-outlined arrowColorOption">
                     {" "}
                     keyboard_arrow_down
                   </div>
                 )}
               </div>
               {dishwasher ? (
-                <div className="SaveEnergyOptionText">
+                <div className="ColorOptionText">
                   The way you use the dishwasher can affect the amount of energy
                   used. Make sure you use the energy-saving and low-heat
                   features to use less water and save energy, and remember to
