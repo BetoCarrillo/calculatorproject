@@ -9,7 +9,7 @@ function RecEnergy7() {
 
   return (
     <div className="EnergyCardRecSummary FunTip">
-      <Link className="EnergyCardContentRecSummary">
+      <Link className="EnergyCardContentRecSummary" to="/CandleDinner">
         <div className="EnergyCardTypeRecSummary">
           <div>Fun Tip</div>
           <div>
@@ -21,10 +21,11 @@ function RecEnergy7() {
         </div>
         <div className="EnergyCardModuleRecSummary">Energy</div>
         <div className="OptionDivRecSummary">
-          or go back to the past with a lights-off evening.
+          or go back to the past with a lights-off evening (don’t turn on the
+          lights after sundown)
         </div>
         <Link
-          // to=""
+          to="/CandleDinner"
           size="small"
           className="RecommendationLearnMoreButtonDiv"
         >

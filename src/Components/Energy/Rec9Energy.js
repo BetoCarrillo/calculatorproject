@@ -9,7 +9,7 @@ function RecEnergy9() {
 
   return (
     <div className="EnergyCardRecSummary FunTip">
-      <Link className="EnergyCardContentRecSummary">
+      <Link className="EnergyCardContentRecSummary" to="/NoTech">
         <div className="EnergyCardTypeRecSummary">
           <div>Fun Tip</div>
           <div>
@@ -22,7 +22,7 @@ function RecEnergy9() {
         <div className="EnergyCardModuleRecSummary">Energy</div>
         <div className="OptionDivRecSummary">This also helps you detox.</div>
         <Link
-          // to=""
+          to="/NoTech"
           size="small"
           className="RecommendationLearnMoreButtonDiv"
         >
