@@ -1,11 +1,16 @@
 import React, { useContext, useEffect, useState } from "react";
 import "../../styles/energystyle.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ResultsContext } from "../../Context/context";
 import CClogo from "../../styles/CClogo.png";
 import orangestar from "../../styles/Pictures/orangestar.png";
+import { Button } from "@mui/material";
 
 function FullRec2Energy() {
+  const redirectPrev = useNavigate();
+  const handlePrev = () => {
+    redirectPrev(-1);
+  };
   const {
     inputQ3Energy,
     inputQ5Energy,
@@ -421,7 +426,7 @@ function FullRec2Energy() {
           <div className="EnergyCardButtonsDivFullReco">
             <Link
               //   to=""
-              className="EnergyFullRecoButtonDiv"
+              className="EnergyFullRecoButtonCompleteDiv"
             >
               <div className="EnergyFullRecoCompleteButton">COMPLETE</div>
             </Link>
@@ -429,9 +434,11 @@ function FullRec2Energy() {
         </div>
       </div>
       <div className="BackFullRecoDiv">
-        <Link to="/EnergyResults" className="EnergyFullRecoButtonDiv">
-          <div className="EnergyFullRecoBackButton">Back</div>
-        </Link>
+        <Button to="/EnergyResults" className="EnergyFullRecoButtonBackDiv">
+          <div className="EnergyFullRecoBackButton" onClick={handlePrev}>
+            Back
+          </div>
+        </Button>
       </div>
       <div className="ChangeClubsLogo CClogo">
         <Link

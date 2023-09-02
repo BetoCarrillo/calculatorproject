@@ -8,7 +8,7 @@ export const ResultsContextProvider = (props) => {
   const [inputQ2Energy, setInputQ2Energy] = useState("");
   const [inputQ3Energy, setInputQ3Energy] = useState("Fans");
   const [inputQ4Energy, setInputQ4Energy] = useState("Electric heater");
-  const [inputQ5Energy, setInputQ5Energy] = useState("Hard drive");
+  const [inputQ5Energy, setInputQ5Energy] = useState("Cloud service");
   const [inputQ6Energy, setInputQ6Energy] = useState("Music-videos");
   const [inputQ7AEnergy, setInputQ7AEnergy] = useState("2");
   const [inputQ7BEnergy, setInputQ7BEnergy] = useState("2");

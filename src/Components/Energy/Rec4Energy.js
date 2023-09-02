@@ -9,7 +9,7 @@ function RecEnergy4() {
 
   return (
     <div className="EnergyCardRecSummary EasyToDo">
-      <Link className="EnergyCardContentRecSummary">
+      <Link className="EnergyCardContentRecSummary" to="/EnergyAware">
         <div className="EnergyCardTypeRecSummary">
           <div>Easy to do</div>
           <div>
@@ -25,7 +25,7 @@ function RecEnergy4() {
           habits in your daily life.
         </div>
         <Link
-          // to=""
+          to="/EnergyAware"
           size="small"
           className="RecommendationLearnMoreButtonDiv"
         >

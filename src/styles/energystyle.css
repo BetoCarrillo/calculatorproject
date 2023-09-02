@@ -1056,6 +1056,7 @@
 
 .ImportanceText {
   font-family: "Palanquin", sans-serif !important;
+  font-size: 18px;
   /* width: 95%; */
   display: flex;
   flex-direction: column;
@@ -1241,13 +1242,23 @@
   text-align: center;
 }
 
-.EnergyFullRecoButtonDiv {
+.EnergyFullRecoButtonBackDiv {
+  /* width: 100%; */
+  font-family: "Palanquin Dark", sans-serif !important;
+  padding-bottom: 1rem;
+}
+
+.EnergyFullRecoButtonBackDiv:hover {
+  text-decoration: none;
+}
+
+.EnergyFullRecoButtonCompleteDiv {
   width: 8rem;
   font-family: "Palanquin Dark", sans-serif !important;
   padding-bottom: 1rem;
 }
 
-.EnergyFullRecoButtonDiv:hover {
+.EnergyFullRecoButtonCompleteDiv:hover {
   text-decoration: none;
 }
 
@@ -1266,15 +1277,14 @@
 }
 
 .EnergyFullRecoBackButton {
-  width: 4rem;
+  width: 100%;
   text-align: center;
   color: white !important;
   background-color: #095366;
   border-radius: 0.2rem;
-
   text-decoration: none;
   /* padding: 10px; */
-  padding: 0.1rem 0rem !important;
+  /* padding: 0.1rem 0rem !important; */
   /* padding-right: 2rem; */
 }
 
@@ -1294,6 +1304,21 @@
 .BackFullRecoDiv {
   align-self: flex-end;
   margin-right: 12%;
+}
+
+.ExtraTipBackButton {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.ExtraTipDiv {
+  font-family: "Palanquin", sans-serif !important;
+  font-size: 18px;
+  background-color: rgba(204, 204, 204, 0.78);
+  border-radius: 1.5rem;
+  padding: 10px;
 }
 
 .EnergyCardtextFullRecoSaveEnergy {
@@ -1332,11 +1357,12 @@
   gap: 10px;
   justify-content: space-between;
   flex-direction: column;
+  opacity: 0.9;
   /* text-align: baseline !important; */
 }
 
 .SaveEnergyButton:hover {
-  opacity: 0.9;
+  opacity: 1;
 }
 .SaveEnergyOptionDiv {
   display: flex;
@@ -1350,13 +1376,13 @@
 }
 
 .SaveEnergyOptionText {
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: 2%;
+  margin-right: 2%;
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-size: 18px;
-  font-family: "Palanquin ", sans-serif !important;
+  font-family: "Palanquin", sans-serif !important;
 }
 
 .arrowSaveEnergy {
@@ -1505,6 +1531,11 @@
 
   .EnergyCardtextFullReco {
     font-size: 16px;
+  }
+
+  .EnergySingleRecoBulletDiv {
+    padding-top: 5px;
+    margin-left: 0.5rem;
   }
 
   .SaveEnergyOptionTitle {

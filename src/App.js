@@ -49,6 +49,8 @@ import EnergyResults from "./Views/Energy/EnergyResults";
 import EnergyRecommendations from "./Views/Energy/EnergyRecommendations";
 import FullRec1Energy from "./Components/Energy/FullRec1Energy";
 import FullRec2Energy from "./Components/Energy/FullRec2Energy";
+import FullRec3Energy from "./Components/Energy/FullRec3Energy";
+import FullRec4Energy from "./Components/Energy/FullRec4Energy";
 
 function App() {
   return (
@@ -74,6 +76,8 @@ function App() {
           />
           <Route path="/CleanEnergy" element={<FullRec1Energy />} />
           <Route path="/SaveEnergy" element={<FullRec2Energy />} />
+          <Route path="/EfficientAppliances" element={<FullRec3Energy />} />
+          <Route path="/EnergyAware" element={<FullRec4Energy />} />
 
           <Route path="/Q1" element={<Q1 />} />
           <Route path="/Q2" element={<Q2 />} />
