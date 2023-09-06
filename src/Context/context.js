@@ -3,6 +3,8 @@ import { createContext, useEffect, useState } from "react";
 export const ResultsContext = createContext();
 
 export const ResultsContextProvider = (props) => {
+  // Generals
+  const [inputQGHomeType, setInputQGHomeType] = useState("");
   // Energy
   const [inputQ1Energy, setInputQ1Energy] = useState("Normal grid");
   const [inputQ2Energy, setInputQ2Energy] = useState("");
@@ -201,6 +203,9 @@ export const ResultsContextProvider = (props) => {
   return (
     <ResultsContext.Provider
       value={{
+        // Generals
+        inputQGHomeType,
+        setInputQGHomeType,
         // Energy
         UserRecommendations,
         inputQ1Energy,

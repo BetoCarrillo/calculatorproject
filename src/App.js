@@ -57,12 +57,15 @@ import FullRec7Energy from "./Components/Energy/FullRec7Energy";
 import FullRec8Energy from "./Components/Energy/FullRec8Energy";
 import FullRec9Energy from "./Components/Energy/FullRec9Energy";
 import FullRec10Energy from "./Components/Energy/FullRec10Energy";
+import GeneralQs from "./Views/GeneralQs";
+import Tryout from "./Views/Tryout";
 
 function App() {
   return (
     <div>
       <ResultsContextProvider>
         <Routes>
+          <Route path="/Tryout" element={<Tryout />} />
           <Route path="/" element={<Start />} />
           <Route path="/Modules" element={<Modules />} />
           {/* <Route path="/" element={<Landing />} /> */}
@@ -90,6 +93,7 @@ function App() {
           <Route path="/MorningCoffee" element={<FullRec8Energy />} />
           <Route path="/NoTech" element={<FullRec9Energy />} />
           <Route path="/RenewableHeating" element={<FullRec10Energy />} />
+          <Route path="/Generals" element={<GeneralQs />} />
 
           <Route path="/Q1" element={<Q1 />} />
           <Route path="/Q2" element={<Q2 />} />

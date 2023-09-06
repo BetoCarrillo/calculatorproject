@@ -4,6 +4,15 @@
   padding-bottom: 15px;
 } */
 
+.TryOurContentDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Palanquin Dark", sans-serif;
+  font-size: 100px;
+  text-align: center;
+}
+
 .MainDivBackground {
   background-color: #212329;
   height: 100vh;
@@ -21,6 +30,7 @@
 }
 
 .StartCard {
+  width: 90%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -121,6 +131,83 @@
   100% {
     border-color: #4386c6;
   }
+}
+
+/* GENERAL QUESTIONS */
+
+.GQuestionsCard {
+  /* width: auto; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  animation: change-color 60s linear infinite;
+  border-width: 0.2rem;
+  border-radius: 2rem !important;
+  max-width: 60rem;
+  min-width: 30rem;
+}
+
+.GQuestionsCardContent {
+  gap: 15px;
+  flex-wrap: nowrap;
+  /* width: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  margin: 2%;
+  font-family: "Palanquin", sans-serif;
+  font-size: 18px;
+}
+
+.GQuestionsListTitle {
+  text-align: center;
+  /* width: 100%; */
+  font-family: "Palanquin Dark", sans-serif;
+  font-size: 20px;
+}
+
+.GQuestionsTitle {
+  width: 50%;
+}
+.GQuestionsDiv {
+  width: 70%;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Palanquin ", sans-serif;
+  font-size: 18px;
+}
+
+.GQuestionsTitleAnswerDiv {
+  width: 50%;
+}
+
+.GQuestionsStartButton {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.2rem;
+  height: 3rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 12rem;
+  color: white;
+  text-align: center;
+  background-color: #f79521 !important;
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-size: 20px !important;
+}
+
+.GQuestionsTitle {
+  font-family: "Palanquin Dark", sans-serif !important;
+  font-size: 16px !important;
+}
+
+.GQuestionsStartButton:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: white;
 }
 
 /* MODULES */

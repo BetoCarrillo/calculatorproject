@@ -1062,6 +1062,8 @@
   flex-direction: column;
   gap: 15px;
   margin: 4%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 /* .OptionDivRecommendations {
@@ -1370,7 +1372,7 @@
   height: 100%;
   /* padding-top: ; */
   display: flex;
-  gap: 10px;
+  /* gap: 5px; */
   justify-content: space-between;
   flex-direction: column;
   opacity: 0.9;
