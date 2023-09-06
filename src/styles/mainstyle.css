@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   font-family: "Palanquin Dark", sans-serif;
-  font-size: 100px;
+  font-size: 70px;
   text-align: center;
 }
 
@@ -30,7 +30,6 @@
 }
 
 .StartCard {
-  width: 90%;
   color: white;
   display: flex;
   flex-direction: column;
