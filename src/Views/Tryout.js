@@ -22,9 +22,7 @@ function Tryout() {
         </Link>
       </div>
       <div className="StartCard change-color">
-        <div className="TryOurContentDiv">
-          TRY OUT THE CHANGE CLUBS' BETA APP
-        </div>
+        <div className="TryOurContentDiv">TRY OUT OUR BETA APP</div>
       </div>
       <div className="StartButtonsDiv">
         <Button

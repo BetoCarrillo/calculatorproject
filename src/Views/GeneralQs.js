@@ -14,7 +14,7 @@ function GeneralQs() {
   };
 
   return (
-    <div className="MainDivBackground ViewDiv">
+    <div className="MainDivBackgroundGQuestions ViewDiv">
       <div>
         <Link
           to="https://changeclubs.global/"
@@ -26,24 +26,18 @@ function GeneralQs() {
       </div>
       <div className="GQuestionsCard change-color">
         <div className="GQuestionsCardContent">
-          <div className="GQuestionsListTitle">
-            {" "}
-            FIRST, SOME GENERAL QUESTIONS:
-          </div>
+          <div className="GQuestionsListTitle"> GENERAL QUESTIONS:</div>
           <div className="GQuestionsDiv">
-            <div className="GQuestionsTitle">Type of building</div>
+            <div className="GQuestion">Type of building</div>
             <div className="GQuestionsTitleAnswerDiv">
               {inputQGHomeType === "" ? (
                 <button
                   type="button"
                   className=" ownbutton DropdownButtonAnswers dropddown-toggle-own"
                   data-toggle="dropdown"
-                  style={{
-                    width: "auto",
-                  }}
                 >
                   <div
-                    className=" AnswerInput"
+                    className="AnswerInput"
                     style={{
                       color: "#095366",
                       textDecoration: "none",
@@ -59,13 +53,10 @@ function GeneralQs() {
                   type="button"
                   className="ownbutton DropdownButtonAnswers dropddown-toggle-own "
                   data-toggle="dropdown"
-                  style={{
-                    width: "auto",
-                  }}
                 >
                   {" "}
                   <div
-                    className=" AnswerInput"
+                    className="AnswerInput"
                     style={{
                       fontFamily: "Palanquin",
                     }}

@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   font-family: "Palanquin Dark", sans-serif;
-  font-size: 70px;
+  font-size: 120px;
   text-align: center;
 }
 
@@ -19,9 +19,15 @@
   background-size: cover;
   overflow: auto;
 }
+
+.MainDivBackgroundGQuestions {
+  background-color: #212329;
+  height: 100vh;
+  background-size: cover;
+  overflow: auto;
+}
+
 .ViewDiv {
-  /* height: 100vh; */
-  /* height: auto; */
   display: flex;
   flex-direction: column;
   justify-content: center !important;
@@ -138,7 +144,7 @@
 /* GENERAL QUESTIONS */
 
 .GQuestionsCard {
-  /* width: auto; */
+  width: 50%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -146,17 +152,21 @@
   animation: change-color 60s linear infinite;
   border-width: 0.2rem;
   border-radius: 2rem !important;
-  max-width: 60rem;
-  min-width: 30rem;
+  align-items: center;
+  /* max-width: 60rem; */
+  /* min-width: 30rem; */
 }
 
 .GQuestionsCardContent {
+  width: 75%;
   gap: 15px;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
+  /* justify-content: center !important; */
   /* width: auto; */
   display: flex;
   flex-direction: column;
-  align-items: center !important;
+  /* align-items: center; */
+  /* align-items: center !important; */
   margin: 2%;
   font-family: "Palanquin", sans-serif;
   font-size: 18px;
@@ -169,21 +179,29 @@
   font-size: 20px;
 }
 
-.GQuestionsTitle {
-  width: 50%;
-}
 .GQuestionsDiv {
-  width: 70%;
+  width: 100%;
   display: flex;
-  gap: 10px;
+  /* gap: 10px; */
   flex-direction: row;
-  justify-content: center;
-  font-family: "Palanquin ", sans-serif;
+  /* justify-content: space-evenly; */
+  /* font-family: "Palanquin Dark", sans-serif; */
+  /* font-size: 18px; */
+}
+
+.GQuestion {
+  font-family: "Palanquin Dark", sans-serif;
   font-size: 18px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .GQuestionsTitleAnswerDiv {
-  width: 50%;
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
 }
 
 .GQuestionsStartButton {
@@ -1117,6 +1135,12 @@
   /* START */
   .MainDivBackground {
     height: 100%;
+  }
+
+  /* General QS */
+
+  .GQuestionsCard {
+    width: 95%;
   }
 
   /* .ResultsDiv {
