@@ -20,12 +20,14 @@
   overflow: auto;
 }
 .ViewDiv {
+  /* height: 100vh; */
+  /* height: auto; */
   display: flex;
   flex-direction: column;
   justify-content: center !important;
   align-items: center;
   gap: 25px;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -38,6 +40,7 @@
   border-width: 0.2rem;
   border-radius: 2rem !important;
   max-width: 60rem;
+  width: 95%;
 }
 
 .StartCardContent {
@@ -1111,6 +1114,11 @@
 /* MEDIA */
 
 @media screen and (max-width: 650px) {
+  /* START */
+  .MainDivBackground {
+    height: 100%;
+  }
+
   /* .ResultsDiv {
     display: flex;
     flex-direction: column-reverse;
