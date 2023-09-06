@@ -3,6 +3,7 @@ import "../styles/mainstyle.css";
 import Button from "@mui/material/Button";
 import { Link, useNavigate } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
+import QR from "../styles/Pictures/QR.png";
 
 function Tryout() {
   const redirectQ1 = useNavigate();
@@ -11,7 +12,7 @@ function Tryout() {
     redirectQ1("/");
   };
   return (
-    <div className="MainDivBackground ViewDiv">
+    <div className="ViewDivTryout">
       <div>
         <Link
           to="https://changeclubs.global/"
@@ -23,6 +24,9 @@ function Tryout() {
       </div>
       <div className="StartCard change-color">
         <div className="TryOurContentDiv">TRY OUT OUR BETA APP</div>
+      </div>
+      <div>
+        <img src={QR} alt="Change Clubs logo" height={200}></img>
       </div>
       <div className="StartButtonsDiv">
         <Button
