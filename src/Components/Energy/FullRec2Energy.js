@@ -15,7 +15,7 @@ function FullRec2Energy() {
     inputQ3Energy,
     inputQ5Energy,
     inputQ7BEnergy,
-
+    inputQ6Energy,
     inputQ7CEnergy,
   } = useContext(ResultsContext);
   //   const { inputQ1Energy, setInputQ1Energy } = useContext(ResultsContext);
@@ -73,7 +73,6 @@ function FullRec2Energy() {
             expanding development and additional extraction of natural resources
             impacting natural areas.
           </div>
-
           <div className="EnergyCardtextFullReco">
             Some ways to save energy are:
           </div>
@@ -111,7 +110,6 @@ function FullRec2Energy() {
               )}
             </div>
           </div>
-
           {inputQ5Energy === "Cloud service" ? (
             <div className="EnergyCardColorOptions">
               <div
@@ -150,42 +148,46 @@ function FullRec2Energy() {
             <div style={{ display: "none" }}></div>
           )}
 
-          <div className="EnergyCardColorOptions">
-            <div
-              onClick={showMusicStream}
-              className="EnergyCardColorOptionsEventDiv"
-              style={{ backgroundColor: "#f79521" }}
-            >
-              <div className="ColorOptionDiv">
-                <div className="ColorOptionTitle">
-                  When streaming music: listen to music only rather than
-                  watching music-videos
-                </div>{" "}
+          {inputQ6Energy === "Music-videos" ? (
+            <div className="EnergyCardColorOptions">
+              <div
+                onClick={showMusicStream}
+                className="EnergyCardColorOptionsEventDiv"
+                style={{ backgroundColor: "#f79521" }}
+              >
+                <div className="ColorOptionDiv">
+                  <div className="ColorOptionTitle">
+                    When streaming music: listen to music only rather than
+                    watching music-videos
+                  </div>{" "}
+                  {musicStream ? (
+                    <div className="material-symbols-outlined arrowColorOption">
+                      {" "}
+                      keyboard_arrow_up
+                    </div>
+                  ) : (
+                    <div className="material-symbols-outlined arrowColorOption">
+                      {" "}
+                      keyboard_arrow_down
+                    </div>
+                  )}
+                </div>
                 {musicStream ? (
-                  <div className="material-symbols-outlined arrowColorOption">
-                    {" "}
-                    keyboard_arrow_up
+                  <div className="ColorOptionText">
+                    Listening to music via audio streaming platforms creates far
+                    fewer emissions than watching videos. The most
+                    energy-efficient way is to store songs locally on your phone
+                    or computer. CO2 emissions caused by music streaming are up
+                    to 33 times less than by high-quality video streaming.
                   </div>
                 ) : (
-                  <div className="material-symbols-outlined arrowColorOption">
-                    {" "}
-                    keyboard_arrow_down
-                  </div>
+                  <div style={{ display: "none" }}></div>
                 )}
               </div>
-              {musicStream ? (
-                <div className="ColorOptionText">
-                  Listening to music via audio streaming platforms creates far
-                  fewer emissions than watching videos. The most
-                  energy-efficient way is to store songs locally on your phone
-                  or computer. CO2 emissions caused by music streaming are up to
-                  33 times less than by high-quality video streaming.
-                </div>
-              ) : (
-                <div style={{ display: "none" }}></div>
-              )}
             </div>
-          </div>
+          ) : (
+            <div style={{ display: "none" }}></div>
+          )}
 
           {inputQ7BEnergy !== "3" ? (
             <div className="EnergyCardColorOptions">
@@ -331,7 +333,6 @@ function FullRec2Energy() {
           ) : (
             <div style={{ display: "none" }}></div>
           )}
-
           <div className="EnergyCardColorOptions">
             <div
               onClick={showComputer}
@@ -365,7 +366,6 @@ function FullRec2Energy() {
               )}
             </div>
           </div>
-
           {inputQ3Energy !== "A/C" ? (
             <div className="EnergyCardColorOptions">
               <div
@@ -404,7 +404,6 @@ function FullRec2Energy() {
           ) : (
             <div style={{ display: "none" }}></div>
           )}
-
           <div className="EnergyCardColorOptions">
             <div
               onClick={showDishwasher}
@@ -439,7 +438,6 @@ function FullRec2Energy() {
               )}
             </div>
           </div>
-
           <div className="EnergyCardButtonsDivFullReco">
             <Link
               //   to=""

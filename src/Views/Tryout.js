@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../styles/mainstyle.css";
 import Button from "@mui/material/Button";
 import { Link, useNavigate } from "react-router-dom";
@@ -7,14 +7,6 @@ import QR from "../styles/Pictures/QR.png";
 
 function Tryout() {
   const redirectQ1 = useNavigate();
-
-  const componentDidMount = () => {
-    window.scrollTo(0, 1);
-  };
-
-  useEffect(() => {
-    componentDidMount();
-  }, []);
 
   const handleStart = () => {
     redirectQ1("/");
