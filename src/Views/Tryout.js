@@ -4,10 +4,8 @@ import Button from "@mui/material/Button";
 import { Link, useNavigate } from "react-router-dom";
 import CClogo from "../styles/CClogo.png";
 import QR from "../styles/Pictures/QR.png";
-import { createStackNavigator } from "@react-navigation/stack";
 
 function Tryout() {
-  const HomeStack = createStackNavigator();
   const redirectQ1 = useNavigate();
 
   const handleStart = () => {
